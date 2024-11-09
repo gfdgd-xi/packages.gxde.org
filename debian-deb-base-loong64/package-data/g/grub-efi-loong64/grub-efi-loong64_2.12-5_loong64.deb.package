@@ -1,0 +1,31 @@
+Package: grub-efi-loong64
+Architecture: loong64
+Version: 2.12-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 506
+Depends: debconf (>= 0.5) | debconf-2.0, grub2-common (>= 2.02~beta2-9), grub-efi-loong64-bin (= 2.12-5), grub-efi-loong64-unsigned (= 2.12-5), ucf
+Filename: ./g/grub-efi-loong64/grub-efi-loong64_2.12-5_loong64.deb
+Size: 358784
+MD5sum: a974fb619ac351fab3dcd99a94db7c9f
+SHA1: c1926857412f941fdb42d7cc9c1ea9b866c438ac
+SHA256: 66d5c0bcb7f56a7ad9baa0c17bcd20ccc867e5cd33e4ef2ee404178b5096daeb
+SHA512: baaf786432496445ba288ded2ebcbe00a48e73610276345c247509e3eca542b75874d3a11b0e15bc9ba2e4dc61e186a5d9de2377c69726f91b76c5ac13961374
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This is a dependency package for a version of GRUB that has been built for
+ use on LoongArch 64-bit systems with UEFI.  Installing this package indicates that
+ this version of GRUB should be the active boot loader.
+

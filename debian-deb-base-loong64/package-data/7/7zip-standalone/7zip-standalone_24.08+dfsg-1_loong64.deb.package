@@ -1,0 +1,29 @@
+Package: 7zip-standalone
+Architecture: loong64
+Version: 24.08+dfsg-1
+Priority: optional
+Section: utils
+Source: 7zip
+Maintainer: YOKOTA Hiroshi <yokota.hgml@gmail.com>
+Installed-Size: 2590
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Suggests: 7zip (= 24.08+dfsg-1)
+Replaces: 7zip (<< 23.01+dfsg-4~)
+Filename: ./7/7zip-standalone/7zip-standalone_24.08+dfsg-1_loong64.deb
+Size: 889416
+MD5sum: fcc98aa45565bcb52c700cf0c35d1259
+SHA1: c9d6a4c74eca6d002d7719f07d4cd514516967fa
+SHA256: 7e49410725318ef874e14b113c35ec9624d65482f691c668baaac255c07224bc
+SHA512: ef03e76f8df4b288564f0e61855b679e5ea7c6e2536441cbc8584f398ee5ad6f8df75f3c6c58a1986f8db2e4bbb9915d823361d3aaa4881831093f0b21378fc8
+Homepage: https://www.7-zip.org/
+Description: 7-Zip file archiver with a high compression ratio (standalone)
+ 7-Zip is a file archiver with a high compression ratio.
+ .
+ "7zip-standalone" provides:
+  * /usr/bin/7zz: Full featured except plugins, standalone executable.
+       This means 7zz can't work with unRAR plugin that provided by 7zip-rar
+       package. Use 7zip package for unRAR plugin.
+ .
+ Note: If you want to create SFX archive, you also needs 7zip package for SFX
+       stub module.
+

@@ -1,0 +1,27 @@
+Package: weston
+Architecture: loong64
+Version: 14.0.0-2
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5335
+Depends: libc6 (>= 2.40), libcairo2 (>= 1.10.0), libdrm2 (>= 2.4.108), libegl1, libevdev2 (>= 0.9.1), libfontconfig1 (>= 2.12.6), libgbm1 (>= 21.3.0~rc1), libgles2, libglib2.0-0t64 (>= 2.12.0), libinput10 (>= 1.4.0), libjpeg62-turbo (>= 1:2.0.2), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpixman-1-0 (>= 0.30.0), libpng16-16t64 (>= 1.6.2), libsystemd0, libudev1 (>= 183), libwayland-client0 (>= 1.22.0), libwayland-cursor0 (>= 1.22.0), libwayland-egl1 (>= 1.22.0), libwayland-server0 (>= 1.22.0), libwebp7 (>= 1.4.0), libweston-14-0 (>= 14.0.0), libxkbcommon0 (>= 0.5.0)
+Recommends: libgl1-mesa-dri
+Suggests: wayland-utils
+Conflicts: libweston-8-dev
+Breaks: libweston-8-dev
+Replaces: libweston-8-dev
+Filename: ./w/weston/weston_14.0.0-2_loong64.deb
+Size: 898312
+MD5sum: 7176e0f912d5501ee2333b4c76a83f90
+SHA1: dfe683076539e63a2c564f381ebf30649050958f
+SHA256: 9659a3f111d669e045ef46d439d55c4904e4a04b7c44425f16a4989b03c0975a
+SHA512: 9806e957b260689deb4a6a1fc02ce56ad44c55eeb8f0a37d08f29f738b330fcd60071a28ca0df5cad5a2bb65374eef81d206d03054917efc31eadbf7cc8507fd
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
+

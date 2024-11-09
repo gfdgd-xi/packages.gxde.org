@@ -1,0 +1,28 @@
+Package: aptitude
+Architecture: loong64
+Version: 0.8.13-6.1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
+Installed-Size: 4355
+Depends: aptitude-common (= 0.8.13-6.1), libapt-pkg6.0t64 (>= 1.9.0), libboost-iostreams1.83.0 (>= 1.83.0), libc6 (>= 2.39), libcwidget4 (>= 0.5.18-1), libgcc-s1 (>= 3.0), libncursesw6 (>= 6.1+20180210), libsigc++-2.0-0v5 (>= 2.8.0), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 14), libtinfo6 (>= 6.1+20180210), libxapian30 (>= 1.4.19~)
+Recommends: libdpkg-perl, sensible-utils
+Suggests: apt-xapian-index, aptitude-doc-en | aptitude-doc, debtags, tasksel
+Filename: ./a/aptitude/aptitude_0.8.13-6.1_loong64.deb
+Size: 1259328
+MD5sum: 81dd6612ae77ecf30d58cb28ea8b38c3
+SHA1: c4babcbdc90c538ca3bbb9b22876b057ae318f04
+SHA256: 18aaeb0e2733cc4d68bad7268f40c313ef61e468d28f1a15f44340fd2f1d5d9c
+SHA512: ba68cf54f7ba0db9623d89a6d821d5436c6c116a5f30884349700623afb23c611d8828d4898559f0835840e87b998521b12130514deede5b8751f9057ca7190d
+Homepage: https://wiki.debian.org/Aptitude
+Description: terminal-based package manager
+ aptitude is a package manager with a number of useful features,
+ including: a mutt-like syntax for matching packages in a flexible
+ manner, dselect-like persistence of user actions, the ability to
+ retrieve and display the Debian changelog of most packages, and a
+ command-line mode similar to that of apt-get.
+ .
+ aptitude is also Y2K-compliant, non-fattening, naturally cleansing,
+ and housebroken.
+

@@ -1,0 +1,41 @@
+Package: 7zip
+Architecture: loong64
+Version: 24.08+dfsg-1
+Priority: optional
+Section: utils
+Maintainer: YOKOTA Hiroshi <yokota.hgml@gmail.com>
+Installed-Size: 6772
+Provides: p7zip, p7zip-full
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Suggests: 7zip-standalone, 7zip-rar
+Breaks: p7zip (<= 16.02+dfsg-8), p7zip-full (<= 16.02+dfsg-8)
+Replaces: p7zip (<= 16.02+dfsg-8), p7zip-full (<= 16.02+dfsg-8)
+Filename: ./7/7zip/7zip_24.08+dfsg-1_loong64.deb
+Size: 1417668
+MD5sum: 6d675bf9495dfa93ef33210cd80fc5a5
+SHA1: 209ef68905cd95d009a6406bcfe77fde50f9ee12
+SHA256: daa1816a918941dde2a752c11c3be9e810168febc5592631239acd11fd7c4b58
+SHA512: 4741d5227529d89c1a6a811d1350506bb7255c56c3eb5adab0252988fa97050f68772fbc2946aa8dead795b9a3ed455da55c067664edb09aff7323ca12adb1b8
+Homepage: https://www.7-zip.org/
+Description: 7-Zip file archiver with a high compression ratio
+ 7-Zip is a file archiver with a high compression ratio. The main features
+ of 7-Zip are:
+  * High compression ratio in 7z format with LZMA and LZMA2 compression
+  * Supported formats:
+      * Packing / unpacking: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM
+      * Unpacking only: AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT,
+          GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2,
+          RPM, SquashFS, UDF, UEFI, VDI, VHD, VMDK, WIM, XAR and Z.
+  * For ZIP and GZIP formats, 7-Zip provides a compression ratio that is
+      2-10 % better than the ratio provided by PKZip and WinZip
+  * Strong AES-256 encryption in 7z and ZIP formats
+  * Powerful command line version
+ .
+ "7zip" provides:
+  * /usr/bin/7z:  Full featured with plugin functionality.
+  * /usr/bin/7za: Major formats/features only.
+  * /usr/bin/7zr: LZMA (.7z, .lzma, .xz) only. Minimal executable.
+ .
+ Note: The unRAR code was dropped to keep compatible with DFSG.
+       Install 7zip-rar package in non-free section to use RAR files.
+

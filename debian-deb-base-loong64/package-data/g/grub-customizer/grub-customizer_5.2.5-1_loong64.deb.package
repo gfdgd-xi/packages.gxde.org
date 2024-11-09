@@ -1,0 +1,33 @@
+Package: grub-customizer
+Architecture: loong64
+Version: 5.2.5-1
+Priority: optional
+Section: utils
+Maintainer: xiao sheng wen <atzlinux@sina.com>
+Installed-Size: 3489
+Depends: hwinfo, pkexec, libarchive13t64 (>= 3.0.4), libatkmm-1.6-1v5 (>= 2.28.4), libc6 (>= 2.38), libcairomm-1.0-1v5 (>= 1.14.5), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.14.0), libglibmm-2.4-1t64 (>= 2.66.7), libgtk-3-0t64 (>= 3.0.0), libgtkmm-3.0-1t64 (>= 3.24.9), libpangomm-1.4-1v5 (>= 2.46.4), libsigc++-2.0-0v5 (>= 2.2.0), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1)
+Enhances: grub-efi, grub-legacy, grub-pc
+Filename: ./g/grub-customizer/grub-customizer_5.2.5-1_loong64.deb
+Size: 699536
+MD5sum: ffdefc70e911c4bfd9ffe57489fba268
+SHA1: b213d769fbeb81a8747ba8c1dc2f2aa3f59523ca
+SHA256: 91a87b6112a5ca9a086876c535169e3c44aab4ad0de1920c2ca522e6e8209c01
+SHA512: cae2c5ab1328cd7c9e5235b98f04945276fa28c63a3ae45da3f56c31ed96feaac99e7191c35476525bbfd3fa5249eba2b58c8f6d3a6c46b95a459ef6ad8c0192
+Homepage: https://launchpad.net/grub-customizer
+Description: GUI to configure GRUB2 and BURG
+ Grub Customizer is a graphical interface to configure GRUB2 and BURG. It can
+ do changes for settings and menuentries easily.
+ .
+ Grub Customizer has the following features:
+   * Move, remove or rename menuentries (they stey updatable by update-grub).
+   * Edit the contents of menuentries or create new ones (internally it edits
+     the 40_custom file).
+   * Provide reinstallation of the bootloader to MBR.
+   * Allow make settings like default operating system, kernel params,
+     background image, text colors, etc.
+   * Allow one to change the installed operating system by running on a live
+     CD/DVD or from an OS inside a flash drive.
+ .
+ Grub Customizer is useful for customizations and recovering actions over any
+ Linux distribution.
+

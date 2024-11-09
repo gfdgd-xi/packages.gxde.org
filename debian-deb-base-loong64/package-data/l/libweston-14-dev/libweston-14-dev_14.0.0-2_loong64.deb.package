@@ -1,0 +1,28 @@
+Package: libweston-14-dev
+Architecture: loong64
+Version: 14.0.0-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: weston
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 237
+Depends: libpixman-1-dev, libwayland-dev, libweston-14-0 (= 14.0.0-2), libxkbcommon-dev
+Breaks: weston (<< 1.12.0-1)
+Replaces: weston (<< 1.12.0-1)
+Filename: ./l/libweston-14-dev/libweston-14-dev_14.0.0-2_loong64.deb
+Size: 45712
+MD5sum: 5b590491c14558a0f5409977a894392e
+SHA1: cc1abc773fdedebbd2ca15fe355504237b8ea0dc
+SHA256: eaab32f5505f517934e5fd451b313a5fc0a6c4605b573e9ba4c27d8b6e976dc7
+SHA512: 6eca6a73a2245a8e8cdde56efb93c34a097c8c567c165d1d680d7780458a0b71e0c10d29e0885984819d1df09c4d41471b23e4b8c13360ced0c35b335a4e7bf4
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor (headers)
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
+ .
+ This package includes the libweston headers.
+

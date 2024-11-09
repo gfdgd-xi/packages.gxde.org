@@ -1,0 +1,28 @@
+Package: libweston-14-0
+Architecture: loong64
+Version: 14.0.0-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: weston
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1536
+Depends: libaml0t64 (>= 0.3.0), libc6 (>= 2.40), libcairo2 (>= 1.10.0), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.108), libegl1, libfontconfig1 (>= 2.12.6), libfreerdp-server3-3 (>= 3.0.0), libfreerdp3-3 (>= 3.0.0), libgbm1 (>= 21.3.0~rc1), libgles2, libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.2.0), libgstreamer1.0-0 (>= 1.4.0), libinput10 (>= 1.2.0), libjpeg62-turbo (>= 1:2.0.2), liblcms2-2 (>= 2.7), libneatvnc0 (>= 0.8.0+dfsg), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpipewire-0.3-0t64 (>= 0.3.1), libpixman-1-0 (>= 0.30.0), libpng16-16t64 (>= 1.6.2), libseat1 (>= 0.5.0), libudev1 (>= 183), libva-drm2 (>= 1.1.0), libva2 (>= 1.7.3), libwayland-client0 (>= 1.22.0), libwayland-cursor0 (>= 1.22.0), libwayland-egl1 (>= 1.22.0), libwayland-server0 (>= 1.22.0), libwebp7 (>= 1.4.0), libwinpr3-3 (>= 3.0.0), libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb-composite0, libxcb-render0, libxcb-shm0, libxcb-xfixes0, libxcb-xkb1, libxcb1 (>= 1.8), libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.5.0)
+Breaks: weston (<< 1.12.0-1)
+Replaces: weston (<< 1.12.0-1)
+Filename: ./l/libweston-14-0/libweston-14-0_14.0.0-2_loong64.deb
+Size: 397756
+MD5sum: 73948b56292098b347aff8ec19e44f5f
+SHA1: 86018da811b3976f3dda73fecd79c69daf432a58
+SHA256: 8a8915734046440478ad448d015d1e5599d6ca5c6b3b580cbf2542fcfbaffaa7
+SHA512: 3ce3f9daa1fb810f626e181efc34b371b12f8ae02c4e69996fcc2c5b57881d680e2fcb73368c1b43f567540bb54f4cb128a2ffdd8d699ec8bab3858db6d392eb
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor (shared libs)
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
+ .
+ This package includes the libweston shared libraries.
+

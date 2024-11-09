@@ -1,3 +1,73 @@
+Package: 7zip
+Architecture: loong64
+Version: 24.08+dfsg-1
+Priority: optional
+Section: utils
+Maintainer: YOKOTA Hiroshi <yokota.hgml@gmail.com>
+Installed-Size: 6772
+Provides: p7zip, p7zip-full
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Suggests: 7zip-standalone, 7zip-rar
+Breaks: p7zip (<= 16.02+dfsg-8), p7zip-full (<= 16.02+dfsg-8)
+Replaces: p7zip (<= 16.02+dfsg-8), p7zip-full (<= 16.02+dfsg-8)
+Filename: ./7/7zip/7zip_24.08+dfsg-1_loong64.deb
+Size: 1417668
+MD5sum: 6d675bf9495dfa93ef33210cd80fc5a5
+SHA1: 209ef68905cd95d009a6406bcfe77fde50f9ee12
+SHA256: daa1816a918941dde2a752c11c3be9e810168febc5592631239acd11fd7c4b58
+SHA512: 4741d5227529d89c1a6a811d1350506bb7255c56c3eb5adab0252988fa97050f68772fbc2946aa8dead795b9a3ed455da55c067664edb09aff7323ca12adb1b8
+Homepage: https://www.7-zip.org/
+Description: 7-Zip file archiver with a high compression ratio
+ 7-Zip is a file archiver with a high compression ratio. The main features
+ of 7-Zip are:
+  * High compression ratio in 7z format with LZMA and LZMA2 compression
+  * Supported formats:
+      * Packing / unpacking: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM
+      * Unpacking only: AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT,
+          GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2,
+          RPM, SquashFS, UDF, UEFI, VDI, VHD, VMDK, WIM, XAR and Z.
+  * For ZIP and GZIP formats, 7-Zip provides a compression ratio that is
+      2-10 % better than the ratio provided by PKZip and WinZip
+  * Strong AES-256 encryption in 7z and ZIP formats
+  * Powerful command line version
+ .
+ "7zip" provides:
+  * /usr/bin/7z:  Full featured with plugin functionality.
+  * /usr/bin/7za: Major formats/features only.
+  * /usr/bin/7zr: LZMA (.7z, .lzma, .xz) only. Minimal executable.
+ .
+ Note: The unRAR code was dropped to keep compatible with DFSG.
+       Install 7zip-rar package in non-free section to use RAR files.
+
+Package: 7zip-standalone
+Architecture: loong64
+Version: 24.08+dfsg-1
+Priority: optional
+Section: utils
+Source: 7zip
+Maintainer: YOKOTA Hiroshi <yokota.hgml@gmail.com>
+Installed-Size: 2590
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)
+Suggests: 7zip (= 24.08+dfsg-1)
+Replaces: 7zip (<< 23.01+dfsg-4~)
+Filename: ./7/7zip-standalone/7zip-standalone_24.08+dfsg-1_loong64.deb
+Size: 889416
+MD5sum: fcc98aa45565bcb52c700cf0c35d1259
+SHA1: c9d6a4c74eca6d002d7719f07d4cd514516967fa
+SHA256: 7e49410725318ef874e14b113c35ec9624d65482f691c668baaac255c07224bc
+SHA512: ef03e76f8df4b288564f0e61855b679e5ea7c6e2536441cbc8584f398ee5ad6f8df75f3c6c58a1986f8db2e4bbb9915d823361d3aaa4881831093f0b21378fc8
+Homepage: https://www.7-zip.org/
+Description: 7-Zip file archiver with a high compression ratio (standalone)
+ 7-Zip is a file archiver with a high compression ratio.
+ .
+ "7zip-standalone" provides:
+  * /usr/bin/7zz: Full featured except plugins, standalone executable.
+       This means 7zz can't work with unRAR plugin that provided by 7zip-rar
+       package. Use 7zip package for unRAR plugin.
+ .
+ Note: If you want to create SFX archive, you also needs 7zip package for SFX
+       stub module.
+
 Package: adduser
 Architecture: all
 Version: 3.137
@@ -99,6 +169,34 @@ Description: package management related utility programs
   * apt-ftparchive is used to create Packages and other index files
     needed to publish an archive of Debian packages
   * apt-sortpkgs is a Packages/Sources file normalizer.
+
+Package: aptitude
+Architecture: loong64
+Version: 0.8.13-6.1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
+Installed-Size: 4355
+Depends: aptitude-common (= 0.8.13-6.1), libapt-pkg6.0t64 (>= 1.9.0), libboost-iostreams1.83.0 (>= 1.83.0), libc6 (>= 2.39), libcwidget4 (>= 0.5.18-1), libgcc-s1 (>= 3.0), libncursesw6 (>= 6.1+20180210), libsigc++-2.0-0v5 (>= 2.8.0), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 14), libtinfo6 (>= 6.1+20180210), libxapian30 (>= 1.4.19~)
+Recommends: libdpkg-perl, sensible-utils
+Suggests: apt-xapian-index, aptitude-doc-en | aptitude-doc, debtags, tasksel
+Filename: ./a/aptitude/aptitude_0.8.13-6.1_loong64.deb
+Size: 1259328
+MD5sum: 81dd6612ae77ecf30d58cb28ea8b38c3
+SHA1: c4babcbdc90c538ca3bbb9b22876b057ae318f04
+SHA256: 18aaeb0e2733cc4d68bad7268f40c313ef61e468d28f1a15f44340fd2f1d5d9c
+SHA512: ba68cf54f7ba0db9623d89a6d821d5436c6c116a5f30884349700623afb23c611d8828d4898559f0835840e87b998521b12130514deede5b8751f9057ca7190d
+Homepage: https://wiki.debian.org/Aptitude
+Description: terminal-based package manager
+ aptitude is a package manager with a number of useful features,
+ including: a mutt-like syntax for matching packages in a flexible
+ manner, dselect-like persistence of user actions, the ability to
+ retrieve and display the Debian changelog of most packages, and a
+ command-line mode similar to that of apt-get.
+ .
+ aptitude is also Y2K-compliant, non-fattening, naturally cleansing,
+ and housebroken.
 
 Package: base-files
 Architecture: loong64
@@ -870,26 +968,29 @@ Description: utilities for finding files--find, xargs
  This package contains 'find' and 'xargs'; however, 'locate' has
  been split off into a separate package.
 
-Package: gcc-13-plugin-dev
+Package: gdc-14
 Architecture: loong64
-Version: 13.3.0-8
+Version: 14.2.0-7
 Priority: optional
 Section: devel
-Source: gcc-13
+Source: gcc-14
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 8079
-Depends: gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.40)
-Filename: ./g/gcc-13-plugin-dev/gcc-13-plugin-dev_13.3.0-8_loong64.deb
-Size: 1273288
-MD5sum: 6335140e549d462bd56c9b6b20b4c2c4
-SHA1: 1b37cff8dc7e63be7e98539a41c487ddc3a11b1a
-SHA256: 2cc97e5b745b1dd2712bd68ea8d4ef1f25a93f0e34bb2df5604ec0affbd37613
-SHA512: 90e1bd046b785f82c9964fde8c1abb9b025c45d5c844155f2bdf78ee4111d2a3c0da79411cc358af29210d58c005ecab44f87056b9ab18edc937e4ef6c8da224
+Installed-Size: 111
+Provides: d-compiler, d-v2-compiler, gdc
+Depends: gdc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
+Replaces: gdc (<< 4.4.6-5)
+Filename: ./g/gdc-14/gdc-14_14.2.0-7_loong64.deb
+Size: 44596
+MD5sum: ecffd38cc64b835c90f04ace3d459eee
+SHA1: 81ec599b38d02ba5f52cdaf1e76dd9b036015690
+SHA256: d79ab9d15f20246979ce29a9ccfc1831a31d188aaaa6cd8df5c3aa18cfb4946c
+SHA512: f36ffcc9561a26edd25134fac3c53dba6b93993c1e3421ce1acd12565feb996f8781b1b77476e1df51fdbbb912c876e3a92daab727ea7aad2bfac8ffa5e3ff68
 Homepage: http://gcc.gnu.org/
-Description: Files for GNU GCC plugin development.
- This package contains (header) files for GNU GCC plugin development. It
- is only used for the development of GCC plugins, but not needed to run
- plugins.
+Description: GNU D compiler (version 2)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
 
 Package: gfortran-14-for-host
 Architecture: loong64
@@ -1081,471 +1182,6 @@ Description: GNU C++ compiler for loongarch64-linux-gnu architecture
  This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
  .
  This package contains C++ cross-compiler for loongarch64-linux-gnu architecture.
-
-Package: gcc-12
-Architecture: loong64
-Version: 12.2.0-14+loong64.1
-Priority: optional
-Section: devel
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 42844
-Provides: c-compiler
-Depends: cpp-12 (= 12.2.0-14+loong64.1), gcc-12-base (= 12.2.0-14+loong64.1), libcc1-0 (>= 12.2.0-14+loong64.1), binutils (>= 2.40), libgcc-12-dev (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
-Recommends: libc6-dev (>= 2.23-1~)
-Suggests: gcc-12-doc (>= 12), gcc-12-locales (>= 12)
-Replaces: cpp-12 (<< 7.1.1-8)
-Filename: ./g/gcc-12/gcc-12_12.2.0-14+loong64.1_loong64.deb
-Size: 13355976
-MD5sum: cbc2656657112e44deefde216cb3f2f1
-SHA1: d4f6175b4f4d630c5989526d499da7ac20bd7918
-SHA256: 38a23d4792135674105fc6d6a0fd892b62d883f9f54161696dfa389ae2e753bd
-SHA512: 0ed04540f6af7cd7403a3941021f8b9a74a37d677cb2156048a44737e528851a1af653afbb908fcd61c925805bc5cbdca0276bb43a8eb42b4638905d0a2c4bf5
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
-
-Package: gcc-12-base
-Architecture: loong64
-Version: 12.2.0-14+loong64.1
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gcc-12
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 96
-Breaks: gnat (<< 7)
-Filename: ./g/gcc-12-base/gcc-12-base_12.2.0-14+loong64.1_loong64.deb
-Size: 34488
-MD5sum: e94e9b329a452627a101256b39a2d745
-SHA1: 98588da1f0a6c6f6d5fdb261be214e3e79a2a9d1
-SHA256: dab25cc44cbf7f5c14999ac473e885ff9bf025424c99345e3a79ee20801a9b9c
-SHA512: 8d31fd914202f509174575fd8a6412d71da78f1ed4d08e4cca66aa1b7c9ce82578ce57f3c3f2dca249ee44d6519e2dc9cae7b9a3a8d7bb25657b57cbe94a8ab7
-Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU Compiler Collection (base package)
- This package contains files common to all languages and libraries
- contained in the GNU Compiler Collection (GCC).
-
-Package: gcc-12-locales
-Architecture: all
-Version: 12.2.0-14+loong64.1
-Priority: optional
-Section: devel
-Source: gcc-12
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 12423
-Depends: gcc-12-base (>= 12), cpp-12 (>= 12)
-Recommends: gcc-12 (>= 12)
-Filename: ./g/gcc-12-locales/gcc-12-locales_12.2.0-14+loong64.1_all.deb
-Size: 1759376
-MD5sum: e544ec7bb4ef41878b06f7c33ce35388
-SHA1: 47c5339a2916c0e64cf6f449a152a75587eb7ef1
-SHA256: 7aef6b5b58043aa28c7afacb159b889a900bfca342e359921c6358d5e6be2b81
-SHA512: 61c2467e01e1b2315b6ac2906059eff879a17c42e50ba59789125559918e525d3aabb4712309f0ab067a58f780bd8b2de01d5dbcb46a41f3c31018f9db028920
-Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU compiler collection (native language support files)
- Native language support for GCC. Lets GCC speak your language,
- if translations are available.
- .
- Please do NOT submit bug reports in other languages than "C".
- Always reset your language settings to use the "C" locales.
-
-Package: gcc-12-plugin-dev
-Architecture: loong64
-Version: 12.2.0-14+loong64.1
-Priority: optional
-Section: devel
-Source: gcc-12
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 7915
-Depends: gcc-12-base (= 12.2.0-14+loong64.1), gcc-12 (= 12.2.0-14+loong64.1), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.36)
-Filename: ./g/gcc-12-plugin-dev/gcc-12-plugin-dev_12.2.0-14+loong64.1_loong64.deb
-Size: 1257480
-MD5sum: c90880b84ff4c53d7211f2af2eede91e
-SHA1: ed00b788959b37e853c626742ddb7d2444536e7c
-SHA256: 37c0f0900935f84891a259d57c75261f743c5e1f8490f810ff90bbad5275b1ae
-SHA512: edee1812373eebb9ddfcf57767f1da16a2f753a6789fbf2c57d6530db28768960da4421b2bf15a02433f2c46f839489b2fbfe07d4899f177eda0f987aa8a952d
-Homepage: http://gcc.gnu.org/
-Description: Files for GNU GCC plugin development.
- This package contains (header) files for GNU GCC plugin development. It
- is only used for the development of GCC plugins, but not needed to run
- plugins.
-
-Package: gcc-12-source
-Architecture: all
-Version: 12.2.0-14+loong64.1
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Source: gcc-12
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 100993
-Depends: make, quilt, patchutils, sharutils, gawk, lsb-release, time, m4, libtool, autoconf2.69
-Filename: ./g/gcc-12-source/gcc-12-source_12.2.0-14+loong64.1_all.deb
-Size: 83444128
-MD5sum: 6fe4f654c653e57bdd75974eb4e6b9e3
-SHA1: 5b04dbfee47df44ebf92e1f74f799ae14d783775
-SHA256: fe1e38bc6d4d82a926167198052101944490b014c0d7393bda1a9ec337c8d18b
-SHA512: 15eaebc8f61c5adbaeb6ee0de46048b0ba220fdb7336f64589adff1ccd4556c603fa8c8150df7f022d12b9866a08b86d6b31dfab6d3c0076e20bc9109f288929
-Homepage: http://gcc.gnu.org/
-Description: Source of the GNU Compiler Collection
- This package contains the sources and patches which are needed to
- build the GNU Compiler Collection (GCC).
-
-Package: gcc-12-test-results
-Architecture: loong64
-Version: 12.2.0-14+loong64.1
-Priority: optional
-Section: devel
-Source: gcc-12
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 8
-Depends: gcc-12-base (= 12.2.0-14+loong64.1)
-Replaces: g++-5 (<< 5.2.1-28)
-Filename: ./g/gcc-12-test-results/gcc-12-test-results_12.2.0-14+loong64.1_loong64.deb
-Size: 1104
-MD5sum: be22d9011868bb4d2a313345ae1f520e
-SHA1: 5fbb8330eb8e18a7631c05cf21aed591e71ab0d3
-SHA256: c1a8351cde62fab258f137ce9e088d584ed24a9af4d74b3e5c24cdf3227eb91d
-SHA512: e97fa5a334db5a356ebfa06fc56dc4ef46af49c96653bc56d28d111758e1a8a684b3af07ad6cd65b43ceba3ec8af641b5bcd12981a9fce73bb309e19b857b85f
-Homepage: http://gcc.gnu.org/
-Description: Test results for the GCC test suite
- This package contains the test results for running the GCC test suite
- for a post build analysis.
-
-Package: gcc-13
-Architecture: loong64
-Version: 13.3.0-8
-Priority: optional
-Section: devel
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 526
-Provides: c-compiler
-Depends: gcc-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), cpp-13 (= 13.3.0-8), binutils (>= 2.39)
-Recommends: libc6-dev (>= 2.23-1~)
-Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
-Replaces: cpp-13 (<< 7.1.1-8)
-Filename: ./g/gcc-13/gcc-13_13.3.0-8_loong64.deb
-Size: 472092
-MD5sum: f787e1f9eafb320de4471e6a474ce7ca
-SHA1: 2afcc158a3fef9c5bd6ea201b7fc82db5b732d4d
-SHA256: 803396cee4267614831715a0988eaf70cdec284b5af61b1ce053fd8b14ce13ad
-SHA512: 5cea08578f0b2f9a86a55f94c8d60e6aef1636df15ec9361ca9ac1e464c713849978dceb3c8e460656cc1212b151eb869a522ca6641db7b4a4a316b3f233aff5
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
-
-Package: gcc-13-base
-Architecture: loong64
-Version: 13.3.0-8
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gcc-13
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 109
-Breaks: gnat (<< 7)
-Filename: ./g/gcc-13-base/gcc-13-base_13.3.0-8_loong64.deb
-Size: 47200
-MD5sum: 2f7cb95170fbe8fd10d7fbbf43383397
-SHA1: 0450c23f35b23a81e5d558c95937a5b206bf1eef
-SHA256: bd087349b6f26249eca52e80b4e6432cf5d311213021bbf0f345d0bb9737728e
-SHA512: 9e9c1a22dd041f82976f0ba306eb148125a85d4c30fca0627ea0f84e07a953703d9b37d69eb31d494df75da7a50f4cb5fc59a6869f6710c8d199ba23940f1873
-Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU Compiler Collection (base package)
- This package contains files common to all languages and libraries
- contained in the GNU Compiler Collection (GCC).
-
-Package: gcc-13-for-host
-Architecture: loong64
-Version: 13.3.0-8
-Multi-Arch: same
-Priority: optional
-Section: devel
-Source: gcc-13
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 6
-Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (>= 13), cpp-13-for-host (= 13.3.0-8)
-Filename: ./g/gcc-13-for-host/gcc-13-for-host_13.3.0-8_loong64.deb
-Size: 1028
-MD5sum: d27a0912a7f2bcb3e5fd608e2b40833f
-SHA1: d3a744166144530d3ef5344d71f23053a1bc6056
-SHA256: 3fbd04f313b518a8f9d5eb96bb2e6285baa5f923f93aa4fb398959b43e4629b5
-SHA512: 850c8d1903989e28274e7cead27574d66c225c864ddb7a1daecfa32e2230af7c95e9e0b50110cb24afd063dca2da17273d47725180155c293c3256cb9c4507f4
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler for the host architecture
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
- .
- When using this package, tools must be invoked with an architecture prefix.
- .
- This is a dependency package.
-
-Package: gcc-13-loongarch64-linux-gnu
-Architecture: loong64
-Version: 13.3.0-8
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Source: gcc-13
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 44251
-Provides: c-compiler-loongarch64-linux-gnu
-Depends: cpp-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), libcc1-0 (>= 13.3.0-8), binutils-loongarch64-linux-gnu (>= 2.39), libgcc-13-dev (= 13.3.0-8), libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
-Recommends: libc6-dev (>= 2.23-1~)
-Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
-Breaks: gcc-13 (<< 13.2.0-11)
-Replaces: cpp-13-loongarch64-linux-gnu (<< 7.1.1-8), gcc-13 (<< 13.2.0-11)
-Filename: ./g/gcc-13-loongarch64-linux-gnu/gcc-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
-Size: 14272684
-MD5sum: 8f5b6929b911f619b5d5801b3c533061
-SHA1: 3ea2719e810a6e7121de67701e628ffd64c77622
-SHA256: fb79e586ab35d7d20dc793560e85fcf6e754b9f9f89d4c272a15308533f99428
-SHA512: e4164df184ff05cd4d7c20be991095e447ac1dfabd382bde28c28ee7169110a678c2589530efc9f50e0e0c9248f0ccbb6374b6ff643f28e10b5e3a30545adc7b
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler for the loongarch64-linux-gnu architecture
- This is the GNU C compiler for the loongarch64-linux-gnu architecture,
- a fairly portable optimizing compiler for C.
-
-Package: gcc-13-test-results
-Architecture: loong64
-Version: 13.3.0-8
-Priority: optional
-Section: devel
-Source: gcc-13
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 12958
-Depends: gcc-13-base (= 13.3.0-8)
-Replaces: g++-5 (<< 5.2.1-28)
-Filename: ./g/gcc-13-test-results/gcc-13-test-results_13.3.0-8_loong64.deb
-Size: 13254032
-MD5sum: 81371e6e50809d93b7a495d0371007ad
-SHA1: 1513ff37c598ebae9b29091f13d34cefbfae9122
-SHA256: c0e08ec2e171106e156adf8a57fe98144c3f4b81c4bbe9bf353a1d7b79969053
-SHA512: 5db4f592b2cdd897ab3955e6aad87b825331be3f66509c433a0e50eb89ee74d11071f72f8c7dc3d527e2034e7a6a4bca3d14600f0f5a918b4975ee25286cb0db
-Homepage: http://gcc.gnu.org/
-Description: Test results for the GCC test suite
- This package contains the test results for running the GCC test suite
- for a post build analysis.
-
-Package: gcc-14
-Architecture: loong64
-Version: 14.2.0-7
-Priority: optional
-Section: devel
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 597
-Provides: c-compiler
-Depends: gcc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), cpp-14 (= 14.2.0-7), binutils (>= 2.39)
-Recommends: libc6-dev (>= 2.23-1~)
-Suggests: gcc-14-doc (>= 14), gcc-14-locales (>= 14)
-Replaces: cpp-14 (<< 7.1.1-8)
-Filename: ./g/gcc-14/gcc-14_14.2.0-7_loong64.deb
-Size: 516672
-MD5sum: 701b21f45b46c6135431fff0dfb8629c
-SHA1: 337f1a295a2277513d1440be22122c1a5c004ba1
-SHA256: bf73931475697d8f7896661a8a259243425acd38a73d9bc78519b47a733f87cf
-SHA512: e9cc147dce768a67d22df339cdf3cb63f488a87bd5d15696eb647be9daf4a3b7d172a454389411ca562a07709adceb4861cf8863a364943136ceb15d8db55a87
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
-
-Package: gcc-14-base
-Architecture: loong64
-Version: 14.2.0-7
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 109
-Breaks: gnat (<< 7)
-Filename: ./g/gcc-14-base/gcc-14-base_14.2.0-7_loong64.deb
-Size: 46884
-MD5sum: 50e89e12f0e4b6544fb0b8d6c3540ea0
-SHA1: f05b0bf6593167bc79fb5afc47c833ac4b9e6847
-SHA256: ba93339b45272403492fbc744956edfd8b6553117b1bf71ec3c5cc971ad300bd
-SHA512: b8a22a9bade3873900cfbb885dcdaab0b6972af4ae1fc6da06ed38b6764490b3d04b335c428f897042ee3da1f420c0fc651c5ac89ac4e6f64db4c5ba13f9e178
-Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU Compiler Collection (base package)
- This package contains files common to all languages and libraries
- contained in the GNU Compiler Collection (GCC).
-
-Package: gcc-14-for-host
-Architecture: loong64
-Version: 14.2.0-7
-Multi-Arch: same
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 6
-Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (>= 14), cpp-14-for-host (= 14.2.0-7)
-Filename: ./g/gcc-14-for-host/gcc-14-for-host_14.2.0-7_loong64.deb
-Size: 1024
-MD5sum: 23552e64880aa0b726a941e1707b8f56
-SHA1: ad2558ec5fcafa2d15ac6622fa9dbb38fe2746d6
-SHA256: 84c5ceedcfec0fef40d2aa9269832efd5eab1934a553e9c00bed5eeb993006db
-SHA512: 058c29c4d7c4f4fe3f74e1dc6ee96135a537b97eb470059018f96362d129962bb7152117f76f905d27e2e18fe908eb9d9ef1bb732646f3dcc6ccfcd9bea41b25
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler for the host architecture
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
- .
- When using this package, tools must be invoked with an architecture prefix.
- .
- This is a dependency package.
-
-Package: gcc-14-plugin-dev
-Architecture: loong64
-Version: 14.2.0-7
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 9252
-Depends: gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.40)
-Filename: ./g/gcc-14-plugin-dev/gcc-14-plugin-dev_14.2.0-7_loong64.deb
-Size: 1404016
-MD5sum: fec5bf0318f3549169177b3abc7f6b4a
-SHA1: e272ebb80b2a441160bcf896b40480594dc8bbbb
-SHA256: 8e4cfbfdc40150d40ea3376f9bdcaa6ceaf15ab6311ccb95d4f6f9ed797e0131
-SHA512: ec8cd9380de390e716ddd23cfa24cc786c3c2ec0fd7ebab22f5e43b63fa2f6b604b4a16d1a9f92e49507285bbf00d4520c976fae5c30d0884819cc5799c4a472
-Homepage: http://gcc.gnu.org/
-Description: Files for GNU GCC plugin development.
- This package contains (header) files for GNU GCC plugin development. It
- is only used for the development of GCC plugins, but not needed to run
- plugins.
-
-Package: gcc-14-test-results
-Architecture: loong64
-Version: 14.2.0-7
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 16463
-Depends: gcc-14-base (= 14.2.0-7)
-Replaces: g++-5 (<< 5.2.1-28)
-Filename: ./g/gcc-14-test-results/gcc-14-test-results_14.2.0-7_loong64.deb
-Size: 16842832
-MD5sum: 80ae41adac76db71836c061217e5950f
-SHA1: 521e83f7f1946ad33f691c8a83d71d41088a19b4
-SHA256: 8f63a14c82fb3e4062c48dd4a35408a55cd073ffcff5f2ccacd0726866387988
-SHA512: a5dc60a1546130bd0ce8fe443397aa3b14ee4bf91b35bde1fa58ab84bb9854698619918b575777142168b329c7d7b7d6f14e14a754a7a5dae61dc53d8ad8a668
-Homepage: http://gcc.gnu.org/
-Description: Test results for the GCC test suite
- This package contains the test results for running the GCC test suite
- for a post build analysis.
-
-Package: gccrs-14
-Architecture: loong64
-Version: 14.2.0-7
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 8
-Provides: gccrs, rust-compiler
-Depends: gcc-14-base (>= 14), gccrs-14-loongarch64-linux-gnu (= 14.2.0-7), g++-14 (>= 14)
-Filename: ./g/gccrs-14/gccrs-14_14.2.0-7_loong64.deb
-Size: 1120
-MD5sum: 575a05d185943a7dd58e199ba605928e
-SHA1: 8e3a7a722645c9fd5728752ae7e46d3a5f7c9ef1
-SHA256: bf7731b7242d6bc96260777c069952fafcd91da58172f3a074d50ec500fb5044
-SHA512: 0f949b6dadfa0dd82dafa75e5779536f0362609fe2ac4989a40909b5a241e92c53bfa67f2aed9f463f95d4a437b36d36ca712c9111efc92bee9a991b24352bc8
-Homepage: http://gcc.gnu.org/
-Description: GNU Rust compiler
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
- .
- gccrs is a full alternative implementation of the Rust
- language ontop of GCC with the goal to become fully
- upstream with the GNU toolchain.
- .
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
-
-Package: gccrs-14-for-host
-Architecture: loong64
-Version: 14.2.0-7
-Multi-Arch: same
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 6
-Depends: gcc-14-base (= 14.2.0-7), gccrs-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
-Filename: ./g/gccrs-14-for-host/gccrs-14-for-host_14.2.0-7_loong64.deb
-Size: 1152
-MD5sum: af71b06c04cc1cb1ebbdc94f716f3f35
-SHA1: 8418700415484968b72011521f570058d2a3e77c
-SHA256: 08e1aa4726329a7b68366bd966c74f8358701f5f7dbc8acb784e009ae5c58d5c
-SHA512: a37c40dbe2fe8b6dcaa4f545e556dc56ad1fba4c38e690e97413b126a6fd36a20a241969d2544fc0540f4e89294a963f730f647a9e86018a189e6c039bb1162f
-Homepage: http://gcc.gnu.org/
-Description: GNU Rust compiler for the host architecture
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
- .
- gccrs is a full alternative implementation of the Rust
- language ontop of GCC with the goal to become fully
- upstream with the GNU toolchain.
- .
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
- .
- When using this package, tools must be invoked with an architecture prefix.
- .
- This is a dependency package.
-
-Package: gccrs-14-loongarch64-linux-gnu
-Architecture: loong64
-Version: 14.2.0-7
-Multi-Arch: foreign
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 33710
-Depends: gcc-14-base (>= 14), g++-14-loongarch64-linux-gnu (>= 14), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
-Filename: ./g/gccrs-14-loongarch64-linux-gnu/gccrs-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
-Size: 10137320
-MD5sum: 2ee30b5ce0d6318da8df2ca9b5aebc44
-SHA1: d3ca30456445e133dbcf2c91d7eaeac50de863ee
-SHA256: ad8e78bbab0559ba431c031a67246772ec634debe3c229759f37b5a3d0d2bd9b
-SHA512: cb47e957ccdf03bb8dc2ce94ace4734028f4258d9e9f800037d9711ed33aba0d2b57cc5ecff861556922d6dc34b2aa03a9af29c773ed4d24eaa4414d781b500c
-Homepage: http://gcc.gnu.org/
-Description: GNU Rust compiler for the loongarch64-linux-gnu architecture
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
- .
- gccrs is a full alternative implementation of the Rust
- language ontop of GCC with the goal to become fully
- upstream with the GNU toolchain.
- .
- !!!!! Please note, the compiler is in a very early stage
- and not usable yet for compiling real Rust programs !!!!!
-
-Package: gdc-14
-Architecture: loong64
-Version: 14.2.0-7
-Priority: optional
-Section: devel
-Source: gcc-14
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 111
-Provides: d-compiler, d-v2-compiler, gdc
-Depends: gdc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
-Replaces: gdc (<< 4.4.6-5)
-Filename: ./g/gdc-14/gdc-14_14.2.0-7_loong64.deb
-Size: 44596
-MD5sum: ecffd38cc64b835c90f04ace3d459eee
-SHA1: 81ec599b38d02ba5f52cdaf1e76dd9b036015690
-SHA256: d79ab9d15f20246979ce29a9ccfc1831a31d188aaaa6cd8df5c3aa18cfb4946c
-SHA512: f36ffcc9561a26edd25134fac3c53dba6b93993c1e3421ce1acd12565feb996f8781b1b77476e1df51fdbbb912c876e3a92daab727ea7aad2bfac8ffa5e3ff68
-Homepage: http://gcc.gnu.org/
-Description: GNU D compiler (version 2)
- This is the GNU D compiler, which compiles D on platforms supported by gcc.
- It uses the gcc backend to generate optimised code.
- .
- This compiler supports D language version 2.
 
 Package: gdc-14-for-host
 Architecture: loong64
@@ -2247,6 +1883,192 @@ Description: GNU grep, egrep and fgrep
  look at every character. The result is typically many times faster
  than Unix grep or egrep. (Regular expressions containing backreferencing
  will run more slowly, however.)
+
+Package: grub-common
+Architecture: loong64
+Version: 2.12-5
+Built-Using: lzo2 (= 2.10-3)
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 17412
+Depends: libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1t64 (>= 38), libefivar1t64 (>= 38), libfreetype6 (>= 2.2.1), libfuse3-3 (>= 3.2.3), liblzma5 (>= 5.1.1alpha+20120614), gettext-base
+Recommends: os-prober (>= 1.33)
+Suggests: multiboot-doc, mtools, xorriso (>= 0.5.6.pl00), desktop-base (>= 4.0.6), console-setup
+Conflicts: init-select
+Breaks: apport (<< 2.1.1), friendly-recovery (<< 0.2.13), grub-efi-amd64-signed (<< 1+2.12~rc1), grub-efi-arm64-signed (<< 1+2.12~rc1), grub-efi-ia32-signed (<< 1+2.12~rc1), lupin-support (<< 0.55), mdadm (<< 2.6.7-2)
+Replaces: grub-coreboot (<< 2.00-4), grub-efi (<< 1.99-1), grub-efi-amd64 (<< 2.00-4), grub-efi-ia32 (<< 2.00-4), grub-efi-ia64 (<< 2.00-4), grub-ieee1275 (<< 2.00-4), grub-linuxbios (<< 1.96+20080831-1), grub-pc (<< 2.00-4), grub-yeeloong (<< 2.00-4), init-select
+Filename: ./g/grub-common/grub-common_2.12-5_loong64.deb
+Size: 2847504
+MD5sum: 6e9fc84b1bc3467943bb30b787e839eb
+SHA1: 0880e9be0bf420841c3f6a23da3225bd43d6281e
+SHA256: 46d7d74411aa215567963d7f46a6c985eedb2a090f3eea0eae04e0055a30aa03
+SHA512: f6cb70fda62e83450c705f95fbe3e1cb20011b65b21b32b5774a9dc0fc97f7dcfecfce4c1b530fbc261c67afb5a3cfa7763e0a1564a52a993186c83fbd55a16b
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader (common files)
+ This package contains common files shared by the distinct flavours of GRUB.
+ It is shared between GRUB Legacy and GRUB 2, although a number of files
+ specific to GRUB 2 are here as long as they do not break GRUB Legacy.
+ .
+ grub-mkrescue needs the suggested packages mtools (for UEFI targets) and
+ xorriso.
+
+Package: grub-customizer
+Architecture: loong64
+Version: 5.2.5-1
+Priority: optional
+Section: utils
+Maintainer: xiao sheng wen <atzlinux@sina.com>
+Installed-Size: 3489
+Depends: hwinfo, pkexec, libarchive13t64 (>= 3.0.4), libatkmm-1.6-1v5 (>= 2.28.4), libc6 (>= 2.38), libcairomm-1.0-1v5 (>= 1.14.5), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.14.0), libglibmm-2.4-1t64 (>= 2.66.7), libgtk-3-0t64 (>= 3.0.0), libgtkmm-3.0-1t64 (>= 3.24.9), libpangomm-1.4-1v5 (>= 2.46.4), libsigc++-2.0-0v5 (>= 2.2.0), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1)
+Enhances: grub-efi, grub-legacy, grub-pc
+Filename: ./g/grub-customizer/grub-customizer_5.2.5-1_loong64.deb
+Size: 699536
+MD5sum: ffdefc70e911c4bfd9ffe57489fba268
+SHA1: b213d769fbeb81a8747ba8c1dc2f2aa3f59523ca
+SHA256: 91a87b6112a5ca9a086876c535169e3c44aab4ad0de1920c2ca522e6e8209c01
+SHA512: cae2c5ab1328cd7c9e5235b98f04945276fa28c63a3ae45da3f56c31ed96feaac99e7191c35476525bbfd3fa5249eba2b58c8f6d3a6c46b95a459ef6ad8c0192
+Homepage: https://launchpad.net/grub-customizer
+Description: GUI to configure GRUB2 and BURG
+ Grub Customizer is a graphical interface to configure GRUB2 and BURG. It can
+ do changes for settings and menuentries easily.
+ .
+ Grub Customizer has the following features:
+   * Move, remove or rename menuentries (they stey updatable by update-grub).
+   * Edit the contents of menuentries or create new ones (internally it edits
+     the 40_custom file).
+   * Provide reinstallation of the bootloader to MBR.
+   * Allow make settings like default operating system, kernel params,
+     background image, text colors, etc.
+   * Allow one to change the installed operating system by running on a live
+     CD/DVD or from an OS inside a flash drive.
+ .
+ Grub Customizer is useful for customizations and recovering actions over any
+ Linux distribution.
+
+Package: grub-efi
+Architecture: loong64
+Version: 2.12-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 334
+Depends: grub-efi-loong64 (= 2.12-5)
+Filename: ./g/grub-efi/grub-efi_2.12-5_loong64.deb
+Size: 315344
+MD5sum: 6c2283216fe025336dd734b02d040ffd
+SHA1: c75fe8aa9dd9b22f45cc76ae816cd6efc5f8e2ce
+SHA256: 193612facb9b6fbffa7108a3f7d652081b4cde738d1a61c81ed781a4a6bfe40f
+SHA512: 94c4c59836314e74a745a2bb9c941f6bc2ff7ecd5fb92687c94c435b5a725f001a0c33d63c434d39e02e66da1f95e4ba54eb92cee8ed8041a803b67ff8592760
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy package that depends on the grub-efi-$ARCH package most likely
+ to be appropriate for each architecture.
+
+Package: grub-efi-loong64
+Architecture: loong64
+Version: 2.12-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 506
+Depends: debconf (>= 0.5) | debconf-2.0, grub2-common (>= 2.02~beta2-9), grub-efi-loong64-bin (= 2.12-5), grub-efi-loong64-unsigned (= 2.12-5), ucf
+Filename: ./g/grub-efi-loong64/grub-efi-loong64_2.12-5_loong64.deb
+Size: 358784
+MD5sum: a974fb619ac351fab3dcd99a94db7c9f
+SHA1: c1926857412f941fdb42d7cc9c1ea9b866c438ac
+SHA256: 66d5c0bcb7f56a7ad9baa0c17bcd20ccc867e5cd33e4ef2ee404178b5096daeb
+SHA512: baaf786432496445ba288ded2ebcbe00a48e73610276345c247509e3eca542b75874d3a11b0e15bc9ba2e4dc61e186a5d9de2377c69726f91b76c5ac13961374
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This is a dependency package for a version of GRUB that has been built for
+ use on LoongArch 64-bit systems with UEFI.  Installing this package indicates that
+ this version of GRUB should be the active boot loader.
+
+Package: grub-efi-loong64-bin
+Architecture: loong64
+Version: 2.12-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 4167
+Depends: grub-common (>= 2.02~beta2-9)
+Recommends: efibootmgr, grub-efi-loong64-unsigned
+Filename: ./g/grub-efi-loong64-bin/grub-efi-loong64-bin_2.12-5_loong64.deb
+Size: 1005140
+MD5sum: 92e6e9f11f7097aa58d0409a7e44e41a
+SHA1: ecf9227a89ff8f2f420e7d00360b5878e2b7fcf2
+SHA256: 7ecb4d5c86bf2ef5ec5ea03f2efef6051cf1fc7f76f0b350b79b1284bef36ef4
+SHA512: c605bd51a8358473e5abee8b7bdf231ab336a8e48bdfd455b515ab236f3f526fb43e196e3bf434aa59cb6034bd5d6e1604877da8a4ce7c6b866fa611aa8d9764
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI modules)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This package contains GRUB modules that have been built for use on loong64
+ systems with UEFI.  It can be installed in parallel with other flavours,
+ but will not automatically install GRUB as the active boot loader nor
+ automatically update grub.cfg on upgrade unless grub-efi-loong64 is also
+ installed.
+Efi-Vendor: debian
+
+Package: grub-efi-loong64-unsigned
+Architecture: loong64
+Version: 2.12-5
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: grub2
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Installed-Size: 12725
+Depends: grub-common (>= 2.02~beta2-9)
+Recommends: efibootmgr
+Filename: ./g/grub-efi-loong64-unsigned/grub-efi-loong64-unsigned_2.12-5_loong64.deb
+Size: 1693544
+MD5sum: 3f102438d6e36be28af41755dbc49182
+SHA1: c20a928c217b00879eab3b323d4df72cef40bb7f
+SHA256: 544add70d47218fe21d5197de32374698534f015e3cc2eceed85f150ae0ede3d
+SHA512: df7984fac21c34bd67c3184f9e28a072705e69f3bd59bcf9abcaa6d08b15ceabcd01f29328ea5b83ea231f5b7b7a902bd03eca06a51cd80ca243493a61417150
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI images)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This package contains GRUB images that have been built for use on loong64
+ systems with UEFI.  It can be installed in parallel with other flavours,
+ but will not automatically install GRUB as the active boot loader nor
+ automatically update grub.cfg on upgrade unless grub-efi-loong64 is also
+ installed.
+Efi-Vendor: debian
 
 Package: gzip
 Architecture: loong64
@@ -5738,6 +5560,62 @@ Description: Universally Unique ID library
  .
  See RFC 4122 for more information.
 
+Package: libweston-14-0
+Architecture: loong64
+Version: 14.0.0-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: weston
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1536
+Depends: libaml0t64 (>= 0.3.0), libc6 (>= 2.40), libcairo2 (>= 1.10.0), libdisplay-info2 (>= 0.2.0), libdrm2 (>= 2.4.108), libegl1, libfontconfig1 (>= 2.12.6), libfreerdp-server3-3 (>= 3.0.0), libfreerdp3-3 (>= 3.0.0), libgbm1 (>= 21.3.0~rc1), libgles2, libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.2.0), libgstreamer1.0-0 (>= 1.4.0), libinput10 (>= 1.2.0), libjpeg62-turbo (>= 1:2.0.2), liblcms2-2 (>= 2.7), libneatvnc0 (>= 0.8.0+dfsg), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpipewire-0.3-0t64 (>= 0.3.1), libpixman-1-0 (>= 0.30.0), libpng16-16t64 (>= 1.6.2), libseat1 (>= 0.5.0), libudev1 (>= 183), libva-drm2 (>= 1.1.0), libva2 (>= 1.7.3), libwayland-client0 (>= 1.22.0), libwayland-cursor0 (>= 1.22.0), libwayland-egl1 (>= 1.22.0), libwayland-server0 (>= 1.22.0), libwebp7 (>= 1.4.0), libwinpr3-3 (>= 3.0.0), libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb-composite0, libxcb-render0, libxcb-shm0, libxcb-xfixes0, libxcb-xkb1, libxcb1 (>= 1.8), libxcursor1 (>> 1.1.2), libxkbcommon0 (>= 0.5.0)
+Breaks: weston (<< 1.12.0-1)
+Replaces: weston (<< 1.12.0-1)
+Filename: ./l/libweston-14-0/libweston-14-0_14.0.0-2_loong64.deb
+Size: 397756
+MD5sum: 73948b56292098b347aff8ec19e44f5f
+SHA1: 86018da811b3976f3dda73fecd79c69daf432a58
+SHA256: 8a8915734046440478ad448d015d1e5599d6ca5c6b3b580cbf2542fcfbaffaa7
+SHA512: 3ce3f9daa1fb810f626e181efc34b371b12f8ae02c4e69996fcc2c5b57881d680e2fcb73368c1b43f567540bb54f4cb128a2ffdd8d699ec8bab3858db6d392eb
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor (shared libs)
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
+ .
+ This package includes the libweston shared libraries.
+
+Package: libweston-14-dev
+Architecture: loong64
+Version: 14.0.0-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: weston
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 237
+Depends: libpixman-1-dev, libwayland-dev, libweston-14-0 (= 14.0.0-2), libxkbcommon-dev
+Breaks: weston (<< 1.12.0-1)
+Replaces: weston (<< 1.12.0-1)
+Filename: ./l/libweston-14-dev/libweston-14-dev_14.0.0-2_loong64.deb
+Size: 45712
+MD5sum: 5b590491c14558a0f5409977a894392e
+SHA1: cc1abc773fdedebbd2ca15fe355504237b8ea0dc
+SHA256: eaab32f5505f517934e5fd451b313a5fc0a6c4605b573e9ba4c27d8b6e976dc7
+SHA512: 6eca6a73a2245a8e8cdde56efb93c34a097c8c567c165d1d680d7780458a0b71e0c10d29e0885984819d1df09c4d41471b23e4b8c13360ced0c35b335a4e7bf4
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor (headers)
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
+ .
+ This package includes the libweston headers.
+
 Package: libxtables12
 Architecture: loong64
 Version: 1.8.10-4
@@ -8337,6 +8215,33 @@ Description: Vi IMproved - enhanced vi editor - compact version
  .
  If a vim binary is wanted, try one of the following more featureful
  packages: vim, vim-nox, vim-motif, or vim-gtk3.
+
+Package: weston
+Architecture: loong64
+Version: 14.0.0-2
+Priority: optional
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 5335
+Depends: libc6 (>= 2.40), libcairo2 (>= 1.10.0), libdrm2 (>= 2.4.108), libegl1, libevdev2 (>= 0.9.1), libfontconfig1 (>= 2.12.6), libgbm1 (>= 21.3.0~rc1), libgles2, libglib2.0-0t64 (>= 2.12.0), libinput10 (>= 1.4.0), libjpeg62-turbo (>= 1:2.0.2), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpixman-1-0 (>= 0.30.0), libpng16-16t64 (>= 1.6.2), libsystemd0, libudev1 (>= 183), libwayland-client0 (>= 1.22.0), libwayland-cursor0 (>= 1.22.0), libwayland-egl1 (>= 1.22.0), libwayland-server0 (>= 1.22.0), libwebp7 (>= 1.4.0), libweston-14-0 (>= 14.0.0), libxkbcommon0 (>= 0.5.0)
+Recommends: libgl1-mesa-dri
+Suggests: wayland-utils
+Conflicts: libweston-8-dev
+Breaks: libweston-8-dev
+Replaces: libweston-8-dev
+Filename: ./w/weston/weston_14.0.0-2_loong64.deb
+Size: 898312
+MD5sum: 7176e0f912d5501ee2333b4c76a83f90
+SHA1: dfe683076539e63a2c564f381ebf30649050958f
+SHA256: 9659a3f111d669e045ef46d439d55c4904e4a04b7c44425f16a4989b03c0975a
+SHA512: 9806e957b260689deb4a6a1fc02ce56ad44c55eeb8f0a37d08f29f738b330fcd60071a28ca0df5cad5a2bb65374eef81d206d03054917efc31eadbf7cc8507fd
+Homepage: https://wayland.freedesktop.org/
+Description: reference implementation of a wayland compositor
+ Part of the Wayland project is also the Weston reference implementation
+ of a Wayland compositor. Weston can run as an X client or under Linux
+ KMS and ships with a few demo clients. The Weston compositor is a minimal
+ and fast compositor and is suitable for many embedded and mobile use
+ cases.
 
 Package: whiptail
 Architecture: loong64
