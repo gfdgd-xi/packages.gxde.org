@@ -1,0 +1,23 @@
+Package: libdebconfclient0
+Architecture: loong64
+Version: 0.272
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: cdebconf
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Installed-Size: 40
+Depends: libc6 (>= 2.38)
+Filename: ./l/libdebconfclient0/libdebconfclient0_0.272_loong64.deb
+Size: 10072
+MD5sum: 46130e544304a334e994eff90915372c
+SHA1: f6ab7bf8202ecd37d286501429c8cdc37129c3b8
+SHA256: 9241e4516284d2a2bd143ec09c81b8dc49669f5be542689432a6779e6cf64136
+SHA512: f6ba5bdf25d523066a287e57e953c67cf39f12f1b7633fefc61c740d6ac4012ecb6a22c7c7f87ceb67d362cbd21fe5821c4a70963cf13f6b722871612753eda7
+Description: Debian Configuration Management System (C-implementation library)
+ Debconf is a configuration management system for Debian packages. It is
+ used by some packages to prompt you for information before they are
+ installed. cdebconf is a reimplementation of the original debconf in C.
+ .
+ This library allows C programs to interface with cdebconf.
+

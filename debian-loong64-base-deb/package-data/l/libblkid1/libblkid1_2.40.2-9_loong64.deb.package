@@ -1,0 +1,23 @@
+Package: libblkid1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 500
+Depends: libc6 (>= 2.40)
+Filename: ./l/libblkid1/libblkid1_2.40.2-9_loong64.deb
+Size: 175892
+MD5sum: c516b8765fbe690d28286bb928733f25
+SHA1: 2d5897fdc8c5a4731b26aeeee63771ae3b4a02f0
+SHA256: 765759b365654c4536c3816ac1bc608897152e87f862c632beac5d95f54d428e
+SHA512: cd088fdf7f7fc46919a44d5601c1c4bec2d4105078b71558c1694bcb8505cc6e75f5b74b7e571c2ea6b47be8fc0a45daa1cf00d6737d17f93390ee07c17c8a06
+Homepage: https://github.com/util-linux/util-linux
+Description: block device ID library
+ The blkid library allows system programs such as fsck and mount to
+ quickly and easily find block devices by filesystem UUID or label.
+ This allows system administrators to avoid specifying filesystems by
+ hard-coded device names and use a logical naming system instead.
+

@@ -1,0 +1,28 @@
+Package: ncurses-base
+Architecture: all
+Version: 6.5-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: misc
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 385
+Provides: ncurses-runtime
+Breaks: cryptsetup-initramfs (<< 2:2.6.1), ncurses-term (<< 6.4+20230625), neovim (<< 0.6.0), vim-common (<< 2:9.0.1000-2)
+Replaces: ncurses-term (<< 6.4+20230603)
+Filename: ./n/ncurses-base/ncurses-base_6.5-2_all.deb
+Size: 269660
+MD5sum: 09da2e808b1902f0b13a81760699c2d7
+SHA1: f64322e166233ad16ca51cfa3956595c98d9211f
+SHA256: 917e74203fa3df043d105011dc59848897597367c132a6dad996df165617652d
+SHA512: 9a8eb1905fe6d11113b70c48ee8e4c49cb3219f24b9a7558350b9e07ab6c22aaf307a1049da537f58edc7d377adbd196ae0ef920f7bfa255df30779db88ad58c
+Homepage: https://invisible-island.net/ncurses/
+Description: basic terminal type definitions
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains terminfo data files to support the most common types of
+ terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
+ vt52, and xterm.
+

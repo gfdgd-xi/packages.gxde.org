@@ -1,0 +1,27 @@
+Package: less
+Architecture: loong64
+Version: 643-1
+Multi-Arch: foreign
+Priority: important
+Section: text
+Maintainer: Milan Kupcevic <milan@debian.org>
+Installed-Size: 355
+Depends: libc6 (>= 2.37), libtinfo6 (>= 6)
+Filename: ./l/less/less_643-1_loong64.deb
+Size: 141984
+MD5sum: 3adc140e95cec2596d2e2fb65bfd2f31
+SHA1: 3973d09d74fcfde27458408b8a461cf6322456f0
+SHA256: a3f53ea96cdabf45f1347de8c66bbb901ba06f4101434376393e1eb235d80647
+SHA512: 9828c2ce1bf294417bf09248d0e95a680f2fb57f6a947c41a64c0b6ec167540185631251cf812c4d506f0c9641e8891e77875e22139341b238c6a2d5bb6be5a7
+Homepage: http://www.greenwoodsoftware.com/less/
+Description: pager program similar to more
+ This package provides "less", a file pager (that is, a memory-efficient
+ utility for displaying text one screenful at a time). Less has many
+ more features than the basic pager "more". As part of the GNU project,
+ it is widely regarded as the standard pager on UNIX-derived systems.
+ .
+ Also provided are "lessecho", a simple utility for ensuring arguments
+ with spaces are correctly quoted; "lesskey", a tool for modifying the
+ standard (vi-like) keybindings; and "lesspipe", a filter for specific
+ types of input, such as .doc or .txt.gz files.
+

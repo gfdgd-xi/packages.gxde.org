@@ -1,0 +1,28 @@
+Package: libelf1t64
+Architecture: loong64
+Version: 0.192-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elfutils
+Maintainer: Debian Elfutils Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1260
+Provides: libelf1 (= 0.192-3)
+Depends: libc6 (>= 2.40), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Breaks: libelf1 (<< 0.192-3)
+Replaces: libelf1
+Filename: ./l/libelf1t64/libelf1t64_0.192-3_loong64.deb
+Size: 193648
+MD5sum: f32f54a8b03dd8f378ada8d1cff74bc2
+SHA1: 483fc3926cefddba61da5a44d22a0c202cace84e
+SHA256: dfce769c88b3204edc8530d25d0284a0549a93ea140c36aa5196bf15b6edf68f
+SHA512: c30981a3ca460830ed521fe54ecd265a67a211eb21120750931b5465377307709536ea0887d97bb3e556e01888f586e8d7b253fa4bda83ad9cbf9db41e3ccb3a
+Homepage: https://sourceware.org/elfutils/
+Description: library to read and write ELF files
+ The libelf1t64 package provides a shared library which allows reading and
+ writing ELF files on a high level.  Third party programs depend on
+ this package to read internals of ELF files.  The programs of the
+ elfutils package use it also to generate new ELF files.
+ .
+ This library is part of elfutils.
+

@@ -1,0 +1,42 @@
+Package: adduser
+Architecture: all
+Version: 3.137
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debian Adduser Developers <adduser@packages.debian.org>
+Installed-Size: 592
+Depends: passwd
+Suggests: liblocale-gettext-perl, perl, cron, quota
+Filename: ./a/adduser/adduser_3.137_all.deb
+Size: 139720
+MD5sum: 3b5322221d61e04efc7be6b80da76b0a
+SHA1: 292761717213ec2745b50eacb737d0986acd30a6
+SHA256: 40b77d8b5b482baee2d0c95bbb4a4b9bcf7271b79dec039ef45e541142edfc12
+SHA512: 4d90f5302749ab517ecf3dfa6dd34303f835e4cdb6a1fe9d5028cede27ba478df1abb02e3f26cfa9c377b177355bfcfaadcfa5542e379b6f675e300d07f9de86
+Description: add and remove users and groups
+ This package includes the 'adduser' and 'deluser' commands for creating
+ and removing users.
+ .
+  - 'adduser' creates new users and groups and adds existing users to
+    existing groups;
+  - 'deluser' removes users and groups and removes users from a given
+    group.
+ .
+ Adding users with 'adduser' is much easier than adding them manually.
+ 'Adduser' will choose UID and GID values that conform to Debian policy,
+ create a home directory, copy skeletal user configuration, and
+ automate setting initial values for the user's password, real name
+ and so on.
+ .
+ 'Deluser' can back up and remove users' home directories
+ and mail spool or all the files they own on the system.
+ .
+ A custom script can be executed after each of the commands.
+ .
+ 'Adduser' and 'Deluser' are intended to be used by the local
+ administrator in lieu of the tools from the 'useradd' suite, and
+ they provide support for easy use from Debian package maintainer
+ scripts, functioning as kind of a policy layer to make those scripts
+ easier and more stable to write and maintain.
+

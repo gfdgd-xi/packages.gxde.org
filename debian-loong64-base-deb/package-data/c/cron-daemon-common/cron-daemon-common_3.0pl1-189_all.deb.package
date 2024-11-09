@@ -1,0 +1,29 @@
+Package: cron-daemon-common
+Architecture: all
+Version: 3.0pl1-189
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: cron
+Maintainer: Georges Khaznadar <georgesk@debian.org>
+Installed-Size: 54
+Depends: systemd | systemd-standalone-sysusers | systemd-sysusers, adduser
+Conflicts: bcron (<< 0.11-9.1), cron (<< 3.0pl1-140), cronie (<< 1.6.1-5), systemd-cron (<< 1.15.18-1.1)
+Breaks: systemd-cron (<< 1.15.19-5~)
+Replaces: bcron (<< 0.11-9.1), cron (<< 3.0pl1-140), cronie (<< 1.6.1-5), systemd-cron (<< 1.15.18-1.1)
+Filename: ./c/cron-daemon-common/cron-daemon-common_3.0pl1-189_all.deb
+Size: 16768
+MD5sum: f3e034a32bb8214f0c1e24a56861c52e
+SHA1: 23be16673f5fe66094a745d34c3e81abc9988293
+SHA256: 745661fb1559c9cf75b0a4d049e74a847f733b4a6f98ef1c125c7eee7cbdc82b
+SHA512: cabcf9aeb827e339aac70aa8a0ef3f165c7716a2750a8cc4ab351a7d2ea29e7117fbdd4317a6801c8fab8770dec991090e265588ec8ec48f3f5c61918d7d56b1
+Homepage: https://ftp.isc.org/isc/cron/
+Description: process scheduling daemon's configuration files
+ The cron daemon is a background process that runs particular programs at
+ particular times (for example, every minute, day, week, or month), as
+ specified in a crontab. By default, users may also create crontabs of
+ their own so that processes are run on their behalf.
+ .
+ This package provides configuration files which must be there to
+ define scheduled process sets.
+

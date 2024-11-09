@@ -1,0 +1,27 @@
+Package: liblzma5
+Architecture: loong64
+Version: 5.6.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: xz-utils
+Maintainer: Sebastian Andrzej Siewior <sebastian@breakpoint.cc>
+Installed-Size: 385
+Depends: libc6 (>= 2.38)
+Breaks: liblzma2 (<< 5.1.1alpha+20110809-3~)
+Filename: ./l/liblzma5/liblzma5_5.6.2-2_loong64.deb
+Size: 251560
+MD5sum: 48dd17a78d5d0f97aff90641e7bbcff2
+SHA1: bed8dcdfeca2f1c366a60c45939fb4beac36fd6f
+SHA256: da51880d0435e81e8aa2b68cd8951805ee796bb47c93c953de2339f95909d38d
+SHA512: bc46b92d30ae03e237a32b9cf6334fbf7db1dd6fda0e97dd74071997bc3ebe419685ca6d1c29de974912dd97dcbe487bac91376d43a8ce6bdb8ce88ac4378b8b
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+

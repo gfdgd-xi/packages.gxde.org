@@ -1,0 +1,21 @@
+Package: hostname
+Architecture: loong64
+Version: 3.25
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Michael Meskes <meskes@debian.org>
+Installed-Size: 41
+Pre-Depends: libc6 (>= 2.40)
+Breaks: nis (<< 3.17-30)
+Replaces: nis (<< 3.17-30)
+Filename: ./h/hostname/hostname_3.25_loong64.deb
+Size: 10784
+MD5sum: f62800567b0955b43e29fb5acdc57efb
+SHA1: 19b1476a06f7caed411bd850c7539c0533f8cafa
+SHA256: 29ad7b6732cee9f3f4e32d4dfcc90308774517ff0d2c505c094b3db766066b2a
+SHA512: 04b15e7b1eef8e8377fe02d11351e3bdb9fa0e2a2f2a0ca8c26d80e03b65b5bd24cab7ee0363165754372d3efb76b1195e466152992e42caeabdb12252bade98
+Description: utility to set/show the host name or domain name
+ This package provides commands which can be used to display the system's
+ DNS name, and to display or set its hostname or NIS domain name.
+

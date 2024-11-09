@@ -1,0 +1,24 @@
+Package: base-passwd
+Architecture: loong64
+Version: 3.6.4
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 254
+Depends: libc6 (>= 2.38), libdebconfclient0 (>= 0.145), libselinux1 (>= 3.1~)
+Recommends: debconf (>= 0.5) | debconf-2.0
+Replaces: base
+Filename: ./b/base-passwd/base-passwd_3.6.4_loong64.deb
+Size: 50076
+MD5sum: e98bf314f9f21f03936835963edb9293
+SHA1: e446f90428ca8965c385a2ab1477a02276f6b716
+SHA256: 6c7baba0636632e4e4f450b2b3faa67bc8063fb3adc8f861db314a2531fc9734
+SHA512: b97e53f4108adef5c60a563fe01db782be05b71ffa0e39300280c6109cb834fe6c4c499000ba3b7c0ac0b926c9a8e1c4f762d59bc48b177c0bade5af5443b6c6
+Description: Debian base system master password and group files
+ These are the canonical master copies of the user database files
+ (/etc/passwd and /etc/group), containing the Debian-allocated user and
+ group IDs. The update-passwd tool is provided to keep the system databases
+ synchronized with these master files.
+

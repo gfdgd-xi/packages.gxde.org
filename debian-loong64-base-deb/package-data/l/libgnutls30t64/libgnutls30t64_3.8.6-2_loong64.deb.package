@@ -1,0 +1,37 @@
+Package: libgnutls30t64
+Architecture: loong64
+Version: 3.8.6-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gnutls28
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 3268
+Provides: libgnutls30 (= 3.8.6-2)
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libhogweed6t64 (>= 3.10), libidn2-0 (>= 2.0.0), libnettle8t64 (>= 3.10), libp11-kit0 (>= 0.25.1), libtasn1-6 (>= 4.14), libunistring5 (>= 1.1)
+Suggests: gnutls-bin
+Breaks: libgnutls30 (<< 3.8.6-2)
+Replaces: libgnutls30
+Filename: ./l/libgnutls30t64/libgnutls30t64_3.8.6-2_loong64.deb
+Size: 1345948
+MD5sum: 760cc0894624870f42ac7ed4aa3acfcd
+SHA1: 1df2f38b74b6c8b3ce1e9b9ecdbef1ad0898ccc8
+SHA256: 5d5cf3d0dc9f3fb5e3be5c5546ba6ace4501c790d15ec70b38c1ba418b732bb4
+SHA512: 77fdc7d2b89468c7a48c9f807c51c5eb9350afecfa662072482ba133ce0102273fe57026d1ef3b38ebd0f8f429345f7f86a36387a318185111e69554ac867d30
+Homepage: https://www.gnutls.org/
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the main runtime library.
+

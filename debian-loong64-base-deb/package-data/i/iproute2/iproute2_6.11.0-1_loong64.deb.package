@@ -1,0 +1,29 @@
+Package: iproute2
+Architecture: loong64
+Version: 6.11.0-1
+Multi-Arch: foreign
+Priority: important
+Section: net
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3899
+Provides: arpd
+Depends: debconf (>= 0.5) | debconf-2.0, libbpf1 (>= 1:0.6.0), libc6 (>= 2.40), libcap2 (>= 1:2.10), libdb5.3t64, libelf1t64 (>= 0.131), libmnl0 (>= 1.0.3-4~), libselinux1 (>= 3.1~), libtirpc3t64 (>= 1.0.2), libxtables12 (>= 1.6.0+snapshot20161117), libcap2-bin
+Suggests: python3:any
+Conflicts: arpd
+Breaks: iproute2-doc
+Replaces: iproute2-doc
+Filename: ./i/iproute2/iproute2_6.11.0-1_loong64.deb
+Size: 1059832
+MD5sum: bd777a050fba4be481ed797a9c04f11a
+SHA1: 6e00b6c2ba1752af907d830ceaf91a80cf0e2c13
+SHA256: f36775139828fd05f423498213b984196787f0a298b91b3254731ec19cffe185
+SHA512: aedd3b6e6bfdb07ce254b1b79c36daa25d0099883c1dd6c5eea3df9a49521022ebb14e823c9fcaccf63d9b8867bd3c5ebdb3b302d79974b6c4da27b954708844
+Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+Description: networking and traffic control tools
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ These tools communicate with the Linux kernel via the (rt)netlink
+ interface, providing advanced features not available through the
+ legacy net-tools commands 'ifconfig' and 'route'.
+

@@ -1,0 +1,25 @@
+Package: apt-utils
+Architecture: loong64
+Version: 2.9.9
+Priority: required
+Section: admin
+Source: apt
+Maintainer: APT Development Team <deity@lists.debian.org>
+Installed-Size: 1061
+Depends: apt (= 2.9.9), libapt-pkg6.0t64 (>= 2.9.9), libc6 (>= 2.40), libdb5.3t64, libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: ./a/apt-utils/apt-utils_2.9.9_loong64.deb
+Size: 311280
+MD5sum: 863335eda60777829b8e375645631fa6
+SHA1: 7d646ac9c709c2f61811a617664f243e8f98b958
+SHA256: 8aaa18e9837f751f288adbe1b46408bbd13e151d24292716df7f147eb0f390c9
+SHA512: c5944e6e950c5dffad4e77a657dc4fe06acba23ff6768fc2d5b06f16898bba8eff5e19b84249a8eea7538603b12da963033e23ae36e58e64a53a88fcd9c8cab8
+Description: package management related utility programs
+ This package contains some less used commandline utilities related
+ to package management with APT.
+ .
+  * apt-extracttemplates is used by debconf to prompt for configuration
+    questions before installation.
+  * apt-ftparchive is used to create Packages and other index files
+    needed to publish an archive of Debian packages
+  * apt-sortpkgs is a Packages/Sources file normalizer.
+

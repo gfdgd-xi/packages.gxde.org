@@ -1,0 +1,27 @@
+Package: libpcre2-8-0
+Architecture: loong64
+Version: 10.42-4+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pcre2 (10.42-4)
+Maintainer: Matthew Vernon <matthew@debian.org>
+Installed-Size: 458
+Depends: libc6 (>= 2.38)
+Filename: ./l/libpcre2-8-0/libpcre2-8-0_10.42-4+b1_loong64.deb
+Size: 173096
+MD5sum: 840dabd6ace92ea0f4741f11b471709c
+SHA1: 69f9c46021d5b97c0954f7d669e61ea742bb06aa
+SHA256: 214c78bde46a464d6db50152f8b775dfe343549c66a054105d39f6d8a004d42e
+SHA512: a2bad86ee37ff3de8d11f219ef4c3bfb1cfe0b10503de7c40951e07e6c84c68da4a0e824e5831edd89eee530bc959f36b57853b1acdd0aba5325045262e2fb9d
+Homepage: https://pcre.org/
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library,
+ confusingly called pcre3 in Debian.
+ .
+ This package contains the 8 bit runtime library, which operates on
+ ASCII and UTF-8 input.
+

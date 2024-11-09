@@ -1,0 +1,37 @@
+Package: libhogweed6t64
+Architecture: loong64
+Version: 3.10-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nettle
+Maintainer: Magnus Holmgren <holmgren@debian.org>
+Installed-Size: 490
+Provides: libhogweed6 (= 3.10-1)
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libnettle8t64
+Breaks: libhogweed6 (<< 3.10-1)
+Replaces: libhogweed6
+Filename: ./l/libhogweed6t64/libhogweed6t64_3.10-1_loong64.deb
+Size: 334120
+MD5sum: 803d6a29eddac65a8a2f890c603212d7
+SHA1: 468ce8801d26a28674317e84ef5dc1319f9f5707
+SHA256: e3dd0c8e3e43be54f80c0bd6969f1ca9282560842f798d1e13759f7889f16baf
+SHA512: 8954f6f8c01e0661a7c6c61bc0cd34587cd031f7dbea5ebcfa677634be5baa2a41d7cc3a92cf962a2e23dfb2201af6140d166a125b4d6fa68048613fa6716f34
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (public-key cryptos)
+ Nettle is a cryptographic library that is designed to fit easily in more or
+ less any context: In crypto toolkits for object-oriented languages (C++,
+ Python, Pike, ...), in applications like LSH or GNUPG, or even in kernel
+ space.
+ .
+ It tries to solve a problem of providing a common set of cryptographic
+ algorithms for higher-level applications by implementing a
+ context-independent set of cryptographic algorithms. In that light, Nettle
+ doesn't do any memory allocation or I/O, it simply provides the
+ cryptographic algorithms for the application to use in any environment and
+ in any way it needs.
+ .
+ This package contains the asymmetric cryptographic algorithms, which,
+ require the GNU multiple precision arithmetic library (libgmp) for
+ their large integer computations.
+

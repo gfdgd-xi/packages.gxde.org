@@ -1,0 +1,31 @@
+Package: libkrb5-3
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 1052
+Depends: libkrb5support0 (= 1.21.3-3), libc6 (>= 2.39), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkeyutils1 (>= 1.5.9), libssl3t64 (>= 3.0.0)
+Recommends: krb5-locales
+Suggests: krb5-doc, krb5-user
+Breaks: libapache2-mod-auth-kerb (<= 5.4-2.4)
+Filename: ./l/libkrb5-3/libkrb5-3_1.21.3-3_loong64.deb
+Size: 308764
+MD5sum: 0d73f5aee63e2c0371522332b9763d1f
+SHA1: fa7b6325b9e7c1945e20d581a7eaea1cee9db2db
+SHA256: 3ef8f3bf27ea9491e1e8e887e3c0f8b16f4bf399819c7386f34e14d1cae38607
+SHA512: 79bcfbfed38cf772317b0cc8e033237eaca92d20b598f582f76cbb1c40acfb90e85ff9c3c223269556ded39a1012d82a38cee288ea7a91be8d72223607f0bc54
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
+

@@ -1,0 +1,30 @@
+Package: libc-bin
+Architecture: loong64
+Version: 2.40-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: libs
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 1985
+Depends: libc6 (>= 2.40)
+Recommends: manpages
+Breaks: dh-lua (<< 27+nmu1~)
+Filename: ./l/libc-bin/libc-bin_2.40-3_loong64.deb
+Size: 575240
+MD5sum: 910de30678489dca1384b72c8635e208
+SHA1: 0b377461b9bfd9edadc0554cd3462d69e2c6169c
+SHA256: 308f1d889e6b023a9ec6924c6d5ff13f8720709d310dcbd79b6ce860dc15f19e
+SHA512: 15bac28d4e6a957f91fa462a02a9fceaf8dc0719c35b842ad5c1659263e7258b199b7802e64db65373487b5cdd70bba0143dcb273b3f64ff2fcfed60be82d6a7
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Binaries
+ This package contains utility programs related to the GNU C Library.
+ .
+  * getconf: query system configuration variables
+  * getent: get entries from administrative databases
+  * iconv, iconvconfig: convert between character encodings
+  * ldd, ldconfig: print/configure shared library dependencies
+  * locale, localedef: show/generate locale definitions
+  * tzselect, zdump, zic: select/dump/compile time zones
+

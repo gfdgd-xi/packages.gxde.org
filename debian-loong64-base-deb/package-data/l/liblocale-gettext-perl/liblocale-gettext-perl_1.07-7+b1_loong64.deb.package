@@ -1,0 +1,26 @@
+Package: liblocale-gettext-perl
+Architecture: loong64
+Version: 1.07-7+b1
+Priority: required
+Section: perl
+Source: liblocale-gettext-perl (1.07-7)
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 53
+Pre-Depends: perl-base (>= 5.40.0-6), perlapi-5.40.0
+Depends: libc6 (>= 2.40)
+Filename: ./l/liblocale-gettext-perl/liblocale-gettext-perl_1.07-7+b1_loong64.deb
+Size: 15184
+MD5sum: c488b5098d48ce5ecca4fca223d6017e
+SHA1: 4bc8f333391a9341714c962bffebe87509fe60ff
+SHA256: 188d4cbcc6cdcd6d9a80c0c940e1970a5cb94b7a61a2ad20c2bf2fcbc9964ec5
+SHA512: 64f55d4a36025d28a83001cdfd4ad08c11771c0e984de7c8d14b333d21c4c9c46d1b7a3ea47b6d7cbfaf294a6d9171cc21d8b10e7ecc787f3868613d72efd51f
+Homepage: https://metacpan.org/release/Locale-gettext
+Description: module using libc functions for internationalization in Perl
+ The Locale::gettext module permits access from perl to the gettext() family of
+ functions for retrieving message strings from databases constructed
+ to internationalize software.
+ .
+ It provides gettext(), dgettext(), dcgettext(), textdomain(),
+ bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext()
+ and dngettext().
+

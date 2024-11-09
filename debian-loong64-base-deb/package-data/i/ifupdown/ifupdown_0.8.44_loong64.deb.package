@@ -1,0 +1,22 @@
+Package: ifupdown
+Architecture: loong64
+Version: 0.8.44
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Installed-Size: 195
+Depends: libc6 (>= 2.40), adduser, iproute2
+Recommends: dhcpcd-base | dhcp-client
+Suggests: ppp, rdnssd
+Filename: ./i/ifupdown/ifupdown_0.8.44_loong64.deb
+Size: 60148
+MD5sum: 16e94f07e7091d42382307f43411a5f6
+SHA1: fbce66657357467983801dcd93ac42d12c4c01bc
+SHA256: 8053fe283c7e79565c464998bf95b9295964253687e14ffcd8e7db7d1315aff9
+SHA512: 4f9e4ee978c5e5c15d3c37a9f90b87efd390fcd4f564a6af5b253871079d537cebb6b636c86c512fc33773df02ae7a0bee530bebd77a4953d1a80bb0c0f37f15
+Description: high level tools to configure network interfaces
+ This package provides the tools ifup and ifdown which may be used to
+ configure (or, respectively, deconfigure) network interfaces based on
+ interface definitions in the file /etc/network/interfaces.
+

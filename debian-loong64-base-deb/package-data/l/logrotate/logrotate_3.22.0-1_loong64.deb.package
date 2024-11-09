@@ -1,0 +1,25 @@
+Package: logrotate
+Architecture: loong64
+Version: 3.22.0-1
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Christian Göttsche <cgzones@googlemail.com>
+Installed-Size: 143
+Depends: cron | anacron | cron-daemon | systemd-sysv, libacl1 (>= 2.2.23), libc6 (>= 2.39), libpopt0 (>= 1.14), libselinux1 (>= 3.1~)
+Suggests: bsd-mailx | mailx
+Filename: ./l/logrotate/logrotate_3.22.0-1_loong64.deb
+Size: 59304
+MD5sum: 2d09d1b25fe7c9c54f705f07badaed0e
+SHA1: bf8bc59cd518c26062e25819c7e8b6027161193f
+SHA256: 6fdec052a60fdcd25ad0b3202e2f27f8cfc120796e736aad2feef84647293c57
+SHA512: 36ed724cf050dfc3bd8693cfd3b314834faac4ec7f613438b517cc67bb2102fee80abe8188e0540e833c97baf234c17c9621d3048aa4d06b542fc1b90ef66676
+Homepage: https://github.com/logrotate/logrotate
+Description: Log rotation utility
+ The logrotate utility is designed to simplify the administration of
+ log files on a system which generates a lot of log files.  Logrotate
+ allows for the automatic rotation compression, removal and mailing of
+ log files.  Logrotate can be set to handle a log file daily, weekly,
+ monthly or when the log file gets to a certain size.  Normally, logrotate
+ runs as a daily cron job.
+

@@ -1,0 +1,33 @@
+Package: libsepol2
+Architecture: loong64
+Version: 3.7-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libsepol
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 799
+Depends: libc6 (>= 2.39)
+Filename: ./l/libsepol2/libsepol2_3.7-1_loong64.deb
+Size: 261520
+MD5sum: 9bbe2399f8540e8affdd279b3c8d1420
+SHA1: 5df9885c8ca25883f93371975dbf699ed7500ce0
+SHA256: 0583f0a6345a42b0ed470e10dc0b1cdc51cdc1e229ccd59a4ccfe8d466674cb4
+SHA512: 75467d0f23e49efabebba515eae4bda600cc1eba2fbf7532730355031765fdbb641a900e098ce5b18b82ed3b47b9b99e94614f6b108033e684b29829919e9623
+Homepage: https://selinuxproject.org
+Description: SELinux library for manipulating binary security policies
+ Security-enhanced Linux is a patch of the Linux kernel and a number
+ of utilities with enhanced security functionality designed to add
+ mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement®, Role-based Access
+ Control, and Multi-level Security.
+ .
+ libsepol provides an API for the manipulation of SELinux binary policies.
+ It is used by checkpolicy (the policy compiler) and similar tools, as well
+ as by programs like load_policy that need to perform specific transformations
+ on binary policies such as customizing policy boolean settings.
+

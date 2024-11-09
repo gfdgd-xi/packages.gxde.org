@@ -1,0 +1,30 @@
+Package: libuuid1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 92
+Provides: libuuid1t64 (= 2.40.2-9)
+Depends: libc6 (>= 2.40)
+Suggests: uuid-runtime
+Breaks: libuuid1t64 (<< 2.40.2-9)
+Replaces: libuuid1t64
+Filename: ./l/libuuid1/libuuid1_2.40.2-9_loong64.deb
+Size: 35116
+MD5sum: a7135df6e0aa39e415fd69ed08eb3c28
+SHA1: 5b5129164bd111a8236ebe87df3650757cccd585
+SHA256: c4d317cf3b66b89518727e3a2e32dc6a896646b02f34db0a49ee0b4c340ea9b7
+SHA512: 6b32f5458767eed915e1e449f24c922698652c9f5ac1d18332c2975c2924e67b22cff7846e286929fe54c86c7ab2e3c5d1a0b74470795fc52226ec92f3780cdf
+Homepage: https://github.com/util-linux/util-linux
+Description: Universally Unique ID library
+ The libuuid library generates and parses 128-bit Universally Unique
+ IDs (UUIDs). A UUID is an identifier that is unique within the space
+ of all such identifiers across both space and time. It can be used for
+ multiple purposes, from tagging objects with an extremely short lifetime
+ to reliably identifying very persistent objects across a network.
+ .
+ See RFC 4122 for more information.
+

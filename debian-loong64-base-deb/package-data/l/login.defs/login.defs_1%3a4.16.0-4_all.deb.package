@@ -1,0 +1,21 @@
+Package: login.defs
+Architecture: all
+Version: 1:4.16.0-4
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: shadow
+Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+Installed-Size: 213
+Replaces: login (<< 1:4.16.0-2~)
+Filename: ./l/login.defs/login.defs_1%3a4.16.0-4_all.deb
+Size: 184680
+MD5sum: 447c5422aa2bf1a081079cd9a90715ea
+SHA1: 441b946e4cb3a1f1cf24b8df32007280f4bd8841
+SHA256: 6a26296fb9427e335e408d920c859be62d2b0040f69a56e41516fea7b940caf8
+SHA512: 9b2c90903031ceba137da17993ebbbb3e2a9266f9fc7815969a53dc504a66b1552bd224cad1de3ade1d28957a107da0e79aaa05b92a1b581dba79d68a8357b32
+Homepage: https://github.com/shadow-maint/shadow
+Description: system user management configuration
+ This package provides the login.defs configuration file,
+ used by otherwise unrelated tools managing system users.
+

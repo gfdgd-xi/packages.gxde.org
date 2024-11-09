@@ -1,0 +1,27 @@
+Package: readline-common
+Architecture: all
+Version: 8.2-5
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: readline
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 89
+Suggests: readline-doc
+Conflicts: libreadline-common, libreadline5 (<< 5.0-11)
+Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+Filename: ./r/readline-common/readline-common_8.2-5_all.deb
+Size: 69316
+MD5sum: c0c1b84d30d7a1cd91794ebd2314f941
+SHA1: 8b2baea212e9a6fe4c72c4392cd30defee0509ac
+SHA256: ecf20e32251c60537e7625dfa993c39237ee76980668b364d3f3d049387790aa
+SHA512: fb6df0d0d8f894215349b53b3a712a3c8e42043345cfc868ca7072dcefe6830c6ea59205aa32dd42511ef5d5e79a89cfbcd766414bdd65fa745103530e85c49b
+Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+Description: GNU readline and history libraries, common files
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+

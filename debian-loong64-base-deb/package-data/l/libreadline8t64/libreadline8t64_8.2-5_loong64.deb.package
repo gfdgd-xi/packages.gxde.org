@@ -1,0 +1,28 @@
+Package: libreadline8t64
+Architecture: loong64
+Version: 8.2-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: readline
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 509
+Provides: libreadline8 (= 8.2-5)
+Depends: readline-common, libc6 (>= 2.39), libtinfo6 (>= 6)
+Breaks: libreadline8 (<< 8.2-5)
+Replaces: libreadline8
+Filename: ./l/libreadline8t64/libreadline8t64_8.2-5_loong64.deb
+Size: 167980
+MD5sum: b211eeac9f655a8dd9777326183d1716
+SHA1: 236c0e32fc94f634937e6adc4e98c160beaa0e85
+SHA256: 06eab90ee78a71bc36aff5c62a934b87da99028e4c904c1d1f341ecaef939f1f
+SHA512: 4135b87d8f2a8df1fa0cd3381e0c4bc55663f4c61797d30a707109f2db96599ce59328f422b1daf899c14437f28006df8bac55b72bdd5e59ee411c707fe8001e
+Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+

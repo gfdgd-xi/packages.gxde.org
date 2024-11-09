@@ -1,0 +1,24 @@
+Package: cpio
+Architecture: loong64
+Version: 2.15+dfsg-2
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 1201
+Depends: libc6 (>= 2.39)
+Suggests: libarchive-dev
+Conflicts: cpio-mt, mt-st (<< 0.6)
+Replaces: cpio-mt
+Filename: ./c/cpio/cpio_2.15+dfsg-2_loong64.deb
+Size: 246424
+MD5sum: d6b6e19748d659ba9a3ec42d9634d0f7
+SHA1: 1d3cdef0377649f8838e0e4776248a21fa4eb0e7
+SHA256: a36ebe83579e98f48bc15696b9a752e121cf99e4ea132737dabad5a93ae9b58c
+SHA512: 69d237d88be6c813e866b6f4f63d9677ff6f53261dd14b6598175eb309f9d7aad09c0881eb28954f54dfc40086c4d882f278f680dc9be0581cc9e5508b113d97
+Homepage: https://www.gnu.org/software/cpio/
+Description: GNU cpio -- a program to manage archives of files
+ GNU cpio is a tool for creating and extracting archives, or copying
+ files from one place to another.  It handles a number of cpio formats
+ as well as reading and writing tar files.
+

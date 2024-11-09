@@ -1,0 +1,30 @@
+Package: libsemanage-common
+Architecture: all
+Version: 3.7-2
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libsemanage
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 21
+Filename: ./l/libsemanage-common/libsemanage-common_3.7-2_all.deb
+Size: 7108
+MD5sum: 6868affac8f62529e163f09cffd1737d
+SHA1: 269c7614d490e70e7679c9478172ab541060205b
+SHA256: 72cd5018dce5fb834f3f60125c33124b709118c8d12d0cd90509f4fa36528639
+SHA512: 037c52fb7a0d70a2d1370e5bc0c4c1493c26f5ef4a2eb12cb523ea696b0e3f1ad62ce5f8966e1f23e7aea2a32fff9ab9b4b0e813c1d7a20c59f806df3456525d
+Homepage: https://selinuxproject.org
+Description: Common files for SELinux policy management libraries
+ This package provides the common files used by the shared libraries
+ for SELinux policy management.
+ .
+ Security-enhanced Linux is a patch of the Linux kernel and a
+ number of utilities with enhanced security functionality designed to
+ add mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement, Role-based Access
+ Control, and Multi-level Security.
+

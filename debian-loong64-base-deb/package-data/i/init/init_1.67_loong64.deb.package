@@ -1,0 +1,23 @@
+Package: init
+Architecture: loong64
+Version: 1.67
+Multi-Arch: foreign
+Priority: important
+Protected: yes
+Important: yes
+Section: metapackages
+Source: init-system-helpers
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 17
+Pre-Depends: systemd-sysv | sysvinit-core
+Filename: ./i/init/init_1.67_loong64.deb
+Size: 6172
+MD5sum: a1033f1d36da3d2c53e9cb0b5db246da
+SHA1: 58f99f284834e945cb44239b4afa95eeb4b8e3d1
+SHA256: e3d30511bf4d244bbcf1bd81d37e5f785d4e80a5710da04808eb9246e8bcf6a9
+SHA512: 9c2ed77622fe7184e6179b850bb0050cc1db7604ce9198c621262b314ec9b79cd755c1d36335dda974176bb81fbf1bd583437ff48d014446c8e77af778951a14
+Description: metapackage ensuring an init system is installed
+ This package is a metapackage which allows you to select from the available
+ init systems while ensuring that one of these is available on the system at
+ all times.
+

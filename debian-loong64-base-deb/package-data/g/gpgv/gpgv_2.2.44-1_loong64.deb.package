@@ -1,0 +1,28 @@
+Package: gpgv
+Architecture: loong64
+Version: 2.2.44-1
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: gnupg2
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Installed-Size: 561
+Depends: libbz2-1.0, libc6 (>= 2.40), libgcrypt20 (>= 1.11.0), libgpg-error0 (>= 1.48), zlib1g (>= 1:1.1.4)
+Suggests: gnupg
+Breaks: python-debian (<< 0.1.29)
+Filename: ./g/gpgv/gpgv_2.2.44-1_loong64.deb
+Size: 216200
+MD5sum: 4350bfba9bf1b4d513814c0a8863d6a9
+SHA1: 193ad827c27d7bf99c1f62ef564428bf7f2d93ab
+SHA256: 608a0d002a8aa1a5479c50109af09a3be4bff008e5f17619cb907148247ea343
+SHA512: ed4c4dfbc28f38c115d1d85e37ddc6b501e86e0ec1e894542ecd12f20347176712e6bb2b3f255531384223cf148cfdaf8de0124ec19ddc22b96f394d6abe72d0
+Homepage: https://www.gnupg.org/
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is actually a stripped-down version of gpg which is only able
+ to check signatures. It is somewhat smaller than the fully-blown gpg
+ and uses a different (and simpler) way to check that the public keys
+ used to make the signature are valid. There are no configuration
+ files and only a few options are implemented.
+

@@ -1,0 +1,25 @@
+Package: gzip
+Architecture: loong64
+Version: 1.12-1.1
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Milan Kupcevic <milan@debian.org>
+Installed-Size: 250
+Pre-Depends: libc6 (>= 2.37)
+Depends: dpkg (>= 1.15.4) | install-info
+Suggests: less
+Conflicts: zutils (<< 1.13-2~)
+Filename: ./g/gzip/gzip_1.12-1.1_loong64.deb
+Size: 130224
+MD5sum: eb812cac6e531581bc7a5db3a63257a0
+SHA1: a55a420955eddb31ef193c6cc595659b766d18b5
+SHA256: ed26c7c4848c9d011156914cf5d7f8f17fe68b914a546267d8cf7660d0c1b279
+SHA512: f2ecc88c093047122d6924689136cf5122b8bf72a20369eea40541d0d5389363320ec37f7399489e53710c903fd4fa2e06ded6eeb6719861f0e60e140da72c6e
+Homepage: https://www.gnu.org/software/gzip/
+Description: GNU compression utilities
+ This package provides the standard GNU file compression utilities, which
+ are also the default compression tools for Debian.  They typically operate
+ on files with names ending in '.gz', but can also decompress files ending
+ in '.Z' created with 'compress'.
+

@@ -1,0 +1,20 @@
+Package: libsmartcols1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 408
+Depends: libc6 (>= 2.40)
+Filename: ./l/libsmartcols1/libsmartcols1_2.40.2-9_loong64.deb
+Size: 145516
+MD5sum: 4a7a284298cd39a912c441edf34b4bb6
+SHA1: 618aad087cfc4a3591e5ba8d0327f57ab5e829cc
+SHA256: e3af3a446fb5abe2c4269a796024958c9c5d0faef66b21cc174578bbd2139bcd
+SHA512: 03093476c0a5c581d7e4b7b9d125e77c169b0e45c57f42b6ee921e44a0847348696e854c89e1f36053d20564958b01d9060a1768e7aa93d78ae1050292b7f825
+Homepage: https://github.com/util-linux/util-linux
+Description: smart column output alignment library
+ This smart column output alignment library is used by fdisk utilities.
+

@@ -1,0 +1,32 @@
+Package: bash
+Architecture: loong64
+Version: 5.2.32-1+b2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Source: bash (5.2.32-1)
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7341
+Pre-Depends: libc6 (>= 2.40), libtinfo6 (>= 6)
+Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
+Recommends: bash-completion
+Suggests: bash-doc
+Filename: ./b/bash/bash_5.2.32-1+b2_loong64.deb
+Size: 1492600
+MD5sum: 57574529a9aeac05765dc951aded5301
+SHA1: e7fd75597e219e86f95db03540cd614f3ab6407e
+SHA256: c40f0998eb03331d6b16aff46842cafeb80881b3f19fc133fd107cee8e0ea2ce
+SHA512: 70f620bce1d0be6023be575227ae89a25ae6b6aa111206b382952baa76e99d9b2fdbdadc6d059c6ea799e05ea96d70e39da5e49ffc52a3189798ca222069395b
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Description: GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ Bash is ultimately intended to be a conformant implementation of the
+ IEEE POSIX Shell and Tools specification (IEEE Working Group 1003.2).
+ .
+ The Programmable Completion Code, by Ian Macdonald, is now found in
+ the bash-completion package.
+

@@ -1,0 +1,26 @@
+Package: libkeyutils1
+Architecture: loong64
+Version: 1.6.3-3.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: keyutils
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 36
+Depends: libc6 (>= 2.40)
+Filename: ./l/libkeyutils1/libkeyutils1_1.6.3-3.1_loong64.deb
+Size: 9120
+MD5sum: 0c5901bf399c1a62c5e40959ba6bbcd8
+SHA1: 957aada2aebdb54c50bf2c3f3270ef4eb64fc3b5
+SHA256: f5f27988697de9cb36ff50edb309d7318041abac92adb3273abde50f2952b1fc
+SHA512: a0f184324e2c3937c04bf212985fe3aa28b8de16fa6e7076b88ddf149291bf15f3c7837c4ff3be95b4be22bb5a25b7abcaca9707c5412617e64d3d4a939b133c
+Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+Description: Linux Key Management Utilities (library)
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+ .
+ This package provides a wrapper library for the key management facility system
+ calls.
+

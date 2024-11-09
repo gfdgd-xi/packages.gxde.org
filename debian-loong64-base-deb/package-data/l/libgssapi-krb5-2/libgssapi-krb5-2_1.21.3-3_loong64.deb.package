@@ -1,0 +1,29 @@
+Package: libgssapi-krb5-2
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 422
+Depends: libkrb5-3 (= 1.21.3-3), libc6 (>= 2.39), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkrb5support0 (= 1.21.3-3)
+Suggests: krb5-doc, krb5-user
+Filename: ./l/libgssapi-krb5-2/libgssapi-krb5-2_1.21.3-3_loong64.deb
+Size: 128248
+MD5sum: 1bb9a331e877fe773a595df8e1ab761a
+SHA1: 164d28c6c14b22998594d346ad95fcf1e88ca6c7
+SHA256: 963e290cf278cc1e6f9e1b9f81d79e52f7913e04341a766485b17b599c609daa
+SHA512: efb187e2867bb71bc619e64dd5063d82f78166d014c8f2470d5a1fd5f765821daef702ccfa8ce3ecd1f2bbd169b7199541fccbf3a3474f2815edcb1cbe2bd3dc
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the MIT Kerberos
+ implementation of GSS-API used by applications and Kerberos clients.
+

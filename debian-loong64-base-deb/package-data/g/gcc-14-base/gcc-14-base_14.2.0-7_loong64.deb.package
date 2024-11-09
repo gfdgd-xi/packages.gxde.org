@@ -1,0 +1,21 @@
+Package: gcc-14-base
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 109
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-14-base/gcc-14-base_14.2.0-7_loong64.deb
+Size: 46884
+MD5sum: 50e89e12f0e4b6544fb0b8d6c3540ea0
+SHA1: f05b0bf6593167bc79fb5afc47c833ac4b9e6847
+SHA256: ba93339b45272403492fbc744956edfd8b6553117b1bf71ec3c5cc971ad300bd
+SHA512: b8a22a9bade3873900cfbb885dcdaab0b6972af4ae1fc6da06ed38b6764490b3d04b335c428f897042ee3da1f420c0fc651c5ac89ac4e6f64db4c5ba13f9e178
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+

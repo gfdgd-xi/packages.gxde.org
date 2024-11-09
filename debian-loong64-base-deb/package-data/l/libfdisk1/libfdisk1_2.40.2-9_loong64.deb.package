@@ -1,0 +1,21 @@
+Package: libfdisk1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 619
+Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libuuid1 (= 2.40.2-9)
+Filename: ./l/libfdisk1/libfdisk1_2.40.2-9_loong64.deb
+Size: 214692
+MD5sum: e4340dd2858b528e3b6b07aadba4091a
+SHA1: b49f127aaf80d196f86425db079f7395c745d447
+SHA256: 4d4224dc2daa1c098dd5f8b40fff8a9559eb67593975a4ba1c9b13daf5ce42ce
+SHA512: 12b08af75c5a35d57ab4985390b36886eac36cf74e6dc615ea1f71c91e0fbb17bdea94758889ee5dbf89790dd6bc5b359504038d0574ce10f57be84f1708c94d
+Homepage: https://github.com/util-linux/util-linux
+Description: fdisk partitioning library
+ The libfdisk library is used for manipulating partition tables. It is
+ the core of the fdisk, cfdisk, and sfdisk tools.
+

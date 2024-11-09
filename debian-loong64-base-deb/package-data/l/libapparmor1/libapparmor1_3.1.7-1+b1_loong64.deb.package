@@ -1,0 +1,24 @@
+Package: libapparmor1
+Architecture: loong64
+Version: 3.1.7-1+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: apparmor (3.1.7-1)
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 115
+Depends: libc6 (>= 2.38)
+Breaks: libapparmor-perl (<< 3.0.3-3)
+Replaces: libapparmor-perl (<< 3.0.3-3)
+Filename: ./l/libapparmor1/libapparmor1_3.1.7-1+b1_loong64.deb
+Size: 41828
+MD5sum: 4f485891c8f00f98e893939b21993b42
+SHA1: 4d9aff4c2b5b70904cec4bfc5493e3e53bb5f3cc
+SHA256: 84e51871e91f58bcc98d474f8ac7035dd86b1d9a8db6aa5adf7fc583967e293d
+SHA512: 38bc4c9b21d2464e89cfea05ff1b06df8c436d4b8b2b12a70d929c1ede7311f97f5a15234f91cbae78123110544139ce968e1085e52a003759c49fc67eb8c254
+Homepage: https://apparmor.net/
+Description: changehat AppArmor library
+ libapparmor1 provides a shared library one can compile programs
+ against in order to use various AppArmor functionality,
+ such as transitioning to a different AppArmor profile or hat.
+

@@ -1,0 +1,22 @@
+Package: debconf-i18n
+Architecture: all
+Version: 1.5.87
+Priority: important
+Section: localization
+Source: debconf
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Installed-Size: 794
+Depends: debconf (= 1.5.87), liblocale-gettext-perl, libtext-charwidth-perl, libtext-iconv-perl, libtext-wrapi18n-perl
+Conflicts: debconf-english
+Filename: ./d/debconf-i18n/debconf-i18n_1.5.87_all.deb
+Size: 195572
+MD5sum: 5c54ecd4c58f9315fbdaee28110ec12e
+SHA1: 8eaa88e5dfc4dae4aed522a937c79bc3757701a5
+SHA256: bfedc1ff7dda39227e7d087d2c587c4ec210fc4b63436a8664760928483ecbaf
+SHA512: 909472aa490e459535915598fdb705e0eab31d3cb2a573e9bf37b06923eb463e08045e45ff8c354f7c84bbbe8d1e32214bcf25ff349a87a04421272606ece937
+Description: full internationalization support for debconf
+ This package provides full internationalization for debconf, including
+ translations into all available languages, support for using translated
+ debconf templates, and support for proper display of multibyte character
+ sets.
+

@@ -1,0 +1,25 @@
+Package: libxxhash0
+Architecture: loong64
+Version: 0.8.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: xxhash
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 72
+Depends: libc6 (>= 2.36)
+Filename: ./l/libxxhash0/libxxhash0_0.8.2-2_loong64.deb
+Size: 22992
+MD5sum: d0f9d7ff19ae58c4bb20aea8ac3ce740
+SHA1: 1f9187079417327c73415c821f006d33f12267d1
+SHA256: e5ebd7cc9c5f0c2214da9c706e4ea9dce40d2f10f3658560df41b902cb4fef4f
+SHA512: 88c02d467555fa0c4de9e67006d4edbd2278acbf965e769439eb4636c15aea067fc5506375b30c055fbbfb2a0bac4f68d9c1d0c352d0df4acf6f7cba6e98393b
+Homepage: https://cyan4973.github.io/xxHash
+Description: shared library for xxhash
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains the shared library.
+

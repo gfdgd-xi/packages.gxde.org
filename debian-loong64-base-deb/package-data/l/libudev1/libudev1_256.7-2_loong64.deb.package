@@ -1,0 +1,22 @@
+Package: libudev1
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 351
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
+Suggests: libidn2-0
+Filename: ./l/libudev1/libudev1_256.7-2_loong64.deb
+Size: 143068
+MD5sum: ec16e46eabbf73bd3ec20b407663824a
+SHA1: 12a2afb06a40161ec32e3ad107ce89ae4b4a88b5
+SHA256: 7a35d430e2223ea6b61550d11512a1439960565c9febe455024ab7069886f104
+SHA512: 4a64ba7219be9b2eaaa300bf82979824f76a0f5a64a9594f37960fd06042cc0ef9f347f205934c78e7b1e8bf71810de08cd4fb554154ac13c054031b84049d9a
+Homepage: https://systemd.io
+Description: libudev shared library
+ This library provides APIs to introspect and enumerate devices on the local
+ system.
+

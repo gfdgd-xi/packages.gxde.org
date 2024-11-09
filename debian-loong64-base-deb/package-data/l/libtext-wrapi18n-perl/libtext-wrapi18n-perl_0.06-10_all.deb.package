@@ -1,0 +1,24 @@
+Package: libtext-wrapi18n-perl
+Architecture: all
+Version: 0.06-10
+Priority: required
+Section: perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 26
+Depends: libtext-charwidth-perl
+Filename: ./l/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-10_all.deb
+Size: 8808
+MD5sum: b57a11d040f8e9055f8f2e83ed3dd70b
+SHA1: f442e53233cb43d7c9d108051d76a73cfd48e473
+SHA256: 17f98c7c09af8ac3bdbfd5a5dad32f3f51c71b02cdfc411366f49092a395de85
+SHA512: 0a554401cff25893504699c927f9bcd19929fdfd3837f4d7569c3cd18bd2bd21949435f9ef5466b5a7b7d77f004b22f00e1fc559084a60822faa293d93212792
+Homepage: https://metacpan.org/release/Text-WrapI18N
+Description: internationalized substitute of Text::Wrap
+ The Text::WrapI18N module is a substitution for Text::Wrap, supporting
+ multibyte characters such as UTF-8, EUC-JP, and GB2312, fullwidth characters
+ such as east Asian characters, combining characters such as diacritical marks
+ and Thai, and languages which don't use whitespaces between words such as
+ Chinese and Japanese.
+ .
+ It provides wrap().
+

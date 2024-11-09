@@ -1,0 +1,21 @@
+Package: libacl1
+Architecture: loong64
+Version: 2.3.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: acl
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 70
+Depends: libc6 (>= 2.37)
+Filename: ./l/libacl1/libacl1_2.3.2-2_loong64.deb
+Size: 32036
+MD5sum: 4c5a410882864568a204c820bd1ffb87
+SHA1: a42a98bae00ec06b0f6292ce4c3c223f7062b5c6
+SHA256: d706cffa695cb34e6ac79216f244733dc8631e6032274b5cc12ee56fa27ba9c6
+SHA512: c35fae400c2aafd51b91334d877f24686daad4ae1a11cc4891660a2c9d21118d7c64ed304750cd4849d96eb7b40036705985a69b4d83e3d64f27c4aed4661fb0
+Homepage: https://savannah.nongnu.org/projects/acl/
+Description: access control list - shared library
+ This package contains the shared library containing the POSIX 1003.1e
+ draft standard 17 functions for manipulating access control lists.
+

@@ -1,0 +1,25 @@
+Package: libcom-err2
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 61
+Provides: libcom-err2t64 (= 1.47.1-1), libcomerr2 (= 1.47.1-1)
+Depends: libc6 (>= 2.38)
+Breaks: libcom-err2t64 (<< 1.47.0-2.4~exp1~), libcomerr2 (<< 1.43.9-1~)
+Replaces: libcom-err2t64, libcomerr2 (<< 1.43.9-1~)
+Filename: ./l/libcom-err2/libcom-err2_1.47.1-1_loong64.deb
+Size: 22640
+MD5sum: fae814bc13bbe1789263d0e8f9d3af9b
+SHA1: 0aa7fb2d673172b5caaacf9c112a6e69f3800566
+SHA256: 6f710556157bb600bbc9c9ff0c0d4890405f799cae2426c6ca4e78f8b9815f00
+SHA512: 81ab67c6ae6c48e702d065e11751bcaa710c546e0168b0dff9cfec9f297b38dad1bf342fbba0b0ffb8b738e96e58eead3cdfbce0fcf3671fb184f629fd989394
+Homepage: http://e2fsprogs.sourceforge.net
+Description: common error description library
+ libcomerr is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
+

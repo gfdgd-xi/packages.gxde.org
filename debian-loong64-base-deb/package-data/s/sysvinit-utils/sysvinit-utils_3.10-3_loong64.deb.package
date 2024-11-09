@@ -1,0 +1,30 @@
+Package: sysvinit-utils
+Architecture: loong64
+Version: 3.10-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Source: sysvinit
+Maintainer: Debian sysvinit maintainers <debian-init-diversity@chiark.greenend.org.uk>
+Installed-Size: 114
+Provides: lsb-base (= 11.1.0)
+Depends: libc6 (>= 2.40)
+Conflicts: lsb-base (<< 11.3~)
+Replaces: lsb-base
+Filename: ./s/sysvinit-utils/sysvinit-utils_3.10-3_loong64.deb
+Size: 32960
+MD5sum: 7b76dbd465c09df6c9a58a4bc024f009
+SHA1: c82c69037bc6b291877523305ae6e95fba16b781
+SHA256: ed029b7ce1f1410cd395741be3a081c274cca9354f89e94518bee72f244fb27d
+SHA512: 0d6646882c9c63bd13b9622c09067b1302a20689716906a5384c5424cf65c2fe0e8ebfa581e383a345708a83b0bf504b0c3573d41694d5ee71b3aed5bfdbe923
+Homepage: https://github.com/slicer69/sysvinit
+Description: System-V-like utilities
+ This package contains the important System-V-like utilities.
+ .
+ Specifically, this package includes:
+ init-d-script, fstab-decode, killall5, pidof
+ .
+ It also contains the library scripts sourced by init-d-script and other
+ initscripts that were formerly in lsb-base.
+

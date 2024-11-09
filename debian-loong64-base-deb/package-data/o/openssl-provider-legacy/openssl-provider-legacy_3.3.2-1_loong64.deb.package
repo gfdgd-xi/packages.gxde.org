@@ -1,0 +1,30 @@
+Package: openssl-provider-legacy
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: openssl
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 399
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.0.0)
+Breaks: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Replaces: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Filename: ./o/openssl-provider-legacy/openssl-provider-legacy_3.3.2-1_loong64.deb
+Size: 296372
+MD5sum: 091944f0c4e2b0b984ed1539247faef7
+SHA1: 2e4d277fe34240401d74d7b9383ee63da751296e
+SHA256: 4da69b07493ad7052880b2f9e6bdc8101723906804845da005d72d24e4dd2851
+SHA512: ae89692cc4ed1b88a1813ced584f360c5c90f1166a9fb25bc2bc5c1fa4edeadd2d8af7ac4000fcba7aa3804408d4797ddc01d689b7fe0d3d443146181c5607d2
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ This package contains the legacy provider. The OpenSSL legacy provider
+ supplies OpenSSL implementations of algorithms that have been deemed legacy.
+ Such algorithms have commonly fallen out of use, have been deemed insecure by
+ the cryptography community, or something similar.
+ For details see OSSL_PROVIDER-legacy man page.
+

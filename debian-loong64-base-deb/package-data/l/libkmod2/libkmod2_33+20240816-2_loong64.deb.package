@@ -1,0 +1,21 @@
+Package: libkmod2
+Architecture: loong64
+Version: 33+20240816-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: kmod
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 164
+Depends: libc6 (>= 2.39), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5)
+Conflicts: dracut-install (<= 103-1)
+Filename: ./l/libkmod2/libkmod2_33+20240816-2_loong64.deb
+Size: 62772
+MD5sum: c175c3c4dea3bf81a2267be927e7cd62
+SHA1: e7892135bf77c96244a06ee09c6e773fdb7e89be
+SHA256: 25c5c2f7c3732e9efb572fbc0ae788434a8e5451001db2282cd69669e81c4b8b
+SHA512: 7426d33ba3db062f93c7ea72d592f62e9da2fa39931bd1615d3877aad7558330655164d8deb5dc3ceea40c00cf1df611eecfa980fd7ad7919b2cdab78df1fb1d
+Description: libkmod shared library
+ This library provides an API for insertion, removal, configuration and
+ listing of kernel modules.
+

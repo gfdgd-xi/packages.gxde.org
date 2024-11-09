@@ -1,0 +1,27 @@
+Package: libssl3t64
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openssl
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 6433
+Provides: libssl3 (= 3.3.2-1)
+Depends: libc6 (>= 2.40), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), openssl-provider-legacy
+Breaks: libssl3 (<< 3.3.2-1), openssh-client (<< 1:9.4p1), openssh-server (<< 1:9.4p1), python3-m2crypto (<< 0.38.0-4)
+Replaces: libssl3
+Filename: ./l/libssl3t64/libssl3t64_3.3.2-1_loong64.deb
+Size: 1946820
+MD5sum: ad2446c17527e435fce48c75e195bda4
+SHA1: 8c12aa5c3b1e1657dcf6facddbc1b8d81cad6762
+SHA256: c620c8c7e158eb3641c6daa7cdb662882a664dc2f6ade9eb3313f0b72fa2f908
+SHA512: b3e6d152b9cde866f60648f4634eea44f1c779f4f52d558a1f227af1ea3e0bccf286344ccf7455ea089025aa1240e04f4f9860211635d345973575068e27138d
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+

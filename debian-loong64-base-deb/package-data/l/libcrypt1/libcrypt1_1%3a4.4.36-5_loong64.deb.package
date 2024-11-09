@@ -1,0 +1,25 @@
+Package: libcrypt1
+Architecture: loong64
+Version: 1:4.4.36-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxcrypt
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 241
+Depends: libc6 (>= 2.39)
+Conflicts: libpam0g (<< 1.4.0-10)
+Replaces: libc6 (<< 2.29-4)
+Filename: ./l/libcrypt1/libcrypt1_1%3a4.4.36-5_loong64.deb
+Size: 91436
+MD5sum: 12588fbcda1ac747eaa2d95ece9ece66
+SHA1: 5671c6595912b3ac8ce85010db8736b974e90460
+SHA256: 373bc095515fa8bdd4cea25f0323e56b6dd4db2971e9742d93445807728fed0c
+SHA512: a9fc8f58cff08fc3a6b23d2445657335554a602aacaa64904877e7d59b4eaa2456878afea95add6816af9d1a437387a838983b3d642e894bec2f6f532318a370
+Description: libcrypt shared library
+ libxcrypt is a modern library for one-way hashing of passwords.
+ It supports DES, MD5, NTHASH, SUNMD5, SHA-2-256, SHA-2-512, and
+ bcrypt-based password hashes
+ It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
+ as well as a set of extended interfaces like 'crypt_gensalt'.
+

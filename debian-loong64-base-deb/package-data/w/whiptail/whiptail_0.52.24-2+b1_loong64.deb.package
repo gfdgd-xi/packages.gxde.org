@@ -1,0 +1,23 @@
+Package: whiptail
+Architecture: loong64
+Version: 0.52.24-2+b1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: newt (0.52.24-2)
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 65
+Depends: libc6 (>= 2.38), libnewt0.52 (>= 0.52.24), libpopt0 (>= 1.14), libslang2 (>= 2.2.4)
+Filename: ./w/whiptail/whiptail_0.52.24-2+b1_loong64.deb
+Size: 24064
+MD5sum: f694bb01b6907c804bf147089ef88a9e
+SHA1: 92932a43dc91162bb3aefb36a53852d1f6ca9d0b
+SHA256: e33b90ad5cfe8eb0cada2a44de38e88b8c222a43e9e999f4a4509ea43b41c292
+SHA512: 08caecbde290a32a2dc407c8a0440198d759f09e37c19ec7c5fc0874743bb6ce0472523384cc796238109bb0c5ba24df40493f7ca08e20342607dd70fe46926c
+Homepage: https://pagure.io/newt
+Description: Displays user-friendly dialog boxes from shell scripts
+ Whiptail is a "dialog" replacement using newt instead of ncurses. It
+ provides a method of displaying several different types of dialog boxes
+ from shell scripts. This allows a developer of a script to interact with
+ the user in a much friendlier manner.
+

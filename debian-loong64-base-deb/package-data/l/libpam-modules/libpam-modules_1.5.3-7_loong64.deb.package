@@ -1,0 +1,24 @@
+Package: libpam-modules
+Architecture: loong64
+Version: 1.5.3-7
+Multi-Arch: same
+Priority: required
+Section: admin
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 1160
+Provides: libpam-mkhomedir, libpam-motd, libpam-umask
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.37), libcrypt1 (>= 1:4.3.0), libdb5.3t64, libpam0g (>= 1.4.1), libselinux1 (>= 3.1~), libsystemd0, debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.5.3-7)
+Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
+Replaces: libpam-umask, libpam0g-util
+Filename: ./l/libpam-modules/libpam-modules_1.5.3-7_loong64.deb
+Size: 262948
+MD5sum: f2e3b8bcea9ac35dd090462a6046fd65
+SHA1: 839e1f4c87b02c9db17f66ccacd8671eb744ae9c
+SHA256: 029b51fb57afef58cfda2ca23c2ffc4788b0da8157d0050964de81cc84f5509a
+SHA512: 647e5baa9b45772c22878d1a787fe4f209bf069d2b4595c59d9a94d82fd6e8398ed760685f3a8f342ceb8025b416a153ff722f01a1a301c24e2de0b990005943
+Homepage: http://www.linux-pam.org/
+Description: Pluggable Authentication Modules for PAM
+ This package completes the set of modules for PAM. It includes the
+  pam_unix.so module as well as some specialty modules.
+

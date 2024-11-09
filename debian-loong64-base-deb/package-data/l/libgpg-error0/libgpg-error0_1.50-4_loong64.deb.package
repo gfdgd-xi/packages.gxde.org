@@ -1,0 +1,26 @@
+Package: libgpg-error0
+Architecture: loong64
+Version: 1.50-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libgpg-error
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Installed-Size: 219
+Depends: libc6 (>= 2.40)
+Recommends: libgpg-error-l10n
+Filename: ./l/libgpg-error0/libgpg-error0_1.50-4_loong64.deb
+Size: 83080
+MD5sum: 72e4a2ca43909c75b1987a34ed1b515b
+SHA1: 6398a980b5f7fce3c46bd36cccf7cce1e54eeac7
+SHA256: a5756ab34d2edc5df813359088a1a32f23d5c8e1acf6fc2f1e307a72bed42569
+SHA512: ec72e0f4c79d7a10207e2985387fb802a8cc86e563d649a154992c84bfb45cc0f1b99c50b736858fc9ca26c1bf7cf10185ce4939d833f853aa169ba4ef5a57c0
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Description: GnuPG development runtime library
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+

@@ -1,0 +1,42 @@
+Package: dhcpcd-base
+Architecture: loong64
+Version: 1:10.1.0-1
+Priority: important
+Section: net
+Source: dhcpcd
+Maintainer: Martin-Éric Racine <martin-eric.racine@iki.fi>
+Installed-Size: 531
+Provides: avahi-autoipd, dhcp-client
+Depends: adduser, libc6 (>= 2.40), libssl3t64 (>= 3.0.0), libudev1 (>= 183)
+Suggests: resolvconf | openresolv | systemd-resolved
+Breaks: dhcpcd5 (<< 1:10.1.0-1~)
+Replaces: dhcpcd5 (<< 1:10.1.0-1~)
+Filename: ./d/dhcpcd-base/dhcpcd-base_1%3a10.1.0-1_loong64.deb
+Size: 199696
+MD5sum: e5ab56a6c1cad5db6400646b14d14d3e
+SHA1: 5fd0ea75a457699ef79ef7d42f2811c762ce4e63
+SHA256: 57210f0cc3c2ae56288f1159ac627fd80bc3ab19bbbfece27a52376cbff2cc63
+SHA512: 5893bec166b11eb92725ac638f6b53aab5b0bd1c6417bd56d5470e417550a5795db3cd6f7a6bbccc0537b0cfe7752626f1d6f5bb6f6659ba2b82e9f9c1308dd2
+Homepage: https://roy.marples.name/projects/dhcpcd
+Description: DHCPv4 and DHCPv6 dual-stack client (binaries and exit hooks)
+ dhcpcd provides seamless IPv4 and IPv6 auto-configuration:
+  * DHCPv4 client
+  * DHCPv6 client with Prefix Delegation (PD) support
+  * IPv4LL support (ZeroConf)
+  * IPv6RS support (SLAAC)
+  * ARP address conflict resolution
+  * ARP ping profiles
+  * Wireless SSID profiles
+ .
+ This package provides the binaries, exit hooks and manual pages.
+ .
+ It offers a dual-stack substitute for ISC DHCP Client (dhclient) on systems
+ where interfaces are configured by ifupdown via </etc/network/interfaces>
+ using the DHCP method.
+ .
+ The init.d script and systemd service required for systems without ifupdown
+ are packaged separately as dhcpcd.
+ .
+ Since Debian 12 (Bookworm), dhcpcd uses Predictable Network Interface Names
+ on Linux ports. See NEWS.Debian for more details.
+

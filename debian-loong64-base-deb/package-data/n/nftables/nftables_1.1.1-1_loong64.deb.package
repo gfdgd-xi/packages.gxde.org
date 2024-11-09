@@ -1,0 +1,32 @@
+Package: nftables
+Architecture: loong64
+Version: 1.1.1-1
+Priority: important
+Section: net
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 175
+Depends: libnftables1 (= 1.1.1-1), libc6 (>= 2.40), libedit2 (>= 3.1-20130611-0)
+Recommends: netbase
+Suggests: firewalld
+Filename: ./n/nftables/nftables_1.1.1-1_loong64.deb
+Size: 74196
+MD5sum: 854f96da1b6b1834b5a5b6f7c106bb1b
+SHA1: ba2a337128e72b93daee1405ef91a06aaf899ae2
+SHA256: cfc6f2465826633afd246f74569de03691840f44c1b1db630713071958f220f7
+SHA512: c184eb313eb7c8115b94a4aafe8a90ad7e41c54be84cda3138d0432ffdbe7425975d0dd7220a131d484801e45725378fd78769f059879e076e9912952fb7ce53
+Homepage: https://www.netfilter.org/
+Description: Program to control packet filtering rules by Netfilter project
+ This software provides an in-kernel packet classification framework that is
+ based on a network-specific Virtual Machine (VM) and the nft userspace
+ command line tool. The nftables framework reuses the existing Netfilter
+ subsystems such as the existing hook infrastructure, the connection tracking
+ system, NAT, userspace queueing and logging subsystem.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+

@@ -1,0 +1,26 @@
+Package: login
+Architecture: loong64
+Version: 1:4.16.0-2+really2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Protected: yes
+Section: admin
+Source: util-linux (2.40.2-9)
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 221
+Pre-Depends: login.defs (>= 1:4.16.0-1~)
+Depends: libpam-modules, libpam-runtime, libaudit1 (>= 1:2.2.1), libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1)
+Filename: ./l/login/login_1%3a4.16.0-2+really2.40.2-9_loong64.deb
+Size: 80840
+MD5sum: 6e3df25bce809a626bf4bf4e4426e1b7
+SHA1: 1ab7ca4c2f14563cbecb66a5b123898dade7e1d0
+SHA256: d913610eedd2583b6400d222914571204beffd18f90a41346b9e72592b151290
+SHA512: 5849df4ab68d80a1b15e7b8ffd721c83f00ed77bcd422dba8f46c961633351edefb56375a1f1c0b71303cffb4bd511e6ddd91a7cc36a2fd0403b62ed5b9bed6b
+Homepage: https://github.com/util-linux/util-linux
+Description: system login tools
+ This package provides support for console-based logins and for
+ changing effective user or group IDs, including:
+  * login, the program that invokes a user shell on a virtual terminal,
+  * nologin, a dummy shell for disabled user accounts,
+  * newgrp, a program to change the effective group IDs.
+

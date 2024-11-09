@@ -1,0 +1,31 @@
+Package: openssl
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 2322
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Suggests: ca-certificates
+Filename: ./o/openssl/openssl_3.3.2-1_loong64.deb
+Size: 1358208
+MD5sum: 53e8e0c6f48483fa8bd5d5bc9969539a
+SHA1: 24ef1a1e60985efa61786c44b44bbf3a6b8b3180
+SHA256: 2626d8a1698c0f976a7a05d3d95bd09eb3c12c8b11e6ff8721308dd13f6fc0ba
+SHA512: f894dd806df25fedbd25827a7a07581f4a3506006975f29a071f17052a9a5ca56b6023db5b89802a8611a49404a747eb3085fdec67f48bb9ebee9557579e7b4d
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+

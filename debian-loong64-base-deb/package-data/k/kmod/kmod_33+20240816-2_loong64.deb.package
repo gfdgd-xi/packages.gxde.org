@@ -1,0 +1,20 @@
+Package: kmod
+Architecture: loong64
+Version: 33+20240816-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 261
+Depends: libc6 (>= 2.39), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), libkmod2 (= 33+20240816-2)
+Filename: ./k/kmod/kmod_33+20240816-2_loong64.deb
+Size: 94520
+MD5sum: 5b574c35453709cfd5d52e583931b032
+SHA1: 9c8e91b7c767c410fa21136a7c56e0cc943cbc27
+SHA256: db1d06ac74bba6a6ea9ae05fa7d0ae4e8d583e203936b0fed595342c39a4918c
+SHA512: 1543d9e4a9566c63c4924b36955bc76a2e60fda70fd0a6ecb743b46df33c906717c97ca46114abbf325c699ed73fe9ec71fbf68d35019ac0841fdd4c1e4a5a4f
+Description: tools for managing Linux kernel modules
+ This package contains a set of programs for loading, inserting, and
+ removing kernel modules for Linux.
+ It replaces module-init-tools.
+

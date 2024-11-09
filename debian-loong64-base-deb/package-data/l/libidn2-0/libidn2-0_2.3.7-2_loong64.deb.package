@@ -1,0 +1,23 @@
+Package: libidn2-0
+Architecture: loong64
+Version: 2.3.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libidn2
+Maintainer: Debian Libidn team <help-libidn@gnu.org>
+Installed-Size: 452
+Depends: libc6 (>= 2.37), libunistring5 (>= 1.1)
+Filename: ./l/libidn2-0/libidn2-0_2.3.7-2_loong64.deb
+Size: 126720
+MD5sum: 1897f25d99bb4c73590c172288628fda
+SHA1: 9827bdacb6a065bbcc9b54d934cff31538955eac
+SHA256: f2b2dcfc291f992c0b8cf8ae04f297b72de3cf1e2c5e6d967658e3938f4746ec
+SHA512: 77e2892f69ad595e3680d8b40fcaa250e16d37120a9a06aab1dadc3bdb5326cf195cad573adf2e6234fd4d47f0f1c4eba71e300d91fa20363876b1cd7cbc3ffb
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Internationalized domain names (IDNA2008/TR46) library
+ Libidn2 implements the revised algorithm for internationalized domain
+ names called IDNA2008/TR46.
+ .
+ This package contains runtime libraries.
+

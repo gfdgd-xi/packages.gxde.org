@@ -1,0 +1,23 @@
+Package: libtext-charwidth-perl
+Architecture: loong64
+Version: 0.04-11+b5
+Multi-Arch: same
+Priority: required
+Section: perl
+Source: libtext-charwidth-perl (0.04-11)
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 46
+Depends: libc6 (>= 2.40), perl-base (>= 5.40.0-6), perlapi-5.40.0
+Filename: ./l/libtext-charwidth-perl/libtext-charwidth-perl_0.04-11+b5_loong64.deb
+Size: 9480
+MD5sum: 9b695923ac69f1bdf5ba1becdc96dcc2
+SHA1: 74d5b70fe96c4db5e08ffd75bc7d3a832f469be5
+SHA256: a0fdaaa3f1cbc0c5ea263cf7dc0156d9852b38189efff4c45b727d2ac23a0a41
+SHA512: afc9c6a93a99d7b753156dfaf85e00712851bdc811e251cd50a7977c0189c42b94447eecf976b13c702ee8628866e70a3ee8e96dda53866d5a44f3a388da17ca
+Homepage: https://metacpan.org/release/Text-CharWidth
+Description: get display widths of characters on the terminal
+ Text::CharWidth permits one to get the display widths of characters
+ and strings on the terminal, using wcwidth() and wcswidth() from libc.
+ .
+ It provides mbwidth(), mbswidth(), and mblen().
+

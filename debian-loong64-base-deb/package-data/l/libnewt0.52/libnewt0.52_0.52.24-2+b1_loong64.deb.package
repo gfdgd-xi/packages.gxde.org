@@ -1,0 +1,26 @@
+Package: libnewt0.52
+Architecture: loong64
+Version: 0.52.24-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: newt (0.52.24-2)
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 361
+Depends: libc6 (>= 2.38), libslang2 (>= 2.2.4)
+Recommends: libfribidi0
+Filename: ./l/libnewt0.52/libnewt0.52_0.52.24-2+b1_loong64.deb
+Size: 57456
+MD5sum: 2809fa7706c156e83c89ec3a89413b93
+SHA1: 02f87705ffca4d47f4179f765f5b82756bb0200c
+SHA256: 6d97b5ca9d32078799b2070240e86d6ffea5cdef27f0e7511dede16283e21189
+SHA512: 2c082e5a4d12489d5cebd59418f8ae2c15e338821664ed818456cb69d5243b7ac9c3531a6a279d6b647d48a8b8bd6dcdc8f70b09f7054e3e23dc2c432420e71a
+Homepage: https://pagure.io/newt
+Description: Not Erik's Windowing Toolkit - text mode windowing with slang
+ Newt is a windowing toolkit for text mode built from the slang library.
+ It allows color text mode applications to easily use stackable windows,
+ push buttons, check boxes, radio buttons, lists, entry fields, labels,
+ and displayable text. Scrollbars are supported, and forms may be nested
+ to provide extra functionality. This package contains the shared library
+ for programs that have been built with newt.
+

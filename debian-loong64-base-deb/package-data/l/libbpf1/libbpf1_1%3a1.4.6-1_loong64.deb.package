@@ -1,0 +1,22 @@
+Package: libbpf1
+Architecture: loong64
+Version: 1:1.4.6-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libbpf (1.4.6-1)
+Maintainer: Sudip Mukherjee <sudipm.mukherjee@gmail.com>
+Installed-Size: 471
+Depends: libc6 (>= 2.40), libelf1t64 (>= 0.144), zlib1g (>= 1:1.2.3.3)
+Filename: ./l/libbpf1/libbpf1_1%3a1.4.6-1_loong64.deb
+Size: 162320
+MD5sum: 1804d2ce9f214958731ab583dc4a25c6
+SHA1: b04a3401b0bcad6c1cd757cbddc6b1c1cc6bd639
+SHA256: a1aa711487a0086f873c17561c2ace354ae0c89aa40a613bd00381934452bef1
+SHA512: c1b9d59416f50e3a1699f8c08e8f9eb7d8535583b3047b1a1a412b9e40ca16534d4c13d760d107943f5cda81bff61d27c326fc3067c825ea59c6d0258efe27ea
+Description: eBPF helper library (shared library)
+ libbpf is a library for loading eBPF programs and reading and
+ manipulating eBPF objects from user-space.
+ .
+ This package contains the shared library.
+

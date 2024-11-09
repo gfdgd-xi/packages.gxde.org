@@ -1,0 +1,28 @@
+Package: libcap-ng0
+Architecture: loong64
+Version: 0.8.5-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libcap-ng
+Maintainer: Håvard F. Aasen <havard.f.aasen@pfft.no>
+Installed-Size: 73
+Depends: libc6 (>= 2.40)
+Filename: ./l/libcap-ng0/libcap-ng0_0.8.5-3_loong64.deb
+Size: 17444
+MD5sum: 025fb79f7c4bed87b20a1c3f47832e0b
+SHA1: 365ecdd052da5fd55e61d056cd2cb1de82d78acf
+SHA256: 7407c01ec59d3566ad4644f79bdda68531e57d013a5a6bff425731faad2e21f5
+SHA512: 333a95dfef8589fb886e71ef343feab686b59c9394bf99a53c4db0b99ae7964f69e95c7a275d82eb3887c4f35a61d53ae664a4c002c7bd71a9b418929f2a254f
+Homepage: https://people.redhat.com/sgrubb/libcap-ng
+Description: alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains dynamic libraries for libcap-ng.
+

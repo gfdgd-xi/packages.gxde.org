@@ -1,0 +1,25 @@
+Package: base-files
+Architecture: loong64
+Version: 13.5
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 350
+Provides: base, usr-is-merged
+Pre-Depends: awk
+Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Filename: ./b/base-files/base-files_13.5_loong64.deb
+Size: 72792
+MD5sum: 67cd7614db48fd98680b678e8720ed21
+SHA1: 547cc30d47b08d1e511366fa07ddbc0bc1f65048
+SHA256: 246451ecf83e1524473656de38d4a02149e2bd1e1cce5a6097b9c6c6dbca3213
+SHA512: 14f0c64e2489eba790f41ec010fb05cab551e64c5b7babc590d9f6405cc5ecc39a8fa9dae682f64bf40372d4624720f67d5e26d0ba0d73c372cf30b22f79a570
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
+

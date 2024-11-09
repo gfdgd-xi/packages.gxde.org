@@ -1,0 +1,25 @@
+Package: libncursesw6
+Architecture: loong64
+Version: 6.5-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 411
+Depends: libtinfo6 (= 6.5-2), libc6 (>= 2.38)
+Recommends: libgpm2
+Filename: ./l/libncursesw6/libncursesw6_6.5-2_loong64.deb
+Size: 126492
+MD5sum: c6510556669f698a6d8fa3649f33a691
+SHA1: e38726031ca5c369904baab005e13536842e01bf
+SHA256: 458f1c87765ec19dd761dcda37252445f167cc39327cda4e4f96f501f7cee478
+SHA512: d9b8873fc25c24ca53b453e0450f877770cbf930f700360f9b3bf68a2a1012365eea719ffadd0a830321bd12608b6290c65798c66459d6e36d461ab709e8ec98
+Homepage: https://invisible-island.net/ncurses/
+Description: shared libraries for terminal handling (wide character support)
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with ncursesw, which includes support for wide characters.
+

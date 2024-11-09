@@ -1,0 +1,32 @@
+Package: libxtables12
+Architecture: loong64
+Version: 1.8.10-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: iptables
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.38)
+Filename: ./l/libxtables12/libxtables12_1.8.10-4_loong64.deb
+Size: 30632
+MD5sum: c62b524d8ebb54fe927e1a49b4dcd7eb
+SHA1: 9df9f4db6e2caf4644900171328d4b54b9dada48
+SHA256: 7e9c766830bed8a6360469ef99d02fb35a3a46f8700d565f386d797b3a3284d9
+SHA512: dde8c9a7821a7b180137abac20542a754837d3832037eca088abd2a31c963ec0a6510100dad0ce6e6f66955938875f8e051de6b755ed5a0679731bb6e0eba808
+Homepage: https://www.netfilter.org/
+Description: netfilter xtables library
+ The iptables/xtables framework has been replaced by nftables. You should
+ consider migrating now.
+ .
+ However, even if a given system may be fully running on native nftables,
+ there are other reasons why libxtables might be installed. For one, nftables
+ itself uses it to be able to display old rulesets that were created using
+ xtables extensions (to help folks migrate). Other third-party software might
+ also be linked to this library.
+ .
+ This library being installed in the system should be harmless in any case.
+ .
+ This package contains the user-space interface to the Netfilter xtables
+ kernel framework.
+

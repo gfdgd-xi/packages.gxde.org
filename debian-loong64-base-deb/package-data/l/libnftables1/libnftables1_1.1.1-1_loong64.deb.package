@@ -1,0 +1,31 @@
+Package: libnftables1
+Architecture: loong64
+Version: 1.1.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nftables
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 1104
+Depends: libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libjansson4 (>= 2.14), libmnl0 (>= 1.0.3-4~), libnftnl11 (>= 1.2.8), libxtables12 (>= 1.6.0+snapshot20161117)
+Filename: ./l/libnftables1/libnftables1_1.1.1-1_loong64.deb
+Size: 324252
+MD5sum: 9295a67314bb33ebf884df5b85c8c3fe
+SHA1: 1f04188736a3c20c8479dadc4cc3b9d8f08585a3
+SHA256: 2b92158bd59503fe6c4422bdd29c9eff1f57dfdc17b855e6aa2a58c48df2fe32
+SHA512: 5832ccc63f10f16c76c9c25786b2d32e0b055cd18b1593238914348de20b623802ffb6be602b061ebef55100c97120498da3e25d9f91208184240f2330bd90ff
+Homepage: https://www.netfilter.org/
+Description: Netfilter nftables high level userspace API library
+ This library provides high level semantics to interact with the nftables
+ framework by Netfilter project.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+ .
+ This package contains the libnftables library.
+

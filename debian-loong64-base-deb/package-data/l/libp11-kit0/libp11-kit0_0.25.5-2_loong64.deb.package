@@ -1,0 +1,27 @@
+Package: libp11-kit0
+Architecture: loong64
+Version: 0.25.5-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: p11-kit
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1758
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Filename: ./l/libp11-kit0/libp11-kit0_0.25.5-2_loong64.deb
+Size: 433996
+MD5sum: ab85730ee50ce8adbeccdc767116a79d
+SHA1: 146a944c1e76efbc98c16e693cc816bb8eecfca6
+SHA256: 5d50fb0195fe790e7f07641cfa9247fd9cdef9d27883dd4c6ef0e1c6e3a2819e
+SHA512: 402ff0c6720c1c74b84bc2f90fa79f5ce1d0ffc97ad374e5f1dcda5e2efb526a63ee41b0fd6e192cf5074d339ace739f703aeb33f888dc28b02fddd5f8e72963
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: library for loading and coordinating access to PKCS#11 modules - runtime
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the shared library required for applications loading
+ and accessing PKCS#11 modules.
+

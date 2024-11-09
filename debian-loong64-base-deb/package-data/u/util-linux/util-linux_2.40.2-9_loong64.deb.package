@@ -1,0 +1,29 @@
+Package: util-linux
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 5944
+Provides: hardlink
+Pre-Depends: libpam-modules, libpam-runtime, libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libcap-ng0 (>= 0.7.9), libcrypt1 (>= 1:4.1.0), libmount1 (= 2.40.2-9), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsmartcols1 (= 2.40.2-9), libsystemd0, libtinfo6 (>= 6), libudev1 (>= 183), libuuid1 (= 2.40.2-9)
+Recommends: sensible-utils
+Suggests: dosfstools, kbd, util-linux-extra, util-linux-locales, wtmpdb
+Conflicts: hardlink
+Replaces: hardlink
+Filename: ./u/util-linux/util-linux_2.40.2-9_loong64.deb
+Size: 1188752
+MD5sum: e0b7483a1b8b4ea1a603dadd4f422618
+SHA1: 1e992cc79332a2806dd12954459bb4687e47d38a
+SHA256: a555fbdae3673c48cf8f73341ad6459b9ebba3d564681ad90dc6355640fc1575
+SHA512: cfafd871a984258d7222b0ae694a575b8c3ca320bbb9e6fd66a53bd87e15632271b5bcd3072327a93e411db0f16ebd5c78d6cec09c1b10ef07777798c0521765
+Homepage: https://github.com/util-linux/util-linux
+Description: miscellaneous system utilities
+ This package contains a number of important utilities, most of which
+ are oriented towards maintenance of your system. Some of the more
+ important utilities included in this package allow you to view kernel
+ messages, create new filesystems, view block device information,
+ interface with real time clock, etc.
+

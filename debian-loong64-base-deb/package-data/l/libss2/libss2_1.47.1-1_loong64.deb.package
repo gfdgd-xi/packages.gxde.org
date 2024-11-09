@@ -1,0 +1,27 @@
+Package: libss2
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 77
+Provides: libss2t64 (= 1.47.1-1)
+Depends: libcom-err2, libc6 (>= 2.38)
+Breaks: libss2t64 (<< 1.47.0-2.4~exp1~)
+Replaces: e2fsprogs (<< 1.34-1), libss2t64
+Filename: ./l/libss2/libss2_1.47.1-1_loong64.deb
+Size: 27388
+MD5sum: 01eaeafbd8269a244f87a93d856359da
+SHA1: 17098b7003f7359c479b2fc0bbbc53f73214ec71
+SHA256: 3d7cb28e1fc0200eed7729200b98f4c2916b99bc409eb7c5d549c50e68bc3ef3
+SHA512: c1e0b23d747704f8642e1c9bbb18a673f6d4bbdf9206f569f9f4f2dc1f15389bd92c21a2061b0341cdd2ac3320c7b715e47cc6a30b99b694617ed0d63f489ad4
+Homepage: http://e2fsprogs.sourceforge.net
+Description: command-line interface parsing library
+ libss provides a simple command-line interface parser which will
+ accept input from the user, parse the command into an argv argument
+ vector, and then dispatch it to a handler function.
+ .
+ It was originally inspired by the Multics SubSystem library.
+

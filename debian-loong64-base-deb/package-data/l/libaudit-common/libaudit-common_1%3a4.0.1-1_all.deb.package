@@ -1,0 +1,24 @@
+Package: libaudit-common
+Architecture: all
+Version: 1:4.0.1-1
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: audit
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 24
+Filename: ./l/libaudit-common/libaudit-common_1%3a4.0.1-1_all.deb
+Size: 12272
+MD5sum: 92d389d81ad6d472acfb78a6406cd89c
+SHA1: 9046f873877011457169f083e21acdcfc369ec7b
+SHA256: 0ed1183985f121deccdf4e5affc5cf7f2ec174d87d897f988f4476da601e8aaa
+SHA512: e69d5f02f14d6417d55748278f278d8b7ff9be75fb1a21313d24e552b003f40b9ae62af1fa9630720d55eb05031bd14ce5f5814405b9616007b2fcba1f910cf7
+Homepage: https://people.redhat.com/sgrubb/audit/
+Description: Dynamic library for security auditing - common files
+ The audit-libs package contains the dynamic libraries needed for
+ applications to use the audit framework. It is used to monitor systems for
+ security related events.
+ .
+ This package contains the libaudit.conf configuration file and the associated
+ manpage.
+

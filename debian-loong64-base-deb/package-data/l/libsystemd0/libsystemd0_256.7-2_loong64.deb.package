@@ -1,0 +1,23 @@
+Package: libsystemd0
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 1099
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
+Recommends: libzstd1
+Suggests: libgcrypt20, liblz4-1, liblzma5
+Filename: ./l/libsystemd0/libsystemd0_256.7-2_loong64.deb
+Size: 382736
+MD5sum: ab6db337f845735063fad5de4ddbed47
+SHA1: cabedadf4dac64415450da216e72d7e3cf47962e
+SHA256: c884c3a71a62fb868166dbc27bfdd84cbb0d6188b5a1185a4c8a2296d1118ed7
+SHA512: 3e053ce5f269dcc02f179611447d1924cffd92fc530baf384afa197b74d830232a5014edce0748ff2eef4cf16ab3d4546b66c404df295c046511ec6b15a51e2f
+Homepage: https://systemd.io
+Description: systemd utility library
+ This library provides APIs to interface with various system components such as
+ the system journal, the system service manager, D-Bus and more.
+

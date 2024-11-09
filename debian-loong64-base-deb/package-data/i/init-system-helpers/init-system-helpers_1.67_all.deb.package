@@ -1,0 +1,30 @@
+Package: init-system-helpers
+Architecture: all
+Version: 1.67
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 129
+Depends: usrmerge | usr-is-merged
+Filename: ./i/init-system-helpers/init-system-helpers_1.67_all.deb
+Size: 38672
+MD5sum: 4117d824da26231e28c7ad3af7a7230b
+SHA1: 3d3560c48f00aed739ae70cfe7e06bfea8a61e98
+SHA256: 3220742aa71543e3187c15e149b3ac7d73382f437e21cd6d5927e3ed3a5a3ea2
+SHA512: 9c387aa89250df560ec5be6821a3f5058098b88b71f97c20e0de11cd7c4ec157c5b18893e92278dd4726c637d92f70fb029034fd6c2e2e000c60b044399d7bef
+Description: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e. g. sysvinit or
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ It also includes the "service", "invoke-rc.d", and "update-rc.d" scripts which
+ provide an abstraction for enabling, disabling, starting, and stopping
+ services for all supported Debian init systems as specified by the policy.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+

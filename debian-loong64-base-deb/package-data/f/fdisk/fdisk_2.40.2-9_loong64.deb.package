@@ -1,0 +1,30 @@
+Package: fdisk
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 588
+Depends: libc6 (>= 2.40), libfdisk1 (= 2.40.2-9), libmount1 (= 2.40.2-9), libncursesw6 (>= 6), libreadline8t64 (>= 6.0), libsmartcols1 (= 2.40.2-9), libtinfo6 (>= 6)
+Recommends: sensible-utils
+Filename: ./f/fdisk/fdisk_2.40.2-9_loong64.deb
+Size: 156384
+MD5sum: 092a5036fdcafaa70d64eaeef01d34a3
+SHA1: dbb5471b99dca92b3f7b5f319bb3dfb4f7d59c7b
+SHA256: e00886cfa56f0a296e5cbad1774c9ec3925f1f93a5845d7d988079f91c1535b6
+SHA512: 9383f2424c365f2a27d830344bee3f4cfdb5a8e0a6485c2c3f010a80eaed0eca8e0a004bdbb9c2505be718ccdc494c18343431e31acb6a80261258ff316b6897
+Homepage: https://github.com/util-linux/util-linux
+Description: collection of partitioning utilities
+ This package contains the classic fdisk, sfdisk and cfdisk partitioning
+ utilities from the util-linux suite.
+ .
+ The utilities included in this package allow you to partition
+ your hard disk. The utilities supports both modern and legacy
+ partition tables (eg. GPT, MBR, etc).
+ .
+ The fdisk utility is the classical text-mode utility.
+ The cfdisk utility gives a more userfriendly curses based interface.
+ The sfdisk utility is mostly for automation and scripting uses.
+

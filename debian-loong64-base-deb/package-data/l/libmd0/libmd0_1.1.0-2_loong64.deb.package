@@ -1,0 +1,22 @@
+Package: libmd0
+Architecture: loong64
+Version: 1.1.0-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libmd
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.37)
+Filename: ./l/libmd0/libmd0_1.1.0-2_loong64.deb
+Size: 33980
+MD5sum: b978560c019c7fd956a7a199aecfb2d9
+SHA1: 18b68763d8170a8ced5161528fed4d50c619a363
+SHA256: 82e8abdd919050135fb787946524986af536047e1b6f781aaae57a49a6aab0d6
+SHA512: b1bc0bc2efc0d988c51acbf486c0ced0ff41bd65fbe314cc1863348dc015e2bc3890cbe8b0488f8213ef37aa7e436de2dc45ce84092f69fc6d119ce7b7ac4741
+Homepage: https://www.hadrons.org/software/libmd/
+Description: message digest functions from BSD systems - shared library
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
+

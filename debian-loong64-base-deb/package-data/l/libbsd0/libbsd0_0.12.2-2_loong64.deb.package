@@ -1,0 +1,24 @@
+Package: libbsd0
+Architecture: loong64
+Version: 0.12.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libbsd
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 214
+Depends: libc6 (>= 2.40), libmd0 (>= 1.0.3-2)
+Filename: ./l/libbsd0/libbsd0_0.12.2-2_loong64.deb
+Size: 130824
+MD5sum: 9ad98cc1a4fa0bb5ed69ef0494a5a381
+SHA1: 9eb7414b8b28b8876a553597407480d7c2e4a094
+SHA256: 4f8f6d6fee58d12b99f9b462a743f0a79c1db1a5fea142af7903e10b5df8cfd8
+SHA512: 3649c9a4ac4ca9477cdc71a81c5514586b62447ce8ae3c2d73f426ca65a9f9c1f849809845f675e2b1bc468b86ebce9f175817a3af31bafe3f1a692c5806326e
+Homepage: https://libbsd.freedesktop.org/
+Description: utility functions from BSD systems - shared library
+ This library provides some C functions such as strlcpy() that are commonly
+ available on BSD systems but not on others like GNU systems.
+ .
+ For a detailed list of the provided functions, please see the libbsd-dev
+ package description.
+

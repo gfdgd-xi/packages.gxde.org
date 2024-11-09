@@ -1,0 +1,21 @@
+Package: libmount1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 603
+Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libselinux1 (>= 3.1~)
+Suggests: cryptsetup-bin
+Filename: ./l/libmount1/libmount1_2.40.2-9_loong64.deb
+Size: 207248
+MD5sum: 5f0c9cbc4542b81895d5db1f50a990dd
+SHA1: 284b1aee844cb907729e6da4f0cdd6481514faad
+SHA256: ea7ba7a0f3406f20ca9678023ebe3a01ec9767288d335bc73a3b6e3c31e30d2f
+SHA512: a780c77bbe786c455b40c58cc7ed9e7f12b51dddb81ff0bce7d26ddb6218ea6c4601e8399724d08ca22c44f23a6da14c2911ccc38ed81e720e6834b7811d8026
+Homepage: https://github.com/util-linux/util-linux
+Description: device mounting library
+ This device mounting library is used by mount and umount helpers.
+

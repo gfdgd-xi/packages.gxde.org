@@ -1,0 +1,27 @@
+Package: libpopt0
+Architecture: loong64
+Version: 1.19+dfsg-1+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: popt (1.19+dfsg-1)
+Maintainer: Håvard F. Aasen <havard.f.aasen@pfft.no>
+Installed-Size: 243
+Depends: libc6 (>= 2.36)
+Filename: ./l/libpopt0/libpopt0_1.19+dfsg-1+b1_loong64.deb
+Size: 42824
+MD5sum: 5dab60395d046f2cd8eae45f72cf0996
+SHA1: 710b6fe37413ea5005621df16a08fbb7fa11112d
+SHA256: 726bd7f7f4cc8244953be230e784e112362597b2c87265adf25adfbad205e9c2
+SHA512: e00adc26f95c52eb707b84b7b639d29a16ba8e79bf2aea48db5ea4b84cdb4b21b76393d253c3d8c149d29da6f625de0a226f94827e388c80fdde0e903dedf6c2
+Homepage: https://github.com/rpm-software-management/popt
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+

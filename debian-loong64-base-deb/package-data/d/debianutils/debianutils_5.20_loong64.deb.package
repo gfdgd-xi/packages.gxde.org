@@ -1,0 +1,26 @@
+Package: debianutils
+Architecture: loong64
+Version: 5.20
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Ileana Dumitrescu <ileanadumitrescu95@gmail.com>
+Installed-Size: 241
+Pre-Depends: libc6 (>= 2.38)
+Breaks: ifupdown (<< 0.8.36+nmu1), printer-driver-pnm2ppa (<< 1.13-12), x11-common (<< 1:7.7+23~)
+Filename: ./d/debianutils/debianutils_5.20_loong64.deb
+Size: 89232
+MD5sum: 3e9f3550a65fe017d2a3c793e23d0e15
+SHA1: 82c63a0280eff862dfcfe88980a97dd5d16abf45
+SHA256: e939085e7ea4c41be06132262b5585f9e275852ab6498ed9959210b714d800a7
+SHA512: 34e75d92a2ece011b8020e5c33393ec05ecdc689c65275e23a927a694ac91131bf15b783a08520c18133d0a13b6e9daf3e748818e74bc38c6225aea3c70677e5
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are:
+ add-shell installkernel ischroot remove-shell run-parts savelog
+ update-shells which
+

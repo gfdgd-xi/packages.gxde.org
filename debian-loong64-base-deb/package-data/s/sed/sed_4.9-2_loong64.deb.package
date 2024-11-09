@@ -1,0 +1,23 @@
+Package: sed
+Architecture: loong64
+Version: 4.9-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Clint Adams <clint@debian.org>
+Installed-Size: 995
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.37), libselinux1 (>= 3.1~)
+Filename: ./s/sed/sed_4.9-2_loong64.deb
+Size: 326264
+MD5sum: 856be8cc14541680ffa1c82610db809b
+SHA1: f6db439c4d345c8febf365c77edeb64999e850e1
+SHA256: 12cf1d9cf2508c46f2a4ae5faa165edcadbe5f88fdb3b415594ec7bd46824801
+SHA512: 72fa1f8d2af4d9f219c26e0a10ed2ed9ce4bd149414788f387fc752ad307892d85da77c549fbf48095db6642575d4fee719d4d44f749ffc8ce54551e244180b9
+Homepage: https://www.gnu.org/software/sed/
+Description: GNU stream editor for filtering/transforming text
+ sed reads the specified files or the standard input if no
+ files are specified, makes editing changes according to a
+ list of commands, and writes the results to the standard
+ output.
+

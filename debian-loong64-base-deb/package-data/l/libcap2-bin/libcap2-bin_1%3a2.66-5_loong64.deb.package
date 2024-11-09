@@ -1,0 +1,27 @@
+Package: libcap2-bin
+Architecture: loong64
+Version: 1:2.66-5
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: libcap2
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 144
+Depends: libc6 (>= 2.37), libcap2 (>= 1:2.63)
+Recommends: libpam-cap
+Breaks: libcap-bin
+Replaces: libcap-bin
+Filename: ./l/libcap2-bin/libcap2-bin_1%3a2.66-5_loong64.deb
+Size: 34568
+MD5sum: 93e24a480809bfb5cd9f98727f2bbfaa
+SHA1: 5ece1d17185a61840e0c3a5d79dde5ebfb57cf06
+SHA256: 1fbe4bd47579c2f81531411610ab616ab8fb009b710390a7d7811af0bd9a45b0
+SHA512: cfe122265648d2bd0a5327d301ab0c233544f4693ba05a9a11528b4c6af7dee2bd6e81ee20bfcedc5806bc283d15f0e1475481cd26de98c5742a73dea4617c28
+Homepage: https://sites.google.com/site/fullycapable/
+Description: POSIX 1003.1e capabilities (utilities)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains additional utilities.
+

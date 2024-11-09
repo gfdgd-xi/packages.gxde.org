@@ -1,0 +1,25 @@
+Package: passwd
+Architecture: loong64
+Version: 1:4.16.0-4
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: shadow
+Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+Installed-Size: 4722
+Depends: base-passwd (>= 3.6.4), libpam-modules, login.defs, libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.44), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.11.0), libc6 (>= 2.39), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsemanage2 (>= 2.0.32)
+Recommends: sensible-utils
+Replaces: login (<< 1:4.16.0-2~)
+Filename: ./p/passwd/passwd_1%3a4.16.0-4_loong64.deb
+Size: 1213012
+MD5sum: 9fe3f3c4ec69287c82abc2c978660d83
+SHA1: cae3e0f21473dd386c7183fb4c09b36714ea8963
+SHA256: c6666a384935d6e0c0fe0898ec1460b79206003624fab7dbfec4e6f96edcf105
+SHA512: 3703f05ec0d860e10f9c6efc409d7345751a1739ffd584ae533f409b52ca1a76bc7e6e978f8e9d7cdab44ec95ae9522e690b0766b7a10622799ddd65377ebbd3
+Homepage: https://github.com/shadow-maint/shadow
+Description: change and administer password and group data
+ This package includes passwd, chsh, chfn, and many other programs to
+ maintain password and group data.
+ .
+ Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
+

@@ -1,0 +1,27 @@
+Package: libunistring5
+Architecture: loong64
+Version: 1.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libunistring
+Maintainer: Jörg Frings-Fürst <debian@jff.email>
+Installed-Size: 1779
+Depends: libc6 (>= 2.37)
+Filename: ./l/libunistring5/libunistring5_1.2-1_loong64.deb
+Size: 419980
+MD5sum: 5337aded44c815a7cc51c37842b1e178
+SHA1: c9517106c15e9bdf20fd29bcf11885ad1ad44e24
+SHA256: 2023edf58fdb22e9796f50f70b9510d1285403ffc58e069c3df9277c42a48d3b
+SHA512: 7b76a5cb44dc9d416fad6b6def67f502798bb58f48006738c04c185ce0270b7a569f736f8b50d5f708e8f162d79546bc9f2cec7bc7a9b2d55cf0ebf6d539a5a8
+Homepage: https://www.gnu.org/software/libunistring/
+Description: Unicode string library for C
+ The 'libunistring' library implements Unicode strings (in the UTF-8,
+ UTF-16, and UTF-32 encodings), together with functions for Unicode
+ characters (character names, classifications, properties) and
+ functions for string processing (formatted output, width, word
+ breaks, line breaks, normalization, case folding, regular
+ expressions).
+ .
+ This package contains the shared library.
+

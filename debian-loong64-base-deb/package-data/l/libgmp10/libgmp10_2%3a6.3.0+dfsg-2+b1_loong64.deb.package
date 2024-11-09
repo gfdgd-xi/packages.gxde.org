@@ -1,0 +1,26 @@
+Package: libgmp10
+Architecture: loong64
+Version: 2:6.3.0+dfsg-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gmp (2:6.3.0+dfsg-2)
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 879
+Depends: libc6 (>= 2.38)
+Breaks: postgresql-pgmp (<< 1.0.3-1)
+Filename: ./l/libgmp10/libgmp10_2%3a6.3.0+dfsg-2+b1_loong64.deb
+Size: 554540
+MD5sum: f874937da3de20c1319ed84284baf677
+SHA1: 89f4522969973abb840049e655b43720e2f88ce8
+SHA256: 919394c6c8b5309553f7228881dd337c7d208b6394ec7b4a14db7a99a2b2cf5d
+SHA512: 654f5d668b80c64f5fac373f50d5979d0bc7926acf25097f39d508085d76738feb7167333b19ec041c712aaa7d375ac46e57b7b42ebbca0d0b8df7486c7c43ff
+Homepage: https://gmplib.org/
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+

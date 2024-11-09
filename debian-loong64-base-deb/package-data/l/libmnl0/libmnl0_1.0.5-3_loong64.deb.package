@@ -1,0 +1,45 @@
+Package: libmnl0
+Architecture: loong64
+Version: 1.0.5-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libmnl
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 53
+Depends: libc6 (>= 2.40)
+Filename: ./l/libmnl0/libmnl0_1.0.5-3_loong64.deb
+Size: 12008
+MD5sum: 64ede1218fe9bb38f4719a6322c4253e
+SHA1: 981d263cac87d51e9b674e2c6922e49c988c1233
+SHA256: 61f044e246e0d86441cfbef5e100806ad9b17d2b3600994fcc9afaeb2812e06b
+SHA512: 7d30269643a8b4eb1c8d226c08a81ce538ba3ca3d1ccdc3694377a0bad768188211959984b56dc0caf340eea9257f75a252ef37114da4404ed9f4ad245ba83e5
+Homepage: https://netfilter.org/projects/libmnl/
+Description: minimalistic Netlink communication library
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+ .
+ This package contains the shared libraries needed to run programs that use
+ the minimalistic Netlink communication library.
+

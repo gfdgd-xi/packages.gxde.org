@@ -1,0 +1,30 @@
+Package: perl-base
+Architecture: loong64
+Version: 5.40.0-6
+Priority: required
+Essential: yes
+Section: perl
+Source: perl
+Maintainer: Niko Tyni <ntyni@debian.org>
+Installed-Size: 8037
+Provides: libfile-path-perl (= 2.18), libfile-temp-perl (= 0.2311), libio-socket-ip-perl (= 0.42), libscalar-list-utils-perl (= 1:1.63), libsocket-perl (= 2.038), libxsloader-perl (= 0.32), perlapi-5.40.0
+Pre-Depends: libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), dpkg (>= 1.17.17)
+Suggests: perl, sensible-utils
+Conflicts: defoma (<< 0.11.12), doc-base (<< 0.10.3), mono-gac (<< 2.10.8.1-3), safe-rm (<< 0.8), update-inetd (<< 4.41)
+Breaks: amanda-common (<< 1:3.3.9-2), backuppc (<< 4.4.0-7~), bucardo (<< 5.5.0-1.1), debconf (<< 1.5.61), dh-haskell (<< 0.3), duck (<< 0.14.1), intltool (<< 0.51.0-4), kio-perldoc (<< 20.04.1-1), latexml (<< 0.8.4-2), libdevel-mat-dumper-perl (<< 0.42-3), libencode-arabic-perl (<< 14.2-2), libexception-class-perl (<< 1.42), libfile-path-perl (<< 2.18), libfile-spec-perl (<< 3.9000), libfile-temp-perl (<< 0.2311), libgnupg-interface-perl (<< 1.02-4), libio-socket-ip-perl (<< 0.42), liblexical-failure-perl (<< 0.001000), libmp3-tag-perl (<< 1.13-1.2), libnumber-format-perl (<< 1.76), libsbuild-perl (<< 0.67.0-1), libscalar-list-utils-perl (<< 1:1.63), libsocket-perl (<< 2.038), libur-perl (<< 0.470+ds-3), libxsloader-perl (<< 0.32), mailagent (<< 1:3.1-81-2), perl (<< 5.40.0~), perl-modules (<< 5.40.0~), pod2pdf (<< 0.42-5.1), slic3r (<< 1.2.9+dfsg-6.1), slic3r-prusa (<< 1.37.0+dfsg-1.1), texinfo (<< 6.1.0.dfsg.1-8)
+Replaces: libfile-path-perl (<< 2.18), libfile-temp-perl (<< 0.2311), libio-socket-ip-perl (<< 0.42), libscalar-list-utils-perl (<< 1:1.63), libsocket-perl (<< 2.038), libxsloader-perl (<< 0.32), perl (<< 5.10.1-12), perl-modules (<< 5.20.1-3)
+Filename: ./p/perl-base/perl-base_5.40.0-6_loong64.deb
+Size: 1644536
+MD5sum: ab72517bcb1f959db373e6f07e807347
+SHA1: 7bede18830cc4e0e0536fcc93d55e0105b40f7cb
+SHA256: 85ec2d15a3ea75c99371fa41592f2e49def7038b8f3722df18cc60a63c6dd54d
+SHA512: 3a22900a6eaa7ad5928af9606ddb538cf45cdae86f847d4830bb43b4755720ee431b445bbdb2685ff4ec6b4171b8655299fbeee757a4d6f62e2cdf34b40014d1
+Homepage: http://dev.perl.org/perl5/
+Description: minimal Perl system
+ Perl is a scripting language used in many system scripts and utilities.
+ .
+ This package provides a Perl interpreter and the small subset of the
+ standard run-time library required to perform basic tasks. For a full
+ Perl installation, install "perl" (and its dependencies, "perl-modules-5.40"
+ and "perl-doc").
+

@@ -1,0 +1,26 @@
+Package: vim-common
+Architecture: all
+Version: 2:9.1.0777-1
+Multi-Arch: foreign
+Priority: important
+Section: editors
+Source: vim
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 1858
+Recommends: xxd, vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
+Breaks: vim-runtime (<< 2:9.0.1658-1~)
+Replaces: vim-runtime (<< 2:9.0.1658-1~)
+Filename: ./v/vim-common/vim-common_2%3a9.1.0777-1_all.deb
+Size: 417980
+MD5sum: c7f3b57598f949403a31b9a47c405fdf
+SHA1: 206f974d8a105dbcf9a7bf67483c4acd1abe7128
+SHA256: 89283a42f1a5acebdfe6a3db62ff9d04c2df1198243d235c8dd5fc95df868714
+SHA512: 133b433946bcb1825efe02b8ab019d913b411df00cfbc14d9eb1013ea674215445eb7626e71327f33cfc41fb41daf6028bfcc79c4a49b73b1fb6b5e5d84f882a
+Homepage: https://www.vim.org/
+Description: Vi IMproved - Common files
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains files shared by all non GUI-enabled vim variants
+ available in Debian.  Examples of such shared files are: manpages and
+ configuration files.
+

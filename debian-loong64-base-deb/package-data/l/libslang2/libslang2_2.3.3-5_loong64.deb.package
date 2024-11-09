@@ -1,0 +1,27 @@
+Package: libslang2
+Architecture: loong64
+Version: 2.3.3-5
+Built-Using: unicode-data (= 15.1.0-1)
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: slang2
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 2704
+Depends: libc6 (>= 2.38)
+Filename: ./l/libslang2/libslang2_2.3.3-5_loong64.deb
+Size: 530332
+MD5sum: db65cc584b4837c0965be7b22904ad87
+SHA1: 028e25906969d696a24cd5b501fd31a11b7bd76b
+SHA256: 3ff8a1e6868433d545e13a2c05f6f3ec11ef4fd4354a1707067014c9c7a3152d
+SHA512: 70d1b599eee977112dd63da23758df41e9bec4e7b6ac14b2e0a3fb020b02ab64780ece02235b1cd92421b5087c304bc63ad02b66257f8dc582850e5bf7b909cf
+Homepage: http://www.jedsoft.org/slang/
+Description: S-Lang programming library - runtime version
+ S-Lang is a C programmer's library that includes routines for the rapid
+ development of sophisticated, user friendly, multi-platform applications.
+ .
+ This package contains only the shared library libslang.so.* and copyright
+ information. It is only necessary for programs that use this library (such
+ as jed and slrn). If you plan on doing development with S-Lang, you will
+ need the companion -dev package as well.
+

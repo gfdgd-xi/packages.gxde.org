@@ -1,0 +1,21 @@
+Package: libattr1
+Architecture: loong64
+Version: 1:2.5.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: attr
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.40)
+Filename: ./l/libattr1/libattr1_1%3a2.5.2-2_loong64.deb
+Size: 22688
+MD5sum: dc2a5fc4f161b97294d53b5c5e8f77f8
+SHA1: c68fcee18f03ea197080f8b33cbb9570f65faa30
+SHA256: 0c66f046fb38c7d87140e28f163cf564be1b4824514cab81e786cad3dd507493
+SHA512: 9fda70df131e9dc469e7985d9c7fc694b826b155275ff7d65452b694fd395e3e4f6d5d5989729d419aee2dfa6bf7e528648d657f84f986dbf67edcefc6f8da2c
+Homepage: https://savannah.nongnu.org/projects/attr/
+Description: extended attribute handling - shared library
+ Contains the runtime environment required by programs that make use
+ of extended attributes.
+

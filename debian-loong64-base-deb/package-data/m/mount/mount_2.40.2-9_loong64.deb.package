@@ -1,0 +1,22 @@
+Package: mount
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 525
+Pre-Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libmount1 (= 2.40.2-9), libselinux1 (>= 3.1~), libsmartcols1 (= 2.40.2-9)
+Suggests: nfs-common
+Filename: ./m/mount/mount_2.40.2-9_loong64.deb
+Size: 158948
+MD5sum: ec63e0b43d6cde8e81998b9bc743e9d8
+SHA1: 86027c11b5103a3b1db4835510eb229c2b86f2b6
+SHA256: 97c39b3ea9597dd6a827586d725fff971d526048e06899d8a32bf65e2b6b375b
+SHA512: ab51fcbe58bb6c073030ecd4a616f559b6a5028a415a8f06bf2cab10e7a4a993926352581abf80c3018caf1b4144e12388869a8806cea54f6a82bcf54cd41fc8
+Homepage: https://github.com/util-linux/util-linux
+Description: tools for mounting and manipulating filesystems
+ This package provides the mount(8), umount(8), swapon(8),
+ swapoff(8), and losetup(8) commands.
+

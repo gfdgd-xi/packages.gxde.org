@@ -1,0 +1,24 @@
+Package: bsdutils
+Architecture: loong64
+Version: 1:2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Source: util-linux (2.40.2-9)
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 472
+Pre-Depends: libc6 (>= 2.40), libsystemd0 (>= 254)
+Recommends: bsdextrautils
+Filename: ./b/bsdutils/bsdutils_1%3a2.40.2-9_loong64.deb
+Size: 107288
+MD5sum: e25e3a86b66358b21f3a01d68d8885de
+SHA1: ed51dca02cc1676e673f78795a232cde984de99b
+SHA256: 0e51302446ecbe38d6e15c4def27a8eca776db62e4793dfb6bf6a0b3faad32ba
+SHA512: 7da5e3d96dbe4a92a392e2d974f0267ff68929cd828b8f4dbb1abd82acad727b71e349732f2545e5d52ba133a2afd2a140108b995c369fb52343ba75e021733c
+Homepage: https://github.com/util-linux/util-linux
+Description: basic utilities from 4.4BSD-Lite
+ This package contains the bare minimum of BSD utilities needed for a Debian
+ system: logger, renice, script, scriptlive, scriptreplay and wall. The
+ remaining standard BSD utilities are provided by bsdextrautils.
+

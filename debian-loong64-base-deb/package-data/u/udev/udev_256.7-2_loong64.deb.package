@@ -1,0 +1,24 @@
+Package: udev
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 11433
+Depends: libacl1 (>= 2.2.23), libblkid1 (>= 2.37.2), libc6 (>= 2.40), libcap2 (>= 1:2.10), libselinux1 (>= 3.1~), systemd | systemd-standalone-sysusers | systemd-sysusers | opensysusers, libkmod2, libudev1 (= 256.7-2)
+Suggests: libcryptsetup12, libidn2-0, libtss2-rc0t64
+Conflicts: systemd (<< 255~rc1-4~)
+Replaces: systemd (<< 255~rc1-4~)
+Filename: ./u/udev/udev_256.7-2_loong64.deb
+Size: 1857372
+MD5sum: 1855f8b8f85008d5d057fd3883a91dec
+SHA1: 8bd14c55be13a42ed5d375141048fc3d78729a29
+SHA256: 28b14fdd15d7118227466e12b6c14b53f591dbe734920bdf8daf994c5dd33ac5
+SHA512: 4730c778416b535b2326a7093302f941ce4e3eeeb06ead679f5198f2d84fa7d67ec4484f704a2e75a78e107a87453635d49cfca641c3bcc41918b12d6ab066ca
+Homepage: https://systemd.io
+Description: /dev/ and hotplug management daemon
+ udev is a daemon which dynamically creates and removes device nodes from
+ /dev/, handles hotplug events and loads drivers at boot time.
+

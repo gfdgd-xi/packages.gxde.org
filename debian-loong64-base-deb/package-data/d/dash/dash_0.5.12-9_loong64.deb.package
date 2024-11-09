@@ -1,0 +1,26 @@
+Package: dash
+Architecture: loong64
+Version: 0.5.12-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 199
+Pre-Depends: libc6 (>= 2.38)
+Depends: debianutils (>= 5.6-0.1)
+Filename: ./d/dash/dash_0.5.12-9_loong64.deb
+Size: 90168
+MD5sum: f5b9c279758619e25a96077e38b6ad73
+SHA1: 83872dcb500e21ed4c441a4fbb77c358910700fb
+SHA256: 7cbffc3b6fac748bf928b618d74a8b0aa983f3e8840ce0184e0f776103321427
+SHA512: 9da87d4074308ec1cf3955acf10eedeb51835fcc1ef91dbd3006e47d25027b43c88052415097ad2dc5b6d172ed90e7705856332a070998dcd2e7626831d2d2e4
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+

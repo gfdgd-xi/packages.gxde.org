@@ -1,0 +1,29 @@
+Package: e2fsprogs
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: foreign
+Priority: required
+Important: yes
+Section: admin
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 1571
+Pre-Depends: libblkid1 (>= 2.36), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libext2fs2t64 (= 1.47.1-1), libss2 (>= 1.38), libuuid1 (>= 2.16)
+Depends: logsave
+Recommends: e2fsprogs-l10n
+Suggests: gpart, parted, fuse2fs, e2fsck-static
+Filename: ./e/e2fsprogs/e2fsprogs_1.47.1-1_loong64.deb
+Size: 564920
+MD5sum: f531ab167472565e08813f4cb17d4df9
+SHA1: c90170cfdbc2144cb7cf697715ca6eeedc5170db
+SHA256: 75dfbcab76ccb8d86e77fd3e025de75b196179fd42ebcf2343e80565ebfd9e0f
+SHA512: f0e54de91f66f8e31a9641b022d96f8b8fb37ee2ca603741f8a8813d02d057ca20211e5caf30f2c01caa6dedb22611947231e3a925c64defba96c8e447aad875
+Homepage: http://e2fsprogs.sourceforge.net
+Description: ext2/ext3/ext4 file system utilities
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package contains programs for creating, checking, and maintaining
+ ext2/3/4-based file systems.  It also includes the "badblocks" program,
+ which can be used to scan for bad blocks on a disk or other storage device.
+

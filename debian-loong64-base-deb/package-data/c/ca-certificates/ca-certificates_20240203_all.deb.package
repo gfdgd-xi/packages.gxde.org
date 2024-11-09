@@ -1,0 +1,27 @@
+Package: ca-certificates
+Architecture: all
+Version: 20240203
+Multi-Arch: foreign
+Priority: standard
+Section: misc
+Maintainer: Julien Cristau <jcristau@debian.org>
+Installed-Size: 386
+Depends: openssl (>= 1.1.1), debconf (>= 0.5) | debconf-2.0
+Breaks: ca-certificates-java (<< 20121112+nmu1)
+Enhances: openssl
+Filename: ./c/ca-certificates/ca-certificates_20240203_all.deb
+Size: 158052
+MD5sum: fd662659da07100af860d720ca35df27
+SHA1: 2ab07ed2d73befec89c4fe18cef4bf1d384b7a2f
+SHA256: 10ab75a10d3d515f4d1903ba807403dad5598ac3445a3251b06026fbec0e85af
+SHA512: aab89f0edae24ffbbd2ba30e676f0bb59f27eeafde937bfa4b279e06270e8a5081e3ffb7d45f38c98f210dcd193f2d00b86a564e80dfd9ffaff4de5c68cb7069
+Description: Common CA certificates
+ Contains the certificate authorities shipped with Mozilla's browser to allow
+ SSL-based applications to check for the authenticity of SSL connections.
+ .
+ Please note that Debian can neither confirm nor deny whether the
+ certificate authorities whose certificates are included in this package
+ have in any way been audited for trustworthiness or RFC 3647 compliance.
+ Full responsibility to assess them belongs to the local system
+ administrator.
+

@@ -1,0 +1,26 @@
+Package: tzdata
+Architecture: all
+Version: 2024b-3
+Multi-Arch: foreign
+Priority: required
+Section: localization
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 1347
+Provides: tzdata-trixie
+Depends: debconf (>= 0.5) | debconf-2.0
+Breaks: tzdata-legacy (= 2023c-8), tzdata-legacy (= 2023c-9)
+Replaces: tzdata-legacy (= 2023c-8), tzdata-legacy (= 2023c-9)
+Filename: ./t/tzdata/tzdata_2024b-3_all.deb
+Size: 255460
+MD5sum: e884fce362dc44b1bc514fdd499da957
+SHA1: dc5742b1aca9405d0ef2f4381aed4eb815709f68
+SHA256: 316f6811e3a26869e30d391dff837ce49d44ffdb2d32e1c1aef09d1d40e6d15b
+SHA512: 35c43e235dc37308eb4fefe8b5d490cb6c4ece06f800587ac17229edcb6993cd5347ee9ebc63e8dba7a651ab818e23cae8f59b80070daa0a21218a97affa662c
+Homepage: https://www.iana.org/time-zones
+Description: time zone and daylight-saving time data
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+

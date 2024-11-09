@@ -1,0 +1,18 @@
+Package: debian-archive-keyring
+Architecture: all
+Version: 2023.4
+Multi-Arch: foreign
+Priority: important
+Section: misc
+Maintainer: Debian Release Team <packages@release.debian.org>
+Installed-Size: 272
+Filename: ./d/debian-archive-keyring/debian-archive-keyring_2023.4_all.deb
+Size: 160732
+MD5sum: f517b8cfb4b8ef23789d7ac947065dcb
+SHA1: ecd043fd13610be5a043c09e64a6bfc408f37d5d
+SHA256: 6e93a87b9e50bd81518880ec07a62f95d7d8452f4aa703f5b0a3076439f1022c
+SHA512: 43360871728355eab0d5bbb5eee7fbb0adfdde97eb828972b0eebbb3f3b23369ac5825b232e444f0a212e00e47863dcd9d260db4f04394c9e1b7dfd282e44904
+Description: GnuPG archive keys of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive keys used for that.
+

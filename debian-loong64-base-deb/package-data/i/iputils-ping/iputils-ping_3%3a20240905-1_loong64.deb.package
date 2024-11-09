@@ -1,0 +1,26 @@
+Package: iputils-ping
+Architecture: loong64
+Version: 3:20240905-1
+Multi-Arch: foreign
+Priority: important
+Section: net
+Source: iputils
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Installed-Size: 194
+Provides: ping
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10), libidn2-0 (>= 0.6)
+Recommends: linux-sysctl-defaults
+Filename: ./i/iputils-ping/iputils-ping_3%3a20240905-1_loong64.deb
+Size: 50524
+MD5sum: a3313f99ca890bd1a302bea227b76102
+SHA1: 1ba96df1c127d1561c715fd70a4e0f1cc9579955
+SHA256: ae9f900e104769d631c544959431292bc850b940db3459d6f73e42dbd5aaf088
+SHA512: 48f9380205436a194edbf8efaa76d78b7b9960f168874c8d22d4e84c8362e8d3bb445996dba150e987784ceff29df77f377e7cd6b5a071845cf4e77154b553c1
+Homepage: https://github.com/iputils/iputils/
+Description: Tools to test the reachability of network hosts
+ The ping command sends ICMP ECHO_REQUEST packets to a host in order to
+ test if the host is reachable via the network.
+ .
+ This package includes a ping6 utility which supports IPv6 network
+ connections.
+

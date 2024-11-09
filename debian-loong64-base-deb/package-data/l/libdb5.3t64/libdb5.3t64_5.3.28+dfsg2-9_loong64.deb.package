@@ -1,0 +1,24 @@
+Package: libdb5.3t64
+Architecture: loong64
+Version: 5.3.28+dfsg2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: db5.3
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 1967
+Provides: libdb5.3 (= 5.3.28+dfsg2-9)
+Depends: libc6 (>= 2.40)
+Breaks: libdb5.3 (<< 5.3.28+dfsg2-9)
+Replaces: libdb5.3
+Filename: ./l/libdb5.3t64/libdb5.3t64_5.3.28+dfsg2-9_loong64.deb
+Size: 701928
+MD5sum: b6b4aee04e840df4cac6f1e079de7b1e
+SHA1: e1f886dbef6b8d9be3cf5930c074d8b35f38f610
+SHA256: 3eaea96ef0fbe275e90322481238e329f42aeafd17675783638a3d1151f8d059
+SHA512: de3806480e7d51274f5865394fe2a33057a2c06f994a688e4eae3ea80d7c07e531ffe3bb3daf224c607d70e6d3f295893cfb130494aeda1bc34274eba4d795eb
+Homepage: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
+Description: Berkeley v5.3 Database Libraries [runtime]
+ This is the runtime package for programs that use the v5.3 Berkeley
+ database library.
+

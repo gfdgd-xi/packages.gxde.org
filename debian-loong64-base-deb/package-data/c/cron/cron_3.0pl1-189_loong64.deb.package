@@ -1,0 +1,36 @@
+Package: cron
+Architecture: loong64
+Version: 3.0pl1-189
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Georges Khaznadar <georgesk@debian.org>
+Installed-Size: 257
+Provides: cron-daemon
+Pre-Depends: init-system-helpers (>= 1.54~), cron-daemon-common
+Depends: libc6 (>= 2.37), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), sensible-utils, libpam-runtime
+Recommends: default-mta | mail-transport-agent
+Suggests: anacron, logrotate, checksecurity, supercat, bat
+Conflicts: bcron, cronie, systemd-cron
+Replaces: bcron, cronie, systemd-cron
+Filename: ./c/cron/cron_3.0pl1-189_loong64.deb
+Size: 85700
+MD5sum: 5957da305483292459295d3b46974fe3
+SHA1: 44c30947a6116f4870c74e4ca4251ea7e983cf12
+SHA256: e9a2fb4f50ed74a7526dab28a896130cc76dac15984c1f49c201d3dcac55d1d0
+SHA512: 7f6fc22c14cf1dec244d4cdb41465adca236783682a0f7de601a37ea4a571420413c7e1fc219fee8e8de4432aba7842d8f0ce8696a2f5e43fbc15f2fb5b7dce9
+Homepage: https://ftp.isc.org/isc/cron/
+Description: process scheduling daemon
+ The cron daemon is a background process that runs particular programs at
+ particular times (for example, every minute, day, week, or month), as
+ specified in a crontab. By default, users may also create crontabs of
+ their own so that processes are run on their behalf.
+ .
+ Output from the commands is usually mailed to the system administrator
+ (or to the user in question); you should probably install a mail system
+ as well so that you can receive these messages.
+ .
+ This cron package does not provide any system maintenance tasks. Basic
+ periodic maintenance tasks are provided by other packages, such
+ as checksecurity.
+

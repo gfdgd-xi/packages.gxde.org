@@ -1,0 +1,37 @@
+Package: libapt-pkg6.0t64
+Architecture: loong64
+Version: 2.9.9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: apt
+Maintainer: APT Development Team <deity@lists.debian.org>
+Installed-Size: 3541
+Provides: libapt-pkg (= 2.9.9), libapt-pkg6.0 (= 2.9.9)
+Depends: libbz2-1.0, libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.11.0), liblz4-1 (>= 0.0~r127), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 14), libsystemd0 (>= 221), libudev1 (>= 183), libxxhash0 (>= 0.7.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2.3)
+Recommends: apt (>= 2.9.9)
+Conflicts: libnettle8 (<< 3.9.1-2.2~)
+Breaks: appstream (<< 0.9.0-3~), apt (<< 1.6~), aptitude (<< 0.8.9), dpkg (<< 1.20.8), libapt-inst1.5 (<< 0.9.9~), libapt-pkg6.0 (<< 2.9.9)
+Replaces: libapt-pkg6.0
+Filename: ./l/libapt-pkg6.0t64/libapt-pkg6.0t64_2.9.9_loong64.deb
+Size: 960176
+MD5sum: 185bcfddbbcb972b7aaab89fdcd063bd
+SHA1: ee23ba10fcceeda79dcfaa176cf3b702b3ccfc3e
+SHA256: 58ad02055c8f46a7e65377520141be185088daf4eee1539f6dc3c08a26187f2a
+SHA512: 3fe90f14b9df8a89dd19609f1c988e92aab1d674be54f068146fe0bd742911ec5cc828ec3966ba29b07b2242541812b63b6bd81dd8344303dff17804812f74b5
+Description: package management runtime library
+ This library provides the common functionality for searching and
+ managing packages as well as information about packages.
+ Higher-level package managers can depend upon this library.
+ .
+ This includes:
+  * retrieval of information about packages from multiple sources
+  * retrieval of packages and all dependent packages
+    needed to satisfy a request either through an internal
+    solver or by interfacing with an external one
+  * authenticating the sources and validating the retrieved data
+  * installation and removal of packages in the system
+  * providing different transports to retrieve data over cdrom, ftp,
+    http(s), rsh as well as an interface to add more transports like
+    tor+http(s) (apt-transport-tor).
+

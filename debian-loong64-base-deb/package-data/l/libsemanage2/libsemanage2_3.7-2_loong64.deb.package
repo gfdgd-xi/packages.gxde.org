@@ -1,0 +1,36 @@
+Package: libsemanage2
+Architecture: loong64
+Version: 3.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libsemanage
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 307
+Depends: libsemanage-common (>= 3.7-2), libaudit1 (>= 1:2.2.1), libbz2-1.0, libc6 (>= 2.40), libselinux1 (>= 3.7), libsepol2 (>= 3.7)
+Filename: ./l/libsemanage2/libsemanage2_3.7-2_loong64.deb
+Size: 89084
+MD5sum: c3fe326772ded2bae4ac328ce9eb7f53
+SHA1: 41ebfe52970981f9fe79611e67ba300cbfc340d9
+SHA256: 433665bc704b2ff6acf7ee96a84c8d5960cd484d7f5ef25645908379405edd01
+SHA512: a639b044c95ca60bd048e336dabb864aab321d0e72615a131a5edc0dff70a6b94a8a998915649d76cd3a434f59620987be21ab96137d5dced32c882bf73adee6
+Homepage: https://selinuxproject.org
+Description: SELinux policy management library
+ This package provides the shared libraries for SELinux policy management.
+ It uses libsepol for binary policy manipulation and libselinux for
+ interacting with the SELinux system.  It also exec's helper programs
+ for loading policy and for checking whether the file_contexts
+ configuration is valid (load_policy and setfiles from
+ policycoreutils) presently, although this may change at least for the
+ bootstrapping case
+ .
+ Security-enhanced Linux is a patch of the Linux kernel and a
+ number of utilities with enhanced security functionality designed to
+ add mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement, Role-based Access
+ Control, and Multi-level Security.
+

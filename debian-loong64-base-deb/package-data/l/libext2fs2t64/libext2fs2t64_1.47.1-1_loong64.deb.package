@@ -1,0 +1,30 @@
+Package: libext2fs2t64
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 581
+Provides: e2fslibs (= 1.47.1-1), libext2fs2 (= 1.47.1-1)
+Depends: libc6 (>= 2.38)
+Breaks: e2fslibs (<< 1.43.9-1~), libext2fs2 (<< 1.47.1-1)
+Replaces: e2fslibs (<< 1.43.9-1~), libext2fs2
+Filename: ./l/libext2fs2t64/libext2fs2t64_1.47.1-1_loong64.deb
+Size: 204228
+MD5sum: 3eb322cfcbfd1551c0b3c955de0ad7dc
+SHA1: e4c1c136dd02f68087e53c97260ddebcd9afe10b
+SHA256: 1323a9c07807aba4a016727b97aee9017b00b45e4b964579d12537873bf9a03a
+SHA512: 1d68d609e4294932973b43dcd33af473bf3caddf0657ea58c60eb9a151f120f85f62f08a907e2ce2e8079adc68389cf8c2d9bf4e9ca7ad7b6d65c8951cfcf9ae
+Homepage: http://e2fsprogs.sourceforge.net
+Description: ext2/ext3/ext4 file system libraries
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package provides the ext2fs and e2p libraries, for userspace software
+ that directly accesses extended file systems. Programs that use libext2fs
+ include e2fsck, mke2fs, and tune2fs. Programs that use libe2p include
+ dumpe2fs, chattr, and lsattr.
+

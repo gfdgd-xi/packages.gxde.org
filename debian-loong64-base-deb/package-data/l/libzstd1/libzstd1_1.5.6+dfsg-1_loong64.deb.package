@@ -1,0 +1,23 @@
+Package: libzstd1
+Architecture: loong64
+Version: 1.5.6+dfsg-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libzstd
+Maintainer: RPM packaging team <team+pkg-rpm@tracker.debian.org>
+Installed-Size: 731
+Depends: libc6 (>= 2.38)
+Filename: ./l/libzstd1/libzstd1_1.5.6+dfsg-1_loong64.deb
+Size: 272032
+MD5sum: 206c82b245ed08a3ce6f7be5145a6445
+SHA1: 03f73414e5d3a3adf24a5aef8b9eae41cb2df90a
+SHA256: 9926e346b94d0a3b1005ea21836d2acd3360067b7f21d5052c7af29d6a9349f5
+SHA512: d11997a7faf571c7a134415fde6992ace93ddbdf5a45e251ae488b407f1a59f698aba5e32dc3fdb5b4e7a4e3a6ad207fd955f9c172adfc0abc6b97b578c69acf
+Homepage: https://github.com/facebook/zstd
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+

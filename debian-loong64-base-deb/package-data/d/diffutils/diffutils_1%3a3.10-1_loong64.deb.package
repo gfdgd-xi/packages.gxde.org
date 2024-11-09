@@ -1,0 +1,33 @@
+Package: diffutils
+Architecture: loong64
+Version: 1:3.10-1
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 1727
+Pre-Depends: libc6 (>= 2.37)
+Suggests: diffutils-doc, wdiff
+Replaces: diff
+Filename: ./d/diffutils/diffutils_1%3a3.10-1_loong64.deb
+Size: 368324
+MD5sum: 63b3950ed2fe0e7d13ef8ca92c4b1942
+SHA1: bfc0bf8800af356098d9c6199e7a1f2171d3f7cd
+SHA256: 076f7446381dbd4d055c2e67b5484b6000abd0309ae1f1c41ce2fd426870e72a
+SHA512: 8fab5641c837b029099a7400b90424770cddc7d09ee6b1cb0925bfe0d591490dea4a37a4e548db8495e1ba35841ac94eb32e7f031c882688f28a2560ee2501c2
+Homepage: https://www.gnu.org/software/diffutils/
+Description: File comparison utilities
+ The diffutils package provides the diff, diff3, sdiff, and cmp programs.
+ .
+ `diff' shows differences between two files, or each corresponding file
+ in two directories.  `cmp' shows the offsets and line numbers where
+ two files differ.  `cmp' can also show all the characters that
+ differ between the two files, side by side.  `diff3' shows differences
+ among three files.  `sdiff' merges two files interactively.
+ .
+ The set of differences produced by `diff' can be used to distribute
+ updates to text files (such as program source code) to other people.
+ This method is especially useful when the differences are small compared
+ to the complete files.  Given `diff' output, the `patch' program can
+ update, or "patch", a copy of the file.
+

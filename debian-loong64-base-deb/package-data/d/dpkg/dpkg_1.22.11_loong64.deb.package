@@ -1,0 +1,26 @@
+Package: dpkg
+Architecture: loong64
+Version: 1.22.11
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Installed-Size: 6410
+Pre-Depends: libbz2-1.0, libc6 (>= 2.39), liblzma5 (>= 5.4.0), libmd0 (>= 0.0.0), libselinux1 (>= 3.1~), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Depends: tar (>= 1.28-1)
+Suggests: apt, debsig-verify
+Breaks: libapt-pkg5.0 (<< 1.7~b), lsb-base (<< 10.2019031300)
+Filename: ./d/dpkg/dpkg_1.22.11_loong64.deb
+Size: 1516380
+MD5sum: 7cfbdbf22a939ed243cac82e024569dd
+SHA1: 582d28028f41dbc0a1ec7d7cebb02f7953bc5636
+SHA256: 75ff76a28a0e6cdf8e9353a63d5f8087dc2c85c06861d7b2e722125d81973f83
+SHA512: f201d0413ebeeea417e083085b8e86083553de51c3b44af3c89cdd8b1ffc5b4dfee940e45d36d8cb345d2dc07a76df5246d1aacf0838600bea8ab45fd46f89b5
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Description: Debian package management system
+ This package provides the low-level infrastructure for handling the
+ installation and removal of Debian software packages.
+ .
+ For Debian package development tools, install dpkg-dev.
+

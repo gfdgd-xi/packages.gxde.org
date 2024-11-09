@@ -1,0 +1,30 @@
+Package: dmidecode
+Architecture: loong64
+Version: 3.6-1
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Maintainer: Jörg Frings-Fürst <debian@jff.email>
+Installed-Size: 177
+Depends: libc6 (>= 2.38)
+Filename: ./d/dmidecode/dmidecode_3.6-1_loong64.deb
+Size: 56976
+MD5sum: 38c566546b4fc974f37d639c98dfe761
+SHA1: e5efdb343ae58a35c4428f75ec248c4f366c6671
+SHA256: 2bef79eae051b0a40583138a27e3bb2b33c6d6ebb922203928655acaa83f8d05
+SHA512: ef5831faf76b9ce6c5cdb46dc877e928c07d98eb17aa7501ec652bca7f42c957d9bb7a799701d616195a48a64d7fb36e7d901719b6678558d6fb26534f0a57e1
+Homepage: https://nongnu.org/dmidecode/
+Description: SMBIOS/DMI table decoder
+ Dmidecode reports information about the system's hardware as described in the
+ system BIOS according to the SMBIOS/DMI standard.
+ .
+ This information typically includes system manufacturer, model name, serial
+ number, BIOS version, asset tag as well as a lot of other details of varying
+ level of interest and reliability depending on the manufacturer. This will
+ often include usage status for the CPU sockets, expansion slots (e.g. AGP, PCI,
+ ISA) and memory module slots, and the list of I/O ports (e.g. serial, parallel,
+ USB).
+ .
+ Beware that DMI data have proven to be too unreliable to be blindly trusted.
+ Dmidecode does not scan the hardware, it only reports what the BIOS told it to.
+

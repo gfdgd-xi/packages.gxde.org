@@ -1,0 +1,27 @@
+Package: libjansson4
+Architecture: loong64
+Version: 2.14-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: jansson (2.14-2)
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 108
+Depends: libc6 (>= 2.36)
+Filename: ./l/libjansson4/libjansson4_2.14-2+b1_loong64.deb
+Size: 38864
+MD5sum: 21720015c0506d69c53eecccaaf7242b
+SHA1: 09583c3aac687cf6a06fb4d48968df25ae70c1c5
+SHA256: 2b26210655589613b381061537b579ff2a03f75d426c80b9450c1100258d7799
+SHA512: 34f5a1005ffe4953782e0d6918c18ec478977402dc2c474a309a49c4cea7325b841e322141c879c36b08290f3b9ecce186c841b92fb217d463e1c2c98efa919f
+Homepage: http://www.digip.org/jansson/
+Description: C library for encoding, decoding and manipulating JSON data
+ Jansson is a C library for encoding, decoding and manipulating JSON data.
+ .
+ It features:
+  * Simple and intuitive API and data model
+  * Comprehensive documentation
+  * No dependencies on other libraries
+  * Full Unicode support (UTF-8)
+  * Extensive test suite
+

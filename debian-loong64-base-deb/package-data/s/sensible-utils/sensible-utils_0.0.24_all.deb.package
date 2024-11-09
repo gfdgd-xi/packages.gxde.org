@@ -1,0 +1,22 @@
+Package: sensible-utils
+Architecture: all
+Version: 0.0.24
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 63
+Filename: ./s/sensible-utils/sensible-utils_0.0.24_all.deb
+Size: 24840
+MD5sum: 6d73b3457e467b5e40b973c880bef1c8
+SHA1: a3a4525073551b03a55b148f5a118ccbb1991bf3
+SHA256: b8841f7907fd3114961285efc5b2cec55c32d434d24787ef598ca4f4736ec356
+SHA512: 167410c7508902316a7708cc16034efe9abb3277c28162ede13632ced679201c73c2ac2536a382ad793eb87e1311ebcf0b100f167cafc66e22e4f4a323a249bb
+Description: Utilities for sensible alternative selection
+ This package provides a number of small utilities which are used
+ by programs to sensibly select and spawn an appropriate browser,
+ editor, pager, or terminal emulator.
+ .
+ The specific utilities included are: sensible-browser sensible-editor
+ sensible-pager sensible-terminal
+

@@ -1,0 +1,28 @@
+Package: vim-tiny
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: important
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 1974
+Provides: editor
+Depends: vim-common (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
+Suggests: indent
+Filename: ./v/vim-tiny/vim-tiny_2%3a9.1.0777-1+b1_loong64.deb
+Size: 740704
+MD5sum: 8126b4d9be6614f38607d8d3e16e189f
+SHA1: 995dfac990d8014b0651c0fa617d754af2ab65d2
+SHA256: b00208bd12571e561826d462ec9c00ee1f1fffa3e4cef0b95a55eab2f830e2c6
+SHA512: 7755e6300328051bbfede06e8bd0bfb36316395ad5123e35872b96661e0104e02f91d66fb1a0a112bd4c2a3fd50e4bc73674e99be0826749ee845f5ab96a1e1b
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - compact version
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains a minimal version of Vim compiled with no GUI and
+ a small subset of features. This package's sole purpose is to provide
+ the vi binary for base installations.
+ .
+ If a vim binary is wanted, try one of the following more featureful
+ packages: vim, vim-nox, vim-motif, or vim-gtk3.
+

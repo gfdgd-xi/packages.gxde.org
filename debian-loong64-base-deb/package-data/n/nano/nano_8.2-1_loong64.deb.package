@@ -1,0 +1,38 @@
+Package: nano
+Architecture: loong64
+Version: 8.2-1
+Priority: important
+Section: editors
+Maintainer: Jordi Mallach <jordi@debian.org>
+Installed-Size: 2836
+Depends: libc6 (>= 2.40), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Suggests: hunspell
+Conflicts: pico
+Breaks: nano-tiny (<< 2.8.6-2)
+Replaces: nano-tiny (<< 2.8.6-2), pico
+Filename: ./n/nano/nano_8.2-1_loong64.deb
+Size: 636532
+MD5sum: eabe219f6924d38edd8ed4a22a66f54c
+SHA1: 81ee6f214cf61a100990a876899bddfedd7a02be
+SHA256: eb4c726402712f23d99e2f9f118f3879736f69a4c2c7c9d54f31373fcaa7205a
+SHA512: 963f9347654320f2d83616472c95f16da70dd3568e2b3cc3feb26a7f2791bc9cc6f92839f0f5223416a7056db375657888ae6afc34edac1db9d140efc159d672
+Homepage: https://www.nano-editor.org/
+Description: small, friendly text editor inspired by Pico
+ GNU nano is an easy-to-use text editor originally designed as a replacement
+ for Pico, the ncurses-based editor from the non-free mailer package Pine
+ (itself now available under the Apache License as Alpine).
+ .
+ However, GNU nano also implements many features missing in Pico, including:
+  - undo/redo
+  - line numbering
+  - syntax coloring
+  - soft-wrapping of overlong lines
+  - selecting text by holding Shift
+  - interactive search and replace (with regular expression support)
+  - a go-to line (and column) command
+  - support for multiple file buffers
+  - auto-indentation
+  - tab completion of filenames and search terms
+  - toggling features while running
+  - and full internationalization support
+

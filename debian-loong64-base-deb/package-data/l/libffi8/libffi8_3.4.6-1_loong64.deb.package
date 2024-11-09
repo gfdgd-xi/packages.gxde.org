@@ -1,0 +1,25 @@
+Package: libffi8
+Architecture: loong64
+Version: 3.4.6-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libffi
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 60
+Provides: libffi8ubuntu1 (= 3.4.6-1)
+Depends: libc6 (>= 2.37)
+Breaks: libffi8ubuntu1 (<< 3.4.2-1)
+Replaces: libffi8ubuntu1 (<< 3.4.2-1)
+Filename: ./l/libffi8/libffi8_3.4.6-1_loong64.deb
+Size: 20324
+MD5sum: 12e3bb98b82b80c37510e348eb73c9c4
+SHA1: cb6916cf4a8406ed471be7281dba9131ac2ada6e
+SHA256: 4607783ec7b70353d5534f86b29cc5c9ad990207f76d4d96d2099f78521841ec
+SHA512: eba4c7c65b2815acae60496fc9500acb12fa2e78f4c14ba81b3c191c18153edb020a0cd2af85d0cb4e0e877f0b12759d334a86f014ed742dc4fa4ba5d7cf16fc
+Homepage: https://sourceware.org/libffi/
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+

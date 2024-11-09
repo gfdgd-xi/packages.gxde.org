@@ -1,0 +1,32 @@
+Package: coreutils
+Architecture: loong64
+Version: 9.4-3.1
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Michael Stone <mstone@debian.org>
+Installed-Size: 18571
+Pre-Depends: libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.48), libc6 (>= 2.37), libgmp10 (>= 2:6.3.0+dfsg), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0)
+Breaks: usrmerge (<< 39)
+Filename: ./c/coreutils/coreutils_9.4-3.1_loong64.deb
+Size: 2908592
+MD5sum: c9566a92f9dcf304d99894e4d7f9a5a6
+SHA1: 3d20f9d3b475f113b2f4f47f4310a9bda7d029e3
+SHA256: 0276a0b0ddc61071f7cda2a4a374be2545bb82c759ad25f7da13e0bee8a19e99
+SHA512: c424848ad758598fd7312863fa3e0dc77cb8c428b9fadafa26536933ccb2dbc4d38437c8bf92f189e01c9c335e1b58322315ccc6273d7362f80ecd01aa762968
+Homepage: http://gnu.org/software/coreutils
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes:
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand
+ uniq unlink users vdir wc who whoami yes
+

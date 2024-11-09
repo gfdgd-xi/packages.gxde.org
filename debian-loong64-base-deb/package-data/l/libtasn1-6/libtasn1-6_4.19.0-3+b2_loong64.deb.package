@@ -1,0 +1,29 @@
+Package: libtasn1-6
+Architecture: loong64
+Version: 4.19.0-3+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libtasn1-6 (4.19.0-3)
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 118
+Depends: libc6 (>= 2.38)
+Filename: ./l/libtasn1-6/libtasn1-6_4.19.0-3+b2_loong64.deb
+Size: 47340
+MD5sum: 01973b5c3a01d76212acfe03736f35a3
+SHA1: 5ede964df931be07ce6519c72660a8acd9f093ac
+SHA256: 16a245819280ae33a1eec4b3b5dc2152154b022df9ce2e80c288983ae4c0051d
+SHA512: 29c410262be55e14368b9f5acc8bb6c09b46ce5ddbbd7c946d2c7b24ea8e4dbb46257661919028a9bc38159310b930134bf6a53da36e16138ebca723377202dd
+Homepage: https://www.gnu.org/software/libtasn1/
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+

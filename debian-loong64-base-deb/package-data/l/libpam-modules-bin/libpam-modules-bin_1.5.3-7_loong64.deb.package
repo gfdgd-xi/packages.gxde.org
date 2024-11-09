@@ -1,0 +1,22 @@
+Package: libpam-modules-bin
+Architecture: loong64
+Version: 1.5.3-7
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 241
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.37), libcrypt1 (>= 1:4.3.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsystemd0 (>= 254)
+Replaces: libpam-modules (<< 1.5.2-5~)
+Filename: ./l/libpam-modules-bin/libpam-modules-bin_1.5.3-7_loong64.deb
+Size: 53900
+MD5sum: a1b2bbbb9f119500bce3a309dfecbbcf
+SHA1: abb00394951e8e391655bfd6f640e332084757a3
+SHA256: 126541a22965eb564f20e00a433d2575f0947f2bba3eed27d2acd5d02ed4b752
+SHA512: f986983f3461c68153f2b3a73bd7ca9966dfd0391eba186d0427267bc8efd22b2a6fb6cb20661c48320a7211e0c486168533740259c14efbac511f3e482d3f4f
+Homepage: http://www.linux-pam.org/
+Description: Pluggable Authentication Modules for PAM - helper binaries
+ This package contains helper binaries used by the standard set of PAM
+ modules in the libpam-modules package.
+

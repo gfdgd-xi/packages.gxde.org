@@ -1,0 +1,26 @@
+Package: logsave
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 59
+Depends: libc6 (>= 2.38)
+Breaks: e2fsprogs (<< 1.45.3-1)
+Replaces: e2fsprogs (<< 1.45.3-1)
+Filename: ./l/logsave/logsave_1.47.1-1_loong64.deb
+Size: 22512
+MD5sum: 487bacf3b59580c58221f0aa5b7668a3
+SHA1: cf320898d228d468485d46179694e398fad21b2c
+SHA256: 4febc705c6efe35108e404b381641db4d935c8ed24aadb2eeb6cec7520c6deec
+SHA512: d12b0668c852db59d36a2d2250108d35cb7ca91cf708e47ade1f7d27ab85e13d3bd55366d5cdb99f15af716150632cb0170ce62c93bf780dd800b26aec4a842a
+Homepage: http://e2fsprogs.sourceforge.net
+Description: save the output of a command in a log file
+ The logsave program will execute cmd_prog with the specified
+ argument(s), and save a copy of its output to logfile.  If the
+ containing directory for logfile does not exist, logsave will
+ accumulate the output in memory until it can be written out.  A copy
+ of the output will also be written to standard output.
+

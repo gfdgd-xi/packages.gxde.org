@@ -1,0 +1,4017 @@
+Package: adduser
+Architecture: all
+Version: 3.137
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debian Adduser Developers <adduser@packages.debian.org>
+Installed-Size: 592
+Depends: passwd
+Suggests: liblocale-gettext-perl, perl, cron, quota
+Filename: ./a/adduser/adduser_3.137_all.deb
+Size: 139720
+MD5sum: 3b5322221d61e04efc7be6b80da76b0a
+SHA1: 292761717213ec2745b50eacb737d0986acd30a6
+SHA256: 40b77d8b5b482baee2d0c95bbb4a4b9bcf7271b79dec039ef45e541142edfc12
+SHA512: 4d90f5302749ab517ecf3dfa6dd34303f835e4cdb6a1fe9d5028cede27ba478df1abb02e3f26cfa9c377b177355bfcfaadcfa5542e379b6f675e300d07f9de86
+Description: add and remove users and groups
+ This package includes the 'adduser' and 'deluser' commands for creating
+ and removing users.
+ .
+  - 'adduser' creates new users and groups and adds existing users to
+    existing groups;
+  - 'deluser' removes users and groups and removes users from a given
+    group.
+ .
+ Adding users with 'adduser' is much easier than adding them manually.
+ 'Adduser' will choose UID and GID values that conform to Debian policy,
+ create a home directory, copy skeletal user configuration, and
+ automate setting initial values for the user's password, real name
+ and so on.
+ .
+ 'Deluser' can back up and remove users' home directories
+ and mail spool or all the files they own on the system.
+ .
+ A custom script can be executed after each of the commands.
+ .
+ 'Adduser' and 'Deluser' are intended to be used by the local
+ administrator in lieu of the tools from the 'useradd' suite, and
+ they provide support for easy use from Debian package maintainer
+ scripts, functioning as kind of a policy layer to make those scripts
+ easier and more stable to write and maintain.
+
+Package: apt
+Architecture: loong64
+Version: 2.9.9
+Priority: required
+Section: admin
+Maintainer: APT Development Team <deity@lists.debian.org>
+Installed-Size: 3946
+Provides: apt-transport-https (= 2.9.9)
+Depends: base-passwd (>= 3.6.1) | adduser, gpgv, libapt-pkg6.0t64 (>= 2.9.9), debian-archive-keyring, libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgnutls30t64 (>= 3.8.1), libstdc++6 (>= 13.1), libsystemd0
+Recommends: ca-certificates
+Suggests: apt-doc, aptitude | synaptic | wajig, dpkg-dev (>= 1.17.2), gnupg | gnupg2 | gnupg1, powermgmt-base
+Conflicts: apt-verify, libnettle8 (<< 3.9.1-2.2~)
+Breaks: apt-transport-https (<< 1.5~alpha4~), apt-utils (<< 1.3~exp2~), aptitude (<< 0.8.10)
+Replaces: apt-transport-https (<< 1.5~alpha4~), apt-utils (<< 1.3~exp2~)
+Filename: ./a/apt/apt_2.9.9_loong64.deb
+Size: 1316148
+MD5sum: 6e4ee4b1874dfa1ba9d8e4a69aecc7af
+SHA1: 7310b490c5025c793076be3e1123e306b2a34ef3
+SHA256: 596038dd15e33bc03024f192d889a990626f1b7332ed5a19e77fe8a057b31b87
+SHA512: 76b0ee9f604a37c0c35e4f9b95a2455f416a2e23dfafd83aa2c23e7e7761c156d38159fb64a5bae198637175e8471a561d9187201ba81c0db098b8a654f5bc7e
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+ .
+ These include:
+  * apt-get for retrieval of packages and information about them
+    from authenticated sources and for installation, upgrade and
+    removal of packages together with their dependencies
+  * apt-cache for querying available information about installed
+    as well as installable packages
+  * apt-cdrom to use removable media as a source for packages
+  * apt-config as an interface to the configuration settings
+  * apt-key as an interface to manage authentication keys
+
+Package: apt-utils
+Architecture: loong64
+Version: 2.9.9
+Priority: required
+Section: admin
+Source: apt
+Maintainer: APT Development Team <deity@lists.debian.org>
+Installed-Size: 1061
+Depends: apt (= 2.9.9), libapt-pkg6.0t64 (>= 2.9.9), libc6 (>= 2.40), libdb5.3t64, libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: ./a/apt-utils/apt-utils_2.9.9_loong64.deb
+Size: 311280
+MD5sum: 863335eda60777829b8e375645631fa6
+SHA1: 7d646ac9c709c2f61811a617664f243e8f98b958
+SHA256: 8aaa18e9837f751f288adbe1b46408bbd13e151d24292716df7f147eb0f390c9
+SHA512: c5944e6e950c5dffad4e77a657dc4fe06acba23ff6768fc2d5b06f16898bba8eff5e19b84249a8eea7538603b12da963033e23ae36e58e64a53a88fcd9c8cab8
+Description: package management related utility programs
+ This package contains some less used commandline utilities related
+ to package management with APT.
+ .
+  * apt-extracttemplates is used by debconf to prompt for configuration
+    questions before installation.
+  * apt-ftparchive is used to create Packages and other index files
+    needed to publish an archive of Debian packages
+  * apt-sortpkgs is a Packages/Sources file normalizer.
+
+Package: base-files
+Architecture: loong64
+Version: 13.5
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 350
+Provides: base, usr-is-merged
+Pre-Depends: awk
+Breaks: debian-security-support (<< 2019.04.25), initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Filename: ./b/base-files/base-files_13.5_loong64.deb
+Size: 72792
+MD5sum: 67cd7614db48fd98680b678e8720ed21
+SHA1: 547cc30d47b08d1e511366fa07ddbc0bc1f65048
+SHA256: 246451ecf83e1524473656de38d4a02149e2bd1e1cce5a6097b9c6c6dbca3213
+SHA512: 14f0c64e2489eba790f41ec010fb05cab551e64c5b7babc590d9f6405cc5ecc39a8fa9dae682f64bf40372d4624720f67d5e26d0ba0d73c372cf30b22f79a570
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
+
+Package: base-passwd
+Architecture: loong64
+Version: 3.6.4
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 254
+Depends: libc6 (>= 2.38), libdebconfclient0 (>= 0.145), libselinux1 (>= 3.1~)
+Recommends: debconf (>= 0.5) | debconf-2.0
+Replaces: base
+Filename: ./b/base-passwd/base-passwd_3.6.4_loong64.deb
+Size: 50076
+MD5sum: e98bf314f9f21f03936835963edb9293
+SHA1: e446f90428ca8965c385a2ab1477a02276f6b716
+SHA256: 6c7baba0636632e4e4f450b2b3faa67bc8063fb3adc8f861db314a2531fc9734
+SHA512: b97e53f4108adef5c60a563fe01db782be05b71ffa0e39300280c6109cb834fe6c4c499000ba3b7c0ac0b926c9a8e1c4f762d59bc48b177c0bade5af5443b6c6
+Description: Debian base system master password and group files
+ These are the canonical master copies of the user database files
+ (/etc/passwd and /etc/group), containing the Debian-allocated user and
+ group IDs. The update-passwd tool is provided to keep the system databases
+ synchronized with these master files.
+
+Package: bash
+Architecture: loong64
+Version: 5.2.32-1+b2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Source: bash (5.2.32-1)
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7341
+Pre-Depends: libc6 (>= 2.40), libtinfo6 (>= 6)
+Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
+Recommends: bash-completion
+Suggests: bash-doc
+Filename: ./b/bash/bash_5.2.32-1+b2_loong64.deb
+Size: 1492600
+MD5sum: 57574529a9aeac05765dc951aded5301
+SHA1: e7fd75597e219e86f95db03540cd614f3ab6407e
+SHA256: c40f0998eb03331d6b16aff46842cafeb80881b3f19fc133fd107cee8e0ea2ce
+SHA512: 70f620bce1d0be6023be575227ae89a25ae6b6aa111206b382952baa76e99d9b2fdbdadc6d059c6ea799e05ea96d70e39da5e49ffc52a3189798ca222069395b
+Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+Description: GNU Bourne Again SHell
+ Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file.  Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+ .
+ Bash is ultimately intended to be a conformant implementation of the
+ IEEE POSIX Shell and Tools specification (IEEE Working Group 1003.2).
+ .
+ The Programmable Completion Code, by Ian Macdonald, is now found in
+ the bash-completion package.
+
+Package: bsdutils
+Architecture: loong64
+Version: 1:2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Source: util-linux (2.40.2-9)
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 472
+Pre-Depends: libc6 (>= 2.40), libsystemd0 (>= 254)
+Recommends: bsdextrautils
+Filename: ./b/bsdutils/bsdutils_1%3a2.40.2-9_loong64.deb
+Size: 107288
+MD5sum: e25e3a86b66358b21f3a01d68d8885de
+SHA1: ed51dca02cc1676e673f78795a232cde984de99b
+SHA256: 0e51302446ecbe38d6e15c4def27a8eca776db62e4793dfb6bf6a0b3faad32ba
+SHA512: 7da5e3d96dbe4a92a392e2d974f0267ff68929cd828b8f4dbb1abd82acad727b71e349732f2545e5d52ba133a2afd2a140108b995c369fb52343ba75e021733c
+Homepage: https://github.com/util-linux/util-linux
+Description: basic utilities from 4.4BSD-Lite
+ This package contains the bare minimum of BSD utilities needed for a Debian
+ system: logger, renice, script, scriptlive, scriptreplay and wall. The
+ remaining standard BSD utilities are provided by bsdextrautils.
+
+Package: ca-certificates
+Architecture: all
+Version: 20240203
+Multi-Arch: foreign
+Priority: standard
+Section: misc
+Maintainer: Julien Cristau <jcristau@debian.org>
+Installed-Size: 386
+Depends: openssl (>= 1.1.1), debconf (>= 0.5) | debconf-2.0
+Breaks: ca-certificates-java (<< 20121112+nmu1)
+Enhances: openssl
+Filename: ./c/ca-certificates/ca-certificates_20240203_all.deb
+Size: 158052
+MD5sum: fd662659da07100af860d720ca35df27
+SHA1: 2ab07ed2d73befec89c4fe18cef4bf1d384b7a2f
+SHA256: 10ab75a10d3d515f4d1903ba807403dad5598ac3445a3251b06026fbec0e85af
+SHA512: aab89f0edae24ffbbd2ba30e676f0bb59f27eeafde937bfa4b279e06270e8a5081e3ffb7d45f38c98f210dcd193f2d00b86a564e80dfd9ffaff4de5c68cb7069
+Description: Common CA certificates
+ Contains the certificate authorities shipped with Mozilla's browser to allow
+ SSL-based applications to check for the authenticity of SSL connections.
+ .
+ Please note that Debian can neither confirm nor deny whether the
+ certificate authorities whose certificates are included in this package
+ have in any way been audited for trustworthiness or RFC 3647 compliance.
+ Full responsibility to assess them belongs to the local system
+ administrator.
+
+Package: coreutils
+Architecture: loong64
+Version: 9.4-3.1
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Michael Stone <mstone@debian.org>
+Installed-Size: 18571
+Pre-Depends: libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.48), libc6 (>= 2.37), libgmp10 (>= 2:6.3.0+dfsg), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0)
+Breaks: usrmerge (<< 39)
+Filename: ./c/coreutils/coreutils_9.4-3.1_loong64.deb
+Size: 2908592
+MD5sum: c9566a92f9dcf304d99894e4d7f9a5a6
+SHA1: 3d20f9d3b475f113b2f4f47f4310a9bda7d029e3
+SHA256: 0276a0b0ddc61071f7cda2a4a374be2545bb82c759ad25f7da13e0bee8a19e99
+SHA512: c424848ad758598fd7312863fa3e0dc77cb8c428b9fadafa26536933ccb2dbc4d38437c8bf92f189e01c9c335e1b58322315ccc6273d7362f80ecd01aa762968
+Homepage: http://gnu.org/software/coreutils
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes:
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand
+ uniq unlink users vdir wc who whoami yes
+
+Package: cpio
+Architecture: loong64
+Version: 2.15+dfsg-2
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 1201
+Depends: libc6 (>= 2.39)
+Suggests: libarchive-dev
+Conflicts: cpio-mt, mt-st (<< 0.6)
+Replaces: cpio-mt
+Filename: ./c/cpio/cpio_2.15+dfsg-2_loong64.deb
+Size: 246424
+MD5sum: d6b6e19748d659ba9a3ec42d9634d0f7
+SHA1: 1d3cdef0377649f8838e0e4776248a21fa4eb0e7
+SHA256: a36ebe83579e98f48bc15696b9a752e121cf99e4ea132737dabad5a93ae9b58c
+SHA512: 69d237d88be6c813e866b6f4f63d9677ff6f53261dd14b6598175eb309f9d7aad09c0881eb28954f54dfc40086c4d882f278f680dc9be0581cc9e5508b113d97
+Homepage: https://www.gnu.org/software/cpio/
+Description: GNU cpio -- a program to manage archives of files
+ GNU cpio is a tool for creating and extracting archives, or copying
+ files from one place to another.  It handles a number of cpio formats
+ as well as reading and writing tar files.
+
+Package: cron
+Architecture: loong64
+Version: 3.0pl1-189
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Georges Khaznadar <georgesk@debian.org>
+Installed-Size: 257
+Provides: cron-daemon
+Pre-Depends: init-system-helpers (>= 1.54~), cron-daemon-common
+Depends: libc6 (>= 2.37), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), sensible-utils, libpam-runtime
+Recommends: default-mta | mail-transport-agent
+Suggests: anacron, logrotate, checksecurity, supercat, bat
+Conflicts: bcron, cronie, systemd-cron
+Replaces: bcron, cronie, systemd-cron
+Filename: ./c/cron/cron_3.0pl1-189_loong64.deb
+Size: 85700
+MD5sum: 5957da305483292459295d3b46974fe3
+SHA1: 44c30947a6116f4870c74e4ca4251ea7e983cf12
+SHA256: e9a2fb4f50ed74a7526dab28a896130cc76dac15984c1f49c201d3dcac55d1d0
+SHA512: 7f6fc22c14cf1dec244d4cdb41465adca236783682a0f7de601a37ea4a571420413c7e1fc219fee8e8de4432aba7842d8f0ce8696a2f5e43fbc15f2fb5b7dce9
+Homepage: https://ftp.isc.org/isc/cron/
+Description: process scheduling daemon
+ The cron daemon is a background process that runs particular programs at
+ particular times (for example, every minute, day, week, or month), as
+ specified in a crontab. By default, users may also create crontabs of
+ their own so that processes are run on their behalf.
+ .
+ Output from the commands is usually mailed to the system administrator
+ (or to the user in question); you should probably install a mail system
+ as well so that you can receive these messages.
+ .
+ This cron package does not provide any system maintenance tasks. Basic
+ periodic maintenance tasks are provided by other packages, such
+ as checksecurity.
+
+Package: cron-daemon-common
+Architecture: all
+Version: 3.0pl1-189
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: cron
+Maintainer: Georges Khaznadar <georgesk@debian.org>
+Installed-Size: 54
+Depends: systemd | systemd-standalone-sysusers | systemd-sysusers, adduser
+Conflicts: bcron (<< 0.11-9.1), cron (<< 3.0pl1-140), cronie (<< 1.6.1-5), systemd-cron (<< 1.15.18-1.1)
+Breaks: systemd-cron (<< 1.15.19-5~)
+Replaces: bcron (<< 0.11-9.1), cron (<< 3.0pl1-140), cronie (<< 1.6.1-5), systemd-cron (<< 1.15.18-1.1)
+Filename: ./c/cron-daemon-common/cron-daemon-common_3.0pl1-189_all.deb
+Size: 16768
+MD5sum: f3e034a32bb8214f0c1e24a56861c52e
+SHA1: 23be16673f5fe66094a745d34c3e81abc9988293
+SHA256: 745661fb1559c9cf75b0a4d049e74a847f733b4a6f98ef1c125c7eee7cbdc82b
+SHA512: cabcf9aeb827e339aac70aa8a0ef3f165c7716a2750a8cc4ab351a7d2ea29e7117fbdd4317a6801c8fab8770dec991090e265588ec8ec48f3f5c61918d7d56b1
+Homepage: https://ftp.isc.org/isc/cron/
+Description: process scheduling daemon's configuration files
+ The cron daemon is a background process that runs particular programs at
+ particular times (for example, every minute, day, week, or month), as
+ specified in a crontab. By default, users may also create crontabs of
+ their own so that processes are run on their behalf.
+ .
+ This package provides configuration files which must be there to
+ define scheduled process sets.
+
+Package: dash
+Architecture: loong64
+Version: 0.5.12-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: shells
+Maintainer: Andrej Shadura <andrewsh@debian.org>
+Installed-Size: 199
+Pre-Depends: libc6 (>= 2.38)
+Depends: debianutils (>= 5.6-0.1)
+Filename: ./d/dash/dash_0.5.12-9_loong64.deb
+Size: 90168
+MD5sum: f5b9c279758619e25a96077e38b6ad73
+SHA1: 83872dcb500e21ed4c441a4fbb77c358910700fb
+SHA256: 7cbffc3b6fac748bf928b618d74a8b0aa983f3e8840ce0184e0f776103321427
+SHA512: 9da87d4074308ec1cf3955acf10eedeb51835fcc1ef91dbd3006e47d25027b43c88052415097ad2dc5b6d172ed90e7705856332a070998dcd2e7626831d2d2e4
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+
+Package: debconf
+Architecture: all
+Version: 1.5.87
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Installed-Size: 493
+Provides: debconf-2.0
+Recommends: apt-utils, debconf-i18n
+Suggests: debconf-doc, debconf-kde-helper, debconf-utils, libgtk3-perl, libnet-ldap-perl, libterm-readline-gnu-perl, perl, whiptail | dialog
+Conflicts: debconf-tiny, whiptail-utf8 (<= 0.50.17-13)
+Replaces: debconf-tiny
+Filename: ./d/debconf/debconf_1.5.87_all.deb
+Size: 119336
+MD5sum: 1ef9f8b995060aa7218021d22c80dcda
+SHA1: d1920296fea5e9d55590b310e1db9ebd5eca9af4
+SHA256: 3b8cc04e0b7e9537008ff9611cbdbf45c7e4d15df2f7c66ecf2d942f73886e85
+SHA512: 3ab2e475abbf8632d0a69587f7efe9d76065df9ad36893d48d32102f262f01d053003237190795f2a384261b9088960fe778a697ab03324bb9f78e1c3559ecb3
+Description: Debian configuration management system
+ Debconf is a configuration management system for debian packages. Packages
+ use Debconf to ask questions when they are installed.
+
+Package: debconf-i18n
+Architecture: all
+Version: 1.5.87
+Priority: important
+Section: localization
+Source: debconf
+Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
+Installed-Size: 794
+Depends: debconf (= 1.5.87), liblocale-gettext-perl, libtext-charwidth-perl, libtext-iconv-perl, libtext-wrapi18n-perl
+Conflicts: debconf-english
+Filename: ./d/debconf-i18n/debconf-i18n_1.5.87_all.deb
+Size: 195572
+MD5sum: 5c54ecd4c58f9315fbdaee28110ec12e
+SHA1: 8eaa88e5dfc4dae4aed522a937c79bc3757701a5
+SHA256: bfedc1ff7dda39227e7d087d2c587c4ec210fc4b63436a8664760928483ecbaf
+SHA512: 909472aa490e459535915598fdb705e0eab31d3cb2a573e9bf37b06923eb463e08045e45ff8c354f7c84bbbe8d1e32214bcf25ff349a87a04421272606ece937
+Description: full internationalization support for debconf
+ This package provides full internationalization for debconf, including
+ translations into all available languages, support for using translated
+ debconf templates, and support for proper display of multibyte character
+ sets.
+
+Package: debian-archive-keyring
+Architecture: all
+Version: 2023.4
+Multi-Arch: foreign
+Priority: important
+Section: misc
+Maintainer: Debian Release Team <packages@release.debian.org>
+Installed-Size: 272
+Filename: ./d/debian-archive-keyring/debian-archive-keyring_2023.4_all.deb
+Size: 160732
+MD5sum: f517b8cfb4b8ef23789d7ac947065dcb
+SHA1: ecd043fd13610be5a043c09e64a6bfc408f37d5d
+SHA256: 6e93a87b9e50bd81518880ec07a62f95d7d8452f4aa703f5b0a3076439f1022c
+SHA512: 43360871728355eab0d5bbb5eee7fbb0adfdde97eb828972b0eebbb3f3b23369ac5825b232e444f0a212e00e47863dcd9d260db4f04394c9e1b7dfd282e44904
+Description: GnuPG archive keys of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: debianutils
+Architecture: loong64
+Version: 5.20
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Ileana Dumitrescu <ileanadumitrescu95@gmail.com>
+Installed-Size: 241
+Pre-Depends: libc6 (>= 2.38)
+Breaks: ifupdown (<< 0.8.36+nmu1), printer-driver-pnm2ppa (<< 1.13-12), x11-common (<< 1:7.7+23~)
+Filename: ./d/debianutils/debianutils_5.20_loong64.deb
+Size: 89232
+MD5sum: 3e9f3550a65fe017d2a3c793e23d0e15
+SHA1: 82c63a0280eff862dfcfe88980a97dd5d16abf45
+SHA256: e939085e7ea4c41be06132262b5585f9e275852ab6498ed9959210b714d800a7
+SHA512: 34e75d92a2ece011b8020e5c33393ec05ecdc689c65275e23a927a694ac91131bf15b783a08520c18133d0a13b6e9daf3e748818e74bc38c6225aea3c70677e5
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are:
+ add-shell installkernel ischroot remove-shell run-parts savelog
+ update-shells which
+
+Package: dhcpcd-base
+Architecture: loong64
+Version: 1:10.1.0-1
+Priority: important
+Section: net
+Source: dhcpcd
+Maintainer: Martin-Éric Racine <martin-eric.racine@iki.fi>
+Installed-Size: 531
+Provides: avahi-autoipd, dhcp-client
+Depends: adduser, libc6 (>= 2.40), libssl3t64 (>= 3.0.0), libudev1 (>= 183)
+Suggests: resolvconf | openresolv | systemd-resolved
+Breaks: dhcpcd5 (<< 1:10.1.0-1~)
+Replaces: dhcpcd5 (<< 1:10.1.0-1~)
+Filename: ./d/dhcpcd-base/dhcpcd-base_1%3a10.1.0-1_loong64.deb
+Size: 199696
+MD5sum: e5ab56a6c1cad5db6400646b14d14d3e
+SHA1: 5fd0ea75a457699ef79ef7d42f2811c762ce4e63
+SHA256: 57210f0cc3c2ae56288f1159ac627fd80bc3ab19bbbfece27a52376cbff2cc63
+SHA512: 5893bec166b11eb92725ac638f6b53aab5b0bd1c6417bd56d5470e417550a5795db3cd6f7a6bbccc0537b0cfe7752626f1d6f5bb6f6659ba2b82e9f9c1308dd2
+Homepage: https://roy.marples.name/projects/dhcpcd
+Description: DHCPv4 and DHCPv6 dual-stack client (binaries and exit hooks)
+ dhcpcd provides seamless IPv4 and IPv6 auto-configuration:
+  * DHCPv4 client
+  * DHCPv6 client with Prefix Delegation (PD) support
+  * IPv4LL support (ZeroConf)
+  * IPv6RS support (SLAAC)
+  * ARP address conflict resolution
+  * ARP ping profiles
+  * Wireless SSID profiles
+ .
+ This package provides the binaries, exit hooks and manual pages.
+ .
+ It offers a dual-stack substitute for ISC DHCP Client (dhclient) on systems
+ where interfaces are configured by ifupdown via </etc/network/interfaces>
+ using the DHCP method.
+ .
+ The init.d script and systemd service required for systems without ifupdown
+ are packaged separately as dhcpcd.
+ .
+ Since Debian 12 (Bookworm), dhcpcd uses Predictable Network Interface Names
+ on Linux ports. See NEWS.Debian for more details.
+
+Package: diffutils
+Architecture: loong64
+Version: 1:3.10-1
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 1727
+Pre-Depends: libc6 (>= 2.37)
+Suggests: diffutils-doc, wdiff
+Replaces: diff
+Filename: ./d/diffutils/diffutils_1%3a3.10-1_loong64.deb
+Size: 368324
+MD5sum: 63b3950ed2fe0e7d13ef8ca92c4b1942
+SHA1: bfc0bf8800af356098d9c6199e7a1f2171d3f7cd
+SHA256: 076f7446381dbd4d055c2e67b5484b6000abd0309ae1f1c41ce2fd426870e72a
+SHA512: 8fab5641c837b029099a7400b90424770cddc7d09ee6b1cb0925bfe0d591490dea4a37a4e548db8495e1ba35841ac94eb32e7f031c882688f28a2560ee2501c2
+Homepage: https://www.gnu.org/software/diffutils/
+Description: File comparison utilities
+ The diffutils package provides the diff, diff3, sdiff, and cmp programs.
+ .
+ `diff' shows differences between two files, or each corresponding file
+ in two directories.  `cmp' shows the offsets and line numbers where
+ two files differ.  `cmp' can also show all the characters that
+ differ between the two files, side by side.  `diff3' shows differences
+ among three files.  `sdiff' merges two files interactively.
+ .
+ The set of differences produced by `diff' can be used to distribute
+ updates to text files (such as program source code) to other people.
+ This method is especially useful when the differences are small compared
+ to the complete files.  Given `diff' output, the `patch' program can
+ update, or "patch", a copy of the file.
+
+Package: dmidecode
+Architecture: loong64
+Version: 3.6-1
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Maintainer: Jörg Frings-Fürst <debian@jff.email>
+Installed-Size: 177
+Depends: libc6 (>= 2.38)
+Filename: ./d/dmidecode/dmidecode_3.6-1_loong64.deb
+Size: 56976
+MD5sum: 38c566546b4fc974f37d639c98dfe761
+SHA1: e5efdb343ae58a35c4428f75ec248c4f366c6671
+SHA256: 2bef79eae051b0a40583138a27e3bb2b33c6d6ebb922203928655acaa83f8d05
+SHA512: ef5831faf76b9ce6c5cdb46dc877e928c07d98eb17aa7501ec652bca7f42c957d9bb7a799701d616195a48a64d7fb36e7d901719b6678558d6fb26534f0a57e1
+Homepage: https://nongnu.org/dmidecode/
+Description: SMBIOS/DMI table decoder
+ Dmidecode reports information about the system's hardware as described in the
+ system BIOS according to the SMBIOS/DMI standard.
+ .
+ This information typically includes system manufacturer, model name, serial
+ number, BIOS version, asset tag as well as a lot of other details of varying
+ level of interest and reliability depending on the manufacturer. This will
+ often include usage status for the CPU sockets, expansion slots (e.g. AGP, PCI,
+ ISA) and memory module slots, and the list of I/O ports (e.g. serial, parallel,
+ USB).
+ .
+ Beware that DMI data have proven to be too unreliable to be blindly trusted.
+ Dmidecode does not scan the hardware, it only reports what the BIOS told it to.
+
+Package: dpkg
+Architecture: loong64
+Version: 1.22.11
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Installed-Size: 6410
+Pre-Depends: libbz2-1.0, libc6 (>= 2.39), liblzma5 (>= 5.4.0), libmd0 (>= 0.0.0), libselinux1 (>= 3.1~), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Depends: tar (>= 1.28-1)
+Suggests: apt, debsig-verify
+Breaks: libapt-pkg5.0 (<< 1.7~b), lsb-base (<< 10.2019031300)
+Filename: ./d/dpkg/dpkg_1.22.11_loong64.deb
+Size: 1516380
+MD5sum: 7cfbdbf22a939ed243cac82e024569dd
+SHA1: 582d28028f41dbc0a1ec7d7cebb02f7953bc5636
+SHA256: 75ff76a28a0e6cdf8e9353a63d5f8087dc2c85c06861d7b2e722125d81973f83
+SHA512: f201d0413ebeeea417e083085b8e86083553de51c3b44af3c89cdd8b1ffc5b4dfee940e45d36d8cb345d2dc07a76df5246d1aacf0838600bea8ab45fd46f89b5
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Description: Debian package management system
+ This package provides the low-level infrastructure for handling the
+ installation and removal of Debian software packages.
+ .
+ For Debian package development tools, install dpkg-dev.
+
+Package: e2fsprogs
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: foreign
+Priority: required
+Important: yes
+Section: admin
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 1571
+Pre-Depends: libblkid1 (>= 2.36), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libext2fs2t64 (= 1.47.1-1), libss2 (>= 1.38), libuuid1 (>= 2.16)
+Depends: logsave
+Recommends: e2fsprogs-l10n
+Suggests: gpart, parted, fuse2fs, e2fsck-static
+Filename: ./e/e2fsprogs/e2fsprogs_1.47.1-1_loong64.deb
+Size: 564920
+MD5sum: f531ab167472565e08813f4cb17d4df9
+SHA1: c90170cfdbc2144cb7cf697715ca6eeedc5170db
+SHA256: 75dfbcab76ccb8d86e77fd3e025de75b196179fd42ebcf2343e80565ebfd9e0f
+SHA512: f0e54de91f66f8e31a9641b022d96f8b8fb37ee2ca603741f8a8813d02d057ca20211e5caf30f2c01caa6dedb22611947231e3a925c64defba96c8e447aad875
+Homepage: http://e2fsprogs.sourceforge.net
+Description: ext2/ext3/ext4 file system utilities
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package contains programs for creating, checking, and maintaining
+ ext2/3/4-based file systems.  It also includes the "badblocks" program,
+ which can be used to scan for bad blocks on a disk or other storage device.
+
+Package: fdisk
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 588
+Depends: libc6 (>= 2.40), libfdisk1 (= 2.40.2-9), libmount1 (= 2.40.2-9), libncursesw6 (>= 6), libreadline8t64 (>= 6.0), libsmartcols1 (= 2.40.2-9), libtinfo6 (>= 6)
+Recommends: sensible-utils
+Filename: ./f/fdisk/fdisk_2.40.2-9_loong64.deb
+Size: 156384
+MD5sum: 092a5036fdcafaa70d64eaeef01d34a3
+SHA1: dbb5471b99dca92b3f7b5f319bb3dfb4f7d59c7b
+SHA256: e00886cfa56f0a296e5cbad1774c9ec3925f1f93a5845d7d988079f91c1535b6
+SHA512: 9383f2424c365f2a27d830344bee3f4cfdb5a8e0a6485c2c3f010a80eaed0eca8e0a004bdbb9c2505be718ccdc494c18343431e31acb6a80261258ff316b6897
+Homepage: https://github.com/util-linux/util-linux
+Description: collection of partitioning utilities
+ This package contains the classic fdisk, sfdisk and cfdisk partitioning
+ utilities from the util-linux suite.
+ .
+ The utilities included in this package allow you to partition
+ your hard disk. The utilities supports both modern and legacy
+ partition tables (eg. GPT, MBR, etc).
+ .
+ The fdisk utility is the classical text-mode utility.
+ The cfdisk utility gives a more userfriendly curses based interface.
+ The sfdisk utility is mostly for automation and scripting uses.
+
+Package: findutils
+Architecture: loong64
+Version: 4.10.0-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Andreas Metzler <ametzler@debian.org>
+Installed-Size: 2184
+Pre-Depends: libc6 (>= 2.39), libselinux1 (>= 3.1~)
+Breaks: binstats (<< 1.08-8.1), guilt (<< 0.36-0.2), libpython3.4-minimal (<< 3.4.4-2), libpython3.5-minimal (<< 3.5.1-3), lsat (<< 0.9.7.1-2.1), mc (<< 3:4.8.11-1), switchconf (<< 0.0.9-2.1)
+Filename: ./f/findutils/findutils_4.10.0-3_loong64.deb
+Size: 695676
+MD5sum: 3c20aba1ffecf84cf3e6b1db75979e06
+SHA1: 1067e5607a2c296632a87715cd08d4bab8ccb518
+SHA256: a02c8882cf4ec8b37fb1681c785e6b57742fa5264f4c07e7522abecb67110644
+SHA512: 593c80398f00b26c91edf18f7f55146b87f204e763987cbf44d5029db00bf093cb0e147f785a7d8965b9f165efecf758262db3008dd3d866ab89e14d9f8ade0b
+Homepage: https://savannah.gnu.org/projects/findutils/
+Description: utilities for finding files--find, xargs
+ GNU findutils provides utilities to find files meeting specified
+ criteria and perform various actions on the files which are found.
+ This package contains 'find' and 'xargs'; however, 'locate' has
+ been split off into a separate package.
+
+Package: gcc-14-base
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 109
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-14-base/gcc-14-base_14.2.0-7_loong64.deb
+Size: 46884
+MD5sum: 50e89e12f0e4b6544fb0b8d6c3540ea0
+SHA1: f05b0bf6593167bc79fb5afc47c833ac4b9e6847
+SHA256: ba93339b45272403492fbc744956edfd8b6553117b1bf71ec3c5cc971ad300bd
+SHA512: b8a22a9bade3873900cfbb885dcdaab0b6972af4ae1fc6da06ed38b6764490b3d04b335c428f897042ee3da1f420c0fc651c5ac89ac4e6f64db4c5ba13f9e178
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: gpgv
+Architecture: loong64
+Version: 2.2.44-1
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: gnupg2
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Installed-Size: 561
+Depends: libbz2-1.0, libc6 (>= 2.40), libgcrypt20 (>= 1.11.0), libgpg-error0 (>= 1.48), zlib1g (>= 1:1.1.4)
+Suggests: gnupg
+Breaks: python-debian (<< 0.1.29)
+Filename: ./g/gpgv/gpgv_2.2.44-1_loong64.deb
+Size: 216200
+MD5sum: 4350bfba9bf1b4d513814c0a8863d6a9
+SHA1: 193ad827c27d7bf99c1f62ef564428bf7f2d93ab
+SHA256: 608a0d002a8aa1a5479c50109af09a3be4bff008e5f17619cb907148247ea343
+SHA512: ed4c4dfbc28f38c115d1d85e37ddc6b501e86e0ec1e894542ecd12f20347176712e6bb2b3f255531384223cf148cfdaf8de0124ec19ddc22b96f394d6abe72d0
+Homepage: https://www.gnupg.org/
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is actually a stripped-down version of gpg which is only able
+ to check signatures. It is somewhat smaller than the fully-blown gpg
+ and uses a different (and simpler) way to check that the public keys
+ used to make the signature are valid. There are no configuration
+ files and only a few options are implemented.
+
+Package: grep
+Architecture: loong64
+Version: 3.11-4
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 1263
+Provides: rgrep
+Pre-Depends: libc6 (>= 2.37), libpcre2-8-0 (>= 10.32)
+Conflicts: rgrep
+Filename: ./g/grep/grep_3.11-4_loong64.deb
+Size: 425364
+MD5sum: e173d8849321ddfa2fca5bbd4d9d212e
+SHA1: 3a2e19f535abbeeaef2ecc201586e4551f58bba7
+SHA256: 5e7edabc8c02504c89e77db3974b4d3b1f112f9a908746aeb189d66bb1c862ce
+SHA512: 5aa27b0390d6812adef2f5a20aa46c93948c48139ef0da71255457962305483095b569fcabc8b1c18bac9e070a90d33769dbfebfee4bd84d199a97c2333414e6
+Homepage: https://www.gnu.org/software/grep/
+Description: GNU grep, egrep and fgrep
+ 'grep' is a utility to search for text in files; it can be used from the
+ command line or in scripts.  Even if you don't want to use it, other packages
+ on your system probably will.
+ .
+ The GNU family of grep utilities may be the "fastest grep in the west".
+ GNU grep is based on a fast lazy-state deterministic matcher (about
+ twice as fast as stock Unix egrep) hybridized with a Boyer-Moore-Gosper
+ search for a fixed string that eliminates impossible text from being
+ considered by the full regexp matcher without necessarily having to
+ look at every character. The result is typically many times faster
+ than Unix grep or egrep. (Regular expressions containing backreferencing
+ will run more slowly, however.)
+
+Package: gzip
+Architecture: loong64
+Version: 1.12-1.1
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Milan Kupcevic <milan@debian.org>
+Installed-Size: 250
+Pre-Depends: libc6 (>= 2.37)
+Depends: dpkg (>= 1.15.4) | install-info
+Suggests: less
+Conflicts: zutils (<< 1.13-2~)
+Filename: ./g/gzip/gzip_1.12-1.1_loong64.deb
+Size: 130224
+MD5sum: eb812cac6e531581bc7a5db3a63257a0
+SHA1: a55a420955eddb31ef193c6cc595659b766d18b5
+SHA256: ed26c7c4848c9d011156914cf5d7f8f17fe68b914a546267d8cf7660d0c1b279
+SHA512: f2ecc88c093047122d6924689136cf5122b8bf72a20369eea40541d0d5389363320ec37f7399489e53710c903fd4fa2e06ded6eeb6719861f0e60e140da72c6e
+Homepage: https://www.gnu.org/software/gzip/
+Description: GNU compression utilities
+ This package provides the standard GNU file compression utilities, which
+ are also the default compression tools for Debian.  They typically operate
+ on files with names ending in '.gz', but can also decompress files ending
+ in '.Z' created with 'compress'.
+
+Package: hostname
+Architecture: loong64
+Version: 3.25
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Michael Meskes <meskes@debian.org>
+Installed-Size: 41
+Pre-Depends: libc6 (>= 2.40)
+Breaks: nis (<< 3.17-30)
+Replaces: nis (<< 3.17-30)
+Filename: ./h/hostname/hostname_3.25_loong64.deb
+Size: 10784
+MD5sum: f62800567b0955b43e29fb5acdc57efb
+SHA1: 19b1476a06f7caed411bd850c7539c0533f8cafa
+SHA256: 29ad7b6732cee9f3f4e32d4dfcc90308774517ff0d2c505c094b3db766066b2a
+SHA512: 04b15e7b1eef8e8377fe02d11351e3bdb9fa0e2a2f2a0ca8c26d80e03b65b5bd24cab7ee0363165754372d3efb76b1195e466152992e42caeabdb12252bade98
+Description: utility to set/show the host name or domain name
+ This package provides commands which can be used to display the system's
+ DNS name, and to display or set its hostname or NIS domain name.
+
+Package: ifupdown
+Architecture: loong64
+Version: 0.8.44
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Installed-Size: 195
+Depends: libc6 (>= 2.40), adduser, iproute2
+Recommends: dhcpcd-base | dhcp-client
+Suggests: ppp, rdnssd
+Filename: ./i/ifupdown/ifupdown_0.8.44_loong64.deb
+Size: 60148
+MD5sum: 16e94f07e7091d42382307f43411a5f6
+SHA1: fbce66657357467983801dcd93ac42d12c4c01bc
+SHA256: 8053fe283c7e79565c464998bf95b9295964253687e14ffcd8e7db7d1315aff9
+SHA512: 4f9e4ee978c5e5c15d3c37a9f90b87efd390fcd4f564a6af5b253871079d537cebb6b636c86c512fc33773df02ae7a0bee530bebd77a4953d1a80bb0c0f37f15
+Description: high level tools to configure network interfaces
+ This package provides the tools ifup and ifdown which may be used to
+ configure (or, respectively, deconfigure) network interfaces based on
+ interface definitions in the file /etc/network/interfaces.
+
+Package: init
+Architecture: loong64
+Version: 1.67
+Multi-Arch: foreign
+Priority: important
+Protected: yes
+Important: yes
+Section: metapackages
+Source: init-system-helpers
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 17
+Pre-Depends: systemd-sysv | sysvinit-core
+Filename: ./i/init/init_1.67_loong64.deb
+Size: 6172
+MD5sum: a1033f1d36da3d2c53e9cb0b5db246da
+SHA1: 58f99f284834e945cb44239b4afa95eeb4b8e3d1
+SHA256: e3d30511bf4d244bbcf1bd81d37e5f785d4e80a5710da04808eb9246e8bcf6a9
+SHA512: 9c2ed77622fe7184e6179b850bb0050cc1db7604ce9198c621262b314ec9b79cd755c1d36335dda974176bb81fbf1bd583437ff48d014446c8e77af778951a14
+Description: metapackage ensuring an init system is installed
+ This package is a metapackage which allows you to select from the available
+ init systems while ensuring that one of these is available on the system at
+ all times.
+
+Package: init-system-helpers
+Architecture: all
+Version: 1.67
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 129
+Depends: usrmerge | usr-is-merged
+Filename: ./i/init-system-helpers/init-system-helpers_1.67_all.deb
+Size: 38672
+MD5sum: 4117d824da26231e28c7ad3af7a7230b
+SHA1: 3d3560c48f00aed739ae70cfe7e06bfea8a61e98
+SHA256: 3220742aa71543e3187c15e149b3ac7d73382f437e21cd6d5927e3ed3a5a3ea2
+SHA512: 9c387aa89250df560ec5be6821a3f5058098b88b71f97c20e0de11cd7c4ec157c5b18893e92278dd4726c637d92f70fb029034fd6c2e2e000c60b044399d7bef
+Description: helper tools for all init systems
+ This package contains helper tools that are necessary for switching between
+ the various init systems that Debian contains (e. g. sysvinit or
+ systemd). An example is deb-systemd-helper, a script that enables systemd unit
+ files without depending on a running systemd.
+ .
+ It also includes the "service", "invoke-rc.d", and "update-rc.d" scripts which
+ provide an abstraction for enabling, disabling, starting, and stopping
+ services for all supported Debian init systems as specified by the policy.
+ .
+ While this package is maintained by pkg-systemd-maintainers, it is NOT
+ specific to systemd at all. Maintainers of other init systems are welcome to
+ include their helpers in this package.
+
+Package: iproute2
+Architecture: loong64
+Version: 6.11.0-1
+Multi-Arch: foreign
+Priority: important
+Section: net
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3899
+Provides: arpd
+Depends: debconf (>= 0.5) | debconf-2.0, libbpf1 (>= 1:0.6.0), libc6 (>= 2.40), libcap2 (>= 1:2.10), libdb5.3t64, libelf1t64 (>= 0.131), libmnl0 (>= 1.0.3-4~), libselinux1 (>= 3.1~), libtirpc3t64 (>= 1.0.2), libxtables12 (>= 1.6.0+snapshot20161117), libcap2-bin
+Suggests: python3:any
+Conflicts: arpd
+Breaks: iproute2-doc
+Replaces: iproute2-doc
+Filename: ./i/iproute2/iproute2_6.11.0-1_loong64.deb
+Size: 1059832
+MD5sum: bd777a050fba4be481ed797a9c04f11a
+SHA1: 6e00b6c2ba1752af907d830ceaf91a80cf0e2c13
+SHA256: f36775139828fd05f423498213b984196787f0a298b91b3254731ec19cffe185
+SHA512: aedd3b6e6bfdb07ce254b1b79c36daa25d0099883c1dd6c5eea3df9a49521022ebb14e823c9fcaccf63d9b8867bd3c5ebdb3b302d79974b6c4da27b954708844
+Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+Description: networking and traffic control tools
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ These tools communicate with the Linux kernel via the (rt)netlink
+ interface, providing advanced features not available through the
+ legacy net-tools commands 'ifconfig' and 'route'.
+
+Package: iputils-ping
+Architecture: loong64
+Version: 3:20240905-1
+Multi-Arch: foreign
+Priority: important
+Section: net
+Source: iputils
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Installed-Size: 194
+Provides: ping
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10), libidn2-0 (>= 0.6)
+Recommends: linux-sysctl-defaults
+Filename: ./i/iputils-ping/iputils-ping_3%3a20240905-1_loong64.deb
+Size: 50524
+MD5sum: a3313f99ca890bd1a302bea227b76102
+SHA1: 1ba96df1c127d1561c715fd70a4e0f1cc9579955
+SHA256: ae9f900e104769d631c544959431292bc850b940db3459d6f73e42dbd5aaf088
+SHA512: 48f9380205436a194edbf8efaa76d78b7b9960f168874c8d22d4e84c8362e8d3bb445996dba150e987784ceff29df77f377e7cd6b5a071845cf4e77154b553c1
+Homepage: https://github.com/iputils/iputils/
+Description: Tools to test the reachability of network hosts
+ The ping command sends ICMP ECHO_REQUEST packets to a host in order to
+ test if the host is reachable via the network.
+ .
+ This package includes a ping6 utility which supports IPv6 network
+ connections.
+
+Package: kmod
+Architecture: loong64
+Version: 33+20240816-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 261
+Depends: libc6 (>= 2.39), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), libkmod2 (= 33+20240816-2)
+Filename: ./k/kmod/kmod_33+20240816-2_loong64.deb
+Size: 94520
+MD5sum: 5b574c35453709cfd5d52e583931b032
+SHA1: 9c8e91b7c767c410fa21136a7c56e0cc943cbc27
+SHA256: db1d06ac74bba6a6ea9ae05fa7d0ae4e8d583e203936b0fed595342c39a4918c
+SHA512: 1543d9e4a9566c63c4924b36955bc76a2e60fda70fd0a6ecb743b46df33c906717c97ca46114abbf325c699ed73fe9ec71fbf68d35019ac0841fdd4c1e4a5a4f
+Description: tools for managing Linux kernel modules
+ This package contains a set of programs for loading, inserting, and
+ removing kernel modules for Linux.
+ It replaces module-init-tools.
+
+Package: libdebconfclient0
+Architecture: loong64
+Version: 0.272
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: cdebconf
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Installed-Size: 40
+Depends: libc6 (>= 2.38)
+Filename: ./l/libdebconfclient0/libdebconfclient0_0.272_loong64.deb
+Size: 10072
+MD5sum: 46130e544304a334e994eff90915372c
+SHA1: f6ab7bf8202ecd37d286501429c8cdc37129c3b8
+SHA256: 9241e4516284d2a2bd143ec09c81b8dc49669f5be542689432a6779e6cf64136
+SHA512: f6ba5bdf25d523066a287e57e953c67cf39f12f1b7633fefc61c740d6ac4012ecb6a22c7c7f87ceb67d362cbd21fe5821c4a70963cf13f6b722871612753eda7
+Description: Debian Configuration Management System (C-implementation library)
+ Debconf is a configuration management system for Debian packages. It is
+ used by some packages to prompt you for information before they are
+ installed. cdebconf is a reimplementation of the original debconf in C.
+ .
+ This library allows C programs to interface with cdebconf.
+
+Package: libkrb5support0
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 136
+Depends: libc6 (>= 2.39)
+Breaks: krb5-admin-server (<< 1.20.1-4~), krb5-kdc (<< 1.20.1-4~), krb5-pkinit (<< 1.20.1-4~), krb5-user (<< 1.20.1-4~), libgssapi-krb5-2 (<< 1.20), libk5crypto3 (<< 1.20.1-4~), libkadm5clnt-mit9 (<< 1.13~alpha1-1), libkadm5srv-mit12 (<< 1.20.1-4~), libkadm5srv-mit9 (<< 1.13~alpha1-1), libkdb5-10t64 (<< 1.20.1-4~), libkdb5-8 (<< 1.16), libkrb5-3 (<< 1.20.1-4~)
+Filename: ./l/libkrb5support0/libkrb5support0_1.21.3-3_loong64.deb
+Size: 31988
+MD5sum: fb63af33a6a44670b23426b3a65b4cf5
+SHA1: 0539f513fffd52dd71bd1e675be0e5c98fa5338c
+SHA256: 086dbd40368480376b9edbd60498cf4e9ce2d2ed2c97d3f48bebd7d67e952350
+SHA512: 8dfaa6307fd4a19bc3b7ad42dee29b04d44b45e8e748ec857eb4953ac76f14b999dc9d5367154c82ffa84d0aabc7486ea2168ed09a0955b6be08bd85ebff272d
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - Support library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an internal runtime support library used by other
+ Kerberos libraries.
+
+Package: libproc2-0
+Architecture: loong64
+Version: 2:4.0.4-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: procps
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 244
+Depends: libc6 (>= 2.40), libsystemd0
+Replaces: procps (<< 1:3.3.2-1)
+Filename: ./l/libproc2-0/libproc2-0_2%3a4.0.4-6_loong64.deb
+Size: 64956
+MD5sum: 784ddc640657635cfa63eb568dfff603
+SHA1: 372fecf0591ba23c898c2515b8575fedaba4d32c
+SHA256: 44bf19569ee19d9104af05adda73755da6b396d781ab5b4d09b66ef9f17830a8
+SHA512: 61e77411c88fdfcda502e7cd9e399132216b7223c08977f09966f21f49339c8f1e15ca61fd257030f2a33868dbcceaf7ff6f788e30ee295889f24b2d3bffecfa
+Homepage: https://gitlab.com/procps-ng/procps
+Description: library for accessing process information from /proc
+ The libproc2 library is a way of accessing information out of the /proc
+ filesystem.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with libproc2.
+
+Package: less
+Architecture: loong64
+Version: 643-1
+Multi-Arch: foreign
+Priority: important
+Section: text
+Maintainer: Milan Kupcevic <milan@debian.org>
+Installed-Size: 355
+Depends: libc6 (>= 2.37), libtinfo6 (>= 6)
+Filename: ./l/less/less_643-1_loong64.deb
+Size: 141984
+MD5sum: 3adc140e95cec2596d2e2fb65bfd2f31
+SHA1: 3973d09d74fcfde27458408b8a461cf6322456f0
+SHA256: a3f53ea96cdabf45f1347de8c66bbb901ba06f4101434376393e1eb235d80647
+SHA512: 9828c2ce1bf294417bf09248d0e95a680f2fb57f6a947c41a64c0b6ec167540185631251cf812c4d506f0c9641e8891e77875e22139341b238c6a2d5bb6be5a7
+Homepage: http://www.greenwoodsoftware.com/less/
+Description: pager program similar to more
+ This package provides "less", a file pager (that is, a memory-efficient
+ utility for displaying text one screenful at a time). Less has many
+ more features than the basic pager "more". As part of the GNU project,
+ it is widely regarded as the standard pager on UNIX-derived systems.
+ .
+ Also provided are "lessecho", a simple utility for ensuring arguments
+ with spaces are correctly quoted; "lesskey", a tool for modifying the
+ standard (vi-like) keybindings; and "lesspipe", a filter for specific
+ types of input, such as .doc or .txt.gz files.
+
+Package: libacl1
+Architecture: loong64
+Version: 2.3.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: acl
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 70
+Depends: libc6 (>= 2.37)
+Filename: ./l/libacl1/libacl1_2.3.2-2_loong64.deb
+Size: 32036
+MD5sum: 4c5a410882864568a204c820bd1ffb87
+SHA1: a42a98bae00ec06b0f6292ce4c3c223f7062b5c6
+SHA256: d706cffa695cb34e6ac79216f244733dc8631e6032274b5cc12ee56fa27ba9c6
+SHA512: c35fae400c2aafd51b91334d877f24686daad4ae1a11cc4891660a2c9d21118d7c64ed304750cd4849d96eb7b40036705985a69b4d83e3d64f27c4aed4661fb0
+Homepage: https://savannah.nongnu.org/projects/acl/
+Description: access control list - shared library
+ This package contains the shared library containing the POSIX 1003.1e
+ draft standard 17 functions for manipulating access control lists.
+
+Package: libapparmor1
+Architecture: loong64
+Version: 3.1.7-1+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: apparmor (3.1.7-1)
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 115
+Depends: libc6 (>= 2.38)
+Breaks: libapparmor-perl (<< 3.0.3-3)
+Replaces: libapparmor-perl (<< 3.0.3-3)
+Filename: ./l/libapparmor1/libapparmor1_3.1.7-1+b1_loong64.deb
+Size: 41828
+MD5sum: 4f485891c8f00f98e893939b21993b42
+SHA1: 4d9aff4c2b5b70904cec4bfc5493e3e53bb5f3cc
+SHA256: 84e51871e91f58bcc98d474f8ac7035dd86b1d9a8db6aa5adf7fc583967e293d
+SHA512: 38bc4c9b21d2464e89cfea05ff1b06df8c436d4b8b2b12a70d929c1ede7311f97f5a15234f91cbae78123110544139ce968e1085e52a003759c49fc67eb8c254
+Homepage: https://apparmor.net/
+Description: changehat AppArmor library
+ libapparmor1 provides a shared library one can compile programs
+ against in order to use various AppArmor functionality,
+ such as transitioning to a different AppArmor profile or hat.
+
+Package: libapt-pkg6.0t64
+Architecture: loong64
+Version: 2.9.9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: apt
+Maintainer: APT Development Team <deity@lists.debian.org>
+Installed-Size: 3541
+Provides: libapt-pkg (= 2.9.9), libapt-pkg6.0 (= 2.9.9)
+Depends: libbz2-1.0, libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.11.0), liblz4-1 (>= 0.0~r127), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 14), libsystemd0 (>= 221), libudev1 (>= 183), libxxhash0 (>= 0.7.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2.3)
+Recommends: apt (>= 2.9.9)
+Conflicts: libnettle8 (<< 3.9.1-2.2~)
+Breaks: appstream (<< 0.9.0-3~), apt (<< 1.6~), aptitude (<< 0.8.9), dpkg (<< 1.20.8), libapt-inst1.5 (<< 0.9.9~), libapt-pkg6.0 (<< 2.9.9)
+Replaces: libapt-pkg6.0
+Filename: ./l/libapt-pkg6.0t64/libapt-pkg6.0t64_2.9.9_loong64.deb
+Size: 960176
+MD5sum: 185bcfddbbcb972b7aaab89fdcd063bd
+SHA1: ee23ba10fcceeda79dcfaa176cf3b702b3ccfc3e
+SHA256: 58ad02055c8f46a7e65377520141be185088daf4eee1539f6dc3c08a26187f2a
+SHA512: 3fe90f14b9df8a89dd19609f1c988e92aab1d674be54f068146fe0bd742911ec5cc828ec3966ba29b07b2242541812b63b6bd81dd8344303dff17804812f74b5
+Description: package management runtime library
+ This library provides the common functionality for searching and
+ managing packages as well as information about packages.
+ Higher-level package managers can depend upon this library.
+ .
+ This includes:
+  * retrieval of information about packages from multiple sources
+  * retrieval of packages and all dependent packages
+    needed to satisfy a request either through an internal
+    solver or by interfacing with an external one
+  * authenticating the sources and validating the retrieved data
+  * installation and removal of packages in the system
+  * providing different transports to retrieve data over cdrom, ftp,
+    http(s), rsh as well as an interface to add more transports like
+    tor+http(s) (apt-transport-tor).
+
+Package: libattr1
+Architecture: loong64
+Version: 1:2.5.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: attr
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.40)
+Filename: ./l/libattr1/libattr1_1%3a2.5.2-2_loong64.deb
+Size: 22688
+MD5sum: dc2a5fc4f161b97294d53b5c5e8f77f8
+SHA1: c68fcee18f03ea197080f8b33cbb9570f65faa30
+SHA256: 0c66f046fb38c7d87140e28f163cf564be1b4824514cab81e786cad3dd507493
+SHA512: 9fda70df131e9dc469e7985d9c7fc694b826b155275ff7d65452b694fd395e3e4f6d5d5989729d419aee2dfa6bf7e528648d657f84f986dbf67edcefc6f8da2c
+Homepage: https://savannah.nongnu.org/projects/attr/
+Description: extended attribute handling - shared library
+ Contains the runtime environment required by programs that make use
+ of extended attributes.
+
+Package: libaudit-common
+Architecture: all
+Version: 1:4.0.1-1
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: audit
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 24
+Filename: ./l/libaudit-common/libaudit-common_1%3a4.0.1-1_all.deb
+Size: 12272
+MD5sum: 92d389d81ad6d472acfb78a6406cd89c
+SHA1: 9046f873877011457169f083e21acdcfc369ec7b
+SHA256: 0ed1183985f121deccdf4e5affc5cf7f2ec174d87d897f988f4476da601e8aaa
+SHA512: e69d5f02f14d6417d55748278f278d8b7ff9be75fb1a21313d24e552b003f40b9ae62af1fa9630720d55eb05031bd14ce5f5814405b9616007b2fcba1f910cf7
+Homepage: https://people.redhat.com/sgrubb/audit/
+Description: Dynamic library for security auditing - common files
+ The audit-libs package contains the dynamic libraries needed for
+ applications to use the audit framework. It is used to monitor systems for
+ security related events.
+ .
+ This package contains the libaudit.conf configuration file and the associated
+ manpage.
+
+Package: libaudit1
+Architecture: loong64
+Version: 1:3.1.2-4+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: audit (1:3.1.2-4)
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 173
+Depends: libaudit-common (>= 1:3.1.2-4), libc6 (>= 2.38), libcap-ng0 (>= 0.7.9)
+Filename: ./l/libaudit1/libaudit1_1%3a3.1.2-4+b1_loong64.deb
+Size: 48176
+MD5sum: 5ff001c8bee5bf239ad836b35ce7107f
+SHA1: af4c648141cd3adebcfb2763e092b7610849399c
+SHA256: 6d33e66d8f78b3d54b06ffc2dab118fab080184e6febf1b8a67d2bc3b46d8391
+SHA512: 1f3bc0807eebb3783b2801ae55210aefb540e24e31614bb2c8804a4d4000192e92d138b596707ef2919a9f7e7003e13a992403b5b37610a8158873b5e9d9832c
+Homepage: https://people.redhat.com/sgrubb/audit/
+Description: Dynamic library for security auditing
+ The audit-libs package contains the dynamic libraries needed for
+ applications to use the audit framework. It is used to monitor systems for
+ security related events.
+
+Package: libblkid1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 500
+Depends: libc6 (>= 2.40)
+Filename: ./l/libblkid1/libblkid1_2.40.2-9_loong64.deb
+Size: 175892
+MD5sum: c516b8765fbe690d28286bb928733f25
+SHA1: 2d5897fdc8c5a4731b26aeeee63771ae3b4a02f0
+SHA256: 765759b365654c4536c3816ac1bc608897152e87f862c632beac5d95f54d428e
+SHA512: cd088fdf7f7fc46919a44d5601c1c4bec2d4105078b71558c1694bcb8505cc6e75f5b74b7e571c2ea6b47be8fc0a45daa1cf00d6737d17f93390ee07c17c8a06
+Homepage: https://github.com/util-linux/util-linux
+Description: block device ID library
+ The blkid library allows system programs such as fsck and mount to
+ quickly and easily find block devices by filesystem UUID or label.
+ This allows system administrators to avoid specifying filesystems by
+ hard-coded device names and use a logical naming system instead.
+
+Package: libbpf1
+Architecture: loong64
+Version: 1:1.4.6-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libbpf (1.4.6-1)
+Maintainer: Sudip Mukherjee <sudipm.mukherjee@gmail.com>
+Installed-Size: 471
+Depends: libc6 (>= 2.40), libelf1t64 (>= 0.144), zlib1g (>= 1:1.2.3.3)
+Filename: ./l/libbpf1/libbpf1_1%3a1.4.6-1_loong64.deb
+Size: 162320
+MD5sum: 1804d2ce9f214958731ab583dc4a25c6
+SHA1: b04a3401b0bcad6c1cd757cbddc6b1c1cc6bd639
+SHA256: a1aa711487a0086f873c17561c2ace354ae0c89aa40a613bd00381934452bef1
+SHA512: c1b9d59416f50e3a1699f8c08e8f9eb7d8535583b3047b1a1a412b9e40ca16534d4c13d760d107943f5cda81bff61d27c326fc3067c825ea59c6d0258efe27ea
+Description: eBPF helper library (shared library)
+ libbpf is a library for loading eBPF programs and reading and
+ manipulating eBPF objects from user-space.
+ .
+ This package contains the shared library.
+
+Package: libbsd0
+Architecture: loong64
+Version: 0.12.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libbsd
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 214
+Depends: libc6 (>= 2.40), libmd0 (>= 1.0.3-2)
+Filename: ./l/libbsd0/libbsd0_0.12.2-2_loong64.deb
+Size: 130824
+MD5sum: 9ad98cc1a4fa0bb5ed69ef0494a5a381
+SHA1: 9eb7414b8b28b8876a553597407480d7c2e4a094
+SHA256: 4f8f6d6fee58d12b99f9b462a743f0a79c1db1a5fea142af7903e10b5df8cfd8
+SHA512: 3649c9a4ac4ca9477cdc71a81c5514586b62447ce8ae3c2d73f426ca65a9f9c1f849809845f675e2b1bc468b86ebce9f175817a3af31bafe3f1a692c5806326e
+Homepage: https://libbsd.freedesktop.org/
+Description: utility functions from BSD systems - shared library
+ This library provides some C functions such as strlcpy() that are commonly
+ available on BSD systems but not on others like GNU systems.
+ .
+ For a detailed list of the provided functions, please see the libbsd-dev
+ package description.
+
+Package: libbz2-1.0
+Architecture: loong64
+Version: 1.0.8-6
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: bzip2
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 108
+Depends: libc6 (>= 2.39)
+Filename: ./l/libbz2-1.0/libbz2-1.0_1.0.8-6_loong64.deb
+Size: 38188
+MD5sum: f283067efbc83310dfdce49c20fca444
+SHA1: cb0576aca0a5abb71adfc289f89026bb19d71050
+SHA256: 76789bb8f3562521706986f5396d450f4795521fa659cbab839e741f8f153824
+SHA512: 638cbf68d869a06e266b7e367eee0d46af7657f4aaf52e1b9d9095cff26ff0a919f0b929af6d546e96ff74af0ddd21e8f438018276a9cc98ffe4bb0cf5db9723
+Homepage: https://sourceware.org/bzip2/
+Description: high-quality block-sorting file compressor library - runtime
+ This package contains libbzip2 which is used by the bzip2 compressor.
+ .
+ bzip2 is a freely available, patent free, data compressor.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+
+Package: libc-bin
+Architecture: loong64
+Version: 2.40-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: libs
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 1985
+Depends: libc6 (>= 2.40)
+Recommends: manpages
+Breaks: dh-lua (<< 27+nmu1~)
+Filename: ./l/libc-bin/libc-bin_2.40-3_loong64.deb
+Size: 575240
+MD5sum: 910de30678489dca1384b72c8635e208
+SHA1: 0b377461b9bfd9edadc0554cd3462d69e2c6169c
+SHA256: 308f1d889e6b023a9ec6924c6d5ff13f8720709d310dcbd79b6ce860dc15f19e
+SHA512: 15bac28d4e6a957f91fa462a02a9fceaf8dc0719c35b842ad5c1659263e7258b199b7802e64db65373487b5cdd70bba0143dcb273b3f64ff2fcfed60be82d6a7
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Binaries
+ This package contains utility programs related to the GNU C Library.
+ .
+  * getconf: query system configuration variables
+  * getent: get entries from administrative databases
+  * iconv, iconvconfig: convert between character encodings
+  * ldd, ldconfig: print/configure shared library dependencies
+  * locale, localedef: show/generate locale definitions
+  * tzselect, zdump, zic: select/dump/compile time zones
+
+Package: libc6
+Architecture: loong64
+Version: 2.40-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 11153
+Depends: libgcc-s1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, libc-l10n, locales, libnss-nis, libnss-nisplus
+Breaks: base-files (<< 13.3~), chrony (<< 4.2-3~), fakechroot (<< 2.19-3.5), firefox (<< 91~), firefox-esr (<< 91~), gnumach-image-1.8-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-486-dbg (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486-dbg (<< 2:1.8+git20210923~), hurd (<< 1:0.9.git20220301-2), locales (<< 2.40), locales-all (<< 2.40), nscd (<< 2.40), python3-iptables (<< 1.0.0-2), systemd (<< 256~rc4-1~), sysvinit (<< 3.09-2~), tinydns (<< 1:1.05-14), valgrind (<< 1:3.19.0-1~)
+Filename: ./l/libc6/libc6_2.40-3_loong64.deb
+Size: 2315924
+MD5sum: ee538009cdcc8be14224b22891fa5a61
+SHA1: c743dfcb8eea02408b94ead9e1330d3d24fe58d5
+SHA256: 5002ca38a99490abbae809eca6fb704653d5656e94dc4de1de0196887a9dafdd
+SHA512: 82662d62f3c3434ee43be67a377eccb8ba472fb4fc588190b5e404b6b2fd3e211969156e88429ca378bff221f128cf9988534ef375d977d16acb956ce97e9e4f
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
+Package: libcap-ng0
+Architecture: loong64
+Version: 0.8.5-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libcap-ng
+Maintainer: Håvard F. Aasen <havard.f.aasen@pfft.no>
+Installed-Size: 73
+Depends: libc6 (>= 2.40)
+Filename: ./l/libcap-ng0/libcap-ng0_0.8.5-3_loong64.deb
+Size: 17444
+MD5sum: 025fb79f7c4bed87b20a1c3f47832e0b
+SHA1: 365ecdd052da5fd55e61d056cd2cb1de82d78acf
+SHA256: 7407c01ec59d3566ad4644f79bdda68531e57d013a5a6bff425731faad2e21f5
+SHA512: 333a95dfef8589fb886e71ef343feab686b59c9394bf99a53c4db0b99ae7964f69e95c7a275d82eb3887c4f35a61d53ae664a4c002c7bd71a9b418929f2a254f
+Homepage: https://people.redhat.com/sgrubb/libcap-ng
+Description: alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains dynamic libraries for libcap-ng.
+
+Package: libcap2
+Architecture: loong64
+Version: 1:2.66-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 94
+Depends: libc6 (>= 2.37)
+Filename: ./l/libcap2/libcap2_1%3a2.66-5_loong64.deb
+Size: 27244
+MD5sum: 9487b73898215b94d7c0bb5d341965eb
+SHA1: 87b4c37d2bca50363873f145de7cd98e36317bb5
+SHA256: 0b5d4781ae3fadea3f677c28e954a7cb141a4c8df24aba01455d9f71a4b12296
+SHA512: 56375d2836c297d139b4282969b232b57762ca8462776d6670d8c7d99caf5ba9689ef667a072cb419854b1e298569426c3d390498a4bfdb9b8996b385c6f355d
+Homepage: https://sites.google.com/site/fullycapable/
+Description: POSIX 1003.1e capabilities (library)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains the shared library.
+
+Package: libcap2-bin
+Architecture: loong64
+Version: 1:2.66-5
+Multi-Arch: foreign
+Priority: important
+Section: utils
+Source: libcap2
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 144
+Depends: libc6 (>= 2.37), libcap2 (>= 1:2.63)
+Recommends: libpam-cap
+Breaks: libcap-bin
+Replaces: libcap-bin
+Filename: ./l/libcap2-bin/libcap2-bin_1%3a2.66-5_loong64.deb
+Size: 34568
+MD5sum: 93e24a480809bfb5cd9f98727f2bbfaa
+SHA1: 5ece1d17185a61840e0c3a5d79dde5ebfb57cf06
+SHA256: 1fbe4bd47579c2f81531411610ab616ab8fb009b710390a7d7811af0bd9a45b0
+SHA512: cfe122265648d2bd0a5327d301ab0c233544f4693ba05a9a11528b4c6af7dee2bd6e81ee20bfcedc5806bc283d15f0e1475481cd26de98c5742a73dea4617c28
+Homepage: https://sites.google.com/site/fullycapable/
+Description: POSIX 1003.1e capabilities (utilities)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains additional utilities.
+
+Package: libcom-err2
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 61
+Provides: libcom-err2t64 (= 1.47.1-1), libcomerr2 (= 1.47.1-1)
+Depends: libc6 (>= 2.38)
+Breaks: libcom-err2t64 (<< 1.47.0-2.4~exp1~), libcomerr2 (<< 1.43.9-1~)
+Replaces: libcom-err2t64, libcomerr2 (<< 1.43.9-1~)
+Filename: ./l/libcom-err2/libcom-err2_1.47.1-1_loong64.deb
+Size: 22640
+MD5sum: fae814bc13bbe1789263d0e8f9d3af9b
+SHA1: 0aa7fb2d673172b5caaacf9c112a6e69f3800566
+SHA256: 6f710556157bb600bbc9c9ff0c0d4890405f799cae2426c6ca4e78f8b9815f00
+SHA512: 81ab67c6ae6c48e702d065e11751bcaa710c546e0168b0dff9cfec9f297b38dad1bf342fbba0b0ffb8b738e96e58eead3cdfbce0fcf3671fb184f629fd989394
+Homepage: http://e2fsprogs.sourceforge.net
+Description: common error description library
+ libcomerr is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
+
+Package: libcrypt1
+Architecture: loong64
+Version: 1:4.4.36-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxcrypt
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 241
+Depends: libc6 (>= 2.39)
+Conflicts: libpam0g (<< 1.4.0-10)
+Replaces: libc6 (<< 2.29-4)
+Filename: ./l/libcrypt1/libcrypt1_1%3a4.4.36-5_loong64.deb
+Size: 91436
+MD5sum: 12588fbcda1ac747eaa2d95ece9ece66
+SHA1: 5671c6595912b3ac8ce85010db8736b974e90460
+SHA256: 373bc095515fa8bdd4cea25f0323e56b6dd4db2971e9742d93445807728fed0c
+SHA512: a9fc8f58cff08fc3a6b23d2445657335554a602aacaa64904877e7d59b4eaa2456878afea95add6816af9d1a437387a838983b3d642e894bec2f6f532318a370
+Description: libcrypt shared library
+ libxcrypt is a modern library for one-way hashing of passwords.
+ It supports DES, MD5, NTHASH, SUNMD5, SHA-2-256, SHA-2-512, and
+ bcrypt-based password hashes
+ It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
+ as well as a set of extended interfaces like 'crypt_gensalt'.
+
+Package: libdb5.3t64
+Architecture: loong64
+Version: 5.3.28+dfsg2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: db5.3
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 1967
+Provides: libdb5.3 (= 5.3.28+dfsg2-9)
+Depends: libc6 (>= 2.40)
+Breaks: libdb5.3 (<< 5.3.28+dfsg2-9)
+Replaces: libdb5.3
+Filename: ./l/libdb5.3t64/libdb5.3t64_5.3.28+dfsg2-9_loong64.deb
+Size: 701928
+MD5sum: b6b4aee04e840df4cac6f1e079de7b1e
+SHA1: e1f886dbef6b8d9be3cf5930c074d8b35f38f610
+SHA256: 3eaea96ef0fbe275e90322481238e329f42aeafd17675783638a3d1151f8d059
+SHA512: de3806480e7d51274f5865394fe2a33057a2c06f994a688e4eae3ea80d7c07e531ffe3bb3daf224c607d70e6d3f295893cfb130494aeda1bc34274eba4d795eb
+Homepage: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
+Description: Berkeley v5.3 Database Libraries [runtime]
+ This is the runtime package for programs that use the v5.3 Berkeley
+ database library.
+
+Package: libedit2
+Architecture: loong64
+Version: 3.1-20240808-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libedit
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 274
+Depends: libbsd0 (>= 0.1.3), libc6 (>= 2.40), libtinfo6 (>= 6)
+Replaces: libedit-dev (<< 3.1-20180525-2~)
+Filename: ./l/libedit2/libedit2_3.1-20240808-1_loong64.deb
+Size: 93524
+MD5sum: ba5e09ce725eea686ca8dfb2e6f29fb3
+SHA1: 05dba7958dfd2511f6f05096c8ea1eb015e9a672
+SHA256: 061eb91f2fe1cb011839bdf2853b7c56be16fc06687b0334c6c9a0965903b8e0
+SHA512: 69c2099350ffecfc712446b30af517a3bb77d29752545bf35edae242d248b9190e70096b350bc83676a88d67bda7180640f891e52a261672e19aeb795646fe90
+Homepage: https://www.thrysoee.dk/editline/
+Description: BSD editline and history libraries
+ Command line editor library provides generic line editing,
+ history, and tokenization functions.
+ .
+ It slightly resembles GNU readline.
+
+Package: libelf1t64
+Architecture: loong64
+Version: 0.192-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: elfutils
+Maintainer: Debian Elfutils Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1260
+Provides: libelf1 (= 0.192-3)
+Depends: libc6 (>= 2.40), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Breaks: libelf1 (<< 0.192-3)
+Replaces: libelf1
+Filename: ./l/libelf1t64/libelf1t64_0.192-3_loong64.deb
+Size: 193648
+MD5sum: f32f54a8b03dd8f378ada8d1cff74bc2
+SHA1: 483fc3926cefddba61da5a44d22a0c202cace84e
+SHA256: dfce769c88b3204edc8530d25d0284a0549a93ea140c36aa5196bf15b6edf68f
+SHA512: c30981a3ca460830ed521fe54ecd265a67a211eb21120750931b5465377307709536ea0887d97bb3e556e01888f586e8d7b253fa4bda83ad9cbf9db41e3ccb3a
+Homepage: https://sourceware.org/elfutils/
+Description: library to read and write ELF files
+ The libelf1t64 package provides a shared library which allows reading and
+ writing ELF files on a high level.  Third party programs depend on
+ this package to read internals of ELF files.  The programs of the
+ elfutils package use it also to generate new ELF files.
+ .
+ This library is part of elfutils.
+
+Package: libext2fs2t64
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 581
+Provides: e2fslibs (= 1.47.1-1), libext2fs2 (= 1.47.1-1)
+Depends: libc6 (>= 2.38)
+Breaks: e2fslibs (<< 1.43.9-1~), libext2fs2 (<< 1.47.1-1)
+Replaces: e2fslibs (<< 1.43.9-1~), libext2fs2
+Filename: ./l/libext2fs2t64/libext2fs2t64_1.47.1-1_loong64.deb
+Size: 204228
+MD5sum: 3eb322cfcbfd1551c0b3c955de0ad7dc
+SHA1: e4c1c136dd02f68087e53c97260ddebcd9afe10b
+SHA256: 1323a9c07807aba4a016727b97aee9017b00b45e4b964579d12537873bf9a03a
+SHA512: 1d68d609e4294932973b43dcd33af473bf3caddf0657ea58c60eb9a151f120f85f62f08a907e2ce2e8079adc68389cf8c2d9bf4e9ca7ad7b6d65c8951cfcf9ae
+Homepage: http://e2fsprogs.sourceforge.net
+Description: ext2/ext3/ext4 file system libraries
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package provides the ext2fs and e2p libraries, for userspace software
+ that directly accesses extended file systems. Programs that use libext2fs
+ include e2fsck, mke2fs, and tune2fs. Programs that use libe2p include
+ dumpe2fs, chattr, and lsattr.
+
+Package: libfdisk1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 619
+Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libuuid1 (= 2.40.2-9)
+Filename: ./l/libfdisk1/libfdisk1_2.40.2-9_loong64.deb
+Size: 214692
+MD5sum: e4340dd2858b528e3b6b07aadba4091a
+SHA1: b49f127aaf80d196f86425db079f7395c745d447
+SHA256: 4d4224dc2daa1c098dd5f8b40fff8a9559eb67593975a4ba1c9b13daf5ce42ce
+SHA512: 12b08af75c5a35d57ab4985390b36886eac36cf74e6dc615ea1f71c91e0fbb17bdea94758889ee5dbf89790dd6bc5b359504038d0574ce10f57be84f1708c94d
+Homepage: https://github.com/util-linux/util-linux
+Description: fdisk partitioning library
+ The libfdisk library is used for manipulating partition tables. It is
+ the core of the fdisk, cfdisk, and sfdisk tools.
+
+Package: libffi8
+Architecture: loong64
+Version: 3.4.6-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libffi
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 60
+Provides: libffi8ubuntu1 (= 3.4.6-1)
+Depends: libc6 (>= 2.37)
+Breaks: libffi8ubuntu1 (<< 3.4.2-1)
+Replaces: libffi8ubuntu1 (<< 3.4.2-1)
+Filename: ./l/libffi8/libffi8_3.4.6-1_loong64.deb
+Size: 20324
+MD5sum: 12e3bb98b82b80c37510e348eb73c9c4
+SHA1: cb6916cf4a8406ed471be7281dba9131ac2ada6e
+SHA256: 4607783ec7b70353d5534f86b29cc5c9ad990207f76d4d96d2099f78521841ec
+SHA512: eba4c7c65b2815acae60496fc9500acb12fa2e78f4c14ba81b3c191c18153edb020a0cd2af85d0cb4e0e877f0b12759d334a86f014ed742dc4fa4ba5d7cf16fc
+Homepage: https://sourceware.org/libffi/
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libgcc-s1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Protected: yes
+Important: yes
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 399
+Provides: libgcc1 (= 1:14.2.0-7)
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Replaces: libgcc1 (<< 1:10)
+Filename: ./l/libgcc-s1/libgcc-s1_14.2.0-7_loong64.deb
+Size: 94184
+MD5sum: c8a90d0f3c75687472feb72140630f06
+SHA1: 1271e5ae496b64ebb3a07e0fb7bfa7c1745cbb17
+SHA256: 56d28afdfee47dec1d1d2801b81d06e789f29c1ebaa9cbfaafaf895f74fdfafa
+SHA512: 5128e5f779665a42c340456c0cdb84089b2f3377b4dfeee87692b7f2c3d582521eb66c5ba9292c82a3e943c4afa8a543601823784912aa9ce016fa8e760113ed
+Homepage: http://gcc.gnu.org/
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+
+Package: libgcrypt20
+Architecture: loong64
+Version: 1.11.0-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1442
+Depends: libc6 (>= 2.39), libgpg-error0 (>= 1.50)
+Suggests: rng-tools
+Filename: ./l/libgcrypt20/libgcrypt20_1.11.0-6_loong64.deb
+Size: 739232
+MD5sum: fc3cd8195736237078ec22d7ba12b1f8
+SHA1: dda6032eb7e0972d7cb63f74ec6d72de023eb780
+SHA256: 55ea94b113b2315bf4c46bb98503ea9831df276c02605a15f4cff64d9dc1e2e6
+SHA512: b511c3eda2d249cfeb3daba6a7c130f39dbfd9a3eba6da5d7d785710ccbb72bcbbb2104e12a762d29b26422c65bfe48fe9ff72cd392ef557ccf2de084c1aa2e4
+Homepage: https://gnupg.org/software/libgcrypt/
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Poly1305, Camellia, ChaCha20, IDEA, Salsa, SM4, Blake-2, CRC, MD2, MD4, MD5,
+ RIPE-MD160, SM3, SHA-1, SHA-256, SHA-512, SHA3-224, SHA3-256, SHA3-384,
+ SHA3-512, SHAKE128, SHAKE256, Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC
+ (Curve25519, sec256k1, GOST R 34.10-2001 and GOST R 34.10-2012, etc.)
+
+Package: libgmp10
+Architecture: loong64
+Version: 2:6.3.0+dfsg-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gmp (2:6.3.0+dfsg-2)
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 879
+Depends: libc6 (>= 2.38)
+Breaks: postgresql-pgmp (<< 1.0.3-1)
+Filename: ./l/libgmp10/libgmp10_2%3a6.3.0+dfsg-2+b1_loong64.deb
+Size: 554540
+MD5sum: f874937da3de20c1319ed84284baf677
+SHA1: 89f4522969973abb840049e655b43720e2f88ce8
+SHA256: 919394c6c8b5309553f7228881dd337c7d208b6394ec7b4a14db7a99a2b2cf5d
+SHA512: 654f5d668b80c64f5fac373f50d5979d0bc7926acf25097f39d508085d76738feb7167333b19ec041c712aaa7d375ac46e57b7b42ebbca0d0b8df7486c7c43ff
+Homepage: https://gmplib.org/
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+
+Package: libgnutls30t64
+Architecture: loong64
+Version: 3.8.6-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gnutls28
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 3268
+Provides: libgnutls30 (= 3.8.6-2)
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libhogweed6t64 (>= 3.10), libidn2-0 (>= 2.0.0), libnettle8t64 (>= 3.10), libp11-kit0 (>= 0.25.1), libtasn1-6 (>= 4.14), libunistring5 (>= 1.1)
+Suggests: gnutls-bin
+Breaks: libgnutls30 (<< 3.8.6-2)
+Replaces: libgnutls30
+Filename: ./l/libgnutls30t64/libgnutls30t64_3.8.6-2_loong64.deb
+Size: 1345948
+MD5sum: 760cc0894624870f42ac7ed4aa3acfcd
+SHA1: 1df2f38b74b6c8b3ce1e9b9ecdbef1ad0898ccc8
+SHA256: 5d5cf3d0dc9f3fb5e3be5c5546ba6ace4501c790d15ec70b38c1ba418b732bb4
+SHA512: 77fdc7d2b89468c7a48c9f807c51c5eb9350afecfa662072482ba133ce0102273fe57026d1ef3b38ebd0f8f429345f7f86a36387a318185111e69554ac867d30
+Homepage: https://www.gnutls.org/
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the main runtime library.
+
+Package: libgpg-error0
+Architecture: loong64
+Version: 1.50-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libgpg-error
+Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+Installed-Size: 219
+Depends: libc6 (>= 2.40)
+Recommends: libgpg-error-l10n
+Filename: ./l/libgpg-error0/libgpg-error0_1.50-4_loong64.deb
+Size: 83080
+MD5sum: 72e4a2ca43909c75b1987a34ed1b515b
+SHA1: 6398a980b5f7fce3c46bd36cccf7cce1e54eeac7
+SHA256: a5756ab34d2edc5df813359088a1a32f23d5c8e1acf6fc2f1e307a72bed42569
+SHA512: ec72e0f4c79d7a10207e2985387fb802a8cc86e563d649a154992c84bfb45cc0f1b99c50b736858fc9ca26c1bf7cf10185ce4939d833f853aa169ba4ef5a57c0
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Description: GnuPG development runtime library
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+
+Package: libgssapi-krb5-2
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 422
+Depends: libkrb5-3 (= 1.21.3-3), libc6 (>= 2.39), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkrb5support0 (= 1.21.3-3)
+Suggests: krb5-doc, krb5-user
+Filename: ./l/libgssapi-krb5-2/libgssapi-krb5-2_1.21.3-3_loong64.deb
+Size: 128248
+MD5sum: 1bb9a331e877fe773a595df8e1ab761a
+SHA1: 164d28c6c14b22998594d346ad95fcf1e88ca6c7
+SHA256: 963e290cf278cc1e6f9e1b9f81d79e52f7913e04341a766485b17b599c609daa
+SHA512: efb187e2867bb71bc619e64dd5063d82f78166d014c8f2470d5a1fd5f765821daef702ccfa8ce3ecd1f2bbd169b7199541fccbf3a3474f2815edcb1cbe2bd3dc
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the MIT Kerberos
+ implementation of GSS-API used by applications and Kerberos clients.
+
+Package: libhogweed6t64
+Architecture: loong64
+Version: 3.10-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nettle
+Maintainer: Magnus Holmgren <holmgren@debian.org>
+Installed-Size: 490
+Provides: libhogweed6 (= 3.10-1)
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libnettle8t64
+Breaks: libhogweed6 (<< 3.10-1)
+Replaces: libhogweed6
+Filename: ./l/libhogweed6t64/libhogweed6t64_3.10-1_loong64.deb
+Size: 334120
+MD5sum: 803d6a29eddac65a8a2f890c603212d7
+SHA1: 468ce8801d26a28674317e84ef5dc1319f9f5707
+SHA256: e3dd0c8e3e43be54f80c0bd6969f1ca9282560842f798d1e13759f7889f16baf
+SHA512: 8954f6f8c01e0661a7c6c61bc0cd34587cd031f7dbea5ebcfa677634be5baa2a41d7cc3a92cf962a2e23dfb2201af6140d166a125b4d6fa68048613fa6716f34
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (public-key cryptos)
+ Nettle is a cryptographic library that is designed to fit easily in more or
+ less any context: In crypto toolkits for object-oriented languages (C++,
+ Python, Pike, ...), in applications like LSH or GNUPG, or even in kernel
+ space.
+ .
+ It tries to solve a problem of providing a common set of cryptographic
+ algorithms for higher-level applications by implementing a
+ context-independent set of cryptographic algorithms. In that light, Nettle
+ doesn't do any memory allocation or I/O, it simply provides the
+ cryptographic algorithms for the application to use in any environment and
+ in any way it needs.
+ .
+ This package contains the asymmetric cryptographic algorithms, which,
+ require the GNU multiple precision arithmetic library (libgmp) for
+ their large integer computations.
+
+Package: libidn2-0
+Architecture: loong64
+Version: 2.3.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libidn2
+Maintainer: Debian Libidn team <help-libidn@gnu.org>
+Installed-Size: 452
+Depends: libc6 (>= 2.37), libunistring5 (>= 1.1)
+Filename: ./l/libidn2-0/libidn2-0_2.3.7-2_loong64.deb
+Size: 126720
+MD5sum: 1897f25d99bb4c73590c172288628fda
+SHA1: 9827bdacb6a065bbcc9b54d934cff31538955eac
+SHA256: f2b2dcfc291f992c0b8cf8ae04f297b72de3cf1e2c5e6d967658e3938f4746ec
+SHA512: 77e2892f69ad595e3680d8b40fcaa250e16d37120a9a06aab1dadc3bdb5326cf195cad573adf2e6234fd4d47f0f1c4eba71e300d91fa20363876b1cd7cbc3ffb
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Internationalized domain names (IDNA2008/TR46) library
+ Libidn2 implements the revised algorithm for internationalized domain
+ names called IDNA2008/TR46.
+ .
+ This package contains runtime libraries.
+
+Package: libjansson4
+Architecture: loong64
+Version: 2.14-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: jansson (2.14-2)
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 108
+Depends: libc6 (>= 2.36)
+Filename: ./l/libjansson4/libjansson4_2.14-2+b1_loong64.deb
+Size: 38864
+MD5sum: 21720015c0506d69c53eecccaaf7242b
+SHA1: 09583c3aac687cf6a06fb4d48968df25ae70c1c5
+SHA256: 2b26210655589613b381061537b579ff2a03f75d426c80b9450c1100258d7799
+SHA512: 34f5a1005ffe4953782e0d6918c18ec478977402dc2c474a309a49c4cea7325b841e322141c879c36b08290f3b9ecce186c841b92fb217d463e1c2c98efa919f
+Homepage: http://www.digip.org/jansson/
+Description: C library for encoding, decoding and manipulating JSON data
+ Jansson is a C library for encoding, decoding and manipulating JSON data.
+ .
+ It features:
+  * Simple and intuitive API and data model
+  * Comprehensive documentation
+  * No dependencies on other libraries
+  * Full Unicode support (UTF-8)
+  * Extensive test suite
+
+Package: libk5crypto3
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 277
+Depends: libc6 (>= 2.39), libkrb5support0 (= 1.21.3-3)
+Suggests: krb5-doc, krb5-user
+Breaks: libgssapi-krb5-2 (<= 1.18~), libkrb5-3 (<= 1.18~)
+Filename: ./l/libk5crypto3/libk5crypto3_1.21.3-3_loong64.deb
+Size: 81780
+MD5sum: 4e67eb2cbad54f92c1c21efda0cad5f5
+SHA1: e3dd22e7da73cf242fb80b9950f7d22f8deb4583
+SHA256: 4eb7dbf1120c4c61008e236ede86a5bd25503286f6e41fd1735c2e02ba579f8b
+SHA512: 8d9b395bb3c128c4dd82ed3e0c31afb474045f6146fdde49b6706ab73255e7c1fdb4f7aac1cd58eecb57a5987a3ef6071bee9d73798658b13a1211c7618d8774
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - Crypto Library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime cryptography libraries used by
+ applications and Kerberos clients.
+
+Package: libkeyutils1
+Architecture: loong64
+Version: 1.6.3-3.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: keyutils
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 36
+Depends: libc6 (>= 2.40)
+Filename: ./l/libkeyutils1/libkeyutils1_1.6.3-3.1_loong64.deb
+Size: 9120
+MD5sum: 0c5901bf399c1a62c5e40959ba6bbcd8
+SHA1: 957aada2aebdb54c50bf2c3f3270ef4eb64fc3b5
+SHA256: f5f27988697de9cb36ff50edb309d7318041abac92adb3273abde50f2952b1fc
+SHA512: a0f184324e2c3937c04bf212985fe3aa28b8de16fa6e7076b88ddf149291bf15f3c7837c4ff3be95b4be22bb5a25b7abcaca9707c5412617e64d3d4a939b133c
+Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+Description: Linux Key Management Utilities (library)
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+ .
+ This package provides a wrapper library for the key management facility system
+ calls.
+
+Package: libkmod2
+Architecture: loong64
+Version: 33+20240816-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: kmod
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 164
+Depends: libc6 (>= 2.39), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5)
+Conflicts: dracut-install (<= 103-1)
+Filename: ./l/libkmod2/libkmod2_33+20240816-2_loong64.deb
+Size: 62772
+MD5sum: c175c3c4dea3bf81a2267be927e7cd62
+SHA1: e7892135bf77c96244a06ee09c6e773fdb7e89be
+SHA256: 25c5c2f7c3732e9efb572fbc0ae788434a8e5451001db2282cd69669e81c4b8b
+SHA512: 7426d33ba3db062f93c7ea72d592f62e9da2fa39931bd1615d3877aad7558330655164d8deb5dc3ceea40c00cf1df611eecfa980fd7ad7919b2cdab78df1fb1d
+Description: libkmod shared library
+ This library provides an API for insertion, removal, configuration and
+ listing of kernel modules.
+
+Package: libkrb5-3
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 1052
+Depends: libkrb5support0 (= 1.21.3-3), libc6 (>= 2.39), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkeyutils1 (>= 1.5.9), libssl3t64 (>= 3.0.0)
+Recommends: krb5-locales
+Suggests: krb5-doc, krb5-user
+Breaks: libapache2-mod-auth-kerb (<= 5.4-2.4)
+Filename: ./l/libkrb5-3/libkrb5-3_1.21.3-3_loong64.deb
+Size: 308764
+MD5sum: 0d73f5aee63e2c0371522332b9763d1f
+SHA1: fa7b6325b9e7c1945e20d581a7eaea1cee9db2db
+SHA256: 3ef8f3bf27ea9491e1e8e887e3c0f8b16f4bf399819c7386f34e14d1cae38607
+SHA512: 79bcfbfed38cf772317b0cc8e033237eaca92d20b598f582f76cbb1c40acfb90e85ff9c3c223269556ded39a1012d82a38cee288ea7a91be8d72223607f0bc54
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
+
+Package: liblocale-gettext-perl
+Architecture: loong64
+Version: 1.07-7+b1
+Priority: required
+Section: perl
+Source: liblocale-gettext-perl (1.07-7)
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 53
+Pre-Depends: perl-base (>= 5.40.0-6), perlapi-5.40.0
+Depends: libc6 (>= 2.40)
+Filename: ./l/liblocale-gettext-perl/liblocale-gettext-perl_1.07-7+b1_loong64.deb
+Size: 15184
+MD5sum: c488b5098d48ce5ecca4fca223d6017e
+SHA1: 4bc8f333391a9341714c962bffebe87509fe60ff
+SHA256: 188d4cbcc6cdcd6d9a80c0c940e1970a5cb94b7a61a2ad20c2bf2fcbc9964ec5
+SHA512: 64f55d4a36025d28a83001cdfd4ad08c11771c0e984de7c8d14b333d21c4c9c46d1b7a3ea47b6d7cbfaf294a6d9171cc21d8b10e7ecc787f3868613d72efd51f
+Homepage: https://metacpan.org/release/Locale-gettext
+Description: module using libc functions for internationalization in Perl
+ The Locale::gettext module permits access from perl to the gettext() family of
+ functions for retrieving message strings from databases constructed
+ to internationalize software.
+ .
+ It provides gettext(), dgettext(), dcgettext(), textdomain(),
+ bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext()
+ and dngettext().
+
+Package: liblz4-1
+Architecture: loong64
+Version: 1.9.4-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: lz4
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Installed-Size: 151
+Depends: libc6 (>= 2.39), libxxhash0 (>= 0.6.5)
+Breaks: liblz4-1a
+Replaces: liblz4-1a
+Filename: ./l/liblz4-1/liblz4-1_1.9.4-3_loong64.deb
+Size: 52696
+MD5sum: 56c8d10e65526354ee00eb323c8a089f
+SHA1: d9ea5bb2febfe1747bd01fc0c56bd348c5f14a08
+SHA256: 00def1839e0bfccbe2732d444eb3a648a293de0a381e448acfae9af1da124d82
+SHA512: 57b5a9d22b9ee1a1d34851c61bc54e18f3fbf9c69820ff13360c27d51e80e56d152fdc4ba2efacdee8a6ef0579fcb7266b54bd2d0db61f6ebebbb8687803575e
+Homepage: https://github.com/lz4/lz4
+Description: Fast LZ compression algorithm library - runtime
+ LZ4 is a very fast lossless compression algorithm, providing compression speed
+ at 400 MB/s per core, scalable with multi-cores CPU. It also features an
+ extremely fast decoder, with speed in multiple GB/s per core, typically
+ reaching RAM speed limits on multi-core systems.
+ .
+ This package includes the shared library.
+
+Package: liblzma5
+Architecture: loong64
+Version: 5.6.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: xz-utils
+Maintainer: Sebastian Andrzej Siewior <sebastian@breakpoint.cc>
+Installed-Size: 385
+Depends: libc6 (>= 2.38)
+Breaks: liblzma2 (<< 5.1.1alpha+20110809-3~)
+Filename: ./l/liblzma5/liblzma5_5.6.2-2_loong64.deb
+Size: 251560
+MD5sum: 48dd17a78d5d0f97aff90641e7bbcff2
+SHA1: bed8dcdfeca2f1c366a60c45939fb4beac36fd6f
+SHA256: da51880d0435e81e8aa2b68cd8951805ee796bb47c93c953de2339f95909d38d
+SHA512: bc46b92d30ae03e237a32b9cf6334fbf7db1dd6fda0e97dd74071997bc3ebe419685ca6d1c29de974912dd97dcbe487bac91376d43a8ce6bdb8ce88ac4378b8b
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+
+Package: libmd0
+Architecture: loong64
+Version: 1.1.0-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libmd
+Maintainer: Guillem Jover <guillem@debian.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.37)
+Filename: ./l/libmd0/libmd0_1.1.0-2_loong64.deb
+Size: 33980
+MD5sum: b978560c019c7fd956a7a199aecfb2d9
+SHA1: 18b68763d8170a8ced5161528fed4d50c619a363
+SHA256: 82e8abdd919050135fb787946524986af536047e1b6f781aaae57a49a6aab0d6
+SHA512: b1bc0bc2efc0d988c51acbf486c0ced0ff41bd65fbe314cc1863348dc015e2bc3890cbe8b0488f8213ef37aa7e436de2dc45ce84092f69fc6d119ce7b7ac4741
+Homepage: https://www.hadrons.org/software/libmd/
+Description: message digest functions from BSD systems - shared library
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
+
+Package: libmnl0
+Architecture: loong64
+Version: 1.0.5-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libmnl
+Maintainer: Debian Netfilter Packaging Team <pkg-netfilter-team@lists.alioth.debian.org>
+Installed-Size: 53
+Depends: libc6 (>= 2.40)
+Filename: ./l/libmnl0/libmnl0_1.0.5-3_loong64.deb
+Size: 12008
+MD5sum: 64ede1218fe9bb38f4719a6322c4253e
+SHA1: 981d263cac87d51e9b674e2c6922e49c988c1233
+SHA256: 61f044e246e0d86441cfbef5e100806ad9b17d2b3600994fcc9afaeb2812e06b
+SHA512: 7d30269643a8b4eb1c8d226c08a81ce538ba3ca3d1ccdc3694377a0bad768188211959984b56dc0caf340eea9257f75a252ef37114da4404ed9f4ad245ba83e5
+Homepage: https://netfilter.org/projects/libmnl/
+Description: minimalistic Netlink communication library
+ libmnl is a minimalistic user-space library oriented to Netlink developers.
+ There are a lot of common tasks in parsing, validating, constructing of
+ both the Netlink header and TLVs that are repetitive and easy to get wrong.
+ This library aims to provide simple helpers that allows you to re-use code
+ and to avoid re-inventing the wheel.
+ .
+ The main features of this library are:
+ .
+ Small: the shared library requires around 30KB for an x86-based computer.
+ .
+ Simple: this library avoids complexity and elaborated abstractions that
+ tend to hide Netlink details.
+ .
+ Easy to use: the library simplifies the work for Netlink-wise developers.
+ It provides functions to make socket handling, message building,
+ validating, parsing and sequence tracking, easier.
+ .
+ Easy to re-use: you can use the library to build your own abstraction
+ layer on top of this library.
+ .
+ Decoupling: the interdependency of the main bricks that compose the
+ library is reduced, i.e. the library provides many helpers, but the
+ programmer is not forced to use them.
+ .
+ This package contains the shared libraries needed to run programs that use
+ the minimalistic Netlink communication library.
+
+Package: libmount1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 603
+Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libselinux1 (>= 3.1~)
+Suggests: cryptsetup-bin
+Filename: ./l/libmount1/libmount1_2.40.2-9_loong64.deb
+Size: 207248
+MD5sum: 5f0c9cbc4542b81895d5db1f50a990dd
+SHA1: 284b1aee844cb907729e6da4f0cdd6481514faad
+SHA256: ea7ba7a0f3406f20ca9678023ebe3a01ec9767288d335bc73a3b6e3c31e30d2f
+SHA512: a780c77bbe786c455b40c58cc7ed9e7f12b51dddb81ff0bce7d26ddb6218ea6c4601e8399724d08ca22c44f23a6da14c2911ccc38ed81e720e6834b7811d8026
+Homepage: https://github.com/util-linux/util-linux
+Description: device mounting library
+ This device mounting library is used by mount and umount helpers.
+
+Package: libncursesw6
+Architecture: loong64
+Version: 6.5-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 411
+Depends: libtinfo6 (= 6.5-2), libc6 (>= 2.38)
+Recommends: libgpm2
+Filename: ./l/libncursesw6/libncursesw6_6.5-2_loong64.deb
+Size: 126492
+MD5sum: c6510556669f698a6d8fa3649f33a691
+SHA1: e38726031ca5c369904baab005e13536842e01bf
+SHA256: 458f1c87765ec19dd761dcda37252445f167cc39327cda4e4f96f501f7cee478
+SHA512: d9b8873fc25c24ca53b453e0450f877770cbf930f700360f9b3bf68a2a1012365eea719ffadd0a830321bd12608b6290c65798c66459d6e36d461ab709e8ec98
+Homepage: https://invisible-island.net/ncurses/
+Description: shared libraries for terminal handling (wide character support)
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with ncursesw, which includes support for wide characters.
+
+Package: libnettle8t64
+Architecture: loong64
+Version: 3.10-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nettle
+Maintainer: Magnus Holmgren <holmgren@debian.org>
+Installed-Size: 557
+Provides: libnettle8 (= 3.10-1)
+Depends: libc6 (>= 2.38)
+Breaks: libnettle8 (<< 3.10-1)
+Replaces: libnettle8
+Filename: ./l/libnettle8t64/libnettle8t64_3.10-1_loong64.deb
+Size: 311872
+MD5sum: 01c6c984435f810f82d926b8742df4f0
+SHA1: e6c228fc5b31e4364bf4f0bf8911f9ebb4a2737d
+SHA256: f22b869909e40bc1b4d5a21411334d8a20be2357113fb258d66f781516227de8
+SHA512: 69fafa59e7ef9021be3e88aad2aad0718ffab6c60a4ddccec0b08fabd9a9f49a60c1c45b3c739acc4778c4616d1efaf6ff5ade2f6c76a80da9c4d1ac8e79e95d
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (symmetric and one-way cryptos)
+ Nettle is a cryptographic library that is designed to fit easily in more or
+ less any context: In crypto toolkits for object-oriented languages (C++,
+ Python, Pike, ...), in applications like LSH or GNUPG, or even in kernel
+ space.
+ .
+ It tries to solve a problem of providing a common set of cryptographic
+ algorithms for higher-level applications by implementing a
+ context-independent set of cryptographic algorithms. In that light, Nettle
+ doesn't do any memory allocation or I/O, it simply provides the
+ cryptographic algorithms for the application to use in any environment and
+ in any way it needs.
+ .
+ This package contains the symmetric and one-way cryptographic
+ algorithms. To avoid having this package depend on libgmp, the
+ asymmetric cryptos reside in a separate library, libhogweed.
+
+Package: libnewt0.52
+Architecture: loong64
+Version: 0.52.24-2+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: newt (0.52.24-2)
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 361
+Depends: libc6 (>= 2.38), libslang2 (>= 2.2.4)
+Recommends: libfribidi0
+Filename: ./l/libnewt0.52/libnewt0.52_0.52.24-2+b1_loong64.deb
+Size: 57456
+MD5sum: 2809fa7706c156e83c89ec3a89413b93
+SHA1: 02f87705ffca4d47f4179f765f5b82756bb0200c
+SHA256: 6d97b5ca9d32078799b2070240e86d6ffea5cdef27f0e7511dede16283e21189
+SHA512: 2c082e5a4d12489d5cebd59418f8ae2c15e338821664ed818456cb69d5243b7ac9c3531a6a279d6b647d48a8b8bd6dcdc8f70b09f7054e3e23dc2c432420e71a
+Homepage: https://pagure.io/newt
+Description: Not Erik's Windowing Toolkit - text mode windowing with slang
+ Newt is a windowing toolkit for text mode built from the slang library.
+ It allows color text mode applications to easily use stackable windows,
+ push buttons, check boxes, radio buttons, lists, entry fields, labels,
+ and displayable text. Scrollbars are supported, and forms may be nested
+ to provide extra functionality. This package contains the shared library
+ for programs that have been built with newt.
+
+Package: libnftables1
+Architecture: loong64
+Version: 1.1.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nftables
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 1104
+Depends: libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libjansson4 (>= 2.14), libmnl0 (>= 1.0.3-4~), libnftnl11 (>= 1.2.8), libxtables12 (>= 1.6.0+snapshot20161117)
+Filename: ./l/libnftables1/libnftables1_1.1.1-1_loong64.deb
+Size: 324252
+MD5sum: 9295a67314bb33ebf884df5b85c8c3fe
+SHA1: 1f04188736a3c20c8479dadc4cc3b9d8f08585a3
+SHA256: 2b92158bd59503fe6c4422bdd29c9eff1f57dfdc17b855e6aa2a58c48df2fe32
+SHA512: 5832ccc63f10f16c76c9c25786b2d32e0b055cd18b1593238914348de20b623802ffb6be602b061ebef55100c97120498da3e25d9f91208184240f2330bd90ff
+Homepage: https://www.netfilter.org/
+Description: Netfilter nftables high level userspace API library
+ This library provides high level semantics to interact with the nftables
+ framework by Netfilter project.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+ .
+ This package contains the libnftables library.
+
+Package: libnftnl11
+Architecture: loong64
+Version: 1.2.8-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libnftnl
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 279
+Depends: libc6 (>= 2.40), libmnl0 (>= 1.0.3-4~)
+Filename: ./l/libnftnl11/libnftnl11_1.2.8-1_loong64.deb
+Size: 62716
+MD5sum: c246ea0f5640520074edc0973b32a458
+SHA1: 1a2538f61f35a5413b9207fe228c1bc2e8cb826c
+SHA256: cdf2e50ab87817dc1b3dd7ee3be46e598957a3c04634b25cb8fe522a6e701154
+SHA512: 7dfbf094440f93d2c982c2ab60a712611a0e328b31f7b0d966e3ad3ee442b8f4bc2ced1b024f08a52c2d8fe83c079be4e041cfe8a780059badfe1a4ad129013b
+Homepage: https://git.netfilter.org/libnftnl
+Description: Netfilter nftables userspace API library
+ libnftnl is the low-level library for Netfilter 4th generation
+ framework nftables.
+ .
+ Is the user-space library for low-level interaction with
+ nftables Netlink's API over libmnl.
+
+Package: libp11-kit0
+Architecture: loong64
+Version: 0.25.5-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: p11-kit
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1758
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Filename: ./l/libp11-kit0/libp11-kit0_0.25.5-2_loong64.deb
+Size: 433996
+MD5sum: ab85730ee50ce8adbeccdc767116a79d
+SHA1: 146a944c1e76efbc98c16e693cc816bb8eecfca6
+SHA256: 5d50fb0195fe790e7f07641cfa9247fd9cdef9d27883dd4c6ef0e1c6e3a2819e
+SHA512: 402ff0c6720c1c74b84bc2f90fa79f5ce1d0ffc97ad374e5f1dcda5e2efb526a63ee41b0fd6e192cf5074d339ace739f703aeb33f888dc28b02fddd5f8e72963
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: library for loading and coordinating access to PKCS#11 modules - runtime
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the shared library required for applications loading
+ and accessing PKCS#11 modules.
+
+Package: libpam-modules
+Architecture: loong64
+Version: 1.5.3-7
+Multi-Arch: same
+Priority: required
+Section: admin
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 1160
+Provides: libpam-mkhomedir, libpam-motd, libpam-umask
+Pre-Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.37), libcrypt1 (>= 1:4.3.0), libdb5.3t64, libpam0g (>= 1.4.1), libselinux1 (>= 3.1~), libsystemd0, debconf (>= 0.5) | debconf-2.0, libpam-modules-bin (= 1.5.3-7)
+Conflicts: libpam-mkhomedir, libpam-motd, libpam-umask
+Replaces: libpam-umask, libpam0g-util
+Filename: ./l/libpam-modules/libpam-modules_1.5.3-7_loong64.deb
+Size: 262948
+MD5sum: f2e3b8bcea9ac35dd090462a6046fd65
+SHA1: 839e1f4c87b02c9db17f66ccacd8671eb744ae9c
+SHA256: 029b51fb57afef58cfda2ca23c2ffc4788b0da8157d0050964de81cc84f5509a
+SHA512: 647e5baa9b45772c22878d1a787fe4f209bf069d2b4595c59d9a94d82fd6e8398ed760685f3a8f342ceb8025b416a153ff722f01a1a301c24e2de0b990005943
+Homepage: http://www.linux-pam.org/
+Description: Pluggable Authentication Modules for PAM
+ This package completes the set of modules for PAM. It includes the
+  pam_unix.so module as well as some specialty modules.
+
+Package: libpam-modules-bin
+Architecture: loong64
+Version: 1.5.3-7
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 241
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.37), libcrypt1 (>= 1:4.3.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsystemd0 (>= 254)
+Replaces: libpam-modules (<< 1.5.2-5~)
+Filename: ./l/libpam-modules-bin/libpam-modules-bin_1.5.3-7_loong64.deb
+Size: 53900
+MD5sum: a1b2bbbb9f119500bce3a309dfecbbcf
+SHA1: abb00394951e8e391655bfd6f640e332084757a3
+SHA256: 126541a22965eb564f20e00a433d2575f0947f2bba3eed27d2acd5d02ed4b752
+SHA512: f986983f3461c68153f2b3a73bd7ca9966dfd0391eba186d0427267bc8efd22b2a6fb6cb20661c48320a7211e0c486168533740259c14efbac511f3e482d3f4f
+Homepage: http://www.linux-pam.org/
+Description: Pluggable Authentication Modules for PAM - helper binaries
+ This package contains helper binaries used by the standard set of PAM
+ modules in the libpam-modules package.
+
+Package: libpam-runtime
+Architecture: all
+Version: 1.5.3-7
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 881
+Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.5.19) | cdebconf, libpam-modules (>= 1.0.1-6)
+Conflicts: libpam0g-util
+Replaces: libpam0g-dev, libpam0g-util
+Filename: ./l/libpam-runtime/libpam-runtime_1.5.3-7_all.deb
+Size: 140108
+MD5sum: 0cacfac6ce73d95603427eece58c4a45
+SHA1: ec926792b2aaf861eaed1080807a85669d9b3c59
+SHA256: dece7e05b94abfc3987a0db6372d3db2ebf32f9a7fbdb2881da47a705b94ae8f
+SHA512: 3666f858a5eab35f6de04d7d21b7278492b20cb0a08a936f820c0bcd23296e45bba62cac3dc8bc95e62437a37eb9feeea9d9c9fb48f43bde9e4fa252464c00a2
+Homepage: http://www.linux-pam.org/
+Description: Runtime support for the PAM library
+ Contains configuration files and  directories required for
+ authentication  to work on Debian systems.  This package is required
+ on almost all installations.
+
+Package: libpam0g
+Architecture: loong64
+Version: 1.5.3-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pam
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 197
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.37), debconf (>= 0.5) | debconf-2.0
+Suggests: libpam-doc
+Breaks: libpam0t64 (<< 1.5.3-5)
+Replaces: libpam0g-util, libpam0t64 (<< 1.5.3-5)
+Filename: ./l/libpam0g/libpam0g_1.5.3-7_loong64.deb
+Size: 66076
+MD5sum: 1299ed159130a7a70521330de91bb5b7
+SHA1: 31d134835b96701e56f821c868159870a2a51380
+SHA256: f5156836525c93d28c862020677a76f75b5b7b18a7e05735de496ba4707081fc
+SHA512: c8b6c6d3ce0271ababee1fa6c32cda36a1318621b08f9d2a21e4eda94e2ff747ae7b42b770001a339a6b4e521fe37a4ab4a0cbd46b8165ca1109c8092c546c13
+Homepage: http://www.linux-pam.org/
+Description: Pluggable Authentication Modules library
+ Contains the shared library for Linux-PAM, a library that enables the
+ local system administrator to choose how applications authenticate users.
+ In other words, without rewriting or recompiling a PAM-aware application,
+ it is possible to switch between the authentication mechanism(s) it uses.
+ One may entirely upgrade the local authentication system without touching
+ the applications themselves.
+
+Package: libpcre2-8-0
+Architecture: loong64
+Version: 10.42-4+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pcre2 (10.42-4)
+Maintainer: Matthew Vernon <matthew@debian.org>
+Installed-Size: 458
+Depends: libc6 (>= 2.38)
+Filename: ./l/libpcre2-8-0/libpcre2-8-0_10.42-4+b1_loong64.deb
+Size: 173096
+MD5sum: 840dabd6ace92ea0f4741f11b471709c
+SHA1: 69f9c46021d5b97c0954f7d669e61ea742bb06aa
+SHA256: 214c78bde46a464d6db50152f8b775dfe343549c66a054105d39f6d8a004d42e
+SHA512: a2bad86ee37ff3de8d11f219ef4c3bfb1cfe0b10503de7c40951e07e6c84c68da4a0e824e5831edd89eee530bc959f36b57853b1acdd0aba5325045262e2fb9d
+Homepage: https://pcre.org/
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library,
+ confusingly called pcre3 in Debian.
+ .
+ This package contains the 8 bit runtime library, which operates on
+ ASCII and UTF-8 input.
+
+Package: libpopt0
+Architecture: loong64
+Version: 1.19+dfsg-1+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: popt (1.19+dfsg-1)
+Maintainer: Håvard F. Aasen <havard.f.aasen@pfft.no>
+Installed-Size: 243
+Depends: libc6 (>= 2.36)
+Filename: ./l/libpopt0/libpopt0_1.19+dfsg-1+b1_loong64.deb
+Size: 42824
+MD5sum: 5dab60395d046f2cd8eae45f72cf0996
+SHA1: 710b6fe37413ea5005621df16a08fbb7fa11112d
+SHA256: 726bd7f7f4cc8244953be230e784e112362597b2c87265adf25adfbad205e9c2
+SHA512: e00adc26f95c52eb707b84b7b639d29a16ba8e79bf2aea48db5ea4b84cdb4b21b76393d253c3d8c149d29da6f625de0a226f94827e388c80fdde0e903dedf6c2
+Homepage: https://github.com/rpm-software-management/popt
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+
+Package: libreadline8t64
+Architecture: loong64
+Version: 8.2-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: readline
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 509
+Provides: libreadline8 (= 8.2-5)
+Depends: readline-common, libc6 (>= 2.39), libtinfo6 (>= 6)
+Breaks: libreadline8 (<< 8.2-5)
+Replaces: libreadline8
+Filename: ./l/libreadline8t64/libreadline8t64_8.2-5_loong64.deb
+Size: 167980
+MD5sum: b211eeac9f655a8dd9777326183d1716
+SHA1: 236c0e32fc94f634937e6adc4e98c160beaa0e85
+SHA256: 06eab90ee78a71bc36aff5c62a934b87da99028e4c904c1d1f341ecaef939f1f
+SHA512: 4135b87d8f2a8df1fa0cd3381e0c4bc55663f4c61797d30a707109f2db96599ce59328f422b1daf899c14437f28006df8bac55b72bdd5e59ee411c707fe8001e
+Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+
+Package: libselinux1
+Architecture: loong64
+Version: 3.7-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libselinux
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 224
+Depends: libc6 (>= 2.40), libpcre2-8-0 (>= 10.22)
+Filename: ./l/libselinux1/libselinux1_3.7-3_loong64.deb
+Size: 76572
+MD5sum: 99cb0285ea80d9c4e162017cbd994b01
+SHA1: 1175f05592c3b8dcf382d45dcbd8c4ff8fe22e70
+SHA256: f7a1d3b2f95b00119925377103502906e76b8fa2cdd7c84797e6d1afd9755cdd
+SHA512: fcee25ff84691e5d1183d526260d4ee134b5f28b160b4f16dc3d3f3a48431cbc5ce93f5c6f64efb97ea87eed416d9dcd15eccdf211490626ce8dab84691bf47b
+Homepage: https://github.com/SELinuxProject
+Description: SELinux runtime shared libraries
+ This package provides the shared libraries for Security-enhanced
+ Linux that provides interfaces (e.g. library functions for the
+ SELinux kernel APIs like getcon(), other support functions like
+ getseuserbyname()) to SELinux-aware applications. Security-enhanced
+ Linux is a patch of the Linux kernel and a number of utilities with
+ enhanced security functionality designed to add mandatory access
+ controls to Linux.  The Security-enhanced Linux kernel contains new
+ architectural components originally developed to improve the security
+ of the Flask operating system. These architectural components provide
+ general support for the enforcement of many kinds of mandatory access
+ control policies, including those based on the concepts of Type
+ Enforcement, Role-based Access Control, and Multi-level Security.
+ .
+ libselinux1 provides an API for SELinux applications to get and set
+ process and file security contexts and to obtain security policy
+ decisions.  Required for any applications that use the SELinux
+ API. libselinux may use the shared libsepol to manipulate the binary
+ policy if necessary (e.g. to downgrade the policy format to an older
+ version supported by the kernel) when loading policy.
+
+Package: libsemanage-common
+Architecture: all
+Version: 3.7-2
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libsemanage
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 21
+Filename: ./l/libsemanage-common/libsemanage-common_3.7-2_all.deb
+Size: 7108
+MD5sum: 6868affac8f62529e163f09cffd1737d
+SHA1: 269c7614d490e70e7679c9478172ab541060205b
+SHA256: 72cd5018dce5fb834f3f60125c33124b709118c8d12d0cd90509f4fa36528639
+SHA512: 037c52fb7a0d70a2d1370e5bc0c4c1493c26f5ef4a2eb12cb523ea696b0e3f1ad62ce5f8966e1f23e7aea2a32fff9ab9b4b0e813c1d7a20c59f806df3456525d
+Homepage: https://selinuxproject.org
+Description: Common files for SELinux policy management libraries
+ This package provides the common files used by the shared libraries
+ for SELinux policy management.
+ .
+ Security-enhanced Linux is a patch of the Linux kernel and a
+ number of utilities with enhanced security functionality designed to
+ add mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement, Role-based Access
+ Control, and Multi-level Security.
+
+Package: libsemanage2
+Architecture: loong64
+Version: 3.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libsemanage
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 307
+Depends: libsemanage-common (>= 3.7-2), libaudit1 (>= 1:2.2.1), libbz2-1.0, libc6 (>= 2.40), libselinux1 (>= 3.7), libsepol2 (>= 3.7)
+Filename: ./l/libsemanage2/libsemanage2_3.7-2_loong64.deb
+Size: 89084
+MD5sum: c3fe326772ded2bae4ac328ce9eb7f53
+SHA1: 41ebfe52970981f9fe79611e67ba300cbfc340d9
+SHA256: 433665bc704b2ff6acf7ee96a84c8d5960cd484d7f5ef25645908379405edd01
+SHA512: a639b044c95ca60bd048e336dabb864aab321d0e72615a131a5edc0dff70a6b94a8a998915649d76cd3a434f59620987be21ab96137d5dced32c882bf73adee6
+Homepage: https://selinuxproject.org
+Description: SELinux policy management library
+ This package provides the shared libraries for SELinux policy management.
+ It uses libsepol for binary policy manipulation and libselinux for
+ interacting with the SELinux system.  It also exec's helper programs
+ for loading policy and for checking whether the file_contexts
+ configuration is valid (load_policy and setfiles from
+ policycoreutils) presently, although this may change at least for the
+ bootstrapping case
+ .
+ Security-enhanced Linux is a patch of the Linux kernel and a
+ number of utilities with enhanced security functionality designed to
+ add mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement, Role-based Access
+ Control, and Multi-level Security.
+
+Package: libsepol2
+Architecture: loong64
+Version: 3.7-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libsepol
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 799
+Depends: libc6 (>= 2.39)
+Filename: ./l/libsepol2/libsepol2_3.7-1_loong64.deb
+Size: 261520
+MD5sum: 9bbe2399f8540e8affdd279b3c8d1420
+SHA1: 5df9885c8ca25883f93371975dbf699ed7500ce0
+SHA256: 0583f0a6345a42b0ed470e10dc0b1cdc51cdc1e229ccd59a4ccfe8d466674cb4
+SHA512: 75467d0f23e49efabebba515eae4bda600cc1eba2fbf7532730355031765fdbb641a900e098ce5b18b82ed3b47b9b99e94614f6b108033e684b29829919e9623
+Homepage: https://selinuxproject.org
+Description: SELinux library for manipulating binary security policies
+ Security-enhanced Linux is a patch of the Linux kernel and a number
+ of utilities with enhanced security functionality designed to add
+ mandatory access controls to Linux.  The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement®, Role-based Access
+ Control, and Multi-level Security.
+ .
+ libsepol provides an API for the manipulation of SELinux binary policies.
+ It is used by checkpolicy (the policy compiler) and similar tools, as well
+ as by programs like load_policy that need to perform specific transformations
+ on binary policies such as customizing policy boolean settings.
+
+Package: libslang2
+Architecture: loong64
+Version: 2.3.3-5
+Built-Using: unicode-data (= 15.1.0-1)
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: slang2
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 2704
+Depends: libc6 (>= 2.38)
+Filename: ./l/libslang2/libslang2_2.3.3-5_loong64.deb
+Size: 530332
+MD5sum: db65cc584b4837c0965be7b22904ad87
+SHA1: 028e25906969d696a24cd5b501fd31a11b7bd76b
+SHA256: 3ff8a1e6868433d545e13a2c05f6f3ec11ef4fd4354a1707067014c9c7a3152d
+SHA512: 70d1b599eee977112dd63da23758df41e9bec4e7b6ac14b2e0a3fb020b02ab64780ece02235b1cd92421b5087c304bc63ad02b66257f8dc582850e5bf7b909cf
+Homepage: http://www.jedsoft.org/slang/
+Description: S-Lang programming library - runtime version
+ S-Lang is a C programmer's library that includes routines for the rapid
+ development of sophisticated, user friendly, multi-platform applications.
+ .
+ This package contains only the shared library libslang.so.* and copyright
+ information. It is only necessary for programs that use this library (such
+ as jed and slrn). If you plan on doing development with S-Lang, you will
+ need the companion -dev package as well.
+
+Package: libsmartcols1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 408
+Depends: libc6 (>= 2.40)
+Filename: ./l/libsmartcols1/libsmartcols1_2.40.2-9_loong64.deb
+Size: 145516
+MD5sum: 4a7a284298cd39a912c441edf34b4bb6
+SHA1: 618aad087cfc4a3591e5ba8d0327f57ab5e829cc
+SHA256: e3af3a446fb5abe2c4269a796024958c9c5d0faef66b21cc174578bbd2139bcd
+SHA512: 03093476c0a5c581d7e4b7b9d125e77c169b0e45c57f42b6ee921e44a0847348696e854c89e1f36053d20564958b01d9060a1768e7aa93d78ae1050292b7f825
+Homepage: https://github.com/util-linux/util-linux
+Description: smart column output alignment library
+ This smart column output alignment library is used by fdisk utilities.
+
+Package: libss2
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 77
+Provides: libss2t64 (= 1.47.1-1)
+Depends: libcom-err2, libc6 (>= 2.38)
+Breaks: libss2t64 (<< 1.47.0-2.4~exp1~)
+Replaces: e2fsprogs (<< 1.34-1), libss2t64
+Filename: ./l/libss2/libss2_1.47.1-1_loong64.deb
+Size: 27388
+MD5sum: 01eaeafbd8269a244f87a93d856359da
+SHA1: 17098b7003f7359c479b2fc0bbbc53f73214ec71
+SHA256: 3d7cb28e1fc0200eed7729200b98f4c2916b99bc409eb7c5d549c50e68bc3ef3
+SHA512: c1e0b23d747704f8642e1c9bbb18a673f6d4bbdf9206f569f9f4f2dc1f15389bd92c21a2061b0341cdd2ac3320c7b715e47cc6a30b99b694617ed0d63f489ad4
+Homepage: http://e2fsprogs.sourceforge.net
+Description: command-line interface parsing library
+ libss provides a simple command-line interface parser which will
+ accept input from the user, parse the command into an argv argument
+ vector, and then dispatch it to a handler function.
+ .
+ It was originally inspired by the Multics SubSystem library.
+
+Package: libssl3t64
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openssl
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 6433
+Provides: libssl3 (= 3.3.2-1)
+Depends: libc6 (>= 2.40), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), openssl-provider-legacy
+Breaks: libssl3 (<< 3.3.2-1), openssh-client (<< 1:9.4p1), openssh-server (<< 1:9.4p1), python3-m2crypto (<< 0.38.0-4)
+Replaces: libssl3
+Filename: ./l/libssl3t64/libssl3t64_3.3.2-1_loong64.deb
+Size: 1946820
+MD5sum: ad2446c17527e435fce48c75e195bda4
+SHA1: 8c12aa5c3b1e1657dcf6facddbc1b8d81cad6762
+SHA256: c620c8c7e158eb3641c6daa7cdb662882a664dc2f6ade9eb3313f0b72fa2f908
+SHA512: b3e6d152b9cde866f60648f4634eea44f1c779f4f52d558a1f227af1ea3e0bccf286344ccf7455ea089025aa1240e04f4f9860211635d345973575068e27138d
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+
+Package: libstdc++6
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3086
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 14.2.0-7)
+Conflicts: scim (<< 1.4.2-1)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Replaces: libstdc++6-14-dbg (<< 4.9.0-3)
+Filename: ./l/libstdc++6/libstdc++6_14.2.0-7_loong64.deb
+Size: 684740
+MD5sum: e58d035aad484ef66a55f60349225089
+SHA1: 1af76221ac33e5067a06c18aff858a03c66d22d2
+SHA256: db0e63408994063759c62be9677c07fa75f495a4c0ebb75a184c609986e1a6b9
+SHA512: 18f10765f77f4f057cf9938bd3ff91e36125d775aa9991190e0ac934fe9a779f06f799cc1a73714cdae493e6825c7255173495ecb19fab86ece17d53d316cea5
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libsystemd-shared
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 6663
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.30.2), libc6 (>= 2.40), libcap2 (>= 1:2.10), libcrypt1 (>= 1:4.4.0), libmount1 (>= 2.30), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0)
+Recommends: libkmod2, libzstd1
+Suggests: libarchive13t64, libcryptsetup12, libdw1t64, libelf1t64, libfido2-1, libgcrypt20, libidn2-0, libip4tc2, liblz4-1, liblzma5, libp11-kit0, libpcre2-8-0, libpwquality1, libqrencode4, libtss2-rc0t64
+Filename: ./l/libsystemd-shared/libsystemd-shared_256.7-2_loong64.deb
+Size: 1946980
+MD5sum: cdcd52bde6256be60710de08504c5335
+SHA1: 371a94fb75fe597b4b358c932e5efdfe98712fcb
+SHA256: e161a00f726f0eff909697e2e4fa5abb4a5f72eec569bccf7b5bc92f90bb045a
+SHA512: 4860b22aa05daea8d8919cf0af20d39c854badd0e05ee74229373b311adb2c7244cf223bbce640ed837a0c0f1306ba449601d289bf8b333cc0a54542a7ba84f5
+Homepage: https://systemd.io
+Description: systemd shared private library
+ This internal shared library provides common code used by various systemd
+ components. It is supposed to decrease memory and disk footprint.
+ The shared library is not meant for public use and is not API or ABI stable.
+
+Package: libsystemd0
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 1099
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
+Recommends: libzstd1
+Suggests: libgcrypt20, liblz4-1, liblzma5
+Filename: ./l/libsystemd0/libsystemd0_256.7-2_loong64.deb
+Size: 382736
+MD5sum: ab6db337f845735063fad5de4ddbed47
+SHA1: cabedadf4dac64415450da216e72d7e3cf47962e
+SHA256: c884c3a71a62fb868166dbc27bfdd84cbb0d6188b5a1185a4c8a2296d1118ed7
+SHA512: 3e053ce5f269dcc02f179611447d1924cffd92fc530baf384afa197b74d830232a5014edce0748ff2eef4cf16ab3d4546b66c404df295c046511ec6b15a51e2f
+Homepage: https://systemd.io
+Description: systemd utility library
+ This library provides APIs to interface with various system components such as
+ the system journal, the system service manager, D-Bus and more.
+
+Package: libtasn1-6
+Architecture: loong64
+Version: 4.19.0-3+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libtasn1-6 (4.19.0-3)
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 118
+Depends: libc6 (>= 2.38)
+Filename: ./l/libtasn1-6/libtasn1-6_4.19.0-3+b2_loong64.deb
+Size: 47340
+MD5sum: 01973b5c3a01d76212acfe03736f35a3
+SHA1: 5ede964df931be07ce6519c72660a8acd9f093ac
+SHA256: 16a245819280ae33a1eec4b3b5dc2152154b022df9ce2e80c288983ae4c0051d
+SHA512: 29c410262be55e14368b9f5acc8bb6c09b46ce5ddbbd7c946d2c7b24ea8e4dbb46257661919028a9bc38159310b930134bf6a53da36e16138ebca723377202dd
+Homepage: https://www.gnu.org/software/libtasn1/
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+
+Package: libtext-charwidth-perl
+Architecture: loong64
+Version: 0.04-11+b5
+Multi-Arch: same
+Priority: required
+Section: perl
+Source: libtext-charwidth-perl (0.04-11)
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 46
+Depends: libc6 (>= 2.40), perl-base (>= 5.40.0-6), perlapi-5.40.0
+Filename: ./l/libtext-charwidth-perl/libtext-charwidth-perl_0.04-11+b5_loong64.deb
+Size: 9480
+MD5sum: 9b695923ac69f1bdf5ba1becdc96dcc2
+SHA1: 74d5b70fe96c4db5e08ffd75bc7d3a832f469be5
+SHA256: a0fdaaa3f1cbc0c5ea263cf7dc0156d9852b38189efff4c45b727d2ac23a0a41
+SHA512: afc9c6a93a99d7b753156dfaf85e00712851bdc811e251cd50a7977c0189c42b94447eecf976b13c702ee8628866e70a3ee8e96dda53866d5a44f3a388da17ca
+Homepage: https://metacpan.org/release/Text-CharWidth
+Description: get display widths of characters on the terminal
+ Text::CharWidth permits one to get the display widths of characters
+ and strings on the terminal, using wcwidth() and wcswidth() from libc.
+ .
+ It provides mbwidth(), mbswidth(), and mblen().
+
+Package: libtext-iconv-perl
+Architecture: loong64
+Version: 1.7-8+b4
+Multi-Arch: same
+Priority: required
+Section: perl
+Source: libtext-iconv-perl (1.7-8)
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 50
+Depends: libc6 (>= 2.40), perl-base (>= 5.40.0-6), perlapi-5.40.0
+Filename: ./l/libtext-iconv-perl/libtext-iconv-perl_1.7-8+b4_loong64.deb
+Size: 14320
+MD5sum: 0a0c4bb1ad8297e60aa82c25273b761d
+SHA1: 11ffd11b7d5fda1930d45a0762862c560ad22657
+SHA256: 948cc49b59ee385ffc641e47a18c6a90279d8a4744852168244931c071d5def1
+SHA512: 6921f62f4fca95cf95c81104f13a3c06bb809bfee2f80b2aa5a42eaec33ca14f50d494b0b76e7c00aabec391f51d0f40b47efa421e5c7c51c657fc1336d844cd
+Homepage: https://metacpan.org/release/Text-Iconv
+Description: module to convert between character sets in Perl
+ The iconv() family of functions from XPG4 defines an API for converting
+ between character sets (e.g. UTF-8 to Latin1, EBCDIC to ASCII). They
+ are provided by libc6.
+ .
+ This package allows access to them from Perl via the Text::Iconv
+ package.
+
+Package: libtext-wrapi18n-perl
+Architecture: all
+Version: 0.06-10
+Priority: required
+Section: perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 26
+Depends: libtext-charwidth-perl
+Filename: ./l/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-10_all.deb
+Size: 8808
+MD5sum: b57a11d040f8e9055f8f2e83ed3dd70b
+SHA1: f442e53233cb43d7c9d108051d76a73cfd48e473
+SHA256: 17f98c7c09af8ac3bdbfd5a5dad32f3f51c71b02cdfc411366f49092a395de85
+SHA512: 0a554401cff25893504699c927f9bcd19929fdfd3837f4d7569c3cd18bd2bd21949435f9ef5466b5a7b7d77f004b22f00e1fc559084a60822faa293d93212792
+Homepage: https://metacpan.org/release/Text-WrapI18N
+Description: internationalized substitute of Text::Wrap
+ The Text::WrapI18N module is a substitution for Text::Wrap, supporting
+ multibyte characters such as UTF-8, EUC-JP, and GB2312, fullwidth characters
+ such as east Asian characters, combining characters such as diacritical marks
+ and Thai, and languages which don't use whitespaces between words such as
+ Chinese and Japanese.
+ .
+ It provides wrap().
+
+Package: libtinfo6
+Architecture: loong64
+Version: 6.5-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 558
+Depends: libc6 (>= 2.38)
+Breaks: tmux (<< 3.3a-4)
+Filename: ./l/libtinfo6/libtinfo6_6.5-2_loong64.deb
+Size: 339372
+MD5sum: 6fa59c3b22e504379cac044afa689603
+SHA1: 412a396da103899c5c2000f3ebac1a03e95893cc
+SHA256: 67d8bcf0f3a931b6bc01279e0c08d13ae1aaa00719215a1e9455b1dd60dfa9bc
+SHA512: 730a4a316374ee552beae91d4d4fa678c694c15f96e7a8c020f228a4ddc1eadbd96dab15e11b8048940ad7cab9fe8c0a947064979dee428c6420ad5889977856
+Homepage: https://invisible-island.net/ncurses/
+Description: shared low-level terminfo library for terminal handling
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the shared low-level terminfo library.
+
+Package: libtirpc-common
+Architecture: all
+Version: 1.3.4+ds-1.3
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libtirpc
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 32
+Breaks: libtirpc1, libtirpc3t64 (<< 1.1.4-0.1~)
+Replaces: libtirpc1, libtirpc3t64 (<< 1.1.4-0.1~)
+Filename: ./l/libtirpc-common/libtirpc-common_1.3.4+ds-1.3_all.deb
+Size: 10916
+MD5sum: f67e8310e075abb14965eddb037b6803
+SHA1: 04801c6e54a717a30d99cbbfa24a2795b98f8d6b
+SHA256: d31cc2c412789fdd234d6d84b148a5b355d64a2fa3fc21db397a7ccaa64fa7a7
+SHA512: b48821944e8a9d982b4055915f985103ef0fbd09342c0fb5f36189331c5368f4f2956ffe1f70341997d7819ff75b95d7c9e32e288f9badbf514dceaf53b67e63
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library - common files
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+ .
+ This package contains the netconfig configuration file as well as the
+ associated manpage.
+
+Package: libtirpc3t64
+Architecture: loong64
+Version: 1.3.4+ds-1.3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libtirpc
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 243
+Provides: libtirpc3 (= 1.3.4+ds-1.3)
+Depends: libc6 (>= 2.37), libgssapi-krb5-2 (>= 1.17), libtirpc-common (>= 1.3.4+ds-1.3)
+Breaks: libtirpc3 (<< 1.3.4+ds-1.3), nfs-common (<< 1:1.2.8-7), nfs-kernel-server (<< 1:1.2.8-7)
+Replaces: libtirpc3
+Filename: ./l/libtirpc3t64/libtirpc3t64_1.3.4+ds-1.3_loong64.deb
+Size: 79520
+MD5sum: aa569719a7ad33d47dd2dccdfe9cf947
+SHA1: ffc58ea819677bc293f95b7ade81f850afb96bf2
+SHA256: 1596429a1fdf89e94ac7f65394106477699f09b5660faf96b06a506e0726649b
+SHA512: 47d0f5128ca7ef14dfc04105ab4b0d0b1c0d4c3f9efe5b1c0b10e44f614020541e52c51bb69e372eb502df2642bfb4605be3d12e19d273ef4a76e02710cefd10
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+
+Package: libudev1
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 351
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
+Suggests: libidn2-0
+Filename: ./l/libudev1/libudev1_256.7-2_loong64.deb
+Size: 143068
+MD5sum: ec16e46eabbf73bd3ec20b407663824a
+SHA1: 12a2afb06a40161ec32e3ad107ce89ae4b4a88b5
+SHA256: 7a35d430e2223ea6b61550d11512a1439960565c9febe455024ab7069886f104
+SHA512: 4a64ba7219be9b2eaaa300bf82979824f76a0f5a64a9594f37960fd06042cc0ef9f347f205934c78e7b1e8bf71810de08cd4fb554154ac13c054031b84049d9a
+Homepage: https://systemd.io
+Description: libudev shared library
+ This library provides APIs to introspect and enumerate devices on the local
+ system.
+
+Package: libunistring5
+Architecture: loong64
+Version: 1.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libunistring
+Maintainer: Jörg Frings-Fürst <debian@jff.email>
+Installed-Size: 1779
+Depends: libc6 (>= 2.37)
+Filename: ./l/libunistring5/libunistring5_1.2-1_loong64.deb
+Size: 419980
+MD5sum: 5337aded44c815a7cc51c37842b1e178
+SHA1: c9517106c15e9bdf20fd29bcf11885ad1ad44e24
+SHA256: 2023edf58fdb22e9796f50f70b9510d1285403ffc58e069c3df9277c42a48d3b
+SHA512: 7b76a5cb44dc9d416fad6b6def67f502798bb58f48006738c04c185ce0270b7a569f736f8b50d5f708e8f162d79546bc9f2cec7bc7a9b2d55cf0ebf6d539a5a8
+Homepage: https://www.gnu.org/software/libunistring/
+Description: Unicode string library for C
+ The 'libunistring' library implements Unicode strings (in the UTF-8,
+ UTF-16, and UTF-32 encodings), together with functions for Unicode
+ characters (character names, classifications, properties) and
+ functions for string processing (formatted output, width, word
+ breaks, line breaks, normalization, case folding, regular
+ expressions).
+ .
+ This package contains the shared library.
+
+Package: libuuid1
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 92
+Provides: libuuid1t64 (= 2.40.2-9)
+Depends: libc6 (>= 2.40)
+Suggests: uuid-runtime
+Breaks: libuuid1t64 (<< 2.40.2-9)
+Replaces: libuuid1t64
+Filename: ./l/libuuid1/libuuid1_2.40.2-9_loong64.deb
+Size: 35116
+MD5sum: a7135df6e0aa39e415fd69ed08eb3c28
+SHA1: 5b5129164bd111a8236ebe87df3650757cccd585
+SHA256: c4d317cf3b66b89518727e3a2e32dc6a896646b02f34db0a49ee0b4c340ea9b7
+SHA512: 6b32f5458767eed915e1e449f24c922698652c9f5ac1d18332c2975c2924e67b22cff7846e286929fe54c86c7ab2e3c5d1a0b74470795fc52226ec92f3780cdf
+Homepage: https://github.com/util-linux/util-linux
+Description: Universally Unique ID library
+ The libuuid library generates and parses 128-bit Universally Unique
+ IDs (UUIDs). A UUID is an identifier that is unique within the space
+ of all such identifiers across both space and time. It can be used for
+ multiple purposes, from tagging objects with an extremely short lifetime
+ to reliably identifying very persistent objects across a network.
+ .
+ See RFC 4122 for more information.
+
+Package: libxtables12
+Architecture: loong64
+Version: 1.8.10-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: iptables
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.38)
+Filename: ./l/libxtables12/libxtables12_1.8.10-4_loong64.deb
+Size: 30632
+MD5sum: c62b524d8ebb54fe927e1a49b4dcd7eb
+SHA1: 9df9f4db6e2caf4644900171328d4b54b9dada48
+SHA256: 7e9c766830bed8a6360469ef99d02fb35a3a46f8700d565f386d797b3a3284d9
+SHA512: dde8c9a7821a7b180137abac20542a754837d3832037eca088abd2a31c963ec0a6510100dad0ce6e6f66955938875f8e051de6b755ed5a0679731bb6e0eba808
+Homepage: https://www.netfilter.org/
+Description: netfilter xtables library
+ The iptables/xtables framework has been replaced by nftables. You should
+ consider migrating now.
+ .
+ However, even if a given system may be fully running on native nftables,
+ there are other reasons why libxtables might be installed. For one, nftables
+ itself uses it to be able to display old rulesets that were created using
+ xtables extensions (to help folks migrate). Other third-party software might
+ also be linked to this library.
+ .
+ This library being installed in the system should be harmless in any case.
+ .
+ This package contains the user-space interface to the Netfilter xtables
+ kernel framework.
+
+Package: libxxhash0
+Architecture: loong64
+Version: 0.8.2-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: xxhash
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 72
+Depends: libc6 (>= 2.36)
+Filename: ./l/libxxhash0/libxxhash0_0.8.2-2_loong64.deb
+Size: 22992
+MD5sum: d0f9d7ff19ae58c4bb20aea8ac3ce740
+SHA1: 1f9187079417327c73415c821f006d33f12267d1
+SHA256: e5ebd7cc9c5f0c2214da9c706e4ea9dce40d2f10f3658560df41b902cb4fef4f
+SHA512: 88c02d467555fa0c4de9e67006d4edbd2278acbf965e769439eb4636c15aea067fc5506375b30c055fbbfb2a0bac4f68d9c1d0c352d0df4acf6f7cba6e98393b
+Homepage: https://cyan4973.github.io/xxHash
+Description: shared library for xxhash
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains the shared library.
+
+Package: libzstd1
+Architecture: loong64
+Version: 1.5.6+dfsg-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libzstd
+Maintainer: RPM packaging team <team+pkg-rpm@tracker.debian.org>
+Installed-Size: 731
+Depends: libc6 (>= 2.38)
+Filename: ./l/libzstd1/libzstd1_1.5.6+dfsg-1_loong64.deb
+Size: 272032
+MD5sum: 206c82b245ed08a3ce6f7be5145a6445
+SHA1: 03f73414e5d3a3adf24a5aef8b9eae41cb2df90a
+SHA256: 9926e346b94d0a3b1005ea21836d2acd3360067b7f21d5052c7af29d6a9349f5
+SHA512: d11997a7faf571c7a134415fde6992ace93ddbdf5a45e251ae488b407f1a59f698aba5e32dc3fdb5b4e7a4e3a6ad207fd955f9c172adfc0abc6b97b578c69acf
+Homepage: https://github.com/facebook/zstd
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+
+Package: login
+Architecture: loong64
+Version: 1:4.16.0-2+really2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Protected: yes
+Section: admin
+Source: util-linux (2.40.2-9)
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 221
+Pre-Depends: login.defs (>= 1:4.16.0-1~)
+Depends: libpam-modules, libpam-runtime, libaudit1 (>= 1:2.2.1), libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1)
+Filename: ./l/login/login_1%3a4.16.0-2+really2.40.2-9_loong64.deb
+Size: 80840
+MD5sum: 6e3df25bce809a626bf4bf4e4426e1b7
+SHA1: 1ab7ca4c2f14563cbecb66a5b123898dade7e1d0
+SHA256: d913610eedd2583b6400d222914571204beffd18f90a41346b9e72592b151290
+SHA512: 5849df4ab68d80a1b15e7b8ffd721c83f00ed77bcd422dba8f46c961633351edefb56375a1f1c0b71303cffb4bd511e6ddd91a7cc36a2fd0403b62ed5b9bed6b
+Homepage: https://github.com/util-linux/util-linux
+Description: system login tools
+ This package provides support for console-based logins and for
+ changing effective user or group IDs, including:
+  * login, the program that invokes a user shell on a virtual terminal,
+  * nologin, a dummy shell for disabled user accounts,
+  * newgrp, a program to change the effective group IDs.
+
+Package: login.defs
+Architecture: all
+Version: 1:4.16.0-4
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: shadow
+Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+Installed-Size: 213
+Replaces: login (<< 1:4.16.0-2~)
+Filename: ./l/login.defs/login.defs_1%3a4.16.0-4_all.deb
+Size: 184680
+MD5sum: 447c5422aa2bf1a081079cd9a90715ea
+SHA1: 441b946e4cb3a1f1cf24b8df32007280f4bd8841
+SHA256: 6a26296fb9427e335e408d920c859be62d2b0040f69a56e41516fea7b940caf8
+SHA512: 9b2c90903031ceba137da17993ebbbb3e2a9266f9fc7815969a53dc504a66b1552bd224cad1de3ade1d28957a107da0e79aaa05b92a1b581dba79d68a8357b32
+Homepage: https://github.com/shadow-maint/shadow
+Description: system user management configuration
+ This package provides the login.defs configuration file,
+ used by otherwise unrelated tools managing system users.
+
+Package: logrotate
+Architecture: loong64
+Version: 3.22.0-1
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Christian Göttsche <cgzones@googlemail.com>
+Installed-Size: 143
+Depends: cron | anacron | cron-daemon | systemd-sysv, libacl1 (>= 2.2.23), libc6 (>= 2.39), libpopt0 (>= 1.14), libselinux1 (>= 3.1~)
+Suggests: bsd-mailx | mailx
+Filename: ./l/logrotate/logrotate_3.22.0-1_loong64.deb
+Size: 59304
+MD5sum: 2d09d1b25fe7c9c54f705f07badaed0e
+SHA1: bf8bc59cd518c26062e25819c7e8b6027161193f
+SHA256: 6fdec052a60fdcd25ad0b3202e2f27f8cfc120796e736aad2feef84647293c57
+SHA512: 36ed724cf050dfc3bd8693cfd3b314834faac4ec7f613438b517cc67bb2102fee80abe8188e0540e833c97baf234c17c9621d3048aa4d06b542fc1b90ef66676
+Homepage: https://github.com/logrotate/logrotate
+Description: Log rotation utility
+ The logrotate utility is designed to simplify the administration of
+ log files on a system which generates a lot of log files.  Logrotate
+ allows for the automatic rotation compression, removal and mailing of
+ log files.  Logrotate can be set to handle a log file daily, weekly,
+ monthly or when the log file gets to a certain size.  Normally, logrotate
+ runs as a daily cron job.
+
+Package: logsave
+Architecture: loong64
+Version: 1.47.1-1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: e2fsprogs
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 59
+Depends: libc6 (>= 2.38)
+Breaks: e2fsprogs (<< 1.45.3-1)
+Replaces: e2fsprogs (<< 1.45.3-1)
+Filename: ./l/logsave/logsave_1.47.1-1_loong64.deb
+Size: 22512
+MD5sum: 487bacf3b59580c58221f0aa5b7668a3
+SHA1: cf320898d228d468485d46179694e398fad21b2c
+SHA256: 4febc705c6efe35108e404b381641db4d935c8ed24aadb2eeb6cec7520c6deec
+SHA512: d12b0668c852db59d36a2d2250108d35cb7ca91cf708e47ade1f7d27ab85e13d3bd55366d5cdb99f15af716150632cb0170ce62c93bf780dd800b26aec4a842a
+Homepage: http://e2fsprogs.sourceforge.net
+Description: save the output of a command in a log file
+ The logsave program will execute cmd_prog with the specified
+ argument(s), and save a copy of its output to logfile.  If the
+ containing directory for logfile does not exist, logsave will
+ accumulate the output in memory until it can be written out.  A copy
+ of the output will also be written to standard output.
+
+Package: mawk
+Architecture: loong64
+Version: 1.3.4.20240905-1
+Multi-Arch: foreign
+Priority: required
+Section: interpreters
+Maintainer: Boyuan Yang <byang@debian.org>
+Installed-Size: 303
+Provides: awk
+Depends: libc6 (>= 2.40)
+Filename: ./m/mawk/mawk_1.3.4.20240905-1_loong64.deb
+Size: 136132
+MD5sum: 4243761f182b3f1e9a18fa200a1ad9ad
+SHA1: 1eca1e5aecef161c839febd38132cfe1492424df
+SHA256: 2692e4b80dee2bca7a47c3c114c42bac7ff7a15d9fd7e7c8584e976f15c9cd1a
+SHA512: f70e12813dfabc6e328497e459d5a89ab7b653aacb727aff2427ccc38d716fb50cb2f718be0e0a224927f85f3c416c1ebb6595e9dee56d416e275229e398c651
+Homepage: https://invisible-island.net/mawk/
+Description: Pattern scanning and text processing language
+ Mawk is an interpreter for the AWK Programming Language. The AWK
+ language is useful for manipulation of data files, text retrieval and
+ processing, and for prototyping and experimenting with algorithms. Mawk
+ is a new awk meaning it implements the AWK language as defined in Aho,
+ Kernighan and Weinberger, The AWK Programming Language, Addison-Wesley
+ Publishing, 1988. (Hereafter referred to as the AWK book.) Mawk conforms
+ to the POSIX 1003.2 (draft 11.3) definition of the AWK language
+ which contains a few features not described in the AWK book, and mawk
+ provides a small number of extensions.
+ .
+ Mawk is smaller and much faster than gawk. It has some compile-time
+ limits such as NF = 32767 and sprintf buffer = 1020.
+
+Package: mount
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: util-linux
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 525
+Pre-Depends: libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libmount1 (= 2.40.2-9), libselinux1 (>= 3.1~), libsmartcols1 (= 2.40.2-9)
+Suggests: nfs-common
+Filename: ./m/mount/mount_2.40.2-9_loong64.deb
+Size: 158948
+MD5sum: ec63e0b43d6cde8e81998b9bc743e9d8
+SHA1: 86027c11b5103a3b1db4835510eb229c2b86f2b6
+SHA256: 97c39b3ea9597dd6a827586d725fff971d526048e06899d8a32bf65e2b6b375b
+SHA512: ab51fcbe58bb6c073030ecd4a616f559b6a5028a415a8f06bf2cab10e7a4a993926352581abf80c3018caf1b4144e12388869a8806cea54f6a82bcf54cd41fc8
+Homepage: https://github.com/util-linux/util-linux
+Description: tools for mounting and manipulating filesystems
+ This package provides the mount(8), umount(8), swapon(8),
+ swapoff(8), and losetup(8) commands.
+
+Package: nano
+Architecture: loong64
+Version: 8.2-1
+Priority: important
+Section: editors
+Maintainer: Jordi Mallach <jordi@debian.org>
+Installed-Size: 2836
+Depends: libc6 (>= 2.40), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Suggests: hunspell
+Conflicts: pico
+Breaks: nano-tiny (<< 2.8.6-2)
+Replaces: nano-tiny (<< 2.8.6-2), pico
+Filename: ./n/nano/nano_8.2-1_loong64.deb
+Size: 636532
+MD5sum: eabe219f6924d38edd8ed4a22a66f54c
+SHA1: 81ee6f214cf61a100990a876899bddfedd7a02be
+SHA256: eb4c726402712f23d99e2f9f118f3879736f69a4c2c7c9d54f31373fcaa7205a
+SHA512: 963f9347654320f2d83616472c95f16da70dd3568e2b3cc3feb26a7f2791bc9cc6f92839f0f5223416a7056db375657888ae6afc34edac1db9d140efc159d672
+Homepage: https://www.nano-editor.org/
+Description: small, friendly text editor inspired by Pico
+ GNU nano is an easy-to-use text editor originally designed as a replacement
+ for Pico, the ncurses-based editor from the non-free mailer package Pine
+ (itself now available under the Apache License as Alpine).
+ .
+ However, GNU nano also implements many features missing in Pico, including:
+  - undo/redo
+  - line numbering
+  - syntax coloring
+  - soft-wrapping of overlong lines
+  - selecting text by holding Shift
+  - interactive search and replace (with regular expression support)
+  - a go-to line (and column) command
+  - support for multiple file buffers
+  - auto-indentation
+  - tab completion of filenames and search terms
+  - toggling features while running
+  - and full internationalization support
+
+Package: ncurses-base
+Architecture: all
+Version: 6.5-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: misc
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 385
+Provides: ncurses-runtime
+Breaks: cryptsetup-initramfs (<< 2:2.6.1), ncurses-term (<< 6.4+20230625), neovim (<< 0.6.0), vim-common (<< 2:9.0.1000-2)
+Replaces: ncurses-term (<< 6.4+20230603)
+Filename: ./n/ncurses-base/ncurses-base_6.5-2_all.deb
+Size: 269660
+MD5sum: 09da2e808b1902f0b13a81760699c2d7
+SHA1: f64322e166233ad16ca51cfa3956595c98d9211f
+SHA256: 917e74203fa3df043d105011dc59848897597367c132a6dad996df165617652d
+SHA512: 9a8eb1905fe6d11113b70c48ee8e4c49cb3219f24b9a7558350b9e07ab6c22aaf307a1049da537f58edc7d377adbd196ae0ef920f7bfa255df30779db88ad58c
+Homepage: https://invisible-island.net/ncurses/
+Description: basic terminal type definitions
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains terminfo data files to support the most common types of
+ terminal, including ansi, dumb, linux, rxvt, screen, sun, vt100, vt102, vt220,
+ vt52, and xterm.
+
+Package: ncurses-bin
+Architecture: loong64
+Version: 6.5-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Source: ncurses
+Maintainer: Ncurses Maintainers <ncurses@packages.debian.org>
+Installed-Size: 658
+Pre-Depends: libc6 (>= 2.38), libtinfo6 (>= 6.4+20230603)
+Filename: ./n/ncurses-bin/ncurses-bin_6.5-2_loong64.deb
+Size: 429320
+MD5sum: 143f37ad8513d6b8616a428145ec9d75
+SHA1: e10b058188fd68aab904e19e096b64c6da38d347
+SHA256: b394134fa1a796ea451bb034ec030b94491aeaba81c47f331c3633ab80d03a18
+SHA512: 9a66079ab0093a66d6338831ae39e3c11c9b715387ed0c95b8bcfb2d4e53f0d100a64374567faf83d925fd8dc8ff18c19b1c6896191460f73a3eab0d48de0815
+Homepage: https://invisible-island.net/ncurses/
+Description: terminal-related programs and man pages
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the programs used for manipulating the terminfo
+ database and individual terminfo entries, as well as some programs for
+ resetting terminals and such.
+
+Package: netbase
+Architecture: all
+Version: 6.4
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 36
+Breaks: ebtables (<< 2.0.11-2)
+Replaces: ebtables (<< 2.0.11-2)
+Filename: ./n/netbase/netbase_6.4_all.deb
+Size: 12800
+MD5sum: 814246d2f01d3238bbd3ef8c15c57076
+SHA1: 38aa7bd1f2f7015c251713414ffe1ad5965678fd
+SHA256: 29b23c48c0fe6f878e56c5ddc9f65d1c05d729360f3690a593a8c795031cd867
+SHA512: 35614bd5a0eed0541f0a938347fe9b7f24a6aa5fb082c8af0d187261ee1e501296fc3145e5869d1e7d7f80b429df2c780f1ed5e8c53703a69975431ad9b501e2
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
+ .
+ In particular, it supplies common name-to-number mappings in /etc/services,
+ /etc/rpc, /etc/protocols and /etc/ethertypes.
+
+Package: nftables
+Architecture: loong64
+Version: 1.1.1-1
+Priority: important
+Section: net
+Maintainer: Debian Netfilter Packaging Team <team+pkg-netfilter-team@tracker.debian.org>
+Installed-Size: 175
+Depends: libnftables1 (= 1.1.1-1), libc6 (>= 2.40), libedit2 (>= 3.1-20130611-0)
+Recommends: netbase
+Suggests: firewalld
+Filename: ./n/nftables/nftables_1.1.1-1_loong64.deb
+Size: 74196
+MD5sum: 854f96da1b6b1834b5a5b6f7c106bb1b
+SHA1: ba2a337128e72b93daee1405ef91a06aaf899ae2
+SHA256: cfc6f2465826633afd246f74569de03691840f44c1b1db630713071958f220f7
+SHA512: c184eb313eb7c8115b94a4aafe8a90ad7e41c54be84cda3138d0432ffdbe7425975d0dd7220a131d484801e45725378fd78769f059879e076e9912952fb7ce53
+Homepage: https://www.netfilter.org/
+Description: Program to control packet filtering rules by Netfilter project
+ This software provides an in-kernel packet classification framework that is
+ based on a network-specific Virtual Machine (VM) and the nft userspace
+ command line tool. The nftables framework reuses the existing Netfilter
+ subsystems such as the existing hook infrastructure, the connection tracking
+ system, NAT, userspace queueing and logging subsystem.
+ .
+ nftables replaces the old popular iptables, ip6tables, arptables and ebtables.
+ .
+ Netfilter software and nftables in particular are used in applications such
+ as Internet connection sharing, firewalls, IP accounting, transparent
+ proxying, advanced routing and traffic control.
+ .
+ A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
+
+Package: openssl
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 2322
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Suggests: ca-certificates
+Filename: ./o/openssl/openssl_3.3.2-1_loong64.deb
+Size: 1358208
+MD5sum: 53e8e0c6f48483fa8bd5d5bc9969539a
+SHA1: 24ef1a1e60985efa61786c44b44bbf3a6b8b3180
+SHA256: 2626d8a1698c0f976a7a05d3d95bd09eb3c12c8b11e6ff8721308dd13f6fc0ba
+SHA512: f894dd806df25fedbd25827a7a07581f4a3506006975f29a071f17052a9a5ca56b6023db5b89802a8611a49404a747eb3085fdec67f48bb9ebee9557579e7b4d
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+
+Package: openssl-provider-legacy
+Architecture: loong64
+Version: 3.3.2-1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: openssl
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Installed-Size: 399
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.0.0)
+Breaks: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Replaces: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Filename: ./o/openssl-provider-legacy/openssl-provider-legacy_3.3.2-1_loong64.deb
+Size: 296372
+MD5sum: 091944f0c4e2b0b984ed1539247faef7
+SHA1: 2e4d277fe34240401d74d7b9383ee63da751296e
+SHA256: 4da69b07493ad7052880b2f9e6bdc8101723906804845da005d72d24e4dd2851
+SHA512: ae89692cc4ed1b88a1813ced584f360c5c90f1166a9fb25bc2bc5c1fa4edeadd2d8af7ac4000fcba7aa3804408d4797ddc01d689b7fe0d3d443146181c5607d2
+Homepage: https://www.openssl.org/
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ This package contains the legacy provider. The OpenSSL legacy provider
+ supplies OpenSSL implementations of algorithms that have been deemed legacy.
+ Such algorithms have commonly fallen out of use, have been deemed insecure by
+ the cryptography community, or something similar.
+ For details see OSSL_PROVIDER-legacy man page.
+
+Package: passwd
+Architecture: loong64
+Version: 1:4.16.0-4
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Source: shadow
+Maintainer: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
+Installed-Size: 4722
+Depends: base-passwd (>= 3.6.4), libpam-modules, login.defs, libacl1 (>= 2.2.23), libattr1 (>= 1:2.4.44), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.11.0), libc6 (>= 2.39), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsemanage2 (>= 2.0.32)
+Recommends: sensible-utils
+Replaces: login (<< 1:4.16.0-2~)
+Filename: ./p/passwd/passwd_1%3a4.16.0-4_loong64.deb
+Size: 1213012
+MD5sum: 9fe3f3c4ec69287c82abc2c978660d83
+SHA1: cae3e0f21473dd386c7183fb4c09b36714ea8963
+SHA256: c6666a384935d6e0c0fe0898ec1460b79206003624fab7dbfec4e6f96edcf105
+SHA512: 3703f05ec0d860e10f9c6efc409d7345751a1739ffd584ae533f409b52ca1a76bc7e6e978f8e9d7cdab44ec95ae9522e690b0766b7a10622799ddd65377ebbd3
+Homepage: https://github.com/shadow-maint/shadow
+Description: change and administer password and group data
+ This package includes passwd, chsh, chfn, and many other programs to
+ maintain password and group data.
+ .
+ Shadow passwords are supported.  See /usr/share/doc/passwd/README.Debian
+
+Package: perl-base
+Architecture: loong64
+Version: 5.40.0-6
+Priority: required
+Essential: yes
+Section: perl
+Source: perl
+Maintainer: Niko Tyni <ntyni@debian.org>
+Installed-Size: 8037
+Provides: libfile-path-perl (= 2.18), libfile-temp-perl (= 0.2311), libio-socket-ip-perl (= 0.42), libscalar-list-utils-perl (= 1:1.63), libsocket-perl (= 2.038), libxsloader-perl (= 0.32), perlapi-5.40.0
+Pre-Depends: libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), dpkg (>= 1.17.17)
+Suggests: perl, sensible-utils
+Conflicts: defoma (<< 0.11.12), doc-base (<< 0.10.3), mono-gac (<< 2.10.8.1-3), safe-rm (<< 0.8), update-inetd (<< 4.41)
+Breaks: amanda-common (<< 1:3.3.9-2), backuppc (<< 4.4.0-7~), bucardo (<< 5.5.0-1.1), debconf (<< 1.5.61), dh-haskell (<< 0.3), duck (<< 0.14.1), intltool (<< 0.51.0-4), kio-perldoc (<< 20.04.1-1), latexml (<< 0.8.4-2), libdevel-mat-dumper-perl (<< 0.42-3), libencode-arabic-perl (<< 14.2-2), libexception-class-perl (<< 1.42), libfile-path-perl (<< 2.18), libfile-spec-perl (<< 3.9000), libfile-temp-perl (<< 0.2311), libgnupg-interface-perl (<< 1.02-4), libio-socket-ip-perl (<< 0.42), liblexical-failure-perl (<< 0.001000), libmp3-tag-perl (<< 1.13-1.2), libnumber-format-perl (<< 1.76), libsbuild-perl (<< 0.67.0-1), libscalar-list-utils-perl (<< 1:1.63), libsocket-perl (<< 2.038), libur-perl (<< 0.470+ds-3), libxsloader-perl (<< 0.32), mailagent (<< 1:3.1-81-2), perl (<< 5.40.0~), perl-modules (<< 5.40.0~), pod2pdf (<< 0.42-5.1), slic3r (<< 1.2.9+dfsg-6.1), slic3r-prusa (<< 1.37.0+dfsg-1.1), texinfo (<< 6.1.0.dfsg.1-8)
+Replaces: libfile-path-perl (<< 2.18), libfile-temp-perl (<< 0.2311), libio-socket-ip-perl (<< 0.42), libscalar-list-utils-perl (<< 1:1.63), libsocket-perl (<< 2.038), libxsloader-perl (<< 0.32), perl (<< 5.10.1-12), perl-modules (<< 5.20.1-3)
+Filename: ./p/perl-base/perl-base_5.40.0-6_loong64.deb
+Size: 1644536
+MD5sum: ab72517bcb1f959db373e6f07e807347
+SHA1: 7bede18830cc4e0e0536fcc93d55e0105b40f7cb
+SHA256: 85ec2d15a3ea75c99371fa41592f2e49def7038b8f3722df18cc60a63c6dd54d
+SHA512: 3a22900a6eaa7ad5928af9606ddb538cf45cdae86f847d4830bb43b4755720ee431b445bbdb2685ff4ec6b4171b8655299fbeee757a4d6f62e2cdf34b40014d1
+Homepage: http://dev.perl.org/perl5/
+Description: minimal Perl system
+ Perl is a scripting language used in many system scripts and utilities.
+ .
+ This package provides a Perl interpreter and the small subset of the
+ standard run-time library required to perform basic tasks. For a full
+ Perl installation, install "perl" (and its dependencies, "perl-modules-5.40"
+ and "perl-doc").
+
+Package: procps
+Architecture: loong64
+Version: 2:4.0.4-6
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 2414
+Provides: watch
+Depends: libc6 (>= 2.40), libncursesw6 (>= 6), libproc2-0 (>= 2:4.0.4), libsystemd0 (>= 254), libtinfo6 (>= 6), init-system-helpers (>= 1.29~)
+Recommends: psmisc, linux-sysctl-defaults
+Breaks: manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2)
+Replaces: manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2)
+Filename: ./p/procps/procps_2%3a4.0.4-6_loong64.deb
+Size: 871516
+MD5sum: fc53c07eed42f774e32cefcae9da72ad
+SHA1: 67ffec5f19a4f2ea3a3350e8b8cfa83d6711e632
+SHA256: 2de6fe25c0bdd05196ff02ebcb5212ad0517823997c5380398b60248821940ce
+SHA512: a727c764fe3496be49ca73c026daa353af31fbfdf175a64590e34f87ce66cf9e8a07121ed4f52a7e5b06bb2004e93ec998b46f90443910983763f431e1896605
+Homepage: https://gitlab.com/procps-ng/procps
+Description: /proc file system utilities
+ This package provides command line and full screen utilities for browsing
+ procfs, a "pseudo" file system dynamically generated by the kernel to
+ provide information about the status of entries in its process table
+ (such as whether the process is running, stopped, or a "zombie").
+ .
+ It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
+ snice, sysctl, tload, top, uptime, vmstat, w, and watch.
+
+Package: readline-common
+Architecture: all
+Version: 8.2-5
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: readline
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 89
+Suggests: readline-doc
+Conflicts: libreadline-common, libreadline5 (<< 5.0-11)
+Replaces: libreadline-common, libreadline4 (<< 4.3-16), libreadline5 (<< 5.0-11)
+Filename: ./r/readline-common/readline-common_8.2-5_all.deb
+Size: 69316
+MD5sum: c0c1b84d30d7a1cd91794ebd2314f941
+SHA1: 8b2baea212e9a6fe4c72c4392cd30defee0509ac
+SHA256: ecf20e32251c60537e7625dfa993c39237ee76980668b364d3f3d049387790aa
+SHA512: fb6df0d0d8f894215349b53b3a712a3c8e42043345cfc868ca7072dcefe6830c6ea59205aa32dd42511ef5d5e79a89cfbcd766414bdd65fa745103530e85c49b
+Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+Description: GNU readline and history libraries, common files
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+
+Package: sed
+Architecture: loong64
+Version: 4.9-2
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Clint Adams <clint@debian.org>
+Installed-Size: 995
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.37), libselinux1 (>= 3.1~)
+Filename: ./s/sed/sed_4.9-2_loong64.deb
+Size: 326264
+MD5sum: 856be8cc14541680ffa1c82610db809b
+SHA1: f6db439c4d345c8febf365c77edeb64999e850e1
+SHA256: 12cf1d9cf2508c46f2a4ae5faa165edcadbe5f88fdb3b415594ec7bd46824801
+SHA512: 72fa1f8d2af4d9f219c26e0a10ed2ed9ce4bd149414788f387fc752ad307892d85da77c549fbf48095db6642575d4fee719d4d44f749ffc8ce54551e244180b9
+Homepage: https://www.gnu.org/software/sed/
+Description: GNU stream editor for filtering/transforming text
+ sed reads the specified files or the standard input if no
+ files are specified, makes editing changes according to a
+ list of commands, and writes the results to the standard
+ output.
+
+Package: sensible-utils
+Architecture: all
+Version: 0.0.24
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 63
+Filename: ./s/sensible-utils/sensible-utils_0.0.24_all.deb
+Size: 24840
+MD5sum: 6d73b3457e467b5e40b973c880bef1c8
+SHA1: a3a4525073551b03a55b148f5a118ccbb1991bf3
+SHA256: b8841f7907fd3114961285efc5b2cec55c32d434d24787ef598ca4f4736ec356
+SHA512: 167410c7508902316a7708cc16034efe9abb3277c28162ede13632ced679201c73c2ac2536a382ad793eb87e1311ebcf0b100f167cafc66e22e4f4a323a249bb
+Description: Utilities for sensible alternative selection
+ This package provides a number of small utilities which are used
+ by programs to sensibly select and spawn an appropriate browser,
+ editor, pager, or terminal emulator.
+ .
+ The specific utilities included are: sensible-browser sensible-editor
+ sensible-pager sensible-terminal
+
+Package: systemd
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 11003
+Provides: systemd-sysusers (= 256.7-2), systemd-tmpfiles (= 256.7-2)
+Pre-Depends: libblkid1 (>= 2.30.2), libc6 (>= 2.40), libcap2 (>= 1:2.10), libmount1 (>= 2.30), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0)
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libpam0g (>= 0.99.7.1), libsystemd-shared (= 256.7-2), libsystemd0 (= 256.7-2), mount
+Recommends: default-dbus-system-bus | dbus-system-bus, linux-sysctl-defaults, systemd-timesyncd | time-daemon, systemd-cryptsetup, libzstd1
+Suggests: systemd-container, systemd-homed, systemd-userdbd, systemd-boot, systemd-resolved, systemd-repart, libtss2-tcti-device0, polkitd, libcryptsetup12, libgcrypt20, libidn2-0, liblz4-1, liblzma5, libtss2-rc0t64
+Conflicts: consolekit, libpam-ck-connector, opensysusers, systemd-shim
+Breaks: dracut-core (<< 102-2~), less (<< 563), sicherboot (<< 0.1.6)
+Filename: ./s/systemd/systemd_256.7-2_loong64.deb
+Size: 3328344
+MD5sum: a20926e0a8131ee2ef2184b97b9bc652
+SHA1: f8ed0b22602ff2bf8bb02dcd4ab34e915ebd47fb
+SHA256: 00063fae5deb1cb4fc10e42e43f82de205dc67d82459682c0b6dde3d400595eb
+SHA512: 8eaef6672e5cd6a5108df335577f5c670b812552bef871ec37359bf7de30378b1f9556c8300404cb992a19d2670a57bd75c350cf0d5600514ad9b417725e4c1d
+Homepage: https://systemd.io
+Description: system and service manager
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes using
+ Linux control groups, maintains mount and automount points and implements an
+ elaborate transactional dependency-based service control logic.
+ .
+ Installing the systemd package will not switch your init system unless you
+ boot with init=/lib/systemd/systemd or install systemd-sysv in addition.
+
+Package: systemd-sysv
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 88
+Pre-Depends: systemd
+Recommends: libpam-systemd, libnss-systemd
+Conflicts: bfh-container (<< 20211009-22~), file-rc, initscripts, insserv, molly-guard (<< 0.8.2~), orphan-sysvinit-scripts, progress-linux-container (<< 20221002-11~), startpar, systemd-shim, sysv-rc, sysvinit-core
+Replaces: sysvinit-core
+Filename: ./s/systemd-sysv/systemd-sysv_256.7-2_loong64.deb
+Size: 58512
+MD5sum: b0fdb1be24ea6ce0fcf22686bdfcb491
+SHA1: de0dec7469299cd421e4808438077b7d59d318fa
+SHA256: a6ebf6051a851ed691709071bbe219f08075ac068f80cb0b374b2468121832f6
+SHA512: 2ecba1782f8dd6cb13bacd4008e9d8bb0d25f0db31eb9f40316d686e6c1c30f661d79a535fb13e6570466472fc654e677f7ad683de6ced8b3f2ccb1849b4e3d8
+Homepage: https://systemd.io
+Description: system and service manager - SysV compatibility symlinks
+ This package provides manual pages and compatibility symlinks needed for
+ systemd to replace sysvinit.
+ .
+ Installing systemd-sysv will overwrite /sbin/init with a symlink to systemd.
+
+Package: sysvinit-utils
+Architecture: loong64
+Version: 3.10-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Source: sysvinit
+Maintainer: Debian sysvinit maintainers <debian-init-diversity@chiark.greenend.org.uk>
+Installed-Size: 114
+Provides: lsb-base (= 11.1.0)
+Depends: libc6 (>= 2.40)
+Conflicts: lsb-base (<< 11.3~)
+Replaces: lsb-base
+Filename: ./s/sysvinit-utils/sysvinit-utils_3.10-3_loong64.deb
+Size: 32960
+MD5sum: 7b76dbd465c09df6c9a58a4bc024f009
+SHA1: c82c69037bc6b291877523305ae6e95fba16b781
+SHA256: ed029b7ce1f1410cd395741be3a081c274cca9354f89e94518bee72f244fb27d
+SHA512: 0d6646882c9c63bd13b9622c09067b1302a20689716906a5384c5424cf65c2fe0e8ebfa581e383a345708a83b0bf504b0c3573d41694d5ee71b3aed5bfdbe923
+Homepage: https://github.com/slicer69/sysvinit
+Description: System-V-like utilities
+ This package contains the important System-V-like utilities.
+ .
+ Specifically, this package includes:
+ init-d-script, fstab-decode, killall5, pidof
+ .
+ It also contains the library scripts sourced by init-d-script and other
+ initscripts that were formerly in lsb-base.
+
+Package: tar
+Architecture: loong64
+Version: 1.35+dfsg-3
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: Janos Lenart <ocsi@debian.org>
+Installed-Size: 3106
+Pre-Depends: libacl1 (>= 2.2.23), libc6 (>= 2.37), libselinux1 (>= 3.1~)
+Suggests: bzip2, ncompress, xz-utils, tar-scripts, tar-doc
+Conflicts: cpio (<= 2.4.2-38)
+Breaks: dpkg-dev (<< 1.14.26)
+Replaces: cpio (<< 2.4.2-39)
+Filename: ./t/tar/tar_1.35+dfsg-3_loong64.deb
+Size: 804864
+MD5sum: 46f42c6158685431f47ad3966d376b03
+SHA1: 0cea12e3cf9e452e50868e3c98e3a7431a8728fb
+SHA256: 26bda11e8e50679d11713e71f0600dfd4a6b67016147095cda493c5f56760c4f
+SHA512: 1f3c0166588d76e58d0cd5b2e35c33bbb94ed0178b6914e6e08347962b9a3f4188b295ba55cd0c20c99740edf8a84cf7f4e30c0a7db78ae6872cd094ca288059
+Homepage: https://www.gnu.org/software/tar/
+Description: GNU version of the tar archiving utility
+ Tar is a program for packaging a set of files as a single archive in tar
+ format.  The function it performs is conceptually similar to cpio, and to
+ things like PKZIP in the DOS world.  It is heavily used by the Debian package
+ management system, and is useful for performing system backups and exchanging
+ sets of files with others.
+
+Package: tzdata
+Architecture: all
+Version: 2024b-3
+Multi-Arch: foreign
+Priority: required
+Section: localization
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 1347
+Provides: tzdata-trixie
+Depends: debconf (>= 0.5) | debconf-2.0
+Breaks: tzdata-legacy (= 2023c-8), tzdata-legacy (= 2023c-9)
+Replaces: tzdata-legacy (= 2023c-8), tzdata-legacy (= 2023c-9)
+Filename: ./t/tzdata/tzdata_2024b-3_all.deb
+Size: 255460
+MD5sum: e884fce362dc44b1bc514fdd499da957
+SHA1: dc5742b1aca9405d0ef2f4381aed4eb815709f68
+SHA256: 316f6811e3a26869e30d391dff837ce49d44ffdb2d32e1c1aef09d1d40e6d15b
+SHA512: 35c43e235dc37308eb4fefe8b5d490cb6c4ece06f800587ac17229edcb6993cd5347ee9ebc63e8dba7a651ab818e23cae8f59b80070daa0a21218a97affa662c
+Homepage: https://www.iana.org/time-zones
+Description: time zone and daylight-saving time data
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+
+Package: udev
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 11433
+Depends: libacl1 (>= 2.2.23), libblkid1 (>= 2.37.2), libc6 (>= 2.40), libcap2 (>= 1:2.10), libselinux1 (>= 3.1~), systemd | systemd-standalone-sysusers | systemd-sysusers | opensysusers, libkmod2, libudev1 (= 256.7-2)
+Suggests: libcryptsetup12, libidn2-0, libtss2-rc0t64
+Conflicts: systemd (<< 255~rc1-4~)
+Replaces: systemd (<< 255~rc1-4~)
+Filename: ./u/udev/udev_256.7-2_loong64.deb
+Size: 1857372
+MD5sum: 1855f8b8f85008d5d057fd3883a91dec
+SHA1: 8bd14c55be13a42ed5d375141048fc3d78729a29
+SHA256: 28b14fdd15d7118227466e12b6c14b53f591dbe734920bdf8daf994c5dd33ac5
+SHA512: 4730c778416b535b2326a7093302f941ce4e3eeeb06ead679f5198f2d84fa7d67ec4484f704a2e75a78e107a87453635d49cfca641c3bcc41918b12d6ab066ca
+Homepage: https://systemd.io
+Description: /dev/ and hotplug management daemon
+ udev is a daemon which dynamically creates and removes device nodes from
+ /dev/, handles hotplug events and loads drivers at boot time.
+
+Package: usr-is-merged
+Architecture: all
+Version: 39
+Multi-Arch: foreign
+Priority: optional
+Section: oldlibs
+Source: usrmerge
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 13
+Conflicts: acl (<< 2.2.52-3~), arptables (<< 0.0.4+snapshot20181021-1~), coreutils (<< 8.24-1~), cruft (<< 0.9.44~), cryptsetup (<< 2:1.7.0-1~), davfs2 (<< 1.5.2-1.2~), debianutils (<< 4.5~), dhcpcd (<< 1:5~), ebtables (<< 2.0.10.4+snapshot20181205-1~), elvis-tiny (<< 1.4-24~), kbd (<< 2.0.4-4~), ksh (<< 93u+20120801-3.1~), less (<< 481-2~), libbrlapi-dev (<< 5.3.1-1~), libc0.1 (<< 2.35-4), libc0.3 (<< 2.35-4), libc6 (<< 2.35-4), libc6.1 (<< 2.35-4), libdm0-dev, libjson-c-dev (<< 0.12.1-1.1~), libparted1.8-10 (<< 1.8.8.git.2008.03.24-11.2~), libpng12-0 (<< 1.2.54-6~), libusb-0.1-4 (<< 2:0.1.12-28~), lustre-utils (<< 1.8.5+dfsg-3.2~), mksh (<< 52b-1~), molly-guard (<< 0.7.1+exp1~), musl-dev (<< 1.1.9-1.1~), nano (<< 2.3.99pre3-1~), open-iscsi (<< 2.0.873+git0.3b4b4500-13~), open-vm-tools (<< 2:10.0.5-3227872-2~), policycoreutils (<< 2.4-4~), safe-rm (<< 0.12-6~), tcsh (<< 6.18.01-4~), vsearch (<< 1.9.5-2~), xfsdump (<< 3.1.6+nmu1~), xfslibs-dev (<< 4.9.0+nmu1~), yp-tools (<< 3.3-5~), zsh (<< 5.2-4~)
+Breaks: cruft-ng (<< 0.4.4~), initramfs-tools (<< 0.121~)
+Filename: ./u/usr-is-merged/usr-is-merged_39_all.deb
+Size: 5572
+MD5sum: ab559998244680d136ab0b16e8ce8481
+SHA1: b783d7e96b2eb4ce7fc23ffcb86a58d25d5577a0
+SHA256: 4e84ac96acf8254dda4c17cf8cea737646953d094b643692924f1275376813de
+SHA512: fffa5ff3375543faa1f5b05271db28cf414f5cbd6cc72c72b29e177b33c959b98a80a4675546df4b2cb7970bd7e82bae150678194d574636eb0ba49309c2b75e
+Homepage: https://wiki.debian.org/UsrMerge
+Description: Transitional package to assert a merged-/usr system
+ This package can be successfully installed only on merged-/usr systems.
+ .
+ It can be safely removed once no other package depends on it anymore.
+
+Package: util-linux
+Architecture: loong64
+Version: 2.40.2-9
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: utils
+Maintainer: util-linux packagers <util-linux@packages.debian.org>
+Installed-Size: 5944
+Provides: hardlink
+Pre-Depends: libpam-modules, libpam-runtime, libblkid1 (= 2.40.2-9), libc6 (>= 2.40), libcap-ng0 (>= 0.7.9), libcrypt1 (>= 1:4.1.0), libmount1 (= 2.40.2-9), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsmartcols1 (= 2.40.2-9), libsystemd0, libtinfo6 (>= 6), libudev1 (>= 183), libuuid1 (= 2.40.2-9)
+Recommends: sensible-utils
+Suggests: dosfstools, kbd, util-linux-extra, util-linux-locales, wtmpdb
+Conflicts: hardlink
+Replaces: hardlink
+Filename: ./u/util-linux/util-linux_2.40.2-9_loong64.deb
+Size: 1188752
+MD5sum: e0b7483a1b8b4ea1a603dadd4f422618
+SHA1: 1e992cc79332a2806dd12954459bb4687e47d38a
+SHA256: a555fbdae3673c48cf8f73341ad6459b9ebba3d564681ad90dc6355640fc1575
+SHA512: cfafd871a984258d7222b0ae694a575b8c3ca320bbb9e6fd66a53bd87e15632271b5bcd3072327a93e411db0f16ebd5c78d6cec09c1b10ef07777798c0521765
+Homepage: https://github.com/util-linux/util-linux
+Description: miscellaneous system utilities
+ This package contains a number of important utilities, most of which
+ are oriented towards maintenance of your system. Some of the more
+ important utilities included in this package allow you to view kernel
+ messages, create new filesystems, view block device information,
+ interface with real time clock, etc.
+
+Package: vim-common
+Architecture: all
+Version: 2:9.1.0777-1
+Multi-Arch: foreign
+Priority: important
+Section: editors
+Source: vim
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 1858
+Recommends: xxd, vim | vim-gtk3 | vim-motif | vim-nox | vim-tiny
+Breaks: vim-runtime (<< 2:9.0.1658-1~)
+Replaces: vim-runtime (<< 2:9.0.1658-1~)
+Filename: ./v/vim-common/vim-common_2%3a9.1.0777-1_all.deb
+Size: 417980
+MD5sum: c7f3b57598f949403a31b9a47c405fdf
+SHA1: 206f974d8a105dbcf9a7bf67483c4acd1abe7128
+SHA256: 89283a42f1a5acebdfe6a3db62ff9d04c2df1198243d235c8dd5fc95df868714
+SHA512: 133b433946bcb1825efe02b8ab019d913b411df00cfbc14d9eb1013ea674215445eb7626e71327f33cfc41fb41daf6028bfcc79c4a49b73b1fb6b5e5d84f882a
+Homepage: https://www.vim.org/
+Description: Vi IMproved - Common files
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains files shared by all non GUI-enabled vim variants
+ available in Debian.  Examples of such shared files are: manpages and
+ configuration files.
+
+Package: vim-tiny
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: important
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 1974
+Provides: editor
+Depends: vim-common (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
+Suggests: indent
+Filename: ./v/vim-tiny/vim-tiny_2%3a9.1.0777-1+b1_loong64.deb
+Size: 740704
+MD5sum: 8126b4d9be6614f38607d8d3e16e189f
+SHA1: 995dfac990d8014b0651c0fa617d754af2ab65d2
+SHA256: b00208bd12571e561826d462ec9c00ee1f1fffa3e4cef0b95a55eab2f830e2c6
+SHA512: 7755e6300328051bbfede06e8bd0bfb36316395ad5123e35872b96661e0104e02f91d66fb1a0a112bd4c2a3fd50e4bc73674e99be0826749ee845f5ab96a1e1b
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - compact version
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains a minimal version of Vim compiled with no GUI and
+ a small subset of features. This package's sole purpose is to provide
+ the vi binary for base installations.
+ .
+ If a vim binary is wanted, try one of the following more featureful
+ packages: vim, vim-nox, vim-motif, or vim-gtk3.
+
+Package: whiptail
+Architecture: loong64
+Version: 0.52.24-2+b1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: newt (0.52.24-2)
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 65
+Depends: libc6 (>= 2.38), libnewt0.52 (>= 0.52.24), libpopt0 (>= 1.14), libslang2 (>= 2.2.4)
+Filename: ./w/whiptail/whiptail_0.52.24-2+b1_loong64.deb
+Size: 24064
+MD5sum: f694bb01b6907c804bf147089ef88a9e
+SHA1: 92932a43dc91162bb3aefb36a53852d1f6ca9d0b
+SHA256: e33b90ad5cfe8eb0cada2a44de38e88b8c222a43e9e999f4a4509ea43b41c292
+SHA512: 08caecbde290a32a2dc407c8a0440198d759f09e37c19ec7c5fc0874743bb6ce0472523384cc796238109bb0c5ba24df40493f7ca08e20342607dd70fe46926c
+Homepage: https://pagure.io/newt
+Description: Displays user-friendly dialog boxes from shell scripts
+ Whiptail is a "dialog" replacement using newt instead of ncurses. It
+ provides a method of displaying several different types of dialog boxes
+ from shell scripts. This allows a developer of a script to interact with
+ the user in a much friendlier manner.
+
+Package: zlib1g
+Architecture: loong64
+Version: 1:1.3.dfsg+really1.3.1-1
+Multi-Arch: same
+Priority: required
+Section: libs
+Source: zlib
+Maintainer: Mark Brown <broonie@debian.org>
+Installed-Size: 164
+Provides: libz1
+Depends: libc6 (>= 2.38)
+Conflicts: zlib1 (<= 1:1.0.4-7)
+Breaks: libxml2 (<< 2.7.6.dfsg-2), texlive-binaries (<< 2023.20230311.66589-8)
+Filename: ./z/zlib1g/zlib1g_1%3a1.3.dfsg+really1.3.1-1_loong64.deb
+Size: 81088
+MD5sum: d67911bec9e5924b5de838a72554243c
+SHA1: 3b03ec43379916682604f2fd772a2e3f45c272b2
+SHA256: 05d12d7f76b987dd5366ca82c0bcbe26cc4f7655a384a909142893f032d8507a
+SHA512: 7f96e0c3649ec32c3b82e333c10d5838a8dfd98722d0230729dbac69b01bd4bede9e3e2f8380a3cd741693b760d83886718a8d119ce2f546a1a018f642baf9e0
+Homepage: http://zlib.net/
+Description: compression library - runtime
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the shared library.
+

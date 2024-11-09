@@ -1,0 +1,31 @@
+Package: libbz2-1.0
+Architecture: loong64
+Version: 1.0.8-6
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: bzip2
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 108
+Depends: libc6 (>= 2.39)
+Filename: ./l/libbz2-1.0/libbz2-1.0_1.0.8-6_loong64.deb
+Size: 38188
+MD5sum: f283067efbc83310dfdce49c20fca444
+SHA1: cb0576aca0a5abb71adfc289f89026bb19d71050
+SHA256: 76789bb8f3562521706986f5396d450f4795521fa659cbab839e741f8f153824
+SHA512: 638cbf68d869a06e266b7e367eee0d46af7657f4aaf52e1b9d9095cff26ff0a919f0b929af6d546e96ff74af0ddd21e8f438018276a9cc98ffe4bb0cf5db9723
+Homepage: https://sourceware.org/bzip2/
+Description: high-quality block-sorting file compressor library - runtime
+ This package contains libbzip2 which is used by the bzip2 compressor.
+ .
+ bzip2 is a freely available, patent free, data compressor.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+

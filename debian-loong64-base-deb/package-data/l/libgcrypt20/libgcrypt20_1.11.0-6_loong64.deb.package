@@ -1,0 +1,28 @@
+Package: libgcrypt20
+Architecture: loong64
+Version: 1.11.0-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1442
+Depends: libc6 (>= 2.39), libgpg-error0 (>= 1.50)
+Suggests: rng-tools
+Filename: ./l/libgcrypt20/libgcrypt20_1.11.0-6_loong64.deb
+Size: 739232
+MD5sum: fc3cd8195736237078ec22d7ba12b1f8
+SHA1: dda6032eb7e0972d7cb63f74ec6d72de023eb780
+SHA256: 55ea94b113b2315bf4c46bb98503ea9831df276c02605a15f4cff64d9dc1e2e6
+SHA512: b511c3eda2d249cfeb3daba6a7c130f39dbfd9a3eba6da5d7d785710ccbb72bcbbb2104e12a762d29b26422c65bfe48fe9ff72cd392ef557ccf2de084c1aa2e4
+Homepage: https://gnupg.org/software/libgcrypt/
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Poly1305, Camellia, ChaCha20, IDEA, Salsa, SM4, Blake-2, CRC, MD2, MD4, MD5,
+ RIPE-MD160, SM3, SHA-1, SHA-256, SHA-512, SHA3-224, SHA3-256, SHA3-384,
+ SHA3-512, SHAKE128, SHAKE256, Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC
+ (Curve25519, sec256k1, GOST R 34.10-2001 and GOST R 34.10-2012, etc.)
+
