@@ -1,0 +1,25 @@
+Package: libvlccore-dev
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 967
+Depends: libvlccore9 (= 3.0.21-2)
+Filename: ./l/libvlccore-dev/libvlccore-dev_3.0.21-2_loong64.deb
+Size: 241256
+MD5sum: d128f2aec716a3300530baaf62f5fe9e
+SHA1: c68ab7382a1de22db0ae07526ad32f74482857ba
+SHA256: 5cc0c7661eaf0d3ccf932478cb481de79f63a92f437487ce8cdab96f605cdee5
+SHA512: 9d707c3c328bb01e3aa93a7fc626520a0d306a3594f9e4f69759ac854ddf5ff5097087fc91b90575dac2f70b18962713e411dd81a697b149d00404041232fee6
+Homepage: https://www.videolan.org/vlc/
+Description: development files for libvlccore
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains headers and a static library required to build plugins
+ for VLC.
+

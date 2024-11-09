@@ -1,0 +1,25 @@
+Package: libvlc-dev
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 396
+Depends: libvlc5 (= 3.0.21-2)
+Filename: ./l/libvlc-dev/libvlc-dev_3.0.21-2_loong64.deb
+Size: 131944
+MD5sum: c08edfd987d16ce4f5ff7b86ff376cb1
+SHA1: 0f60cccd63d8aa5b850495dca843120b6b9e98a6
+SHA256: af0cc97fb3b3579ffdec79198db1fe64d8581c915cd9b9cc2437ab21eceda593
+SHA512: 6d5ac3f4fbf027a715e84ac7cf53cf3b6d9965fd9752524b991ba164a85d8dea1ec10433a72cf334619b4b44a605e021068fa7fbf10a04ed9f640ed3973ed45e
+Homepage: https://www.videolan.org/vlc/
+Description: development files for libvlc
+ This package contains headers and a static library required to build
+ standalone applications that use VLC features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+

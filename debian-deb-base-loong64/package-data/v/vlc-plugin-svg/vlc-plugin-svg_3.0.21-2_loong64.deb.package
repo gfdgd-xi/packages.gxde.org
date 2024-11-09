@@ -1,0 +1,28 @@
+Package: vlc-plugin-svg
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.13.1), libglib2.0-0t64 (>= 2.12.0), librsvg2-2 (>= 2.14.4), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-svg/vlc-plugin-svg_3.0.21-2_loong64.deb
+Size: 93404
+MD5sum: c3e1f9cb7388024009d3ccbdad1eeeb0
+SHA1: 3835c7b4002c65fc32818aafcd61bbc4b9ff41d3
+SHA256: 219ed391c327c13f8d22dab97ada0e8a107750b0279010d3953dbcb4c3f852be
+SHA512: 747825a05d9509642fec98f1a904123d63cc6cf5c0bce87e582f356d4fd1bea2320cad137e40bfb038f752b66b44a3ff5bd67774279b557e424d7ce339c24204
+Homepage: https://www.videolan.org/vlc/
+Description: SVG plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin allows you to render SVG graphics on top of the video. It is a text
+ renderer, and must be activated through the '--text-renderer svg' option. When
+ sent non-SVG data, it will convert it to SVG using a template that can be
+ specified by the svg-template-file option.
+

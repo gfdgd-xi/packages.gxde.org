@@ -1,0 +1,23 @@
+Package: vlc-bin
+Architecture: loong64
+Version: 3.0.21-2
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 358
+Depends: libvlc-bin (= 3.0.21-2), libc6 (>= 2.39), libvlc5 (>= 3.0.21)
+Filename: ./v/vlc-bin/vlc-bin_3.0.21-2_loong64.deb
+Size: 127484
+MD5sum: 6cc8e277dd225b5b9f87ece2d9d85766
+SHA1: 2556816e817a548471292c2c122f6b6263be4269
+SHA256: d49d3ba66b091d9d38a8f82cdb8f1ac3d75e82966b96bff221553ddfdf1cb97b
+SHA512: 8bde50317531a470f341cdeaf5bc72ad4f03340648c4c264cab68b4d4cf9889ba1e3305c449ad71aee1d3fb1fa43d199e0b10a7b36c5e9ae503c296363ad1e05
+Homepage: https://www.videolan.org/vlc/
+Description: binaries from VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the VLC's binaries.
+

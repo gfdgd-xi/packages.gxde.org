@@ -1,0 +1,41 @@
+Package: vlc
+Architecture: loong64
+Version: 3.0.21-2
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 196
+Provides: mp3-decoder
+Depends: vlc-bin (= 3.0.21-2), vlc-plugin-base (= 3.0.21-2), vlc-plugin-qt (= 3.0.21-2), vlc-plugin-video-output (= 3.0.21-2)
+Recommends: vlc-l10n (= 3.0.21-2), vlc-plugin-access-extra (= 3.0.21-2), vlc-plugin-notify (= 3.0.21-2), vlc-plugin-samba (= 3.0.21-2), vlc-plugin-skins2 (= 3.0.21-2), vlc-plugin-video-splitter (= 3.0.21-2), vlc-plugin-visualization (= 3.0.21-2)
+Suggests: vlc-plugin-fluidsynth (= 3.0.21-2), vlc-plugin-jack (= 3.0.21-2), vlc-plugin-pipewire, vlc-plugin-svg (= 3.0.21-2)
+Filename: ./v/vlc/vlc_3.0.21-2_loong64.deb
+Size: 110104
+MD5sum: 9091a7f5e1af6ad87def506a7ff2bee7
+SHA1: b2f0cfd586897e0e5671ee23a47c353582cf1ef5
+SHA256: 8b7aae5c991936aebe3420dc910186cd866a2501e6eb4606d791c1a53006c476
+SHA512: 6739682618b70f9d24f6f4883d00b61d2338a892daff1d26b82bea3202405d6305d54872020f7b2c3bba6433e2de8faedaa361b32166a2644b89dc149c2b54f0
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins:
+  * vlc-plugin-access-extra
+  * vlc-plugin-fluidsynth
+  * vlc-plugin-jack
+  * vlc-plugin-notify
+  * vlc-plugin-samba
+  * vlc-plugin-skins2
+  * vlc-plugin-svg
+  * vlc-plugin-video-splitter
+  * vlc-plugin-visualization
+

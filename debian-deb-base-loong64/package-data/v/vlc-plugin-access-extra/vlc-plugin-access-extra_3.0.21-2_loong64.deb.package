@@ -1,0 +1,25 @@
+Package: vlc-plugin-access-extra
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 220
+Depends: libc6 (>= 2.39), libsrt1.5-gnutls (>= 1.5.3), libvlccore9 (>= 3.0.21), libvncclient1 (>= 0.9.10), libxcb-composite0, libxcb-shm0, libxcb1 (>= 1.6), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-access-extra/vlc-plugin-access-extra_3.0.21-2_loong64.deb
+Size: 106864
+MD5sum: d78d22c645d0323d23951f2232856bbc
+SHA1: 7588fa2cab9bbffa45db3b52aae2f7f08502a90f
+SHA256: d445d44545feb121880a5005b7dbb38bef513bf016c57dc1e116da126637e643
+SHA512: 5df76948f2372e9f1b961021ac2cfd78323a5b413499a181df3051efd39f47755d8e66578fe500ea06866bf7da44b5068ebd0eb9ea8fc77844ab4695e5a62105
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (extra access plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains additional access plugins.
+

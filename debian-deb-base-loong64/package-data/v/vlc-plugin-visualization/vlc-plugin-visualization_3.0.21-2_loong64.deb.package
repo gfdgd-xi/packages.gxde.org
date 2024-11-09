@@ -1,0 +1,25 @@
+Package: vlc-plugin-visualization
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 231
+Depends: libc6 (>= 2.39), libgl1, libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-visualization/vlc-plugin-visualization_3.0.21-2_loong64.deb
+Size: 113728
+MD5sum: 6c41af355e6df0690e305624eb351777
+SHA1: 503425675736bb8c8f98e72c2f466868882976a1
+SHA256: 9c04b82fe320736fef416bcf85e5b082955376f5ce017b4afa7bcfb8219caa2d
+SHA512: 0f2a3467750ed13f42978a5232db4644908f368fab6147675e8b5b92c877246a5e29bcbfb4694ef37318149de0471e55d55cc9805fd3ffdd8d60ef9fffebb891
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (visualization plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the visualization plugins.
+

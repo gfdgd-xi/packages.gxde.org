@@ -5560,6 +5560,132 @@ Description: Universally Unique ID library
  .
  See RFC 4122 for more information.
 
+Package: libvlc-bin
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 170
+Depends: libc6 (>= 2.39), libvlc5 (>= 3.0.21)
+Filename: ./l/libvlc-bin/libvlc-bin_3.0.21-2_loong64.deb
+Size: 91760
+MD5sum: 0d276d241f46206d6baf59d6777ebc85
+SHA1: 1d70fcce09abd63e055a42acd4cd87130bfafb61
+SHA256: d85f92781f7a9e15e2251cee4763432bb437a696227cf278e30def92d4e99351
+SHA512: 7535154bfe124f08d98de074af157019a14e931f97152690f42fa9b54e98a8d5c886c8f7e5f6c0381e6b4aff128d3cf9226a227ce172498f3f408d040d989e37
+Homepage: https://www.videolan.org/vlc/
+Description: tools for VLC's base library
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the vlc-cache-gen binary.
+
+Package: libvlc-dev
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 396
+Depends: libvlc5 (= 3.0.21-2)
+Filename: ./l/libvlc-dev/libvlc-dev_3.0.21-2_loong64.deb
+Size: 131944
+MD5sum: c08edfd987d16ce4f5ff7b86ff376cb1
+SHA1: 0f60cccd63d8aa5b850495dca843120b6b9e98a6
+SHA256: af0cc97fb3b3579ffdec79198db1fe64d8581c915cd9b9cc2437ab21eceda593
+SHA512: 6d5ac3f4fbf027a715e84ac7cf53cf3b6d9965fd9752524b991ba164a85d8dea1ec10433a72cf334619b4b44a605e021068fa7fbf10a04ed9f640ed3973ed45e
+Homepage: https://www.videolan.org/vlc/
+Description: development files for libvlc
+ This package contains headers and a static library required to build
+ standalone applications that use VLC features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc5
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 322
+Depends: libc6 (>= 2.39), libvlccore9 (>= 3.0.21)
+Recommends: libvlc-bin (= 3.0.21-2)
+Filename: ./l/libvlc5/libvlc5_3.0.21-2_loong64.deb
+Size: 141588
+MD5sum: e126e5c54598d33552e6f9165e0fc59c
+SHA1: 13469e2e8ef815142b284de5e29796e1193f9fd7
+SHA256: 6ced9c8a8d9379caeecce2c7e6bbc7728f6948b9d09742455641f36a9bd0475f
+SHA512: 39dde290a07455dc706c15317745d3ba930ff7277aca09ca00682f4bce1214f57383a8340f71a6083fd8ef8c577489eb5aad977bd327a780061c110c6aa539cd
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer library
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the shared library required by applications using VLC
+ features.
+
+Package: libvlccore-dev
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 967
+Depends: libvlccore9 (= 3.0.21-2)
+Filename: ./l/libvlccore-dev/libvlccore-dev_3.0.21-2_loong64.deb
+Size: 241256
+MD5sum: d128f2aec716a3300530baaf62f5fe9e
+SHA1: c68ab7382a1de22db0ae07526ad32f74482857ba
+SHA256: 5cc0c7661eaf0d3ccf932478cb481de79f63a92f437487ce8cdab96f605cdee5
+SHA512: 9d707c3c328bb01e3aa93a7fc626520a0d306a3594f9e4f69759ac854ddf5ff5097087fc91b90575dac2f70b18962713e411dd81a697b149d00404041232fee6
+Homepage: https://www.videolan.org/vlc/
+Description: development files for libvlccore
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains headers and a static library required to build plugins
+ for VLC.
+
+Package: libvlccore9
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 1277
+Provides: vlc-plugin-abi-3-0-0ft64
+Depends: libc6 (>= 2.39), libdbus-1-3 (>= 1.9.14), libidn12 (>= 1.13)
+Recommends: libproxy-tools
+Filename: ./l/libvlccore9/libvlccore9_3.0.21-2_loong64.deb
+Size: 499388
+MD5sum: 90889c7bb8ff0eaa094b5531da98b56d
+SHA1: 1d7379b64f257d7751f76aa220102cca3336ba83
+SHA256: ca1519dfda2511f7ebd1f75823cd662705554f79c237ec30fc3ae621f8ee29f9
+SHA512: fe2c8f098222a343cca7bf1d994064a48e1309b865c9a28003e2e409f928bf27f7084a1e32e46e8ebd3cc5d66643d00d9c06f7f2d92acdae942abd0f817d135f
+Homepage: https://www.videolan.org/vlc/
+Description: base library for VLC and its modules
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the shared library required by VLC modules and libvlc.
+
 Package: libweston-14-0
 Architecture: loong64
 Version: 14.0.0-2
@@ -8215,6 +8341,381 @@ Description: Vi IMproved - enhanced vi editor - compact version
  .
  If a vim binary is wanted, try one of the following more featureful
  packages: vim, vim-nox, vim-motif, or vim-gtk3.
+
+Package: vlc
+Architecture: loong64
+Version: 3.0.21-2
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 196
+Provides: mp3-decoder
+Depends: vlc-bin (= 3.0.21-2), vlc-plugin-base (= 3.0.21-2), vlc-plugin-qt (= 3.0.21-2), vlc-plugin-video-output (= 3.0.21-2)
+Recommends: vlc-l10n (= 3.0.21-2), vlc-plugin-access-extra (= 3.0.21-2), vlc-plugin-notify (= 3.0.21-2), vlc-plugin-samba (= 3.0.21-2), vlc-plugin-skins2 (= 3.0.21-2), vlc-plugin-video-splitter (= 3.0.21-2), vlc-plugin-visualization (= 3.0.21-2)
+Suggests: vlc-plugin-fluidsynth (= 3.0.21-2), vlc-plugin-jack (= 3.0.21-2), vlc-plugin-pipewire, vlc-plugin-svg (= 3.0.21-2)
+Filename: ./v/vlc/vlc_3.0.21-2_loong64.deb
+Size: 110104
+MD5sum: 9091a7f5e1af6ad87def506a7ff2bee7
+SHA1: b2f0cfd586897e0e5671ee23a47c353582cf1ef5
+SHA256: 8b7aae5c991936aebe3420dc910186cd866a2501e6eb4606d791c1a53006c476
+SHA512: 6739682618b70f9d24f6f4883d00b61d2338a892daff1d26b82bea3202405d6305d54872020f7b2c3bba6433e2de8faedaa361b32166a2644b89dc149c2b54f0
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins:
+  * vlc-plugin-access-extra
+  * vlc-plugin-fluidsynth
+  * vlc-plugin-jack
+  * vlc-plugin-notify
+  * vlc-plugin-samba
+  * vlc-plugin-skins2
+  * vlc-plugin-svg
+  * vlc-plugin-video-splitter
+  * vlc-plugin-visualization
+
+Package: vlc-bin
+Architecture: loong64
+Version: 3.0.21-2
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 358
+Depends: libvlc-bin (= 3.0.21-2), libc6 (>= 2.39), libvlc5 (>= 3.0.21)
+Filename: ./v/vlc-bin/vlc-bin_3.0.21-2_loong64.deb
+Size: 127484
+MD5sum: 6cc8e277dd225b5b9f87ece2d9d85766
+SHA1: 2556816e817a548471292c2c122f6b6263be4269
+SHA256: d49d3ba66b091d9d38a8f82cdb8f1ac3d75e82966b96bff221553ddfdf1cb97b
+SHA512: 8bde50317531a470f341cdeaf5bc72ad4f03340648c4c264cab68b4d4cf9889ba1e3305c449ad71aee1d3fb1fa43d199e0b10a7b36c5e9ae503c296363ad1e05
+Homepage: https://www.videolan.org/vlc/
+Description: binaries from VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the VLC's binaries.
+
+Package: vlc-plugin-access-extra
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 220
+Depends: libc6 (>= 2.39), libsrt1.5-gnutls (>= 1.5.3), libvlccore9 (>= 3.0.21), libvncclient1 (>= 0.9.10), libxcb-composite0, libxcb-shm0, libxcb1 (>= 1.6), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-access-extra/vlc-plugin-access-extra_3.0.21-2_loong64.deb
+Size: 106864
+MD5sum: d78d22c645d0323d23951f2232856bbc
+SHA1: 7588fa2cab9bbffa45db3b52aae2f7f08502a90f
+SHA256: d445d44545feb121880a5005b7dbb38bef513bf016c57dc1e116da126637e643
+SHA512: 5df76948f2372e9f1b961021ac2cfd78323a5b413499a181df3051efd39f47755d8e66578fe500ea06866bf7da44b5068ebd0eb9ea8fc77844ab4695e5a62105
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (extra access plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains additional access plugins.
+
+Package: vlc-plugin-base
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 12939
+Depends: vlc-data (= 3.0.21-2), liba52-0.7.4 (>= 0.7.4), libarchive13t64 (>= 3.1.2), libaribb24-0t64 (>= 1.0.3), libasound2t64 (>= 1.0.27), libass9 (>= 1:0.13.6), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavc1394-0 (>= 0.5.3), libavcodec61 (>= 7:7.0), libavformat61 (>= 7:7.0), libavutil59 (>= 7:7.0), libbluray2 (>= 1:1.0.0), libc6 (>= 2.39), libcairo2 (>= 1.13.1), libcddb2 (>= 1.3.2), libchromaprint1 (>= 1.3.2), libdav1d7 (>= 1.1.0), libdbus-1-3 (>= 1.9.14), libdc1394-25 (>= 2.2.6), libdca0 (>= 0.0.5), libdvbpsi10 (>= 1.3.0), libdvdnav4 (>= 6.1.0), libdvdread8t64 (>= 6.1.0), libebml5 (>= 1.4.5), libfaad2 (>= 2.7), libflac12t64 (>= 1.3.0), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libfribidi0 (>= 1.0.0), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.11.0), libglib2.0-0t64 (>= 2.28.0), libgnutls30t64 (>= 3.8.4), libgpg-error0 (>= 1.14), libharfbuzz0b (>= 0.9.4), libixml11t64 (>= 1:1.14.0), libjpeg62-turbo (>= 1.3.1), libkate1 (>= 0.3.0), liblirc-client0t64 (>= 0.10.2), liblua5.2-0 (>= 5.2.4), libmad0 (>= 0.15.1b-3), libmatroska7 (>= 1.7.1), libmpcdec6 (>= 1:0.1~r435), libmpeg2-4 (>= 0.5.1), libmpg123-0t64 (>= 1.28.0), libmtp9t64 (>= 1.1.0), libncursesw6 (>= 6), libnfs14 (>= 1.9.7), libogg0 (>= 1.1.0), libopenmpt-modplug1 (>= 0.8.9), libopus0 (>= 1.3~beta+20180516), libpng16-16t64 (>= 1.6.2), libpostproc58 (>= 7:7.0), libprotobuf-lite32t64 (>= 3.21.12), libpulse0 (>= 1.0), libraw1394-11 (>= 2.1.2), libresid-builder0c2a, librsvg2-2 (>= 2.14.4), libsamplerate0 (>= 0.1.7), libsecret-1-0 (>= 0.7), libshine3 (>= 3.1.0), libshout3 (>= 2.2.2), libsidplay2, libsoxr0 (>= 0.1.2), libspatialaudio0t64 (>= 0.3.0+git20180730+dfsg1), libspeex1 (>= 1.2~), libspeexdsp1 (>= 1.2.1), libssh2-1t64 (>= 1.2.3), libstdc++6 (>= 14), libswscale8 (>= 7:7.0), libsystemd0, libtag1v5 (>= 1.11), libtheora0 (>= 1.0), libtinfo6 (>= 6), libtwolame0 (>= 0.3.6), libudev1 (>= 183), libupnp17t64 (>= 1:1.14.0), libvlccore9 (>= 3.0.21), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libx264-164 (>= 2:0.164.3108+git31e19f9), libx265-209 (>= 3.6), libxcb-keysyms1 (>= 0.4.0), libxcb1, libxml2 (>= 2.7.4), libzvbi0t64 (>= 0.2.35), zlib1g (>= 1:1.1.4), vlc-plugin-abi-3-0-0ft64
+Recommends: xdg-utils
+Suggests: libdvdcss2
+Filename: ./v/vlc-plugin-base/vlc-plugin-base_3.0.21-2_loong64.deb
+Size: 2987664
+MD5sum: f429ea705b57fdcb518527324b6ea89e
+SHA1: ecd7c9d4fb3e08969ecb8f004c1962a50e82d384
+SHA256: e077b08a131719936f188acd1b5b597af3ec58b777ae17d76853fcd102e88c25
+SHA512: 895e5004a09fabe8363ec30490d26e982b59db96bd378f53ffae617abdc8d9beab2492f273b02009f11273445bf63c80119c443363107ade462d9c312205ddaf
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (base plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains most plugins which are shipped in more specialied plugin
+ packages.
+
+Package: vlc-plugin-fluidsynth
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: fluid-soundfont-gm | timgm6mb-soundfont, libc6 (>= 2.39), libfluidsynth3 (>= 2.0.5), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-fluidsynth/vlc-plugin-fluidsynth_3.0.21-2_loong64.deb
+Size: 93756
+MD5sum: d52a63c94da9c71e1f36f0d18a1711f2
+SHA1: 8f07737b108cc3486c328fc2bc17b9c89eefd7b6
+SHA256: f3c116eb3a578b466af4ce9db046e73b7afc5f093d45eee0f3c81ea6b34f4c85
+SHA512: 48739fcb79249fb7c17de0caddef7097ee5031439187ed2e8259cd46cd490e7e5ffc1e5e5c481b25742f5d939e218cd7084875725305473f3115fb0ac10a5c99
+Homepage: https://www.videolan.org/vlc/
+Description: FluidSynth plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support for playing MIDI file via the FluidSynth software
+ synthesizer to the VLC media player.
+
+Package: vlc-plugin-jack
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 184
+Depends: libc6 (>= 2.39), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-jack/vlc-plugin-jack_3.0.21-2_loong64.deb
+Size: 99136
+MD5sum: 38bc57bf2a9d2941354ba2700f85ab63
+SHA1: 05208df35553f4ccedf58c9eb2e170dccba7735a
+SHA256: 9597ee9cc08e84d7eef816281850d1539cd3b92eda652ab9c1d517069b958b63
+SHA512: 19dcacf9d9ccf6ed3773a58602d64337f2d0692860254999d5e6a4e76a2e5849912185c5a1bd49239a7d76e01aa9d8529833df069ea5057479f322dd406b17c8
+Homepage: https://www.videolan.org/vlc/
+Description: JACK audio plugins for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ These plugins add support for JACK to the VLC media player. To
+ activate the audio output module, use the `--aout jack' flag or
+ select the `jack' audio output plugin from the preferences menu.
+ For the jack input, use `vlc jack://channels=...:ports=...'
+
+Package: vlc-plugin-notify
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.12.0), libgtk-3-0t64 (>= 3.0.0), libnotify4 (>= 0.7.0), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-notify/vlc-plugin-notify_3.0.21-2_loong64.deb
+Size: 93204
+MD5sum: 8f393836e33d5cbe35115f43bc76699f
+SHA1: 757af0216c9cfaacea6ec18c007afab81dadb037
+SHA256: 1867eae18d9a8718d3fab0ea933316814a2118d9ce74c2aa95d66409da38cf16
+SHA512: f3e59bbc1701d6d0351f1246376fd12bd1e18cbaef94e489a48876665146238a5bb5ab514f5abc851be3f606aa2c0a64742909f567a0ea931c91827426bc54f9
+Homepage: https://www.videolan.org/vlc/
+Description: LibNotify plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support for libnotify track change notification to the
+ VLC media player.
+
+Package: vlc-plugin-qt
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 3741
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libqt5core5t64 (>= 5.15.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5svg5 (>= 5.6.0~beta), libqt5widgets5t64 (>= 5.15.1), libqt5x11extras5 (>= 5.6.0), libstdc++6 (>= 14), libvlccore9 (>= 3.0.21), libwayland-client0 (>= 1.0.2), libx11-6, vlc-plugin-abi-3-0-0ft64
+Recommends: vlc-bin
+Filename: ./v/vlc-plugin-qt/vlc-plugin-qt_3.0.21-2_loong64.deb
+Size: 1146748
+MD5sum: bca74544f4aa4407647401c9326bad4f
+SHA1: a5ffbd509b77de2d88d1803fba9df6376f778112
+SHA256: 21eeb3850d19456fd3ef864186b9e0bc392bfef96b8c157ba41774909564075a
+SHA512: f79a2109cf95decb58f0c4d1000941daa11ba9f4747d43686c92b8e4c8499dd0b26916d5dc7e3e5b6c44589cff2f20949ad1c62c4f60029a854c1cad3c9a537b
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (Qt plugin)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains VLC's Qt interface.
+
+Package: vlc-plugin-samba
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libsmbclient0 (>= 2:4.0.3+dfsg1), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-samba/vlc-plugin-samba_3.0.21-2_loong64.deb
+Size: 93524
+MD5sum: ea7807d8016bf93c4415f4a07650b5f0
+SHA1: dc04f71ab20bd699ee9c9aee4291cdcf137b40c3
+SHA256: 122223db081f14796177cd85427e338574225f5a7ef7f7c077666f7283dbc1b7
+SHA512: cc3db62a4671ddf553a21f05e7bf7b0e3ca4dcfe5584f35ec74885e6cf79350ca7493645a1028e35180e24757e67081d77a28d9b14fba7dd35ecf9f2e397e295
+Homepage: https://www.videolan.org/vlc/
+Description: Samba plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support to access Samba shares from the VLC media player.
+
+Package: vlc-plugin-skins2
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 1211
+Depends: fonts-freefont-ttf, vlc-plugin-qt (= 3.0.21-2), libc6 (>= 2.39), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libvlccore9 (>= 3.0.21), libx11-6, libxext6, libxinerama1 (>= 2:1.1.4), libxpm4, vlc-plugin-abi-3-0-0ft64
+Recommends: vlc-bin
+Enhances: vlc
+Filename: ./v/vlc-plugin-skins2/vlc-plugin-skins2_3.0.21-2_loong64.deb
+Size: 546396
+MD5sum: 51e524995f46a567af686935ab714b66
+SHA1: a2f1c78c69496b45dc8c8eb3082be3024daed352
+SHA256: cf8bbfd4bddbffc702cb07001065bcb67f9ca93c7baad45190c55b04dacdeac2
+SHA512: 2b753ba50acbbd12cf16e8b10f391935bbffb38c7ec6ea2c4d7b8047fb09ed62b4eb99d89466e997c336282e7f214da6afb69887c0098c908f07c306c3a4c7ba
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (Skins2 plugin)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains VLC's Skins2 interface.
+
+Package: vlc-plugin-svg
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libcairo2 (>= 1.13.1), libglib2.0-0t64 (>= 2.12.0), librsvg2-2 (>= 2.14.4), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-svg/vlc-plugin-svg_3.0.21-2_loong64.deb
+Size: 93404
+MD5sum: c3e1f9cb7388024009d3ccbdad1eeeb0
+SHA1: 3835c7b4002c65fc32818aafcd61bbc4b9ff41d3
+SHA256: 219ed391c327c13f8d22dab97ada0e8a107750b0279010d3953dbcb4c3f852be
+SHA512: 747825a05d9509642fec98f1a904123d63cc6cf5c0bce87e582f356d4fd1bea2320cad137e40bfb038f752b66b44a3ff5bd67774279b557e424d7ce339c24204
+Homepage: https://www.videolan.org/vlc/
+Description: SVG plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin allows you to render SVG graphics on top of the video. It is a text
+ renderer, and must be activated through the '--text-renderer svg' option. When
+ sent non-SVG data, it will convert it to SVG using a template that can be
+ specified by the svg-template-file option.
+
+Package: vlc-plugin-video-output
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 896
+Depends: libaa1 (>= 1.4p5), libavcodec61 (>= 7:7.0), libavutil59 (>= 7:7.0), libc6 (>= 2.39), libcaca0 (>= 0.99.beta20), libegl1, libgl1, libgles2, libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvlccore9 (>= 3.0.21), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxcb-keysyms1 (>= 0.4.0), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1, vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-video-output/vlc-plugin-video-output_3.0.21-2_loong64.deb
+Size: 220756
+MD5sum: a0b06f3af4d7fa03bd50eb06f4b31a0d
+SHA1: d1d5d98c8342441824a031a80516f2f83a33ae2a
+SHA256: ef3f30c0328b2eb79ec579470a284d1fb96fbfe7af4696fda5eaaeedede3b9c0
+SHA512: 1b2b1f2a1e316e4fe46e13ca461d91b8bad25622f7544ba75d337e1abda875a10d9fe50fea6e34166d7986e36ab8c264d61fe3e21d217edaf939f6b4ce8c02f0
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (video output plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the video output plugins.
+
+Package: vlc-plugin-video-splitter
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 233
+Depends: libc6 (>= 2.39), libvlccore9 (>= 3.0.21), libxcb-randr0 (>= 1.1), libxcb1, vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-video-splitter/vlc-plugin-video-splitter_3.0.21-2_loong64.deb
+Size: 116028
+MD5sum: f1080a20f5ebe19e420c2495ac609c7e
+SHA1: e79d473459a8adf1a1293ae6e5e4865e5cc19e7e
+SHA256: ad7bebf767e590b32b321c834e5c69f2e29cac01b99c2f7187e5305bc6e91412
+SHA512: 94219b7e06c265315b3aa020c896441970c670f376b3fb2820943acf53b9372af79b6c42fbaafdea769315867c4fc609434daea4ed8b8f1f6b38f6c420474b09
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (video splitter plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the video splitter plugins.
+
+Package: vlc-plugin-visualization
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 231
+Depends: libc6 (>= 2.39), libgl1, libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-visualization/vlc-plugin-visualization_3.0.21-2_loong64.deb
+Size: 113728
+MD5sum: 6c41af355e6df0690e305624eb351777
+SHA1: 503425675736bb8c8f98e72c2f466868882976a1
+SHA256: 9c04b82fe320736fef416bcf85e5b082955376f5ce017b4afa7bcfb8219caa2d
+SHA512: 0f2a3467750ed13f42978a5232db4644908f368fab6147675e8b5b92c877246a5e29bcbfb4694ef37318149de0471e55d55cc9805fd3ffdd8d60ef9fffebb891
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (visualization plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the visualization plugins.
 
 Package: weston
 Architecture: loong64

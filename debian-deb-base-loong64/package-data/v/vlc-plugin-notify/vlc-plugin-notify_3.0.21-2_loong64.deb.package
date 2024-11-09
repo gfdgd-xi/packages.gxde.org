@@ -1,0 +1,26 @@
+Package: vlc-plugin-notify
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.12.0), libgtk-3-0t64 (>= 3.0.0), libnotify4 (>= 0.7.0), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-notify/vlc-plugin-notify_3.0.21-2_loong64.deb
+Size: 93204
+MD5sum: 8f393836e33d5cbe35115f43bc76699f
+SHA1: 757af0216c9cfaacea6ec18c007afab81dadb037
+SHA256: 1867eae18d9a8718d3fab0ea933316814a2118d9ce74c2aa95d66409da38cf16
+SHA512: f3e59bbc1701d6d0351f1246376fd12bd1e18cbaef94e489a48876665146238a5bb5ab514f5abc851be3f606aa2c0a64742909f567a0ea931c91827426bc54f9
+Homepage: https://www.videolan.org/vlc/
+Description: LibNotify plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support for libnotify track change notification to the
+ VLC media player.
+

@@ -1,0 +1,28 @@
+Package: vlc-plugin-jack
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 184
+Depends: libc6 (>= 2.39), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-jack/vlc-plugin-jack_3.0.21-2_loong64.deb
+Size: 99136
+MD5sum: 38bc57bf2a9d2941354ba2700f85ab63
+SHA1: 05208df35553f4ccedf58c9eb2e170dccba7735a
+SHA256: 9597ee9cc08e84d7eef816281850d1539cd3b92eda652ab9c1d517069b958b63
+SHA512: 19dcacf9d9ccf6ed3773a58602d64337f2d0692860254999d5e6a4e76a2e5849912185c5a1bd49239a7d76e01aa9d8529833df069ea5057479f322dd406b17c8
+Homepage: https://www.videolan.org/vlc/
+Description: JACK audio plugins for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ These plugins add support for JACK to the VLC media player. To
+ activate the audio output module, use the `--aout jack' flag or
+ select the `jack' audio output plugin from the preferences menu.
+ For the jack input, use `vlc jack://channels=...:ports=...'
+

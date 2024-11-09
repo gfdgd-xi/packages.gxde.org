@@ -1,0 +1,26 @@
+Package: vlc-plugin-fluidsynth
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: fluid-soundfont-gm | timgm6mb-soundfont, libc6 (>= 2.39), libfluidsynth3 (>= 2.0.5), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-fluidsynth/vlc-plugin-fluidsynth_3.0.21-2_loong64.deb
+Size: 93756
+MD5sum: d52a63c94da9c71e1f36f0d18a1711f2
+SHA1: 8f07737b108cc3486c328fc2bc17b9c89eefd7b6
+SHA256: f3c116eb3a578b466af4ce9db046e73b7afc5f093d45eee0f3c81ea6b34f4c85
+SHA512: 48739fcb79249fb7c17de0caddef7097ee5031439187ed2e8259cd46cd490e7e5ffc1e5e5c481b25742f5d939e218cd7084875725305473f3115fb0ac10a5c99
+Homepage: https://www.videolan.org/vlc/
+Description: FluidSynth plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support for playing MIDI file via the FluidSynth software
+ synthesizer to the VLC media player.
+

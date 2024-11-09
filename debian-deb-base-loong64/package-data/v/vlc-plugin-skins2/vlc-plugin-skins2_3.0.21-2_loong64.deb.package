@@ -1,0 +1,26 @@
+Package: vlc-plugin-skins2
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 1211
+Depends: fonts-freefont-ttf, vlc-plugin-qt (= 3.0.21-2), libc6 (>= 2.39), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), libvlccore9 (>= 3.0.21), libx11-6, libxext6, libxinerama1 (>= 2:1.1.4), libxpm4, vlc-plugin-abi-3-0-0ft64
+Recommends: vlc-bin
+Enhances: vlc
+Filename: ./v/vlc-plugin-skins2/vlc-plugin-skins2_3.0.21-2_loong64.deb
+Size: 546396
+MD5sum: 51e524995f46a567af686935ab714b66
+SHA1: a2f1c78c69496b45dc8c8eb3082be3024daed352
+SHA256: cf8bbfd4bddbffc702cb07001065bcb67f9ca93c7baad45190c55b04dacdeac2
+SHA512: 2b753ba50acbbd12cf16e8b10f391935bbffb38c7ec6ea2c4d7b8047fb09ed62b4eb99d89466e997c336282e7f214da6afb69887c0098c908f07c306c3a4c7ba
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (Skins2 plugin)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains VLC's Skins2 interface.
+

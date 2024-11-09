@@ -1,0 +1,25 @@
+Package: vlc-plugin-video-splitter
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 233
+Depends: libc6 (>= 2.39), libvlccore9 (>= 3.0.21), libxcb-randr0 (>= 1.1), libxcb1, vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-video-splitter/vlc-plugin-video-splitter_3.0.21-2_loong64.deb
+Size: 116028
+MD5sum: f1080a20f5ebe19e420c2495ac609c7e
+SHA1: e79d473459a8adf1a1293ae6e5e4865e5cc19e7e
+SHA256: ad7bebf767e590b32b321c834e5c69f2e29cac01b99c2f7187e5305bc6e91412
+SHA512: 94219b7e06c265315b3aa020c896441970c670f376b3fb2820943acf53b9372af79b6c42fbaafdea769315867c4fc609434daea4ed8b8f1f6b38f6c420474b09
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (video splitter plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the video splitter plugins.
+

@@ -1,0 +1,25 @@
+Package: vlc-plugin-qt
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 3741
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.0), libqt5core5t64 (>= 5.15.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5svg5 (>= 5.6.0~beta), libqt5widgets5t64 (>= 5.15.1), libqt5x11extras5 (>= 5.6.0), libstdc++6 (>= 14), libvlccore9 (>= 3.0.21), libwayland-client0 (>= 1.0.2), libx11-6, vlc-plugin-abi-3-0-0ft64
+Recommends: vlc-bin
+Filename: ./v/vlc-plugin-qt/vlc-plugin-qt_3.0.21-2_loong64.deb
+Size: 1146748
+MD5sum: bca74544f4aa4407647401c9326bad4f
+SHA1: a5ffbd509b77de2d88d1803fba9df6376f778112
+SHA256: 21eeb3850d19456fd3ef864186b9e0bc392bfef96b8c157ba41774909564075a
+SHA512: f79a2109cf95decb58f0c4d1000941daa11ba9f4747d43686c92b8e4c8499dd0b26916d5dc7e3e5b6c44589cff2f20949ad1c62c4f60029a854c1cad3c9a537b
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (Qt plugin)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains VLC's Qt interface.
+

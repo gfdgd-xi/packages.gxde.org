@@ -1,0 +1,25 @@
+Package: vlc-plugin-video-output
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 896
+Depends: libaa1 (>= 1.4p5), libavcodec61 (>= 7:7.0), libavutil59 (>= 7:7.0), libc6 (>= 2.39), libcaca0 (>= 0.99.beta20), libegl1, libgl1, libgles2, libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvlccore9 (>= 3.0.21), libwayland-client0 (>= 1.20.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxcb-keysyms1 (>= 0.4.0), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1, vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-video-output/vlc-plugin-video-output_3.0.21-2_loong64.deb
+Size: 220756
+MD5sum: a0b06f3af4d7fa03bd50eb06f4b31a0d
+SHA1: d1d5d98c8342441824a031a80516f2f83a33ae2a
+SHA256: ef3f30c0328b2eb79ec579470a284d1fb96fbfe7af4696fda5eaaeedede3b9c0
+SHA512: 1b2b1f2a1e316e4fe46e13ca461d91b8bad25622f7544ba75d337e1abda875a10d9fe50fea6e34166d7986e36ab8c264d61fe3e21d217edaf939f6b4ce8c02f0
+Homepage: https://www.videolan.org/vlc/
+Description: multimedia player and streamer (video output plugins)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the video output plugins.
+

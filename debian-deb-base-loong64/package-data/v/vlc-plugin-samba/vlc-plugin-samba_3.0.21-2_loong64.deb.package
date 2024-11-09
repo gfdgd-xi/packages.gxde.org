@@ -1,0 +1,25 @@
+Package: vlc-plugin-samba
+Architecture: loong64
+Version: 3.0.21-2
+Multi-Arch: same
+Priority: optional
+Section: video
+Source: vlc
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.39), libsmbclient0 (>= 2:4.0.3+dfsg1), libvlccore9 (>= 3.0.21), vlc-plugin-abi-3-0-0ft64
+Enhances: vlc
+Filename: ./v/vlc-plugin-samba/vlc-plugin-samba_3.0.21-2_loong64.deb
+Size: 93524
+MD5sum: ea7807d8016bf93c4415f4a07650b5f0
+SHA1: dc04f71ab20bd699ee9c9aee4291cdcf137b40c3
+SHA256: 122223db081f14796177cd85427e338574225f5a7ef7f7c077666f7283dbc1b7
+SHA512: cc3db62a4671ddf553a21f05e7bf7b0e3ca4dcfe5584f35ec74885e6cf79350ca7493645a1028e35180e24757e67081d77a28d9b14fba7dd35ecf9f2e397e295
+Homepage: https://www.videolan.org/vlc/
+Description: Samba plugin for VLC
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This plugin adds support to access Samba shares from the VLC media player.
+
