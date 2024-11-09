@@ -1,0 +1,19 @@
+Package: openssh-sftp-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 203
+Depends: openssh-sftp-server (= 1:9.9p1-2)
+Filename: ./o/openssh-sftp-server-dbgsym/openssh-sftp-server-dbgsym_9.9p1-2_loong64.deb
+Size: 176272
+MD5sum: 68343b09cf841c693e1b881ce5187415
+SHA1: 615a1561ebcba49d5a3412702d73a3d23292b583
+SHA256: 160a72b8e16bd8428e0b86e9ff2d7de65f719f51ff1b5ba89c6657330833c4d8
+SHA512: cf5e4d2f34062199ea9e29c8f1f9fe53ff206ef1103f3c08280d95b0824deaaf6b3ff142e4ea0344858ff327bf5f40c53b618e6c4d1541fc7f785d51f0945a97
+Description: debug symbols for openssh-sftp-server
+Build-Ids: e28605cd4160ac7968129bc4f4803f376beac6e0
+

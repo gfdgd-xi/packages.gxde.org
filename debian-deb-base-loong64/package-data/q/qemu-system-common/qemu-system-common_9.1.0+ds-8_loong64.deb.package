@@ -1,0 +1,27 @@
+Package: qemu-system-common
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 3979
+Depends: libasound2t64 (>= 1.0.16), libbrlapi0.8 (>= 6.6), libc6 (>= 2.40), libcacard0 (>= 2.2), libcap-ng0 (>= 0.7.9), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libhogweed6t64, libncursesw6 (>= 6), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.11), libpixman-1-0 (>= 0.19.6), libtinfo6 (>= 6), liburing2 (>= 2.3), libusb-1.0-0 (>= 2:1.0.23~), libusbredirparser1t64 (>= 0.8.0)
+Breaks: libvirt-daemon (<< 7.2.0-1)
+Filename: ./q/qemu-system-common/qemu-system-common_9.1.0+ds-8_loong64.deb
+Size: 899212
+MD5sum: e49b9b77e677d13a34ce4b24afcacfb1
+SHA1: 2855c37af3f105f638ac08f763a1b3eb6974f664
+SHA256: 2231b1ccac9b5c4970d5709c8ac50f89330ee24e6bfc91e66d1ac836d5d6d353
+SHA512: f691aa3a97e24fa5dc3781b5c555c5044a084e0d7d6bbd632044c5e31799953a3bbb0adda26d1a0f9bc02aecf57142966e0a8d7e79afba410b7f48e6f14dae97
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (common files)
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides common files needed for target-specific
+ full system emulation (qemu-system-*) packages.
+

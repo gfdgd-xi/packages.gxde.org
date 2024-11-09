@@ -1,0 +1,23 @@
+Package: qemu-system-modules-opengl
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 830
+Depends: libc6 (>= 2.40), libepoxy0 (>= 1.3), libgbm1 (>= 7.11~1), libglib2.0-0t64 (>= 2.80.0), libpixman-1-0 (>= 0.25.2), libvirglrenderer1 (>= 1.0.0), qemu-system-any (= 1:9.1.0+ds-8)
+Breaks: qemu-system-common (<< 1:8.1.0+ds-1~exp2~), qemu-system-gui (<< 1:8.1.0+ds-1~exp2~)
+Replaces: qemu-system-common (<< 1:8.1.0+ds-1~exp2~), qemu-system-gui (<< 1:8.1.0+ds-1~exp2~)
+Filename: ./q/qemu-system-modules-opengl/qemu-system-modules-opengl_9.1.0+ds-8_loong64.deb
+Size: 158228
+MD5sum: f2a79b81f7fae0fa338390e008e5f71f
+SHA1: 5746f1cd56b21eea36180bb439b1b50c0ed1929e
+SHA256: e908841a3324b0c1c8c55c2086984c87748c8b0ea9b66c0b770dead9540875d2
+SHA512: 882384adcef081a8baf7f0a5f4fd2651e5b1b637cd5854422302e8185012a74f693aae365cf61fd7a887274207bfeb2e9647d15385e346659d98f5601f2541af
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (OpenGL display modules)
+ This package provides optional OpenGL display support modules for QEMU full
+ system emulation (qemu-system-*) packages.  It also provides D-Bus display
+ type.
+

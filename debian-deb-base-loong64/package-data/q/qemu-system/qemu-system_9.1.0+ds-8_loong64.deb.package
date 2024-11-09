@@ -1,0 +1,28 @@
+Package: qemu-system
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 71
+Depends: qemu-system-arm, qemu-system-mips, qemu-system-ppc, qemu-system-sparc, qemu-system-x86, qemu-system-misc
+Filename: ./q/qemu-system/qemu-system_9.1.0+ds-8_loong64.deb
+Size: 45316
+MD5sum: 5725bb031db1f831ad61ad9ad8c06822
+SHA1: d59797d44f614eaba0065b2c40fbb8c5bebc224a
+SHA256: 015e42687d10d58b029e84766bf5eea2c11e6900a107088e0cb018706cb8e0ba
+SHA512: 48ec2c57745a64a3b0bd08060c6b0db75af57fbfb9d31e7cd93a44292f6ada57efe6e33937ac7f93f2aadb65bca7dccc5330635f41e025f486144711edb2e860
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This metapackage provides the full system emulation binaries for all supported
+ targets, by depending on all per-architecture system emulation packages which
+ QEMU supports.
+

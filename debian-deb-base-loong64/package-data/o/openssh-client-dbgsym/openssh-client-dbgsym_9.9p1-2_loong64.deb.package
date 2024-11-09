@@ -1,0 +1,19 @@
+Package: openssh-client-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 4568
+Depends: openssh-client (= 1:9.9p1-2)
+Filename: ./o/openssh-client-dbgsym/openssh-client-dbgsym_9.9p1-2_loong64.deb
+Size: 4148648
+MD5sum: 3a35e3da3c7ae9ab3a0e705f0a51d69b
+SHA1: aa7b0218428242bf3d156b2cd529032945d6e4e2
+SHA256: 8ed29e15c12b9265210afe9e7aff65b941865cd60850a192394a02466ca2b067
+SHA512: 9c2dd5a739c372a0d7eb1f5567762481f6878178d7ba1272fa048e664e75de33a596f4a45448d65cd75f94b915b1ea2b01c6ce2e39a6c82e498ef46c1512aad7
+Description: debug symbols for openssh-client
+Build-Ids: 0e0482369f0146d2dc5acff2658eb219cab69929 2b75a7289f7c3115594dca767e07565020c9a722 2cff602eb24c268b84b26178f776d53bbced5b47 54552d068a594ea15d7f3548df6aab4a99299ebf b8e0a1a76b0e010be5242166bd4252d587ba0e9c be3f015f0ff722bc7c8788fe5a0b5bf2ac0966a0 beea3b8ebaf2867c3c4629c8e7c194a8fa9a8a7d ca6d5f17db7ebb794d77deae977e1ebe55525cc4 ce1567511aa8726e69cbb8f3ed5e4d0af263bf56 f9d767fdec9372165fee7a38bc4cd098263c88e0
+

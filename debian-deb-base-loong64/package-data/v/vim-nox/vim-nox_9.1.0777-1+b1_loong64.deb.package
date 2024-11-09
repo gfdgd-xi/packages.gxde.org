@@ -1,0 +1,28 @@
+Package: vim-nox
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4873
+Provides: editor, vim (= 2:9.1.0777-1+b1), vim-lua (= 2:9.1.0777-1+b1), vim-perl (= 2:9.1.0777-1+b1), vim-python3 (= 2:9.1.0777-1+b1), vim-ruby (= 2:9.1.0777-1+b1), vim-tcl (= 2:9.1.0777-1+b1)
+Depends: vim-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libgpm2 (>= 1.20.7), liblua5.1-0, libperl5.40 (>= 5.40.0), libpython3.12t64 (>= 3.12.1), libruby3.1t64 (>= 3.1.2), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtcl8.6 (>= 8.6.0), libtinfo6 (>= 6)
+Suggests: cscope, vim-doc
+Filename: ./v/vim-nox/vim-nox_9.1.0777-1+b1_loong64.deb
+Size: 1801172
+MD5sum: a429dc604455f4c80b435f7bbd53701e
+SHA1: b5168acb872020b901325504f9b7aebecc009267
+SHA256: 574c963ce196ee9761d6163e5ff4e8ed8e8818bb49bbebf6f6b9c20a18eecf1b
+SHA512: 62ed5e6ccd1da5a6e965b5d67ca43cc8fcf94ee292b308852099ea83c4931d69f2311b9d6945e7a856d5d8da2665289fd49b7a8934755d7d83419ace5ed32509
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - with scripting languages support
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with support for
+ scripting with Lua, Perl, Python 3, Ruby, and Tcl but no GUI.
+

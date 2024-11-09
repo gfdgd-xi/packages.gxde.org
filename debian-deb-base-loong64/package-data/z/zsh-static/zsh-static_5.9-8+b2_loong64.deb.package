@@ -1,0 +1,38 @@
+Package: zsh-static
+Architecture: loong64
+Version: 5.9-8+b2
+Built-Using: glibc (= 2.40-3), libcap2 (= 1:2.66-5), ncurses (= 6.5-2), pcre2 (= 10.42-4)
+Priority: optional
+Section: shells
+Source: zsh (5.9-8)
+Maintainer: Debian Zsh Maintainers <pkg-zsh-devel@lists.alioth.debian.org>
+Installed-Size: 2725
+Depends: debianutils (>= 5.3-1~)
+Recommends: zsh-common
+Suggests: zsh-doc
+Filename: ./z/zsh-static/zsh-static_5.9-8+b2_loong64.deb
+Size: 1144380
+MD5sum: 40251dddaba0721e469237d15369549d
+SHA1: 3ed28d029cf61aed42d299552f62af1d01f16b7a
+SHA256: c6fd5c60f40493e7f521a3fbb69ade3320a60806843ad78f19775b869508d90e
+SHA512: c17e08ce49ad4a3bb9d31aa64072a05cabc2daac556461c44ad03fbaf154690deae29e6a4cbc39382dc26497f5e6f2a0ca6f2de87683eaf39bdf3b52729d7895
+Homepage: https://www.zsh.org/
+Description: shell with lots of features (static link)
+ Zsh is a UNIX command interpreter (shell) usable as an
+ interactive login shell and as a shell script command
+ processor. Of the standard shells, zsh most closely resembles
+ ksh but includes many enhancements. Zsh has command-line editing,
+ built-in spelling correction, programmable command completion,
+ shell functions (with autoloading), a history mechanism, and a
+ host of other features.
+ .
+ This is the statically-compiled version of the shell, i.e. it doesn't
+ require any dynamically loaded libraries to be present and will work
+ even if libraries zsh (in general) needs are broken on the system. So
+ it's more robust in case of a broken system.
+ .
+ It though also has a few limitations compared to the normal,
+ dynamically linked, e.g. it can't use NSS related functionality which
+ might result in minor imperfections like e.g. user names being shown
+ in the prompt.
+

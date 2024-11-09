@@ -1,0 +1,33 @@
+Package: qemu-system-ppc
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 37881
+Provides: qemu-system-any (= 1:9.1.0+ds-8), qemu-system-powerpc (= 1:9.1.0+ds-8), qemu-system-ppc64 (= 1:9.1.0+ds-8), qemu-system-ppc64el (= 1:9.1.0+ds-8), qemu-system-ppc64le (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~)
+Recommends: qemu-utils, seabios, ipxe-qemu, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-ppc/qemu-system-ppc_9.1.0+ds-8_loong64.deb
+Size: 7664164
+MD5sum: 7b852107cde48b3d249a607230a434bc
+SHA1: 0993802635c0c80dcaa308babff07acb0586d64a
+SHA256: 329a2bd555fbb0a6abf3d0e3e658e76f962af65c4bae61803c517ba5beef262d
+SHA512: b5e16be1078c2f4f0d2f287322d17deca35f291b1b975665aab0a392fcf5127bb266011743fb00186673928be5e71e1fd3c87d4efbf40c80b969bdeccc03ad5f
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (ppc)
+ QEMU is a fast processor emulator: currently the package supports
+ PowerPC emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following PowerPC hardware: ppc (powerpc) ppc64 (ppc64le ppc64el).
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+

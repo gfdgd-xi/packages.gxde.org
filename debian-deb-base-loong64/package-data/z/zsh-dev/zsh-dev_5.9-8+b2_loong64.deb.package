@@ -1,0 +1,28 @@
+Package: zsh-dev
+Architecture: loong64
+Version: 5.9-8+b2
+Priority: optional
+Section: libdevel
+Source: zsh (5.9-8)
+Maintainer: Debian Zsh Maintainers <pkg-zsh-devel@lists.alioth.debian.org>
+Installed-Size: 684
+Depends: zsh-common (= 5.9-8)
+Filename: ./z/zsh-dev/zsh-dev_5.9-8+b2_loong64.deb
+Size: 272840
+MD5sum: b467d1a448fe6194396ab1f306cd3743
+SHA1: d94a515de9e277a3da2c9ccdf81ce14d2a3f96d1
+SHA256: 5713b72430d6eb76e8d06f41cf97276bbf9bc8b40fbb7223537aaafb10f9c8fa
+SHA512: 273fe4cf68a68a2744a2ac98f64537c82d65918fee663aa86163d07b8c667f6ad690669777d09e1b725a6a322859bc93d89ef98d2b0388f38fe9f868dc590d1b
+Homepage: https://www.zsh.org/
+Description: shell with lots of features (development files)
+ Zsh is a UNIX command interpreter (shell) usable as an
+ interactive login shell and as a shell script command
+ processor. Of the standard shells, zsh most closely resembles
+ ksh but includes many enhancements. Zsh has command-line editing,
+ built-in spelling correction, programmable command completion,
+ shell functions (with autoloading), a history mechanism, and a
+ host of other features.
+ .
+ This package contains headers and scripts necessary to compile
+ third-party modules.
+

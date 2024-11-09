@@ -1,0 +1,45 @@
+Package: openssh-server
+Architecture: loong64
+Version: 1:9.9p1-2
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 2339
+Provides: ssh-server
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, libpam-modules, libpam-runtime, lsb-base, openssh-client (= 1:9.9p1-2), openssh-sftp-server, procps, ucf, debconf (>= 0.5) | debconf-2.0, runit-helper (>= 2.14.0~), libaudit1 (>= 1:2.2.1), libc6 (>= 2.40), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
+Recommends: default-logind | logind | libpam-systemd, ncurses-term, xauth
+Suggests: molly-guard, monkeysphere, ssh-askpass, ufw
+Conflicts: sftp, ssh-socks, ssh2
+Breaks: runit (<< 2.1.2-51~)
+Replaces: openssh-client (<< 1:7.9p1-8), ssh, ssh-krb5
+Filename: ./o/openssh-server/openssh-server_9.9p1-2_loong64.deb
+Size: 493852
+MD5sum: 3bdf62f3d098004d6230de78b1724646
+SHA1: 80ee350073a0864b81c8479c73ee4cb08ab63820
+SHA256: cbb6b7196e27d4770786f39cb19ca2c9863067fcc24ab5c60d242fcaa6d0d24a
+SHA512: de7eb3b47ec0514eae1801dd3b9ee63df3e1b212f92e2d00e928e54ba60824bebdb905075a3e174bc8dbbd87d3f67291b1069d0d2f46409dbec62c879bbed0cb
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) server, for secure access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the sshd server.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ sshd replaces the insecure rshd program, which is obsolete for most
+ purposes.
+

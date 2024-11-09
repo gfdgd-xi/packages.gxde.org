@@ -1,0 +1,39 @@
+Package: qemu-guest-agent
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 3753
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.40), libglib2.0-0t64 (>= 2.78.0), libnuma1 (>= 2.0.11), libudev1 (>= 183), liburing2 (>= 2.3)
+Filename: ./q/qemu-guest-agent/qemu-guest-agent_9.1.0+ds-8_loong64.deb
+Size: 529016
+MD5sum: 3f6318a7cc64d6f5c61c3c0946c7d680
+SHA1: 0f6ae55e73036206341c2e77459240fac7e9871d
+SHA256: 658a9dd4bc65cd81b25a7eff9865a954bb5c236dd5bfa0f8d58b548cbb1ddac2
+SHA512: 15f89f93b2d16604028c355b63fafcdef59f6342bdc9754d0c34d4b90c3eb0cbd7a2b3b724552d680fd57f4e6879a70646989cc1a11af06ba83ccd189c4b3321
+Homepage: http://www.qemu.org/
+Description: Guest-side qemu-system agent
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides a daemon (agent) to run inside qemu-system
+ guests (full system emulation).  It communicates with the host using
+ a virtio-serial channel org.qemu.guest_agent.0, and allows one to perform
+ some functions in the guest from the host, including:
+  - querying and setting guest system time
+  - performing guest filesystem sync operation
+  - initiating guest shutdown or suspend to ram
+  - accessing guest files
+  - freezing/thawing guest filesystem operations
+  - others.
+ .
+ Install this package on a system which is running as guest inside
+ qemu virtual machine.  It is not used on the host.
+

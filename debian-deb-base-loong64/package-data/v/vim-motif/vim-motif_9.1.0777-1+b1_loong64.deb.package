@@ -1,0 +1,28 @@
+Package: vim-motif
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4957
+Provides: editor, gvim (= 2:9.1.0777-1+b1), vim (= 2:9.1.0777-1+b1), vim-lua (= 2:9.1.0777-1+b1), vim-perl (= 2:9.1.0777-1+b1), vim-python3 (= 2:9.1.0777-1+b1), vim-ruby (= 2:9.1.0777-1+b1), vim-tcl (= 2:9.1.0777-1+b1)
+Depends: vim-common (= 2:9.1.0777-1), vim-gui-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libcanberra0 (>= 0.2), libgpm2 (>= 1.20.7), libice6 (>= 1:1.0.0), liblua5.1-0, libperl5.40 (>= 5.40.0), libpython3.12t64 (>= 3.12.1), libruby3.1t64 (>= 3.1.2), libselinux1 (>= 3.1~), libsm6, libsodium23 (>= 1.0.14), libtcl8.6 (>= 8.6.0), libtinfo6 (>= 6), libx11-6, libxt6t64
+Suggests: cscope, vim-doc
+Filename: ./v/vim-motif/vim-motif_9.1.0777-1+b1_loong64.deb
+Size: 1828784
+MD5sum: 4c0b27e1071e81aa087e2cc2d02f04fd
+SHA1: 2389f4507309686550dfcf9b085339304b9d3497
+SHA256: b8caa160ccb05a04cbb4ea0a5ef76d4e46db6419f99a9b9359b552e6e115ef4b
+SHA512: cd938bf7cfa99aa6e00d93bc8ae1482b0eb6d76856a659b9fe0a2fc56ebbf29a8a0eb3a46d437c3031d5db54f577dba9fb85df36aa1ab8b268ade9a34cfec61e
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - with Motif GUI
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with a Motif GUI
+ and support for scripting with Lua, Perl, Python 3, and Tcl.
+

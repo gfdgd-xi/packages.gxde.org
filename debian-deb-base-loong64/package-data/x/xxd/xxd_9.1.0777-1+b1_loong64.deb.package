@@ -1,0 +1,21 @@
+Package: xxd
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Multi-Arch: foreign
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.40)
+Filename: ./x/xxd/xxd_9.1.0777-1+b1_loong64.deb
+Size: 98136
+MD5sum: 9fcd6333730eb9c9b22aefe2e45349ad
+SHA1: a09fdd067a0639f1784b6fad467f399268ff6bf3
+SHA256: a5a3b9dad898671c1f58d8d8f01d0e196be035946eac738f9574891a716a8a93
+SHA512: 8c4d6d6c08e9a7e5ec5f9028154cb3e1ce56104da8003d401c987a808429af76fe2feab919eab33ef20d33f8062aff77858165039c3b07eac59862e5949fee00
+Homepage: https://www.vim.org/
+Description: tool to make (or reverse) a hex dump
+ xxd creates a hex dump of a given file or standard input.  It can also convert
+ a hex dump back to its original binary form.
+

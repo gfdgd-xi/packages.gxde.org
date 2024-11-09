@@ -1,0 +1,19 @@
+Package: openssh-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 1696
+Depends: openssh-server (= 1:9.9p1-1)
+Filename: ./o/openssh-server-dbgsym/openssh-server-dbgsym_9.9p1-1_loong64.deb
+Size: 1573544
+MD5sum: b67c1909ea9c1c88d2ae9cba33739741
+SHA1: 584400c72c16b01af6a2b540d6e0ca46e4adc521
+SHA256: 601df8996977139897129493cb1155391566c6113b81d9196f7180a90d30cfbb
+SHA512: 6c1980b60090dea4b4e2c0ae7ffaa83c9d41480003e3dac0389ffe3c17eb704f1e083da7b52ffe59daca2b8721f0765ceee958a10eb78ced217a4e7f988794bd
+Description: debug symbols for openssh-server
+Build-Ids: 231ec38716b39c823344cc594f4252f50d697112 fb3fc9d93077e297ff5c382bf39308ec20a7049c
+

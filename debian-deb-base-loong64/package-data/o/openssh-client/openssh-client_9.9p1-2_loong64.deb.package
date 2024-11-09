@@ -1,0 +1,46 @@
+Package: openssh-client
+Architecture: loong64
+Version: 1:9.9p1-2
+Multi-Arch: foreign
+Priority: standard
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 5203
+Provides: ssh-client
+Depends: adduser, passwd, libc6 (>= 2.40), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Recommends: xauth
+Suggests: keychain, libpam-ssh, monkeysphere, ssh-askpass
+Conflicts: sftp
+Breaks: openssh-sk-helper
+Replaces: openssh-sk-helper, ssh, ssh-krb5
+Filename: ./o/openssh-client/openssh-client_9.9p1-2_loong64.deb
+Size: 952940
+MD5sum: 1da57f655e88af33877ca8431c53356e
+SHA1: 95c0ac85d0a9f655bc5847a93430faa7f83a3017
+SHA256: 07fa051636e69b865322a0c83596bf7a8d37ae5f8af32f38b944aff28203565c
+SHA512: 5bb4300ef37bf2158d7a13f905975f851302ab051a131607cd5b5e6f008f6b183c3400260299116636e9ea762d182e39e6b7fd91333e3c7b881cbe2529c0c70b
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+

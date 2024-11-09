@@ -3479,6 +3479,432 @@ Description: Program to control packet filtering rules by Netfilter project
  .
  A Linux kernel >= 3.13 is required. However, >= 4.14 is recommended.
 
+Package: openssh-client
+Architecture: loong64
+Version: 1:9.9p1-1
+Multi-Arch: foreign
+Priority: standard
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 5203
+Provides: ssh-client
+Depends: adduser, passwd, libc6 (>= 2.40), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Recommends: xauth
+Suggests: keychain, libpam-ssh, monkeysphere, ssh-askpass
+Conflicts: sftp
+Breaks: openssh-sk-helper
+Replaces: openssh-sk-helper, ssh, ssh-krb5
+Filename: ./o/openssh-client/openssh-client_9.9p1-1_loong64.deb
+Size: 951976
+MD5sum: ca03d3e56dfec8b491721ab4dcb25db4
+SHA1: 9c36aaa9c92cd761567639e711edf87e1a182423
+SHA256: 4256d68a71c380dd37b26ffcbcc8f2a813e6b253a4d500f3b1f16b814eb2bee8
+SHA512: a8c4940b2e4c927db372424ac0fb207115c2debe68ecbfeca0fa654e8b8c0c0d9470c2d4e3c6d4b14be6e878e01e25b48fa8d3b61ea693dfc8fa6979929b8a11
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+
+Package: openssh-client
+Architecture: loong64
+Version: 1:9.9p1-2
+Multi-Arch: foreign
+Priority: standard
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 5203
+Provides: ssh-client
+Depends: adduser, passwd, libc6 (>= 2.40), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Recommends: xauth
+Suggests: keychain, libpam-ssh, monkeysphere, ssh-askpass
+Conflicts: sftp
+Breaks: openssh-sk-helper
+Replaces: openssh-sk-helper, ssh, ssh-krb5
+Filename: ./o/openssh-client/openssh-client_9.9p1-2_loong64.deb
+Size: 952940
+MD5sum: 1da57f655e88af33877ca8431c53356e
+SHA1: 95c0ac85d0a9f655bc5847a93430faa7f83a3017
+SHA256: 07fa051636e69b865322a0c83596bf7a8d37ae5f8af32f38b944aff28203565c
+SHA512: 5bb4300ef37bf2158d7a13f905975f851302ab051a131607cd5b5e6f008f6b183c3400260299116636e9ea762d182e39e6b7fd91333e3c7b881cbe2529c0c70b
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) client, for secure access to remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the ssh, scp and sftp clients, the ssh-agent
+ and ssh-add programs to make public key authentication more convenient,
+ and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ ssh replaces the insecure rsh, rcp and rlogin programs, which are
+ obsolete for most purposes.
+
+Package: openssh-client-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 4569
+Depends: openssh-client (= 1:9.9p1-1)
+Filename: ./o/openssh-client-dbgsym/openssh-client-dbgsym_9.9p1-1_loong64.deb
+Size: 4144520
+MD5sum: d5810bfb7193d88e65a87705d33e7dbc
+SHA1: ea2a39db6106d7eb150ea5753f48f3f6af3f6555
+SHA256: 50986f3edc00002627eb1b37aa02a89cf70de835a51324b7c201034d9d9c4ba7
+SHA512: 8e8d12b95842240c307cec649169417838f99a207bb7a49036d747d6c99a0afa6d9bd6e9fb7a487e2d8c645bb029c382d015d2983a55ff77354609ade8f751a1
+Description: debug symbols for openssh-client
+Build-Ids: 179d25138925d6997204ceb6300effad6b00a585 32047125d682a196df2d75f236e09fc3ab81b46d 334fb557b0635d052d505c2aeddeeaf3d063445e 527a4fd9f1751f0a1a867eed8abf26bc1750d674 5668a3675e2932665695b23861540391b7bab61f 67e68c776d843b9273bfb803e94a4bcc9a97c814 a0afc36e8695f569cfa606d98442b233dce51f16 b44541b6ce234d9760f2a7ccfe6d2f23fa923326 ebf1f8aa5ed49cb2586ee5f240f005fb93f5ebbe fdfa34b208d38df6d945bbc09a742d5f69d43c83
+
+Package: openssh-client-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 4568
+Depends: openssh-client (= 1:9.9p1-2)
+Filename: ./o/openssh-client-dbgsym/openssh-client-dbgsym_9.9p1-2_loong64.deb
+Size: 4148648
+MD5sum: 3a35e3da3c7ae9ab3a0e705f0a51d69b
+SHA1: aa7b0218428242bf3d156b2cd529032945d6e4e2
+SHA256: 8ed29e15c12b9265210afe9e7aff65b941865cd60850a192394a02466ca2b067
+SHA512: 9c2dd5a739c372a0d7eb1f5567762481f6878178d7ba1272fa048e664e75de33a596f4a45448d65cd75f94b915b1ea2b01c6ce2e39a6c82e498ef46c1512aad7
+Description: debug symbols for openssh-client
+Build-Ids: 0e0482369f0146d2dc5acff2658eb219cab69929 2b75a7289f7c3115594dca767e07565020c9a722 2cff602eb24c268b84b26178f776d53bbced5b47 54552d068a594ea15d7f3548df6aab4a99299ebf b8e0a1a76b0e010be5242166bd4252d587ba0e9c be3f015f0ff722bc7c8788fe5a0b5bf2ac0966a0 beea3b8ebaf2867c3c4629c8e7c194a8fa9a8a7d ca6d5f17db7ebb794d77deae977e1ebe55525cc4 ce1567511aa8726e69cbb8f3ed5e4d0af263bf56 f9d767fdec9372165fee7a38bc4cd098263c88e0
+
+Package: openssh-server
+Architecture: loong64
+Version: 1:9.9p1-1
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 2339
+Provides: ssh-server
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, libpam-modules, libpam-runtime, lsb-base, openssh-client (= 1:9.9p1-1), openssh-sftp-server, procps, ucf, debconf (>= 0.5) | debconf-2.0, runit-helper (>= 2.14.0~), libaudit1 (>= 1:2.2.1), libc6 (>= 2.40), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
+Recommends: default-logind | logind | libpam-systemd, ncurses-term, xauth
+Suggests: molly-guard, monkeysphere, ssh-askpass, ufw
+Conflicts: sftp, ssh-socks, ssh2
+Breaks: runit (<< 2.1.2-51~)
+Replaces: openssh-client (<< 1:7.9p1-8), ssh, ssh-krb5
+Filename: ./o/openssh-server/openssh-server_9.9p1-1_loong64.deb
+Size: 493308
+MD5sum: 30c80c8b419b87a2e2783f02aba0cb76
+SHA1: daa55994f6359fc75a8ceafd15ae45131a21a1a3
+SHA256: 6bf8a0c2cd04f65f1382a936e120d10321f01f65b782d04ad43ec4b835d01a43
+SHA512: 8b037d94c2bcaa8ff293bcce8ad7b3bb94e533697923d507eb539a6496b71812460747970462990c11c7c5bff2b5b416162d521cae5d60959759acc933fd7d26
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) server, for secure access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the sshd server.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ sshd replaces the insecure rshd program, which is obsolete for most
+ purposes.
+
+Package: openssh-server
+Architecture: loong64
+Version: 1:9.9p1-2
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 2339
+Provides: ssh-server
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, libpam-modules, libpam-runtime, lsb-base, openssh-client (= 1:9.9p1-2), openssh-sftp-server, procps, ucf, debconf (>= 0.5) | debconf-2.0, runit-helper (>= 2.14.0~), libaudit1 (>= 1:2.2.1), libc6 (>= 2.40), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
+Recommends: default-logind | logind | libpam-systemd, ncurses-term, xauth
+Suggests: molly-guard, monkeysphere, ssh-askpass, ufw
+Conflicts: sftp, ssh-socks, ssh2
+Breaks: runit (<< 2.1.2-51~)
+Replaces: openssh-client (<< 1:7.9p1-8), ssh, ssh-krb5
+Filename: ./o/openssh-server/openssh-server_9.9p1-2_loong64.deb
+Size: 493852
+MD5sum: 3bdf62f3d098004d6230de78b1724646
+SHA1: 80ee350073a0864b81c8479c73ee4cb08ab63820
+SHA256: cbb6b7196e27d4770786f39cb19ca2c9863067fcc24ab5c60d242fcaa6d0d24a
+SHA512: de7eb3b47ec0514eae1801dd3b9ee63df3e1b212f92e2d00e928e54ba60824bebdb905075a3e174bc8dbbd87d3f67291b1069d0d2f46409dbec62c879bbed0cb
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) server, for secure access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the sshd server.
+ .
+ In some countries it may be illegal to use any encryption at all
+ without a special permit.
+ .
+ sshd replaces the insecure rshd program, which is obsolete for most
+ purposes.
+
+Package: openssh-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 1696
+Depends: openssh-server (= 1:9.9p1-1)
+Filename: ./o/openssh-server-dbgsym/openssh-server-dbgsym_9.9p1-1_loong64.deb
+Size: 1573544
+MD5sum: b67c1909ea9c1c88d2ae9cba33739741
+SHA1: 584400c72c16b01af6a2b540d6e0ca46e4adc521
+SHA256: 601df8996977139897129493cb1155391566c6113b81d9196f7180a90d30cfbb
+SHA512: 6c1980b60090dea4b4e2c0ae7ffaa83c9d41480003e3dac0389ffe3c17eb704f1e083da7b52ffe59daca2b8721f0765ceee958a10eb78ced217a4e7f988794bd
+Description: debug symbols for openssh-server
+Build-Ids: 231ec38716b39c823344cc594f4252f50d697112 fb3fc9d93077e297ff5c382bf39308ec20a7049c
+
+Package: openssh-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 1696
+Depends: openssh-server (= 1:9.9p1-2)
+Filename: ./o/openssh-server-dbgsym/openssh-server-dbgsym_9.9p1-2_loong64.deb
+Size: 1573868
+MD5sum: 4f0a0c6f17fb5a4e6e706efee733f40e
+SHA1: cbed17d5ec7e153645d47ce88929ff6e30a8d818
+SHA256: 3a772c1853c4261561a4d148dbdb34177c2a7b0d671a396997b5427342a2b0cc
+SHA512: 4d6a34031d96e0ab35899a121a223af1abf350a133ca7e10d19f77533127424d7be5de2038807c69ac209cf261ab029e074c421a7bc214be17e16ea4f1d8830c
+Description: debug symbols for openssh-server
+Build-Ids: cdf6979cfa1e9822f599f1463c8a567369ac26b5 eb8f8e20b7fc972ec84842bee533dd5e6ad1da28
+
+Package: openssh-sftp-server
+Architecture: loong64
+Version: 1:9.9p1-1
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 192
+Depends: openssh-client (= 1:9.9p1-1), libc6 (>= 2.40)
+Recommends: openssh-server | ssh-server
+Breaks: openssh-server (<< 1:6.5p1-5)
+Replaces: openssh-server (<< 1:6.5p1-5)
+Enhances: openssh-server, ssh-server
+Filename: ./o/openssh-sftp-server/openssh-sftp-server_9.9p1-1_loong64.deb
+Size: 63688
+MD5sum: 76b9c1d557b5f02b29540d8cb5f5beb1
+SHA1: 80dfe70f80a6aac6c7cd4c21c431f0567da4dccc
+SHA256: 9d292a651d595636c33e0ea904db42148621145e7632e8edd69439e2015dc060
+SHA512: 02a2e185bd1cb793f270df16b2a400f1060c9364d897cec40218d08af6ef3759fe1a494484c4cc10cb2aca628e9e51022c61aec55dc4922a566a102cd51ffe82
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) sftp server module, for SFTP access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the SFTP server module for the SSH server. It
+ is needed if you want to access your SSH server with SFTP. The SFTP
+ server module also works with other SSH daemons like dropbear.
+ .
+ OpenSSH's sftp and sftp-server implement revision 3 of the SSH filexfer
+ protocol described in:
+ .
+  http://www.openssh.com/txt/draft-ietf-secsh-filexfer-02.txt
+ .
+ Newer versions of the draft will not be supported, though some features
+ are individually implemented as extensions.
+
+Package: openssh-sftp-server
+Architecture: loong64
+Version: 1:9.9p1-2
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 192
+Depends: openssh-client (= 1:9.9p1-2), libc6 (>= 2.40)
+Recommends: openssh-server | ssh-server
+Breaks: openssh-server (<< 1:6.5p1-5)
+Replaces: openssh-server (<< 1:6.5p1-5)
+Enhances: openssh-server, ssh-server
+Filename: ./o/openssh-sftp-server/openssh-sftp-server_9.9p1-2_loong64.deb
+Size: 63364
+MD5sum: 52dbf9921fa9fcafcc9743ef329403a2
+SHA1: d915f45473bed8f0cb1409b96358124b1d60adca
+SHA256: 3bf88ecc29ec29a2696b2f3e4a738a23426dda005d9c9eab30a8d83d8b44943a
+SHA512: 3842d04a204c1b240efc1612ae5da54ec99b7f54445c379afcc3902351e51cf6146a42da577e2c3a4484737295268d799bc2fc07e695802b266dcdd09e186e99
+Homepage: https://www.openssh.com/
+Description: secure shell (SSH) sftp server module, for SFTP access from remote machines
+ This is the portable version of OpenSSH, a free implementation of
+ the Secure Shell protocol as specified by the IETF secsh working
+ group.
+ .
+ Ssh (Secure Shell) is a program for logging into a remote machine
+ and for executing commands on a remote machine.
+ It provides secure encrypted communications between two untrusted
+ hosts over an insecure network. X11 connections and arbitrary TCP/IP
+ ports can also be forwarded over the secure channel.
+ It can be used to provide applications with a secure communication
+ channel.
+ .
+ This package provides the SFTP server module for the SSH server. It
+ is needed if you want to access your SSH server with SFTP. The SFTP
+ server module also works with other SSH daemons like dropbear.
+ .
+ OpenSSH's sftp and sftp-server implement revision 3 of the SSH filexfer
+ protocol described in:
+ .
+  http://www.openssh.com/txt/draft-ietf-secsh-filexfer-02.txt
+ .
+ Newer versions of the draft will not be supported, though some features
+ are individually implemented as extensions.
+
+Package: openssh-sftp-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 203
+Depends: openssh-sftp-server (= 1:9.9p1-1)
+Filename: ./o/openssh-sftp-server-dbgsym/openssh-sftp-server-dbgsym_9.9p1-1_loong64.deb
+Size: 176232
+MD5sum: 7640d512e283cf6e6a92ea799e3ed65f
+SHA1: 73390f775b6ee898dca25d573f39f8256775a400
+SHA256: 152b72d6c6538cfff4412805873ea7f9e3431029f8e107492b035bbfa454be8f
+SHA512: 8d4366b86aa5e64f6ec83e62ca054f17bfe5f9f305d886b0b17ea5718037d23c76420052dbc7a018e10c9bcdea48937c7e2d1e9d04aecba4f8819542677c71d8
+Description: debug symbols for openssh-sftp-server
+Build-Ids: 3a2619957205c21440b92ee2ac9fb2592f0d559f
+
+Package: openssh-sftp-server-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 203
+Depends: openssh-sftp-server (= 1:9.9p1-2)
+Filename: ./o/openssh-sftp-server-dbgsym/openssh-sftp-server-dbgsym_9.9p1-2_loong64.deb
+Size: 176272
+MD5sum: 68343b09cf841c693e1b881ce5187415
+SHA1: 615a1561ebcba49d5a3412702d73a3d23292b583
+SHA256: 160a72b8e16bd8428e0b86e9ff2d7de65f719f51ff1b5ba89c6657330833c4d8
+SHA512: cf5e4d2f34062199ea9e29c8f1f9fe53ff206ef1103f3c08280d95b0824deaaf6b3ff142e4ea0344858ff327bf5f40c53b618e6c4d1541fc7f785d51f0945a97
+Description: debug symbols for openssh-sftp-server
+Build-Ids: e28605cd4160ac7968129bc4f4803f376beac6e0
+
+Package: openssh-tests-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 3658
+Depends: openssh-tests (= 1:9.9p1-1)
+Filename: ./o/openssh-tests-dbgsym/openssh-tests-dbgsym_9.9p1-1_loong64.deb
+Size: 3176344
+MD5sum: df3f481869a431dad867bcbee4618272
+SHA1: 88cb95e080356c05b893a709abee500f59851018
+SHA256: 5f3a73a4002adc89f6345e78c85cb7a98c7b4a6ca66434969e94a2f4d996671c
+SHA512: 720f58424417933eda57733491b90aa881a5a9149b6141c78262c8e928b24b11895bdde6fbc34f83d89b275af88fffd2c2969b5ce7cb4d86862dc0da11506efd
+Description: debug symbols for openssh-tests
+Build-Ids: 11a855e20c20365814ff3a5404ce973fb9e65c8b 3199f0004cbdd87c64547b08a37899f452d42d7c 35aff197ef8797a5cf2e4c7609e88c14a9909606 3dd341e104aa33f6d1d3c913875b03071a70018b 3de4cfe256b864009a4f79145eaa2f34a60c4a67 4c8622cd82a818666b3b9b79109b11ae7f4553fd 536857446762135a4287e1050369c55501b86557 56c50aaceceb30d07ef86181b9a6b0041838698e 63a6207c62afa1aa7195528e2620a5afca9f7777 834e7b911f092b0c1d5064c53e5442614fe41d71 ac47aba85ff42e46be65c9dd1b4eccc1c8322987 b6d0c02c87bbd240f738aacd6ed161fdf58964df bb35aaaf854a2b69876605378d782fcd2dc26f4d c9bf45424f491eb6bfff6246f6e550f87c581316 dc2c7ceb1d8dff1f19258438ad97f05a2b77ff9d dfb5fadfff9278dade344a7e2443bca86aa82d66 ef33aefcc9e715bcb0857a1b98f190a45ef53c74 ef7f92d8d6df7a8ac7be39b6f0d2409de1cb405a
+
+Package: openssh-tests-dbgsym
+Architecture: loong64
+Version: 1:9.9p1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openssh
+Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
+Installed-Size: 3660
+Depends: openssh-tests (= 1:9.9p1-2)
+Filename: ./o/openssh-tests-dbgsym/openssh-tests-dbgsym_9.9p1-2_loong64.deb
+Size: 3175012
+MD5sum: bcfe2fef35dea68f5cfb18352540544c
+SHA1: cc5e707dad9d312a1e446218e95db484523357fc
+SHA256: 8e760852d9c97d49e4d7574281784a1b485fa41552ec1e69a60de400d55d39aa
+SHA512: 563e69ab068aa727a99634857cf9181fe00641a7d065566f8510014dbc30aac96702cb094e66a8eddbdc5156336c578a10c3d3cf299c1f03ec4135162a6ce44e
+Description: debug symbols for openssh-tests
+Build-Ids: 1b06cfbcd24c66dce59f845cca8f0cde036aeee8 2c756f259b3eaa075719c644e7af8fafb830f216 372d872943161050a89fdb4e50a033412e80d4c4 4698b6f26ea00f5fdfafbe973b7acd472bcc799e 6662ef8b9b6651cb8b5678e2b4fd8ae522a0edea 73d2d14736c6001a1d4b34487ee440e69ea2e082 84cf7acc81d829637bedf6ae16fd5f4ea8da7deb 922b9397307dd6558ce7b0467a5cf8d8a657a53a 9d7b3934148382979725a72b20bb4131a3b6d92f a2d0fcf51384eefd1f5ff89f9750d0cea756d207 a85eeed050a96d0a00018efc7f5ca666f9dab0e5 ae2277bc7122cd86a5012e45ca34e8236d9bbb5f b9b5001892273363a48cf62a0ceba9897b010f4d bb8f2adc732ee455c59db9c45c4d7e833fd27d53 cddcaec0cbb57e011da82972a1e62be693ddd2aa df09c2f60ededd8c73f102635f407d2b56066546 e65bfcf71f6af07577532c33f2f1d17140b4daa6 eca6044ae4e80c9bde0bee79843e60040274a6d0
+
 Package: openssl
 Architecture: loong64
 Version: 3.3.2-1
@@ -3623,6 +4049,417 @@ Description: /proc file system utilities
  .
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
+
+Package: qemu-block-extra
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 385
+Depends: libblkio1 (>= 1.4.0), libbz2-1.0, libc6 (>= 2.40), libcurl3t64-gnutls (>= 7.16.3), libgfapi0 (>= 11.1), libiscsi7 (>= 1.18.0), libnfs14 (>= 4.0.0), librados2 (>= 18.2.4+ds), librbd1 (>= 18.2.0+ds), libssh-4 (>= 0.8.4), qemu-system-any (= 1:9.1.0+ds-8) | qemu-utils (= 1:9.1.0+ds-8)
+Enhances: qemu-system-arm, qemu-system-mips, qemu-system-misc, qemu-system-sparc, qemu-system-x86, qemu-utils
+Filename: ./q/qemu-block-extra/qemu-block-extra_9.1.0+ds-8_loong64.deb
+Size: 107472
+MD5sum: f32813378da8941ca23da111cc3a049e
+SHA1: b3fb4a88e0a93e43df089859c2fe66891e44fe7f
+SHA256: 80931df14dbebf77e2d8b0bfa89ae384eddfa4abf8ee039335637118e98786e7
+SHA512: c35c80d149ff4d70c08c9e935e9eb47775bc26b839caba3e8c1df8c14b791c689ac5fc01a33ab6b3fc479110137ce31c9a3e8b50afa14272f99dd0ccedadb256
+Homepage: http://www.qemu.org/
+Description: extra block backend modules for qemu-system and qemu-utils
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides extra block device backend modules for qemu-system
+ emulation and qemu-img from qemu-utils package, which are rarely used and
+ has extra dependencies.
+
+Package: qemu-guest-agent
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 3753
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.40), libglib2.0-0t64 (>= 2.78.0), libnuma1 (>= 2.0.11), libudev1 (>= 183), liburing2 (>= 2.3)
+Filename: ./q/qemu-guest-agent/qemu-guest-agent_9.1.0+ds-8_loong64.deb
+Size: 529016
+MD5sum: 3f6318a7cc64d6f5c61c3c0946c7d680
+SHA1: 0f6ae55e73036206341c2e77459240fac7e9871d
+SHA256: 658a9dd4bc65cd81b25a7eff9865a954bb5c236dd5bfa0f8d58b548cbb1ddac2
+SHA512: 15f89f93b2d16604028c355b63fafcdef59f6342bdc9754d0c34d4b90c3eb0cbd7a2b3b724552d680fd57f4e6879a70646989cc1a11af06ba83ccd189c4b3321
+Homepage: http://www.qemu.org/
+Description: Guest-side qemu-system agent
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides a daemon (agent) to run inside qemu-system
+ guests (full system emulation).  It communicates with the host using
+ a virtio-serial channel org.qemu.guest_agent.0, and allows one to perform
+ some functions in the guest from the host, including:
+  - querying and setting guest system time
+  - performing guest filesystem sync operation
+  - initiating guest shutdown or suspend to ram
+  - accessing guest files
+  - freezing/thawing guest filesystem operations
+  - others.
+ .
+ Install this package on a system which is running as guest inside
+ qemu virtual machine.  It is not used on the host.
+
+Package: qemu-system
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 71
+Depends: qemu-system-arm, qemu-system-mips, qemu-system-ppc, qemu-system-sparc, qemu-system-x86, qemu-system-misc
+Filename: ./q/qemu-system/qemu-system_9.1.0+ds-8_loong64.deb
+Size: 45316
+MD5sum: 5725bb031db1f831ad61ad9ad8c06822
+SHA1: d59797d44f614eaba0065b2c40fbb8c5bebc224a
+SHA256: 015e42687d10d58b029e84766bf5eea2c11e6900a107088e0cb018706cb8e0ba
+SHA512: 48ec2c57745a64a3b0bd08060c6b0db75af57fbfb9d31e7cd93a44292f6ada57efe6e33937ac7f93f2aadb65bca7dccc5330635f41e025f486144711edb2e860
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This metapackage provides the full system emulation binaries for all supported
+ targets, by depending on all per-architecture system emulation packages which
+ QEMU supports.
+
+Package: qemu-system-arm
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 66732
+Provides: qemu-system-aarch64 (= 1:9.1.0+ds-8), qemu-system-any (= 1:9.1.0+ds-8), qemu-system-arm64 (= 1:9.1.0+ds-8), qemu-system-armel (= 1:9.1.0+ds-8), qemu-system-armhf (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.30.0), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~)
+Recommends: qemu-utils, ipxe-qemu, qemu-efi-aarch64, qemu-efi-arm, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-arm/qemu-system-arm_9.1.0+ds-8_loong64.deb
+Size: 9404572
+MD5sum: 49c6a379e4cfab0d4ccd5eda3d20b7f1
+SHA1: bebdd312417c1a4fefe4255e77f61d2de1bac0b6
+SHA256: b1b10048e5a3bdc0cd01a9f7ebee4983f0dee73589e41573fc2ca4a0de221df8
+SHA512: b7598e36e3c23d9d275dabbaed8db003839ce677fa5b8c19a3e0db7db16b62c3c8446a3765d46961f3c30b15634ab3017dbf0d8e4ac7b030115c91c127286f50
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (arm)
+ QEMU is a fast processor emulator: currently the package supports
+ ARM emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following arm hardware: aarch64 (arm64) arm (armel armhf).
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+
+Package: qemu-system-common
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 3979
+Depends: libasound2t64 (>= 1.0.16), libbrlapi0.8 (>= 6.6), libc6 (>= 2.40), libcacard0 (>= 2.2), libcap-ng0 (>= 0.7.9), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.2), libhogweed6t64, libncursesw6 (>= 6), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.11), libpixman-1-0 (>= 0.19.6), libtinfo6 (>= 6), liburing2 (>= 2.3), libusb-1.0-0 (>= 2:1.0.23~), libusbredirparser1t64 (>= 0.8.0)
+Breaks: libvirt-daemon (<< 7.2.0-1)
+Filename: ./q/qemu-system-common/qemu-system-common_9.1.0+ds-8_loong64.deb
+Size: 899212
+MD5sum: e49b9b77e677d13a34ce4b24afcacfb1
+SHA1: 2855c37af3f105f638ac08f763a1b3eb6974f664
+SHA256: 2231b1ccac9b5c4970d5709c8ac50f89330ee24e6bfc91e66d1ac836d5d6d353
+SHA512: f691aa3a97e24fa5dc3781b5c555c5044a084e0d7d6bbd632044c5e31799953a3bbb0adda26d1a0f9bc02aecf57142966e0a8d7e79afba410b7f48e6f14dae97
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (common files)
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides common files needed for target-specific
+ full system emulation (qemu-system-*) packages.
+
+Package: qemu-system-gui
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 1226
+Depends: libc6 (>= 2.40), libcairo2 (>= 1.2.4), libepoxy0 (>= 1.0), libgbm1 (>= 12.0.0~0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.62.0), libgtk-3-0t64 (>= 3.21.4), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libnuma1 (>= 2.0.11), libpipewire-0.3-0t64 (>= 0.3.1), libpixman-1-0 (>= 0.19.6), libpulse0 (>= 0.99.1), libsdl2-2.0-0 (>= 2.0.12), libvirglrenderer1 (>= 1.0.0), libvte-2.91-0 (>= 0.49.92), libx11-6, qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-system-any (= 1:9.1.0+ds-8), libgl1
+Replaces: qemu-system-common (<< 1:6.1+dfsg-4~)
+Filename: ./q/qemu-system-gui/qemu-system-gui_9.1.0+ds-8_loong64.deb
+Size: 323752
+MD5sum: d84a620f5052aa36ff5ddf1027261c9b
+SHA1: c3950ec6c390faa4cc8d1a027fb7c7a55e8be657
+SHA256: 6c7e4ced1b5d71914ec11d68c59decaf923e9ec30bce5deb44bd4a37a87afbbb
+SHA512: d739a59fc07ce66ab91193b8cb03e0dc30c3926feaac518419f1b590f154576c8171b9f7a576f6036b886347d0f7892ee37bbdd90eef860d1c25efef590324a3
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (graphical display and audio modules)
+ This package provides optional graphical guest display modules (currently GTK
+ and SDL) and audio backend modules for full system emulation (qemu-system-*)
+ packages.
+ .
+ This package is not a management/control/GUI interface for qemu, use something
+ else (like virt-manager) for that.
+
+Package: qemu-system-mips
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 66242
+Provides: qemu-system-any (= 1:9.1.0+ds-8), qemu-system-mips64 (= 1:9.1.0+ds-8), qemu-system-mips64el (= 1:9.1.0+ds-8), qemu-system-mipsel (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~)
+Recommends: qemu-utils, seabios, ipxe-qemu, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-mips/qemu-system-mips_9.1.0+ds-8_loong64.deb
+Size: 13687728
+MD5sum: 61fe3926a99de7cc1011900f7cdb2b41
+SHA1: fedc6a58c9c4a9366f35b962ce3bdc20e076bbfd
+SHA256: ef8d8d9dc76064c3e75c8d2c1077cda1e491426be5c1c885cf878e6f8e75b076
+SHA512: 92976a40472d6964ba09e5480402edd8eddb63d0bdcc9dec68ebfc06e2b0df81329e694ce396e64f6859d5450730e8f48025bcc169378d804697fb5d5a7d3a75
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (mips)
+ QEMU is a fast processor emulator: currently the package supports
+ MIPS emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following mips hardware: mips mipsel mips64 mips64el.
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+
+Package: qemu-system-misc
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 240393
+Provides: qemu-system-alpha (= 1:9.1.0+ds-8), qemu-system-any (= 1:9.1.0+ds-8), qemu-system-avr (= 1:9.1.0+ds-8), qemu-system-cris (= 1:9.1.0+ds-8), qemu-system-hppa (= 1:9.1.0+ds-8), qemu-system-loong64 (= 1:9.1.0+ds-8), qemu-system-loongarch64 (= 1:9.1.0+ds-8), qemu-system-m68k (= 1:9.1.0+ds-8), qemu-system-microblaze (= 1:9.1.0+ds-8), qemu-system-microblazeel (= 1:9.1.0+ds-8), qemu-system-or1k (= 1:9.1.0+ds-8), qemu-system-riscv32 (= 1:9.1.0+ds-8), qemu-system-riscv64 (= 1:9.1.0+ds-8), qemu-system-rx (= 1:9.1.0+ds-8), qemu-system-s390x (= 1:9.1.0+ds-8), qemu-system-sh4 (= 1:9.1.0+ds-8), qemu-system-sh4eb (= 1:9.1.0+ds-8), qemu-system-tricore (= 1:9.1.0+ds-8), qemu-system-xtensa (= 1:9.1.0+ds-8), qemu-system-xtensaeb (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~), opensbi (>> 1.5.1-1~)
+Recommends: qemu-utils, seabios, ipxe-qemu, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Breaks: qemu-system-data (<< 1:9.1.0+ds-4~)
+Replaces: qemu-system-data (<< 1:9.1.0+ds-4~)
+Filename: ./q/qemu-system-misc/qemu-system-misc_9.1.0+ds-8_loong64.deb
+Size: 50207736
+MD5sum: ad65692a576b3403f1e18bc69ec05eb0
+SHA1: ce354d094b873a08bd47fdceb7e81d3381c094bd
+SHA256: 4ef01bbb386b7e8b1a88882d574135f0687112ad53af858d6f09a351cac47d23
+SHA512: 8add6200f853d5eb28f6d4fcf4abf7f85eae2bb12d3cb78935267d7619326c9080f0613d866381bbcd0a3a98df06cb98143f77f932974f22da67eb0bb2ed643d
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (miscellaneous)
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ various other hardware which did not made into separate packages.
+ Emulators for the following architectures are provided:
+  alpha avr cris hppa m68k loongarch64 (loong64) microblaze microblazeel
+  or1k riscv32 riscv64 rx sh4 sh4eb s390x tricore xtensa xtensaeb.
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+
+Package: qemu-system-modules-opengl
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 830
+Depends: libc6 (>= 2.40), libepoxy0 (>= 1.3), libgbm1 (>= 7.11~1), libglib2.0-0t64 (>= 2.80.0), libpixman-1-0 (>= 0.25.2), libvirglrenderer1 (>= 1.0.0), qemu-system-any (= 1:9.1.0+ds-8)
+Breaks: qemu-system-common (<< 1:8.1.0+ds-1~exp2~), qemu-system-gui (<< 1:8.1.0+ds-1~exp2~)
+Replaces: qemu-system-common (<< 1:8.1.0+ds-1~exp2~), qemu-system-gui (<< 1:8.1.0+ds-1~exp2~)
+Filename: ./q/qemu-system-modules-opengl/qemu-system-modules-opengl_9.1.0+ds-8_loong64.deb
+Size: 158228
+MD5sum: f2a79b81f7fae0fa338390e008e5f71f
+SHA1: 5746f1cd56b21eea36180bb439b1b50c0ed1929e
+SHA256: e908841a3324b0c1c8c55c2086984c87748c8b0ea9b66c0b770dead9540875d2
+SHA512: 882384adcef081a8baf7f0a5f4fd2651e5b1b637cd5854422302e8185012a74f693aae365cf61fd7a887274207bfeb2e9647d15385e346659d98f5601f2541af
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (OpenGL display modules)
+ This package provides optional OpenGL display support modules for QEMU full
+ system emulation (qemu-system-*) packages.  It also provides D-Bus display
+ type.
+
+Package: qemu-system-ppc
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 37881
+Provides: qemu-system-any (= 1:9.1.0+ds-8), qemu-system-powerpc (= 1:9.1.0+ds-8), qemu-system-ppc64 (= 1:9.1.0+ds-8), qemu-system-ppc64el (= 1:9.1.0+ds-8), qemu-system-ppc64le (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~)
+Recommends: qemu-utils, seabios, ipxe-qemu, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-ppc/qemu-system-ppc_9.1.0+ds-8_loong64.deb
+Size: 7664164
+MD5sum: 7b852107cde48b3d249a607230a434bc
+SHA1: 0993802635c0c80dcaa308babff07acb0586d64a
+SHA256: 329a2bd555fbb0a6abf3d0e3e658e76f962af65c4bae61803c517ba5beef262d
+SHA512: b5e16be1078c2f4f0d2f287322d17deca35f291b1b975665aab0a392fcf5127bb266011743fb00186673928be5e71e1fd3c87d4efbf40c80b969bdeccc03ad5f
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (ppc)
+ QEMU is a fast processor emulator: currently the package supports
+ PowerPC emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following PowerPC hardware: ppc (powerpc) ppc64 (ppc64le ppc64el).
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+
+Package: qemu-system-sparc
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 24582
+Provides: qemu-system-any (= 1:9.1.0+ds-8), qemu-system-sparc64 (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~)
+Recommends: qemu-utils, seabios, ipxe-qemu, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-sparc/qemu-system-sparc_9.1.0+ds-8_loong64.deb
+Size: 5352904
+MD5sum: fcdc2783bb3861897b59e7f22d5c3d18
+SHA1: 2ee4fd7ede80f58808d477edaacb3fc8db8bb07e
+SHA256: bc6e64a800c23eff6ab1792831053ae2a46b47f06c3d49e778012482e8ec1a76
+SHA512: 1dda3d7e901a2b8f0d19601c8711227eda132b322850e6a5736b64e1b0343922d08618e71ce64c1cd4fe470be0041d815d226e6bea768591927ab79d5c04c97a
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (sparc)
+ QEMU is a fast processor emulator: currently the package supports
+ SPARC emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following sparc hardware: sparc sparc64.
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+
+Package: qemu-system-x86
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 56833
+Provides: qemu-system-amd64 (= 1:9.1.0+ds-8), qemu-system-any (= 1:9.1.0+ds-8), qemu-system-i386 (= 1:9.1.0+ds-8), qemu-system-x86-64 (= 1:9.1.0+ds-8)
+Depends: libaio1t64 (>= 0.3.93), libbpf1 (>= 1:0.0.8), libc6 (>= 2.40), libcapstone4 (>= 4), libfdt1 (>= 1.7.0), libfuse3-3 (>= 3.2.3), libglib2.0-0t64 (>= 2.78.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.6), libhogweed6t64, libibverbs1 (>= 1.1.6), libjpeg62-turbo (>= 1.3.1), libnettle8t64 (>= 3.9~), libnuma1 (>= 2.0.15), libpixman-1-0 (>= 0.19.6), libpng16-16t64 (>= 1.6.2), librdmacm1t64 (>= 1.0.15), libsasl2-2 (>= 2.1.28+dfsg1), libseccomp2 (>= 2.1.0), libslirp0 (>= 4.7.0), libudev1 (>= 183), liburing2 (>= 2.3), libvdeplug2t64 (>= 4.0.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), qemu-system-common (= 1:9.1.0+ds-8), qemu-system-data (>> 1:9.1.0+ds~), seabios (>> 1.16.3-1~), ipxe-qemu
+Recommends: qemu-utils, ovmf, qemu-system-gui (= 1:9.1.0+ds-8), qemu-system-modules-opengl (= 1:9.1.0+ds-8), qemu-block-extra (= 1:9.1.0+ds-8)
+Suggests: samba, vde2
+Filename: ./q/qemu-system-x86/qemu-system-x86_9.1.0+ds-8_loong64.deb
+Size: 7351476
+MD5sum: d44e78302e0bcfb85ba75576c07cc9eb
+SHA1: f35dbcae491ca644e7b25ba9df94c969051d1eb8
+SHA256: ee1cb8ed9489ffb3fb4b6bafb6a068939f6e7f25b8f4252024b7cecd3e01d81a
+SHA512: 9de05523ed947795edde24ffdcce200a9334dbad9ba89b6770453e5b0b4d6ae2aca85e095a143bc54d6e4374da2a67823d4aa963760da155a347acf57180b418
+Homepage: http://www.qemu.org/
+Description: QEMU full system emulation binaries (x86)
+ QEMU is a fast processor emulator: currently the package supports
+ i386 and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the full system emulation binaries to emulate
+ the following x86 hardware: i386 x86_64 (amd64).
+ .
+ In system emulation mode QEMU emulates a full system, including a processor
+ and various peripherals.  It enables easier testing and debugging of system
+ code.  It can also be used to provide virtual hosting of several virtual
+ machines on a single server.
+ .
+ On x86 host hardware this package also enables KVM kernel virtual machine
+ usage on systems which supports it.
+
+Package: qemu-user-binfmt
+Architecture: loong64
+Version: 1:9.1.0+ds-8
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: qemu
+Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Installed-Size: 40
+Depends: qemu-user (= 1:9.1.0+ds-8)
+Recommends: systemd
+Breaks: qemu-user-static (<< 1:9.1.0)
+Replaces: qemu-user-static (<< 1:9.1.0)
+Filename: ./q/qemu-user-binfmt/qemu-user-binfmt_9.1.0+ds-8_loong64.deb
+Size: 2168
+MD5sum: 0cdb4153d0121a149d529346e88cf5e4
+SHA1: d44493e77f5c0db49eb88eea80622a7abcffd0ae
+SHA256: 8024b3c9dd4ab504ff482fb8ffe8da578ac575713684986e6d77d3dd5391f0a9
+SHA512: 733fd321252ddfded298ce64d9ef0955d88ffa3ce5cf17c7a9eede0b745b1a306c2ab72ec6a22dd9829aabbd1c3b9a255f3da868f7cb36edcd5d07511d721a97
+Homepage: http://www.qemu.org/
+Description: QEMU user mode binfmt registration for qemu-user
+ QEMU is a fast processor emulator: currently the package supports Alpha, ARM,
+ CRIS, i386, LoongArch, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, RISC-V,
+ S390x, SH4, SPARC, x86-64, Xtensa and other emulations. By using dynamic
+ translation it achieves reasonable speed while being easy to port on new host
+ CPUs.
+ .
+ This package provides binfmt support registration for the user-mode emulation
+ binaries from qemu-user.  This package does not contain additional binaries,
+ just (sym)links to binfmt registration data in /usr/lib/binfmt.d/ so it is
+ picked up automatically by, eg, systemd.  Actual files are provided by
+ qemu-user package.
 
 Package: readline-common
 Architecture: all
@@ -3914,6 +4751,36 @@ Description: miscellaneous system utilities
  messages, create new filesystems, view block device information,
  interface with real time clock, etc.
 
+Package: vim
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4325
+Provides: editor
+Depends: vim-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libgpm2 (>= 1.20.7), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtinfo6 (>= 6)
+Suggests: ctags, vim-doc, vim-scripts
+Filename: ./v/vim/vim_9.1.0777-1+b1_loong64.deb
+Size: 1611196
+MD5sum: 8e4db2fe486bb18f268c5c084d88e424
+SHA1: 0c9982bf303b1691ef08852df54ba027c9026bd2
+SHA256: 7c62ea785a381f968526c41d9825597a481f61e05283eaa98bd469ac970a691c
+SHA512: ec8c9884a8ffc5968437267f01ad6d95053d9da76dfd49a373ba919b7237e785bdf1ab222707d7dc33f74b642846676ee20a2472576f1972383d01d5274b47f3
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with a rather
+ standard set of features.  This package does not provide a GUI
+ version of Vim.  See the other vim-* packages if you need more
+ (or less).
+
 Package: vim-common
 Architecture: all
 Version: 2:9.1.0777-1
@@ -3940,6 +4807,90 @@ Description: Vi IMproved - Common files
  available in Debian.  Examples of such shared files are: manpages and
  configuration files.
 
+Package: vim-gtk3
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 5231
+Provides: editor, gvim (= 2:9.1.0777-1+b1), vim (= 2:9.1.0777-1+b1), vim-lua (= 2:9.1.0777-1+b1), vim-perl (= 2:9.1.0777-1+b1), vim-python3 (= 2:9.1.0777-1+b1), vim-ruby (= 2:9.1.0777-1+b1), vim-tcl (= 2:9.1.0777-1+b1)
+Depends: vim-common (= 2:9.1.0777-1), vim-gui-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libcairo2 (>= 1.4.10), libcanberra0 (>= 0.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgpm2 (>= 1.20.7), libgtk-3-0t64 (>= 3.21.5), libice6 (>= 1:1.0.0), liblua5.1-0, libpango-1.0-0 (>= 1.37.5), libpangocairo-1.0-0 (>= 1.14.0), libperl5.40 (>= 5.40.0), libpython3.12t64 (>= 3.12.1), libruby3.1t64 (>= 3.1.2), libselinux1 (>= 3.1~), libsm6, libsodium23 (>= 1.0.14), libtcl8.6 (>= 8.6.0), libtinfo6 (>= 6), libx11-6, libxt6t64
+Suggests: cscope, fonts-dejavu, gnome-icon-theme, vim-doc
+Filename: ./v/vim-gtk3/vim-gtk3_9.1.0777-1+b1_loong64.deb
+Size: 1929060
+MD5sum: 95b3b959c760d37541818b719281f9c9
+SHA1: 29526ec57f5dd20c357434f9b901cfa7b9fb2399
+SHA256: 1863a0fccb60eb40ad8976b04a88d56c0a4004f35b47143e170481ac048be59c
+SHA512: 09c348c1c942a5d2ed7416c3dd8e55859d7369ed1424ab5daa6c668b2f4e026c5b8a1c0e3e22aec7b73d92be48b89eedd00a6b3d15e926835379e6d31235ef5c
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - with GTK3 GUI
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with a GTK3 GUI
+ and support for scripting with Lua, Perl, Python 3, Ruby, and Tcl.
+
+Package: vim-motif
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4957
+Provides: editor, gvim (= 2:9.1.0777-1+b1), vim (= 2:9.1.0777-1+b1), vim-lua (= 2:9.1.0777-1+b1), vim-perl (= 2:9.1.0777-1+b1), vim-python3 (= 2:9.1.0777-1+b1), vim-ruby (= 2:9.1.0777-1+b1), vim-tcl (= 2:9.1.0777-1+b1)
+Depends: vim-common (= 2:9.1.0777-1), vim-gui-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libcanberra0 (>= 0.2), libgpm2 (>= 1.20.7), libice6 (>= 1:1.0.0), liblua5.1-0, libperl5.40 (>= 5.40.0), libpython3.12t64 (>= 3.12.1), libruby3.1t64 (>= 3.1.2), libselinux1 (>= 3.1~), libsm6, libsodium23 (>= 1.0.14), libtcl8.6 (>= 8.6.0), libtinfo6 (>= 6), libx11-6, libxt6t64
+Suggests: cscope, vim-doc
+Filename: ./v/vim-motif/vim-motif_9.1.0777-1+b1_loong64.deb
+Size: 1828784
+MD5sum: 4c0b27e1071e81aa087e2cc2d02f04fd
+SHA1: 2389f4507309686550dfcf9b085339304b9d3497
+SHA256: b8caa160ccb05a04cbb4ea0a5ef76d4e46db6419f99a9b9359b552e6e115ef4b
+SHA512: cd938bf7cfa99aa6e00d93bc8ae1482b0eb6d76856a659b9fe0a2fc56ebbf29a8a0eb3a46d437c3031d5db54f577dba9fb85df36aa1ab8b268ade9a34cfec61e
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - with Motif GUI
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with a Motif GUI
+ and support for scripting with Lua, Perl, Python 3, and Tcl.
+
+Package: vim-nox
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4873
+Provides: editor, vim (= 2:9.1.0777-1+b1), vim-lua (= 2:9.1.0777-1+b1), vim-perl (= 2:9.1.0777-1+b1), vim-python3 (= 2:9.1.0777-1+b1), vim-ruby (= 2:9.1.0777-1+b1), vim-tcl (= 2:9.1.0777-1+b1)
+Depends: vim-common (= 2:9.1.0777-1), vim-runtime (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libgpm2 (>= 1.20.7), liblua5.1-0, libperl5.40 (>= 5.40.0), libpython3.12t64 (>= 3.12.1), libruby3.1t64 (>= 3.1.2), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtcl8.6 (>= 8.6.0), libtinfo6 (>= 6)
+Suggests: cscope, vim-doc
+Filename: ./v/vim-nox/vim-nox_9.1.0777-1+b1_loong64.deb
+Size: 1801172
+MD5sum: a429dc604455f4c80b435f7bbd53701e
+SHA1: b5168acb872020b901325504f9b7aebecc009267
+SHA256: 574c963ce196ee9761d6163e5ff4e8ed8e8818bb49bbebf6f6b9c20a18eecf1b
+SHA512: 62ed5e6ccd1da5a6e965b5d67ca43cc8fcf94ee292b308852099ea83c4931d69f2311b9d6945e7a856d5d8da2665289fd49b7a8934755d7d83419ace5ed32509
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - with scripting languages support
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ Many new features have been added: multi level undo, syntax
+ highlighting, command line history, on-line help, filename
+ completion, block operations, folding, Unicode support, etc.
+ .
+ This package contains a version of vim compiled with support for
+ scripting with Lua, Perl, Python 3, Ruby, and Tcl but no GUI.
+
 Package: vim-tiny
 Architecture: loong64
 Version: 2:9.1.0777-1+b1
@@ -3952,6 +4903,34 @@ Provides: editor
 Depends: vim-common (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
 Suggests: indent
 Filename: ./v/vim-tiny/vim-tiny_2%3a9.1.0777-1+b1_loong64.deb
+Size: 740704
+MD5sum: 8126b4d9be6614f38607d8d3e16e189f
+SHA1: 995dfac990d8014b0651c0fa617d754af2ab65d2
+SHA256: b00208bd12571e561826d462ec9c00ee1f1fffa3e4cef0b95a55eab2f830e2c6
+SHA512: 7755e6300328051bbfede06e8bd0bfb36316395ad5123e35872b96661e0104e02f91d66fb1a0a112bd4c2a3fd50e4bc73674e99be0826749ee845f5ab96a1e1b
+Homepage: https://www.vim.org/
+Description: Vi IMproved - enhanced vi editor - compact version
+ Vim is an almost compatible version of the UNIX editor Vi.
+ .
+ This package contains a minimal version of Vim compiled with no GUI and
+ a small subset of features. This package's sole purpose is to provide
+ the vi binary for base installations.
+ .
+ If a vim binary is wanted, try one of the following more featureful
+ packages: vim, vim-nox, vim-motif, or vim-gtk3.
+
+Package: vim-tiny
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Priority: important
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 1974
+Provides: editor
+Depends: vim-common (= 2:9.1.0777-1), libacl1 (>= 2.2.23), libc6 (>= 2.40), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
+Suggests: indent
+Filename: ./v/vim-tiny/vim-tiny_9.1.0777-1+b1_loong64.deb
 Size: 740704
 MD5sum: 8126b4d9be6614f38607d8d3e16e189f
 SHA1: 995dfac990d8014b0651c0fa617d754af2ab65d2
@@ -3991,6 +4970,27 @@ Description: Displays user-friendly dialog boxes from shell scripts
  from shell scripts. This allows a developer of a script to interact with
  the user in a much friendlier manner.
 
+Package: xxd
+Architecture: loong64
+Version: 2:9.1.0777-1+b1
+Multi-Arch: foreign
+Priority: optional
+Section: editors
+Source: vim (2:9.1.0777-1)
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 165
+Depends: libc6 (>= 2.40)
+Filename: ./x/xxd/xxd_9.1.0777-1+b1_loong64.deb
+Size: 98136
+MD5sum: 9fcd6333730eb9c9b22aefe2e45349ad
+SHA1: a09fdd067a0639f1784b6fad467f399268ff6bf3
+SHA256: a5a3b9dad898671c1f58d8d8f01d0e196be035946eac738f9574891a716a8a93
+SHA512: 8c4d6d6c08e9a7e5ec5f9028154cb3e1ce56104da8003d401c987a808429af76fe2feab919eab33ef20d33f8062aff77858165039c3b07eac59862e5949fee00
+Homepage: https://www.vim.org/
+Description: tool to make (or reverse) a hex dump
+ xxd creates a hex dump of a given file or standard input.  It can also convert
+ a hex dump back to its original binary form.
+
 Package: zlib1g
 Architecture: loong64
 Version: 1:1.3.dfsg+really1.3.1-1
@@ -4014,4 +5014,70 @@ Homepage: http://zlib.net/
 Description: compression library - runtime
  zlib is a library implementing the deflate compression method found
  in gzip and PKZIP.  This package includes the shared library.
+
+Package: zsh-dev
+Architecture: loong64
+Version: 5.9-8+b2
+Priority: optional
+Section: libdevel
+Source: zsh (5.9-8)
+Maintainer: Debian Zsh Maintainers <pkg-zsh-devel@lists.alioth.debian.org>
+Installed-Size: 684
+Depends: zsh-common (= 5.9-8)
+Filename: ./z/zsh-dev/zsh-dev_5.9-8+b2_loong64.deb
+Size: 272840
+MD5sum: b467d1a448fe6194396ab1f306cd3743
+SHA1: d94a515de9e277a3da2c9ccdf81ce14d2a3f96d1
+SHA256: 5713b72430d6eb76e8d06f41cf97276bbf9bc8b40fbb7223537aaafb10f9c8fa
+SHA512: 273fe4cf68a68a2744a2ac98f64537c82d65918fee663aa86163d07b8c667f6ad690669777d09e1b725a6a322859bc93d89ef98d2b0388f38fe9f868dc590d1b
+Homepage: https://www.zsh.org/
+Description: shell with lots of features (development files)
+ Zsh is a UNIX command interpreter (shell) usable as an
+ interactive login shell and as a shell script command
+ processor. Of the standard shells, zsh most closely resembles
+ ksh but includes many enhancements. Zsh has command-line editing,
+ built-in spelling correction, programmable command completion,
+ shell functions (with autoloading), a history mechanism, and a
+ host of other features.
+ .
+ This package contains headers and scripts necessary to compile
+ third-party modules.
+
+Package: zsh-static
+Architecture: loong64
+Version: 5.9-8+b2
+Built-Using: glibc (= 2.40-3), libcap2 (= 1:2.66-5), ncurses (= 6.5-2), pcre2 (= 10.42-4)
+Priority: optional
+Section: shells
+Source: zsh (5.9-8)
+Maintainer: Debian Zsh Maintainers <pkg-zsh-devel@lists.alioth.debian.org>
+Installed-Size: 2725
+Depends: debianutils (>= 5.3-1~)
+Recommends: zsh-common
+Suggests: zsh-doc
+Filename: ./z/zsh-static/zsh-static_5.9-8+b2_loong64.deb
+Size: 1144380
+MD5sum: 40251dddaba0721e469237d15369549d
+SHA1: 3ed28d029cf61aed42d299552f62af1d01f16b7a
+SHA256: c6fd5c60f40493e7f521a3fbb69ade3320a60806843ad78f19775b869508d90e
+SHA512: c17e08ce49ad4a3bb9d31aa64072a05cabc2daac556461c44ad03fbaf154690deae29e6a4cbc39382dc26497f5e6f2a0ca6f2de87683eaf39bdf3b52729d7895
+Homepage: https://www.zsh.org/
+Description: shell with lots of features (static link)
+ Zsh is a UNIX command interpreter (shell) usable as an
+ interactive login shell and as a shell script command
+ processor. Of the standard shells, zsh most closely resembles
+ ksh but includes many enhancements. Zsh has command-line editing,
+ built-in spelling correction, programmable command completion,
+ shell functions (with autoloading), a history mechanism, and a
+ host of other features.
+ .
+ This is the statically-compiled version of the shell, i.e. it doesn't
+ require any dynamically loaded libraries to be present and will work
+ even if libraries zsh (in general) needs are broken on the system. So
+ it's more robust in case of a broken system.
+ .
+ It though also has a few limitations compared to the normal,
+ dynamically linked, e.g. it can't use NSS related functionality which
+ might result in minor imperfections like e.g. user names being shown
+ in the prompt.
 
