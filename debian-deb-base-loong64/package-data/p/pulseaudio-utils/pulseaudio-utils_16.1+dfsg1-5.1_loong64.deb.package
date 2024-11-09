@@ -1,0 +1,36 @@
+Package: pulseaudio-utils
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 327
+Depends: libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1), libsndfile1 (>= 1.0.20), libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb1, libpulsedsp
+Suggests: avahi-daemon, pulseaudio
+Breaks: pulseaudio (<< 14.2-3~)
+Replaces: pulseaudio (<< 14.2-3~)
+Filename: ./p/pulseaudio-utils/pulseaudio-utils_16.1+dfsg1-5.1_loong64.deb
+Size: 83596
+MD5sum: 280e105e7b0506ac45f9630cf04bd152
+SHA1: 51fabc4773754baf6e9b6b946c7eb08c3b564612
+SHA256: 31671736ef57b92b051a8954b3879974cbf3075c677a5940b7f2535aed02a46a
+SHA512: 03ee5dd149448fadcd6d03c788060bb2d47cd423148bf6d4fb5353e616fd8c10dcb3002b9e806fed29a978bcacc7ca8c1828300d9667a1b1e944bb3776a9bf05
+Homepage: https://www.pulseaudio.org
+Description: Command line tools for the PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ These tools provide command line access to various features of the
+ PulseAudio sound server. Included tools are:
+ .
+   paplay - Playback a WAV file via a PulseAudio sink.
+   pacat - Cat raw audio data to a PulseAudio sink.
+   parec - Cat raw audio data from a PulseAudio source.
+   pacmd - Connect to PulseAudio's built-in command line control interface.
+   pactl - Send a control command to a PulseAudio server.
+   padsp - /dev/dsp wrapper to transparently support OSS applications.
+   pax11publish - Store/retrieve PulseAudio default server/sink/source
+                  settings in the X11 root window.
+

@@ -1,0 +1,20 @@
+Package: libobjc4
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 229
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
+Filename: ./l/libobjc4/libobjc4_14.2.0-7_loong64.deb
+Size: 42012
+MD5sum: ab87decb171a3af65e28693f7a1091a2
+SHA1: db1dfd4b468ac226aaa988b6bc12a11afe477d43
+SHA256: 437eb338bba376e9c21240a329aaa4712509886cd6d4d3167e2d9c0c3404c38c
+SHA512: 1169cb29fa5ad173f6e46991e8d375a3821d2d18d49cb0007cb6cf06cdb0401c1edb8cfd5f2b7b769a9210f75726b6168dd3ef8a2189669f2fdb1a89d46a67fc
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications
+ Library needed for GNU ObjC applications linked against the shared library.
+

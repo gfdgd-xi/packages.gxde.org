@@ -1,0 +1,24 @@
+Package: python3.12-tk
+Architecture: loong64
+Version: 3.12.7-1
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 523
+Depends: libc6 (>= 2.40), libtcl8.6 (>= 8.6.0), libtk8.6 (>= 8.6.0)
+Suggests: tix
+Breaks: python3-tk (<< 3.12.5-2~)
+Replaces: python3-tk (<< 3.12.5-2~)
+Enhances: python3.12
+Filename: ./p/python3.12-tk/python3.12-tk_3.12.7-1_loong64.deb
+Size: 114936
+MD5sum: d17f625a4faf9076d7b3057f87889fc7
+SHA1: 2f2d4934118180850595b0ca6e6e1d8f43587b7c
+SHA256: b0e3517a02e04463f5d97a22f367ccdc0f5a6e36bc914e32bc6e82e03707e405
+SHA512: b5108f8f1343f35ea31f3e017ede3ce7182f172eb7acb85eab8f3add50aff5e41ce00d29c2ecf48fb304ea5ae71fb8a4ed6bba7353f9468dbedde0d07018d3e8
+Description: Tkinter - Writing Tk applications with Python (v3.12)
+ A module for writing portable GUI applications with Python (v3.12) using Tk.
+ Also known as Tkinter.
+Python-Version: 3.12
+

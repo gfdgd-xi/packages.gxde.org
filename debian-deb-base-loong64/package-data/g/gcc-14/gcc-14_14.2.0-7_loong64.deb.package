@@ -1,0 +1,22 @@
+Package: gcc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 597
+Provides: c-compiler
+Depends: gcc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), cpp-14 (= 14.2.0-7), binutils (>= 2.39)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-14-doc (>= 14), gcc-14-locales (>= 14)
+Replaces: cpp-14 (<< 7.1.1-8)
+Filename: ./g/gcc-14/gcc-14_14.2.0-7_loong64.deb
+Size: 516672
+MD5sum: 701b21f45b46c6135431fff0dfb8629c
+SHA1: 337f1a295a2277513d1440be22122c1a5c004ba1
+SHA256: bf73931475697d8f7896661a8a259243425acd38a73d9bc78519b47a733f87cf
+SHA512: e9cc147dce768a67d22df339cdf3cb63f488a87bd5d15696eb647be9daf4a3b7d172a454389411ca562a07709adceb4861cf8863a364943136ceb15d8db55a87
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+

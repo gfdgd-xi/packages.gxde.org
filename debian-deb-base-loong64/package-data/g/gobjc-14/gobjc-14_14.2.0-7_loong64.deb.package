@@ -1,0 +1,23 @@
+Package: gobjc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 44
+Provides: objc-compiler
+Depends: gcc-14-base (= 14.2.0-7), gobjc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc-14/gobjc-14_14.2.0-7_loong64.deb
+Size: 38096
+MD5sum: e6c66e061288bc69dfbe6cf9bafe2928
+SHA1: d024289861db2d22eb4046f0ae25251ee1b1e4ae
+SHA256: 3e49c8926f0daf46383c9b6dcc21e2473f4d0f9aa717b8740474839d50be960f
+SHA512: 409480b738c0ce7527db01dfbe03c34fd78fec910e46c8e2367acad03fa696680d90cfbad77ef28888e74957d4d263c2527a2b44e8917390f5d58d39ce7adc68
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler
+ This is the GNU Objective-C compiler, which compiles
+ Objective-C on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+

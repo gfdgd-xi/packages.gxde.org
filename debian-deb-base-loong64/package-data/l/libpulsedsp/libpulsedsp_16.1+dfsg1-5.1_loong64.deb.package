@@ -1,0 +1,25 @@
+Package: libpulsedsp
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 99
+Depends: libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1)
+Filename: ./l/libpulsedsp/libpulsedsp_16.1+dfsg1-5.1_loong64.deb
+Size: 35896
+MD5sum: 79570dc68d43445ad5eb991cafa1917d
+SHA1: 1e0587110223fa5e2675800912da51a3d14dd08a
+SHA256: a646cfc6d49141b1e9d8c9f1cb77933c4294972e97d2037859c6d4d8bae0e1ad
+SHA512: 365839749d00597472af8edc6607c87e3d5a4c4d4dc859161cb0d82afed9ffdae1db736bb234c1b1b52833f78377626883c7f3475fe03b56207139554387aed5
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio OSS pre-load library
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This package provides the pre-load library used to redirect applications
+ using OSS through pulseaudio.
+

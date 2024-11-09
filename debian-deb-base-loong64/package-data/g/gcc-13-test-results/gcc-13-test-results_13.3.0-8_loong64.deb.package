@@ -1,0 +1,21 @@
+Package: gcc-13-test-results
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12958
+Depends: gcc-13-base (= 13.3.0-8)
+Replaces: g++-5 (<< 5.2.1-28)
+Filename: ./g/gcc-13-test-results/gcc-13-test-results_13.3.0-8_loong64.deb
+Size: 13254032
+MD5sum: 81371e6e50809d93b7a495d0371007ad
+SHA1: 1513ff37c598ebae9b29091f13d34cefbfae9122
+SHA256: c0e08ec2e171106e156adf8a57fe98144c3f4b81c4bbe9bf353a1d7b79969053
+SHA512: 5db4f592b2cdd897ab3955e6aad87b825331be3f66509c433a0e50eb89ee74d11071f72f8c7dc3d527e2034e7a6a4bca3d14600f0f5a918b4975ee25286cb0db
+Homepage: http://gcc.gnu.org/
+Description: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+

@@ -1,0 +1,26 @@
+Package: libgnat-14
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4907
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 4.2)
+Filename: ./l/libgnat-14/libgnat-14_14.2.0-7_loong64.deb
+Size: 1131076
+MD5sum: c8bc8bfbc8c978dd80a3e5acab171cdc
+SHA1: 9bc25325b3778fac4f5b9acc802dcc7077fabb9c
+SHA256: 2a663a94ce285c1f859b653e867468c5b6465dab5da7d47b544feae23ef52ce9
+SHA512: e497f400f5d1a83f193daca6a66427cb4d7505dc49f806030be3c6c5dfa89a5e6a6ed43f53e687f316b42124bee7fcd6447b1a0e014972b6dfaec340188e6d5c
+Homepage: http://gcc.gnu.org/
+Description: runtime for applications compiled with GNAT (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the runtime shared library.
+

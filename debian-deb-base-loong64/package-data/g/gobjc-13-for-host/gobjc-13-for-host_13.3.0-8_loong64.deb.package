@@ -1,0 +1,26 @@
+Package: gobjc-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gobjc-13-loongarch64-linux-gnu (>= 13), gcc-13-for-host (= 13.3.0-8)
+Filename: ./g/gobjc-13-for-host/gobjc-13-for-host_13.3.0-8_loong64.deb
+Size: 1084
+MD5sum: 249a3d0373270472f777aaac74b71d6d
+SHA1: 8845a6bd702c1d46061f020140f2b52c5579b74c
+SHA256: 49a72cf1cc6b3af0b867aba0f72585e02f64f730373c425f95340f06872d6233
+SHA512: 2f6158f043cddf21e336305f12acecf093ce9ce2f666a5ae43bf3a74072502f3165592d8f7c91c7ee4bd289be85cf338c6e7e745d70a3b2c406bc142eb97d3f8
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the host architecture
+ This is the GNU Objective-C compiler for the host architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

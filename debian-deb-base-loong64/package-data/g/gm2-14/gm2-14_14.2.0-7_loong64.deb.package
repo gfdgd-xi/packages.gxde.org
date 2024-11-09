@@ -1,0 +1,21 @@
+Package: gm2-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 152
+Provides: gm2, m2-compiler
+Depends: gm2-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
+Filename: ./g/gm2-14/gm2-14_14.2.0-7_loong64.deb
+Size: 87200
+MD5sum: 464f36803f6907f56ed10ffa2f940ce7
+SHA1: 63d256fd556e0c8ad605f71f041105c2d9b0d87f
+SHA256: 5677b0b4f95335dceec714c4c42f7111c9791cdc8bd7dd573524b169e7145bfa
+SHA512: 751e27f27c2ea958b56dcef5421df2e85cde006a882dabab125fa84d9eb6c33e7f9c145ddf16351f028dc9084d81e77b2c419a387b29a32ff5840589de0fa7e0
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 compiler (version 2)
+ This is the GNU Modula-2 compiler, which compiles Modula-2 on platforms
+ supported by gcc.  It uses the gcc backend to generate optimised code.
+

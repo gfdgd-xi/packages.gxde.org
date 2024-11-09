@@ -1,0 +1,28 @@
+Package: gccrs-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 8
+Provides: gccrs, rust-compiler
+Depends: gcc-14-base (>= 14), gccrs-14-loongarch64-linux-gnu (= 14.2.0-7), g++-14 (>= 14)
+Filename: ./g/gccrs-14/gccrs-14_14.2.0-7_loong64.deb
+Size: 1120
+MD5sum: 575a05d185943a7dd58e199ba605928e
+SHA1: 8e3a7a722645c9fd5728752ae7e46d3a5f7c9ef1
+SHA256: bf7731b7242d6bc96260777c069952fafcd91da58172f3a074d50ec500fb5044
+SHA512: 0f949b6dadfa0dd82dafa75e5779536f0362609fe2ac4989a40909b5a241e92c53bfa67f2aed9f463f95d4a437b36d36ca712c9111efc92bee9a991b24352bc8
+Homepage: http://gcc.gnu.org/
+Description: GNU Rust compiler
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ gccrs is a full alternative implementation of the Rust
+ language ontop of GCC with the goal to become fully
+ upstream with the GNU toolchain.
+ .
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+

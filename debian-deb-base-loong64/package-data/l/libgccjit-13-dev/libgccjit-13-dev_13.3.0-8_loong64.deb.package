@@ -1,0 +1,22 @@
+Package: libgccjit-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 127
+Depends: gcc-13-base (= 13.3.0-8), libgccjit0 (>= 13.3.0-8)
+Suggests: libgccjit-13-dbg
+Filename: ./l/libgccjit-13-dev/libgccjit-13-dev_13.3.0-8_loong64.deb
+Size: 20768
+MD5sum: cbc2db26eec43a5fd3c94f805d7ca0b7
+SHA1: 8efe421043837c8ac84ea5a5e2fa79ce91769666
+SHA256: e186d7eb2d8122125a444a0624b24bf181770d38784b591c1556ec573a9c0c41
+SHA512: f552c03dd21edb24d5cc0463e4824a28d870e0c402f5054add4211cbea34aef91c8c89157df6b6ab1d21bb9430bd3b46e141629535be7d98ddec075baacaabd4
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (development files)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
+

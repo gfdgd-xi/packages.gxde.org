@@ -1,0 +1,26 @@
+Package: gm2-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gm2-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gm2-14-for-host/gm2-14-for-host_14.2.0-7_loong64.deb
+Size: 1084
+MD5sum: db09abe7dd41002742abdb2a9dbc4e76
+SHA1: c783f158ad709cb81b1cfa1fd13e1822108f00e2
+SHA256: 0cfa2cc03fc39b8c20126aec24c5f644bcb13ff50ba33eb7ff53500859883d06
+SHA512: 688660f3ffe939a23b42f7b49f07c84824e36d8f7ece79d2e4570619ad32c0334c6cb706ca2ed75e7e64d5e06791b7045a35ad883b596ef7d985b9ccc0b4080f
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 compiler for the host architecture
+ This is the GNU Modula-2 compiler for the host architecture,
+ which compiles Modula-2 on platforms supported by gcc.  It uses the gcc
+ backend to generate optimised code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

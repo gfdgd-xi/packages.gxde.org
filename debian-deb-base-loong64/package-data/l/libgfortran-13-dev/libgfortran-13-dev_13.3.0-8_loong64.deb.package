@@ -1,0 +1,21 @@
+Package: libgfortran-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 14538
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libgfortran5 (>= 13.3.0-8)
+Filename: ./l/libgfortran-13-dev/libgfortran-13-dev_13.3.0-8_loong64.deb
+Size: 942032
+MD5sum: 6491c12f175fc43cd3d7af6c4df32dcd
+SHA1: e319f9e1e2690c6519433ac164df81900d268f6e
+SHA256: 8df5fe1888bf7a0d5519983563503a451c6ee597dc8ab6a60bddb34eca64b42a
+SHA512: 79416b06d39e42a3ff321c82cbab1b5c4c509afd16bde0ad20ea2dd6110d4a31f0a77a551988f6bbb8dbf60685bdb4db6ac21fcf47a67a650b342d8ca5bccc49
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+

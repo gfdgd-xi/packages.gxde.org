@@ -1,0 +1,24 @@
+Package: libpython3.13-stdlib
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9435
+Depends: libpython3.13-minimal (= 3.13.0-1), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.40), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6), libuuid1 (>= 2.20.1)
+Filename: ./l/libpython3.13-stdlib/libpython3.13-stdlib_3.13.0-1_loong64.deb
+Size: 1931680
+MD5sum: 351eb5fcfb5a68f215593787e64c064b
+SHA1: 4e1ce84121b9ac2be96ebdfc2fd41d78c352addd
+SHA256: 2d6e18303750e71d9df3927bab5e6e84bf060bb6ffd569bd6dc12aafd654fb16
+SHA512: 1686d3f21b1b88a72fdd30ba891dc2c73c794ef485695d973dcab8e70d40091af0aed439ddad4234483fb0e3f1d2ca68468a21e46903468a4de6182a4373f621
+Description: Interactive high-level object-oriented language (standard library, version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.13's standard library. It is normally not
+ used on its own, but as a dependency of python3.13.
+

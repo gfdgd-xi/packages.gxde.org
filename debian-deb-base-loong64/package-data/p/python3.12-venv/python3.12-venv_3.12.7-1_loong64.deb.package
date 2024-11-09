@@ -1,0 +1,24 @@
+Package: python3.12-venv
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 28
+Depends: python3.12 (= 3.12.7-1), python3-pip-whl (>= 22.2), python3-setuptools-whl
+Breaks: python3-pip (<< 1.5.6-4)
+Filename: ./p/python3.12-venv/python3.12-venv_3.12.7-1_loong64.deb
+Size: 5844
+MD5sum: d17d6c3fe40a6ad1e8b20c7697e66350
+SHA1: 61debf01a94243bd1db1d5544b985139004b1d65
+SHA256: 193ec2e31d1cf55a766c5f5fa704f1c7ea951c7c87afb24ef1050b83b18fafaa
+SHA512: bdf9b2afd361b14f490bdfa13a22181ab9ae5dec184440276afb3e15c9a1f81753e7ece02a05a7a230beebab045a26d85eb047e218c6c20e12d13c5b532772e6
+Description: Interactive high-level object-oriented language (pyvenv binary, version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the pyvenv-3.12 binary.
+

@@ -1,0 +1,26 @@
+Package: gcc-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 44251
+Provides: c-compiler-loongarch64-linux-gnu
+Depends: cpp-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), libcc1-0 (>= 13.3.0-8), binutils-loongarch64-linux-gnu (>= 2.39), libgcc-13-dev (= 13.3.0-8), libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
+Breaks: gcc-13 (<< 13.2.0-11)
+Replaces: cpp-13-loongarch64-linux-gnu (<< 7.1.1-8), gcc-13 (<< 13.2.0-11)
+Filename: ./g/gcc-13-loongarch64-linux-gnu/gcc-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 14272684
+MD5sum: 8f5b6929b911f619b5d5801b3c533061
+SHA1: 3ea2719e810a6e7121de67701e628ffd64c77622
+SHA256: fb79e586ab35d7d20dc793560e85fcf6e754b9f9f89d4c272a15308533f99428
+SHA512: e4164df184ff05cd4d7c20be991095e447ac1dfabd382bde28c28ee7169110a678c2589530efc9f50e0e0c9248f0ccbb6374b6ff643f28e10b5e3a30545adc7b
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the loongarch64-linux-gnu architecture
+ This is the GNU C compiler for the loongarch64-linux-gnu architecture,
+ a fairly portable optimizing compiler for C.
+

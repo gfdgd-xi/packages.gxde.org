@@ -1,0 +1,21 @@
+Package: libasan8
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12261
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/libasan8/libasan8_14.2.0-7_loong64.deb
+Size: 2689448
+MD5sum: b962472550ab78d8d81cb070416982aa
+SHA1: c212ee18b6c65ff77d44668ae9caa11037c3bc86
+SHA256: bb4007e7ca43a8823431a51021449b83126d1a69ba2639809412cd2891755ec9
+SHA512: 2e8f6672bddeb35d60fbf7284d0e918729a358c507fb4a64ed8d9331968bce0ef16c8bbe69fe7160b6cafa632c088855c5001a55d891befdaa968759d3061f03
+Homepage: http://gcc.gnu.org/
+Description: AddressSanitizer -- a fast memory error detector
+ AddressSanitizer (ASan) is a fast memory error detector.  It finds
+ use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+

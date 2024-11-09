@@ -1,0 +1,27 @@
+Package: python3.12-minimal
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8776
+Pre-Depends: libc6 (>= 2.40)
+Depends: libpython3.12-minimal (= 3.12.7-1), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Recommends: python3.12
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./p/python3.12-minimal/python3.12-minimal_3.12.7-1_loong64.deb
+Size: 2107328
+MD5sum: ff1f3a6854af623046d20271ef3dd16a
+SHA1: 04a23426bf27a33847f83e15d9775a6e9fec2845
+SHA256: 88babb3cc2534b7c00b5ce834562f1eaac996018c11d44b0e21500fdc8465666
+SHA512: 4a98512f46837c1292e49813137279fcc35e58b0577930b8ccec3f6e257bf5f351c2be7d21faf2c3d273c9d0144815b3f31f7b1ea125dc0e80f213b7a1d4d60c
+Description: Minimal subset of the Python language (version 3.12)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.12-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.12
+

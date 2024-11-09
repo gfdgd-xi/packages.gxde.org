@@ -1,0 +1,22 @@
+Package: python3.12-gdbm
+Architecture: loong64
+Version: 3.12.7-1
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 105
+Depends: libc6 (>= 2.40), libgdbm6t64 (>= 1.16)
+Breaks: python3-gdbm (<< 3.12.5-2~)
+Replaces: python3-gdbm (<< 3.12.5-2~)
+Enhances: python3.12
+Filename: ./p/python3.12-gdbm/python3.12-gdbm_3.12.7-1_loong64.deb
+Size: 28808
+MD5sum: ab7cdf1e0a97b2499822a7a2296d0e22
+SHA1: e00bb202f917e28eccdb83de0d49a026a1403290
+SHA256: 08bf595869e2d50bc471871e625b255aa696d0a2cd304de516a0ec45ea7ed1da
+SHA512: 08d4b20a8565cdc52b061eec021f138f8445af053acad07ed95d58bb23f58451cf5fa7fef78ca75539200c1992612df8952fbfa935d94cc917b521703ec9b018
+Description: GNU dbm database support for Python (v3.12)
+ GNU dbm database module for Python. Install this if you want to
+ create or read GNU dbm database files with Python.
+

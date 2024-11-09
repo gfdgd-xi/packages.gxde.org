@@ -1,0 +1,23 @@
+Package: gfortran-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 24
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gfortran-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gfortran-14-doc
+Filename: ./g/gfortran-14/gfortran-14_14.2.0-7_loong64.deb
+Size: 11916
+MD5sum: ab22981c51eabb325ab1c29deeb2a66a
+SHA1: 2ef7ea16381f39c7e8613aed789da88af7b9cbfa
+SHA256: 6a24d2b4e4f84add5350d7534a961641b8229d168ca03c236594c5962bdc5fea
+SHA512: e15991d127e2c44d8a217ece87eba2efd8e296297a5da9acb66baf57426ebfc7f839e0721966e83fb35e2eb3df2e5c63e7dbce9cce385f3dc8a588be5b6be98e
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+

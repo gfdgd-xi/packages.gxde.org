@@ -1,0 +1,21 @@
+Package: gcc-13-base
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 109
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-13-base/gcc-13-base_13.3.0-8_loong64.deb
+Size: 47200
+MD5sum: 2f7cb95170fbe8fd10d7fbbf43383397
+SHA1: 0450c23f35b23a81e5d558c95937a5b206bf1eef
+SHA256: bd087349b6f26249eca52e80b4e6432cf5d311213021bbf0f345d0bb9737728e
+SHA512: 9e9c1a22dd041f82976f0ba306eb148125a85d4c30fca0627ea0f84e07a953703d9b37d69eb31d494df75da7a50f4cb5fc59a6869f6710c8d199ba23940f1873
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+

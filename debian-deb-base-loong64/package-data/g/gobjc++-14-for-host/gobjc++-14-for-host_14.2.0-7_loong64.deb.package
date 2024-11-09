@@ -1,0 +1,26 @@
+Package: gobjc++-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gobjc++-14-loongarch64-linux-gnu (>= 14), gobjc-14-for-host (= 14.2.0-7), g++-14-for-host (= 14.2.0-7)
+Filename: ./g/gobjc++-14-for-host/gobjc++-14-for-host_14.2.0-7_loong64.deb
+Size: 1096
+MD5sum: 7bee87e5523dbe13248154bfd7b82f79
+SHA1: fa15db32c1fe6cd706a87e3cfe241360120ea031
+SHA256: 5ad74185b959bea9e9802de297693e7c7dbeea49b4b0bf77d0556243cf50773d
+SHA512: e38919f99c0b5369c44d0c1bfbcb8a9117e331e460b9d127d2f3ca155005ca7b512438e6e42941881dec4640c97a51d74d00255b64ced06e60172b86db96b72a
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the host architecture
+ This is the GNU Objective-C++ compiler for the host architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

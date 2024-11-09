@@ -1,0 +1,20 @@
+Package: libcc1-0
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 145
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: ./l/libcc1-0/libcc1-0_12.2.0-14+loong64.1_loong64.deb
+Size: 38836
+MD5sum: 6653ba749f16c8444b9a49b9f79ada3a
+SHA1: f63d7b0475b77a66f664a14ee990bda0db1f3728
+SHA256: 1f610875aa139daf81e40542db75addc2301ffbb2cafb6d1ccd216492207f98a
+SHA512: e089142a6c0f40564924286c831926e819a8061bc9385a8862221ba7c03976b0b4d4b1f1cfa4158b51017d4678d21003930c515ad1e7cc9795c35e342edc4915
+Homepage: http://gcc.gnu.org/
+Description: GCC cc1 plugin for GDB
+ libcc1 is a plugin for GDB.
+

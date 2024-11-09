@@ -1,0 +1,24 @@
+Package: python3.13-venv
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 27
+Depends: python3.13 (= 3.13.0-1), python3-pip-whl (>= 22.2), python3-setuptools-whl
+Breaks: python3-pip (<< 1.5.6-4)
+Filename: ./p/python3.13-venv/python3.13-venv_3.13.0-1_loong64.deb
+Size: 5464
+MD5sum: 7b76c8422ad18144cb684005e233e52e
+SHA1: 46a7857334ff5e1f6fec7d5580f0bddbd94a7240
+SHA256: 09824a3151e2783010b53e9313181a84c13a93e85081ab15dd236897fe3d7d05
+SHA512: 7bedbcf6047db25673d97ec2d805d785ac15609d41e9415a72f40363a9b36598df95b1e7817cb8017ff4ae41d1a1c15285afbbefd5febaa022dafe0bc889aeaa
+Description: Interactive high-level object-oriented language (pyvenv binary, version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the pyvenv-3.13 binary.
+

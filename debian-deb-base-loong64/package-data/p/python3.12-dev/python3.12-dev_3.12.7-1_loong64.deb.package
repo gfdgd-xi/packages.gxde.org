@@ -1,0 +1,24 @@
+Package: python3.12-dev
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 509
+Depends: python3.12 (= 3.12.7-1), libpython3.12-dev (= 3.12.7-1), libpython3.12t64 (= 3.12.7-1)
+Recommends: libc6-dev | libc-dev
+Filename: ./p/python3.12-dev/python3.12-dev_3.12.7-1_loong64.deb
+Size: 506648
+MD5sum: 66590f1abce701e117f4f2c552eda0f4
+SHA1: a8cffeca18c81d52899c82762178b04ac5abe17e
+SHA256: c1a9a087028cc2b22c79608911208e5ce16a344af76b3ffc76be4826613015b8
+SHA512: fca09323a5cdc999551adf97e4cd94c204f5d921903ca1389033d56cfa4cc66ab34441d360a305254fe0b0ea253f24911854446738a842b1dddb3ac0c0e92dd5
+Description: Header files and a static library for Python (v3.12)
+ Header files, a static library and development tools for building
+ Python (v3.12) modules, extending the Python interpreter or embedding
+ Python (v3.12) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+

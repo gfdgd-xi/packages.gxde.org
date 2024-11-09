@@ -1,0 +1,22 @@
+Package: python3.13-nopie
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7761
+Depends: python3.13-minimal (= 3.13.0-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Filename: ./p/python3.13-nopie/python3.13-nopie_3.13.0-1_loong64.deb
+Size: 2124104
+MD5sum: 0050d08ca4f7336abb3ebfb0383dbdc4
+SHA1: 5f4e759eeed9926c65946d3100c3162c494d203c
+SHA256: c88afb7a399cbf8b68f9ec2f5ff8aff8e843a6fd1f7f660b0542c51d39fe0c4e
+SHA512: 6398c89754069cbfc2618ec15b809ea0d3d88d90ace09c536d7b1899e3bb53f4fbebd75e677147f36d7202a96c708d97fa460d419728ace531bec088d7474d91
+Description: Python interpreter linked without PIE (version 3.13)
+ This package contains the interpreter not built as position independent
+ executable. This interpreter is diverting the python3.13 executable, and making
+ the interpreter built with PIE available as python3.13-pie.
+Cnf-Visible-Pkgname: python3.13
+

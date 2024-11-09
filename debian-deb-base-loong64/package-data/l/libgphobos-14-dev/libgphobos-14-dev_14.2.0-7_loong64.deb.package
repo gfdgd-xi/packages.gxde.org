@@ -1,0 +1,22 @@
+Package: libgphobos-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 174187
+Depends: gcc-14-base (= 14.2.0-7), libgphobos5 (>= 14.2.0-7), zlib1g-dev
+Filename: ./l/libgphobos-14-dev/libgphobos-14-dev_14.2.0-7_loong64.deb
+Size: 16211092
+MD5sum: 732b0ff34aee2855245c8beccf2e1845
+SHA1: 9eefe5caedd246b36ae132a5abb2580aff5b64b8
+SHA256: c00612f64a11ef6be5a12041ea034785022e45e02e45a4c61811e6a30a7ca373
+SHA512: 9c2140003221208ffd80ab4417dde797aed6dae763d4de49cc99ba5ea312e1238dffda37b16b35707393119ea5fa3836115b0fdd2617b6a6fef8eabb79fbfec0
+Homepage: http://gcc.gnu.org/
+Description: Phobos D standard library
+ This is the Phobos standard library that comes with the D2 compiler.
+ .
+ For more information check http://www.dlang.org/phobos/
+

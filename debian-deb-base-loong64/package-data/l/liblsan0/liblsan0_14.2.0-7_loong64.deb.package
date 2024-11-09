@@ -1,0 +1,21 @@
+Package: liblsan0
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4280
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/liblsan0/liblsan0_14.2.0-7_loong64.deb
+Size: 1197876
+MD5sum: 84a7feb82cf0c1f8a2f36f21c13234fb
+SHA1: c18e7c535d167e9ac67043a70314e42c8836ae06
+SHA256: 281a92f8b907996a26f80c6161c9d7bba91b2d3597589e3db0c591112a34aaa0
+SHA512: f7ca06c0948cee4acd1a302866ab5a73cef0decf01d1dfbbd60b78ce99aeb1c9f86c627d30c62b0e2cde03a5af5288c527c6fa1d08a7c32d71f5f60dcff1847f
+Homepage: http://gcc.gnu.org/
+Description: LeakSanitizer -- a memory leak detector (runtime)
+ LeakSanitizer (Lsan) is a memory leak detector which is integrated
+ into AddressSanitizer.
+

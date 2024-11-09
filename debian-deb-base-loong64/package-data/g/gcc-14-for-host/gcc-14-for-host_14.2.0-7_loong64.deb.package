@@ -1,0 +1,24 @@
+Package: gcc-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (>= 14), cpp-14-for-host (= 14.2.0-7)
+Filename: ./g/gcc-14-for-host/gcc-14-for-host_14.2.0-7_loong64.deb
+Size: 1024
+MD5sum: 23552e64880aa0b726a941e1707b8f56
+SHA1: ad2558ec5fcafa2d15ac6622fa9dbb38fe2746d6
+SHA256: 84c5ceedcfec0fef40d2aa9269832efd5eab1934a553e9c00bed5eeb993006db
+SHA512: 058c29c4d7c4f4fe3f74e1dc6ee96135a537b97eb470059018f96362d129962bb7152117f76f905d27e2e18fe908eb9d9ef1bb732646f3dcc6ccfcd9bea41b25
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the host architecture
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

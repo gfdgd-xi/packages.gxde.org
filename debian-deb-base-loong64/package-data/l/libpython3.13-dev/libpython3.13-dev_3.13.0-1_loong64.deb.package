@@ -1,0 +1,27 @@
+Package: libpython3.13-dev
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 163673
+Depends: libpython3.13-stdlib (= 3.13.0-1), libpython3.13 (= 3.13.0-1), libexpat1-dev, zlib1g-dev
+Recommends: libc6-dev | libc-dev
+Filename: ./l/libpython3.13-dev/libpython3.13-dev_3.13.0-1_loong64.deb
+Size: 15651372
+MD5sum: 1b1fa1666b12f291dfabfc82f4ccdffe
+SHA1: 6567ac02938dffe41613b5fdefa2d95e297954ca
+SHA256: c855c5ea641409c61e488e4c1a22821e5bd5dcb710d4a82631b5fa0577aeb0dc
+SHA512: 4a3676ea13f62351dcaba8b425fe6df66d988f29729d39a599be04e3a385332964e832a941240385c67dfff9dbbe81ceddd7c7c11e3c4a56769fa29152475d58
+Description: Header files and a static library for Python (v3.13)
+ Header files, a static library and development tools for building
+ Python (v3.13) modules, extending the Python interpreter or embedding
+ Python (v3.13) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+ .
+ This package contains development files. It is normally not
+ used on it's own, but as a dependency of python3.13-dev.
+

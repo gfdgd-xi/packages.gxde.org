@@ -1,0 +1,26 @@
+Package: pulseaudio-module-lirc
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 67
+Depends: libc6 (>= 2.38), liblirc-client0t64 (>= 0.10.2), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1)
+Filename: ./p/pulseaudio-module-lirc/pulseaudio-module-lirc_16.1+dfsg1-5.1_loong64.deb
+Size: 25184
+MD5sum: 31263d1a2830f521b78849ea9bbc68c7
+SHA1: eb12938e1c4525e5de7826d87ee86e969372bc9c
+SHA256: c810876d9e2e75021546559d3545c2889f0959c5005c093ec4798b15fee25444
+SHA512: 00b25f0cbe73c12c5fc35964a5f82ed396bceebf451be22f44d8dc1b9ab0b3359c3ad7cdbea1b0f91bc1e3f0e1ad323c068c953bb424396f3c50a378810ece7c
+Homepage: https://www.pulseaudio.org
+Description: lirc module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables the volume of a PulseAudio sink to be controlled when
+ buttons of an infrared remote control are pressed (through LIRC).
+ .
+ The module is called module-lirc.
+

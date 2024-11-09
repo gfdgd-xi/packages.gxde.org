@@ -1,0 +1,23 @@
+Package: python3.13
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 804
+Depends: python3.13-minimal (= 3.13.0-1), libpython3.13-stdlib (= 3.13.0-1), media-types | mime-support, tzdata
+Recommends: ca-certificates
+Suggests: python3.13-venv, python3.13-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+Filename: ./p/python3.13/python3.13_3.13.0-1_loong64.deb
+Size: 729736
+MD5sum: 415ac991d6289d6a22e530d9a3d46b87
+SHA1: 3011800656f0d8e22ccb72745a53a81882e2fabb
+SHA256: 6070f35fed154adf9765e7336392a64c876fe91f96b83d8d295723559a438b7f
+SHA512: f53614abdd200502c0bace3ac305f08693360f738da6effbe42592c44c4af27020cd083ca1faed4e6e7434194c0a1250ecc72f1af8cab37ac8f5fae3914fa530
+Description: Interactive high-level object-oriented language (version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+

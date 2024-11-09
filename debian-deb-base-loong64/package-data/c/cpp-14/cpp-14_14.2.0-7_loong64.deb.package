@@ -1,0 +1,25 @@
+Package: cpp-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: interpreters
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 11
+Depends: gcc-14-base (= 14.2.0-7), cpp-14-loongarch64-linux-gnu (= 14.2.0-7)
+Suggests: gcc-14-locales (>= 14)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-14/cpp-14_14.2.0-7_loong64.deb
+Size: 1284
+MD5sum: 5ae5ee9c57ca756aa72c3229ec980aa8
+SHA1: 6c0567ccb716bebecc3a830af86c72987b10060d
+SHA256: b0c9237a61453e3458ad096d1cf9343cd8be9790df545c816809e376f4e837c5
+SHA512: 26563a02b6db105375cda8e7e0e9fde7400458c793aaf43bd3fa5cbf3332d5f1c0b4d2048744db6b1d299d313fb4c34a7eb943aa03dfa716ca41ea267b6c5cda
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+

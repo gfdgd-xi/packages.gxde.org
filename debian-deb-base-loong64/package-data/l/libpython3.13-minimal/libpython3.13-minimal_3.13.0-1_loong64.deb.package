@@ -1,0 +1,22 @@
+Package: libpython3.13-minimal
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5451
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Recommends: libpython3.13-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./l/libpython3.13-minimal/libpython3.13-minimal_3.13.0-1_loong64.deb
+Size: 854764
+MD5sum: 3e840ca3a185aa9eca5530e4c6ea319c
+SHA1: 160ddb8042cdc975b55370361ca4f04c4cd8bbd8
+SHA256: 30548f24a109fef8d586addd661fcbdd29e0ecbf67fd97cff7ea4c9f9a2353ab
+SHA512: 2185d705357e53238919fdbaa01e6c99adbcea490be09aaa0de6afc616d2f974e797f426e2dba2890cd13ac21422473e9f5d3fe04cfa9ba53328c52dd8ba97ce
+Description: Minimal subset of the Python language (version 3.13)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.13-minimal.
+

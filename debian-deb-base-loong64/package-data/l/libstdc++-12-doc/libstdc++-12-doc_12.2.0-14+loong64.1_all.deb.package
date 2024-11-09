@@ -1,0 +1,25 @@
+Package: libstdc++-12-doc
+Architecture: all
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: doc
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5052
+Depends: gcc-12-base (>= 12)
+Conflicts: libstdc++-10-doc, libstdc++-11-doc, libstdc++-4.8-doc, libstdc++-4.9-doc, libstdc++-5-doc, libstdc++-6-doc, libstdc++-7-doc, libstdc++-8-doc, libstdc++-9-doc, libstdc++5-3.3-doc, libstdc++5-doc, libstdc++6-4.0-doc, libstdc++6-4.1-doc, libstdc++6-4.2-doc, libstdc++6-4.3-doc, libstdc++6-4.4-doc, libstdc++6-4.5-doc, libstdc++6-4.6-doc, libstdc++6-4.7-doc, libstdc++6-doc
+Filename: ./l/libstdc++-12-doc/libstdc++-12-doc_12.2.0-14+loong64.1_all.deb
+Size: 2569144
+MD5sum: 751d320d5e053110800b1b87d24e0336
+SHA1: 3180618e306748401837bebcf46b52f630676a01
+SHA256: 0dad33aba3cddf65aab689c62a5e147d1effddcf47d39135d6f7298bde163990
+SHA512: afc4005b43e7f3afef3c499ebd556052ac7050b66fbfb5e7ed2eb2f0b08a02207a4446fb4d022312fac5b9a19b49e3e681b436e2b1c4bb485c5648eac227fcb3
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (documentation files)
+ This package contains documentation files for the GNU stdc++ library.
+ .
+ One set is the distribution documentation, the other set is the
+ source documentation including a namespace list, class hierarchy,
+ alphabetical list, compound list, file list, namespace members,
+ compound members and file members.
+

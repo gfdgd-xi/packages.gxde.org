@@ -1,0 +1,21 @@
+Package: g++-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 29
+Provides: c++-compiler, c++abi2-dev
+Depends: g++-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Filename: ./g/g++-13/g++-13_13.3.0-8_loong64.deb
+Size: 16376
+MD5sum: eaddeacaa951139285dcc7f8efe60c4b
+SHA1: 081d49f745b429e9dc0f420ae75d9be7a82a2de1
+SHA256: 74f4e79b6892a4fff4dd7f81b5cadcd57d6cd4ecd6b495390c8a52149fac3832
+SHA512: d9bc4150e4b050013e1512f4f521c50cce60b8e8fcff6007cf1c07ccca2ed8a5410ebfc881b4ae20c2052fcb415a609f381bd2215285c2bb938f218b58ec17ac
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+

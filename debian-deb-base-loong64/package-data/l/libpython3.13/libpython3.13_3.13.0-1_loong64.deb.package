@@ -1,0 +1,25 @@
+Package: libpython3.13
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8170
+Depends: libpython3.13-stdlib (= 3.13.0-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Replaces: libpython3.13
+Filename: ./l/libpython3.13/libpython3.13_3.13.0-1_loong64.deb
+Size: 2134016
+MD5sum: eaeee86063953a3bc7d29730f7b04525
+SHA1: 53a6fe4e28d98084b187ed724b532f0403eb38c0
+SHA256: 25b9c1a5d96ffb7c3a700ff23f05ecbc80933eacec3aba79fc81b12e8981a492
+SHA512: be58851d9bf80eb221509d4e45ed23c7f10351128dd5756c1cef0de7e71769fcbc4f987928ca18186dc92f8654da0898c7c7eb48379169faeebec831161dbe05
+Description: Shared Python runtime library (version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+

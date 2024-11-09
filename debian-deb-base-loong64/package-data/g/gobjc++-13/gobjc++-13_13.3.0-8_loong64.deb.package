@@ -1,0 +1,23 @@
+Package: gobjc++-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 14
+Provides: objc++-compiler
+Depends: gcc-13-base (= 13.3.0-8), gobjc++-13-loongarch64-linux-gnu (= 13.3.0-8), gobjc-13 (= 13.3.0-8), g++-13 (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Filename: ./g/gobjc++-13/gobjc++-13_13.3.0-8_loong64.deb
+Size: 6684
+MD5sum: 1f4d56df4d8d77b051de820dbef7c5c0
+SHA1: d635fd4db2a29fa5e318da4816ced476f796c4db
+SHA256: 160cfac5ff50e8ccac20ebe74997ebf7c6584637c24b5aa05408588f19203f9d
+SHA512: a761fdb99101aabbbdd648e2e32eceefe2caabf96920003cfbbdf2c6aef346b0eb20d7e75c86d6818518b3e07bfc4d46875249a79ecc104f826990b98650f416
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler
+ This is the GNU Objective-C++ compiler, which compiles
+ Objective-C++ on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+

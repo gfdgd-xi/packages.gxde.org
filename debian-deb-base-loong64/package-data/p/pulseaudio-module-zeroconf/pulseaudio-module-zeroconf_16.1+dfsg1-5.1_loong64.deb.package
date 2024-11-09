@@ -1,0 +1,26 @@
+Package: pulseaudio-module-zeroconf
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 120
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1), avahi-daemon
+Filename: ./p/pulseaudio-module-zeroconf/pulseaudio-module-zeroconf_16.1+dfsg1-5.1_loong64.deb
+Size: 35892
+MD5sum: 14bbdd2987f49f510bb8f3a2af3472b4
+SHA1: af5e6c8d1e2640c822c0276c5df3dba5a799aff1
+SHA256: 57dceec8cc5eeb3295414a09b410389b1032c7297c33fffb69a882d0e817a33f
+SHA512: f570d99e8d36ee03a15086e1b1adf4a7c2273bd9010bfb14ee981ca9f2e6f85e3fa9c7550710de7f1769406da0733ce13d796b5b4e5adc11a6dd1551e5dacf2a
+Homepage: https://www.pulseaudio.org
+Description: Zeroconf module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to publish available sinks and sources via
+ zeroconf (aka. Avahi, mdns).
+ .
+ The module is called module-zeroconf-publish.
+

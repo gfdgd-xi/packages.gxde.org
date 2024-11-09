@@ -1,0 +1,23 @@
+Package: gfortran-12
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 22070
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), gcc-12 (= 12.2.0-14+loong64.1), libgfortran-12-dev (= 12.2.0-14+loong64.1), libc6-dev (>= 2.23-1~), libc6 (>= 2.36), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-12-doc, libcoarrays-dev
+Filename: ./g/gfortran-12/gfortran-12_12.2.0-14+loong64.1_loong64.deb
+Size: 7293116
+MD5sum: 2bbf7dccec29352e3c9079d1e59c8307
+SHA1: de8b9f5d34c6b471892b764197493c2361bae258
+SHA256: 4aec93da6593a9259edd7d25dffa84590256d5e752e65bfd6c7d7961e0180ceb
+SHA512: 8285419bc710742dad28ee5beb31ea85297ffc258e4572d9617c0321eda9ee4e732d457ddb52048ac46c91d3e6602f3e19e879f6d9aee52a79cf48a76bdbf1cb
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+

@@ -1,0 +1,25 @@
+Package: libpulse-dev
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 479
+Depends: libpulse0 (= 16.1+dfsg1-5.1), libpulse-mainloop-glib0 (= 16.1+dfsg1-5.1), libglib2.0-dev
+Filename: ./l/libpulse-dev/libpulse-dev_16.1+dfsg1-5.1_loong64.deb
+Size: 89468
+MD5sum: 7e13424e59317064206dc58300075eb1
+SHA1: 879c8d5fe1f7b9f13f8f4afd87c9bc3a96a4ad87
+SHA256: 4e4be2a2255a13d8205bd31335fca66f88b5eff1a74d5d770bbd0d9fcdca8d55
+SHA512: c1704e18f4cfbcb6e78705499cc6ac13edbccb2852b428c0d4d775a41788f684a2078b78f2988bf139afc5053152279d5af0dcf73af6b2af815c459b4ffc93ba
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio client development headers and libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Headers and libraries for developing applications that access a PulseAudio
+ sound server via PulseAudio's native interface.
+

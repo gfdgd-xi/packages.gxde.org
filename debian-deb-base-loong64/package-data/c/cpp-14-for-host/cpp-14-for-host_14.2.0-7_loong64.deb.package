@@ -1,0 +1,29 @@
+Package: cpp-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: interpreters
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), cpp-14-loongarch64-linux-gnu (>= 14)
+Filename: ./c/cpp-14-for-host/cpp-14-for-host_14.2.0-7_loong64.deb
+Size: 1140
+MD5sum: a9aeb6708556134314d91421b832e91f
+SHA1: 332488049d158f61d6fff3fc40ee38676af08930
+SHA256: 5c862d37ae0a0f0f65ea9d7b16d1cb8f4c75ae614ef883edbc25b14eccdc82e2
+SHA512: 7a35353e3705601ac5ca8356b4be3f95efba9ebdd5ea8ae5a8e60f17294a959771715f39e48f7db1a5232e5da3145601e2fbc257de00fde7873742421079af44
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor for the host architecture
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor configured for the host architecture but not
+ the compiler.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

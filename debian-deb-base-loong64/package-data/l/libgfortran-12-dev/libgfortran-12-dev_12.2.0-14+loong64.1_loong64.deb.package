@@ -1,0 +1,21 @@
+Package: libgfortran-12-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3350
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libgcc-12-dev (= 12.2.0-14+loong64.1), libgfortran5 (>= 12.2.0-14+loong64.1)
+Filename: ./l/libgfortran-12-dev/libgfortran-12-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 378284
+MD5sum: 2c43609b0fc69232129c7f9d55b8541b
+SHA1: edb88abf2894c19eae85f95ac855a7a896a3a493
+SHA256: 0cacddb9993ccafe8c40937674d015abee41e3fbcd0c76cbbab9f733bcee1894
+SHA512: a4be66106d812f22dd1468b9aca48e98c50c3936b87f227b56d3bd11a2e129209f7493e8773931744cbe66ec2e14186c208a6a0fe12f3da88a2f6a978168db15
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+

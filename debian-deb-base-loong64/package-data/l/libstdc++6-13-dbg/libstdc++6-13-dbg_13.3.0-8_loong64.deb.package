@@ -1,0 +1,23 @@
+Package: libstdc++6-13-dbg
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 132337
+Depends: gcc-13-base (= 13.3.0-8), libstdc++6 (>= 13.3.0-8), libc6 (>= 2.40), libgcc-s1
+Recommends: libstdc++-13-dev (= 13.3.0-8)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-12-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-13-dbg/libstdc++6-13-dbg_13.3.0-8_loong64.deb
+Size: 14318980
+MD5sum: 90b1c130a4b80bf80e8b3d3f4a264e69
+SHA1: ececc9fcf4ac1a2efc8053b1b79b466aae90d648
+SHA256: 6783d8d03f4dfadd5c35f00b7999115a022d69ca22f45f2db3dcb4fcacc1a3f9
+SHA512: ad698d7b27390eba0db0ab83d673846ee74cc259bde06ddb21becf9944dc22e9c1c6f072888b656fa7f64d3fc3cd13f560b0e121eae3ba8cc54b97c2ce420279
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+

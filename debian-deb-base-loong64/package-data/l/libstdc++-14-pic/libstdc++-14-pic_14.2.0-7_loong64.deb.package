@@ -1,0 +1,23 @@
+Package: libstdc++-14-pic
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 37663
+Depends: gcc-14-base (= 14.2.0-7), libstdc++6 (>= 14.2.0-7), libstdc++-14-dev (= 14.2.0-7)
+Filename: ./l/libstdc++-14-pic/libstdc++-14-pic_14.2.0-7_loong64.deb
+Size: 3334356
+MD5sum: ea1bc1d45eb13f2e9fcd96056f8339a5
+SHA1: 4e218eb732b8a087ea4c4cb59e608489498eaa93
+SHA256: 11c44622999657f35a257d1a71afe3495e26e9c20f3fed8f85a8243afeefc221
+SHA512: 7b5bb0586166c15d8678a40a67964da7e869d24d0a10e8abaee4ef00ff99fcb7013c3eb4c66e64190579b7c91f57ec0e6c7f26b8951edc116678e727ad39186a
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (shared library subset kit)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+

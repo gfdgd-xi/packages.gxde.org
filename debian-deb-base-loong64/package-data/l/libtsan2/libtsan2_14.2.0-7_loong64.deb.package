@@ -1,0 +1,21 @@
+Package: libtsan2
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9987
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/libtsan2/libtsan2_14.2.0-7_loong64.deb
+Size: 2437232
+MD5sum: 5a9c7ab8b098d975c555bb133fb072f4
+SHA1: 1e201777c36e9619167f27f210b3861d2ff1dfa0
+SHA256: aadb20cae4d5adc6585cba4a004cad0698f4af0a862f7045160d7e90bcec7b34
+SHA512: bcd9efaf44552402e3ff907348f1a94a9ca829e7db0762c4aa39b9d42006bdf7b4b1d68002783fe266477ee50195a3369120d15bfa09e02babb2dfe6d5712779
+Homepage: http://gcc.gnu.org/
+Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
+ ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
+ The Linux and Mac versions are based on Valgrind.
+

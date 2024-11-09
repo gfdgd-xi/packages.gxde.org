@@ -1,0 +1,26 @@
+Package: g++-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 25220
+Provides: c++-compiler-loongarch64-linux-gnu
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libstdc++-13-dev (= 13.3.0-8), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gcc-13-doc (>= 13)
+Breaks: g++-13 (<< 13.2.0-11)
+Replaces: g++-13 (<< 13.2.0-11)
+Filename: ./g/g++-13-loongarch64-linux-gnu/g++-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 8488588
+MD5sum: 7182b0e27041e61dc274f5febdc5b457
+SHA1: a6f71699825472d8f4317cd2ed8722db003e8d54
+SHA256: a6fc0d4997ffb84f26d3bc5e8dd46f65be86622295f9ac855daad2ac1c7337db
+SHA512: f46d76a2abfa4c1c9f80faaa791806086866324e135d8e6b50b410a9b7036ebf46c9f4455ec842e73872f7a65bafe2d6487cf6e34a3ac7c1af3af5150542ea45
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for loongarch64-linux-gnu architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for loongarch64-linux-gnu architecture.
+

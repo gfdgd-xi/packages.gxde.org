@@ -1,0 +1,23 @@
+Package: libstdc++6-12-dbg
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 66362
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libstdc++6 (>= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 12.2.0-14+loong64.1)
+Recommends: libstdc++-12-dev (= 12.2.0-14+loong64.1)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-12-dbg/libstdc++6-12-dbg_12.2.0-14+loong64.1_loong64.deb
+Size: 8647232
+MD5sum: 20f9faed5fd58773b5fbfa4a1d537e1d
+SHA1: c1b80006778a1dfb98226056fb94d9d67d4f2ac0
+SHA256: 777120b73f63e1473d5f41e9c0282a7d15df1f52bdb881fbbe2a1fe4320d2183
+SHA512: a09ca759920c7e499c7e760766c57c8584c946bbd61062e2fdd21b99a7515a5e673f94d1db2bac8b2900dac588dc1c4432c8e62167de61bf81720802c2daefff
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+

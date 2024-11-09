@@ -1,0 +1,26 @@
+Package: libpython3.12-stdlib
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9334
+Depends: libpython3.12-minimal (= 3.12.7-1), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libnsl2 (>= 1.0), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6), libtirpc3t64 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Breaks: libpython3.12-testsuite (<< 3.12.0-3~), python3-gdbm (<< 3.9.9-1~)
+Replaces: libpython3.12-testsuite (<< 3.12.0-3~), python3-gdbm (<< 3.9.9-1~)
+Filename: ./l/libpython3.12-stdlib/libpython3.12-stdlib_3.12.7-1_loong64.deb
+Size: 1917168
+MD5sum: 37778df55b61c2f61e705396d7c5c753
+SHA1: aace9f29d575b3443b0dbf1611066247b41d3745
+SHA256: 9beaec98424e44e2a86b85b831176826a619282f76bcd8d2c4525ea7ce03174c
+SHA512: ddf6a02d3f9561979d951fa4d5c55fb500eb60ada6719fec474a161fd5c202ec2773f33b03d24cc187bb0a6b591d7224ba3b36b4fb69c479ca372e664260452f
+Description: Interactive high-level object-oriented language (standard library, version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.12's standard library. It is normally not
+ used on its own, but as a dependency of python3.12.
+

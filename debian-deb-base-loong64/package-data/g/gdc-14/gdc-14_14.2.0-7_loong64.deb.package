@@ -1,0 +1,24 @@
+Package: gdc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 111
+Provides: d-compiler, d-v2-compiler, gdc
+Depends: gdc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
+Replaces: gdc (<< 4.4.6-5)
+Filename: ./g/gdc-14/gdc-14_14.2.0-7_loong64.deb
+Size: 44596
+MD5sum: ecffd38cc64b835c90f04ace3d459eee
+SHA1: 81ec599b38d02ba5f52cdaf1e76dd9b036015690
+SHA256: d79ab9d15f20246979ce29a9ccfc1831a31d188aaaa6cd8df5c3aa18cfb4946c
+SHA512: f36ffcc9561a26edd25134fac3c53dba6b93993c1e3421ce1acd12565feb996f8781b1b77476e1df51fdbbb912c876e3a92daab727ea7aad2bfac8ffa5e3ff68
+Homepage: http://gcc.gnu.org/
+Description: GNU D compiler (version 2)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+

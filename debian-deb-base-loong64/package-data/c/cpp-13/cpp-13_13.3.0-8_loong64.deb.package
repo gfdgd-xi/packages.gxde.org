@@ -1,0 +1,25 @@
+Package: cpp-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: interpreters
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 11
+Depends: gcc-13-base (= 13.3.0-8), cpp-13-loongarch64-linux-gnu (= 13.3.0-8)
+Suggests: gcc-13-locales (>= 13)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-13/cpp-13_13.3.0-8_loong64.deb
+Size: 1284
+MD5sum: dee5b014e093f3b91ecab70acf341a41
+SHA1: b9f5249c70fc012e14ae2fbb17cffdbbe63c5d89
+SHA256: 3633e1744abe226db92fd230059dfc3e2fa010694db620108e7b83cd98221fbd
+SHA512: 7803945b5ea41f237f4d2e58e9d3dc538c52141b7c2ce3fde859afe8ef3d9ce7fc397eabeb3664080aa2826531bf93d1f5a4eee9b1f401a37c2caa016a33ec80
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+

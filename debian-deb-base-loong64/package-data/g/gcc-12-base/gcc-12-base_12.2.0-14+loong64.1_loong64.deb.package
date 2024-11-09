@@ -1,0 +1,21 @@
+Package: gcc-12-base
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 96
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-12-base/gcc-12-base_12.2.0-14+loong64.1_loong64.deb
+Size: 34488
+MD5sum: e94e9b329a452627a101256b39a2d745
+SHA1: 98588da1f0a6c6f6d5fdb261be214e3e79a2a9d1
+SHA256: dab25cc44cbf7f5c14999ac473e885ff9bf025424c99345e3a79ee20801a9b9c
+SHA512: 8d31fd914202f509174575fd8a6412d71da78f1ed4d08e4cca66aa1b7c9ce82578ce57f3c3f2dca249ee44d6519e2dc9cae7b9a3a8d7bb25657b57cbe94a8ab7
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+

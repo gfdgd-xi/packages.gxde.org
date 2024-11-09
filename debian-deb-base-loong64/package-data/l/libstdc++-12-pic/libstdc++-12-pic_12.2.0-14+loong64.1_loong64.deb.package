@@ -1,0 +1,23 @@
+Package: libstdc++-12-pic
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5906
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libstdc++6 (>= 12.2.0-14+loong64.1), libstdc++-12-dev (= 12.2.0-14+loong64.1)
+Filename: ./l/libstdc++-12-pic/libstdc++-12-pic_12.2.0-14+loong64.1_loong64.deb
+Size: 677416
+MD5sum: 06b1c7c10b8119256b9a52f0ffa9ef04
+SHA1: 9bceb4ca966e95feeed098b1bddbb9f64955fae7
+SHA256: 19bebc5dc29e1c7dacf62ede7ce8e260c926b420db881b9ced6e0e9150de76fb
+SHA512: a7f28e5b9afdd8090e9a4236cae6f6270eff81d04ca111166830d6820d2fd2b5f9371f5e7af0c318133582e72fdb40cd3e1063a5a79aa18c97be1d77195a43a8
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (shared library subset kit)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+

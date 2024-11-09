@@ -1,0 +1,26 @@
+Package: gfortran-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gfortran-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gfortran-14-for-host/gfortran-14-for-host_14.2.0-7_loong64.deb
+Size: 1080
+MD5sum: c180f58813c4922e5f71d1e1c75ff9e2
+SHA1: 2574e431b8aaf309682fcb274c14a8330d8be53b
+SHA256: 9bad00e4366e9567a200c4556dd79374626fa75442a0e84e93be0408fd2aa63e
+SHA512: 3051faeeb501d7a3dd607c6db2501bd746b326d9d12cf5bf7ec3e2a0872719c4237e37a6fe5d9ed86806446cbda3435b0c65d4ef3a62fc46fd84e1517afeb7f0
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the host architecture
+ This is the GNU Fortran compiler for the host architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

@@ -1,0 +1,27 @@
+Package: libstdc++-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 49585
+Provides: libstdc++-dev
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libstdc++6 (>= 13.3.0-8), libc6-dev (>= 2.23-1~)
+Suggests: libstdc++-13-doc
+Filename: ./l/libstdc++-13-dev/libstdc++-13-dev_13.3.0-8_loong64.deb
+Size: 4501328
+MD5sum: 78373fbffbe2ca0f182b644d28e9c60e
+SHA1: 09fec3c38af20a0464beab843b5cdaf71ec09390
+SHA256: 7c767ccf5b710306ca629a6bdc91698f601fce99197501e98f1540b6a368e0ab
+SHA512: babc66e11d31415647efacbae1297fc601150f754737d6232ad25634ef26ff9b1e5f3d8f2a06d67a1d07a7c24b58574178c10c5cbd407f92654ebf206ae84bc2
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+

@@ -1,0 +1,31 @@
+Package: python3.12-full
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 6
+Depends: python3.12 (= 3.12.7-1), libpython3.12-testsuite, python3.12-venv (= 3.12.7-1), idle-python3.12, python3.12-gdbm, python3.12-lib2to3, python3.12-tk, ca-certificates
+Recommends: python3.12-doc, python3.12-examples
+Suggests: python3.12-dev
+Filename: ./p/python3.12-full/python3.12-full_3.12.7-1_loong64.deb
+Size: 1276
+MD5sum: 2544090f361697ea116101691f5e9ee2
+SHA1: 2107faaf40dd7d3add4baf44e60e44530ce44ce6
+SHA256: fc751f9e2bce7cba6e34aba2a7d7a0551bcc023dc4efa98fdf67c2b291d518df
+SHA512: 0a3fe8378baa93ba82a4e657f9576e86467c96e4533f137f194736dc5d8a095e939fa34c448a55e748ed3625bdd31aa645af488f2bbc5ad24dbfeae851efee0c
+Description: Python Interpreter with complete class library (version 3.12)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on the full
+ standard library of Python for Python developers. Including modules
+ used only at build-time, such as venv and lib2to3, and modules with
+ complex dependencies, such as tk and IDLE. All batteries included.
+ .
+ According to the Debian Python policy, this package must not be used in
+ build dependencies, dependencies and recommendations.
+

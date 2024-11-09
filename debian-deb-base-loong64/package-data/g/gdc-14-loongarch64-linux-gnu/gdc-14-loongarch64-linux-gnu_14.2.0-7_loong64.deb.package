@@ -1,0 +1,24 @@
+Package: gdc-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 34398
+Depends: gcc-14-base (>= 14), g++-14-loongarch64-linux-gnu (>= 14.2.0-7), libgphobos-14-dev (>= 14), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Filename: ./g/gdc-14-loongarch64-linux-gnu/gdc-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10256724
+MD5sum: dc8587840ff80186843f44e3ff01552e
+SHA1: 0900e698d9a8702479b4a55484a04e255b18ec18
+SHA256: f444507d3a7805660b4317eb5dccc03742d73af042afe818de9f3f9bb5ea87e3
+SHA512: 8db3e5e168044921dd71ca9e65659dad6105587422bdf22771d751a4f8c83c6c23dfea1d0cbb42cf4d78872dc3897978362d922785492cacddd1e80297105351
+Homepage: http://gcc.gnu.org/
+Description: GNU D compiler (version 2) for the loongarch64-linux-gnu architecture
+ This is the GNU D compiler for the loongarch64-linux-gnu architecture,
+ which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+

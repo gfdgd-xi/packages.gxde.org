@@ -1,0 +1,22 @@
+Package: gcc-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 526
+Provides: c-compiler
+Depends: gcc-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), cpp-13 (= 13.3.0-8), binutils (>= 2.39)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
+Replaces: cpp-13 (<< 7.1.1-8)
+Filename: ./g/gcc-13/gcc-13_13.3.0-8_loong64.deb
+Size: 472092
+MD5sum: f787e1f9eafb320de4471e6a474ce7ca
+SHA1: 2afcc158a3fef9c5bd6ea201b7fc82db5b732d4d
+SHA256: 803396cee4267614831715a0988eaf70cdec284b5af61b1ce053fd8b14ce13ad
+SHA512: 5cea08578f0b2f9a86a55f94c8d60e6aef1636df15ec9361ca9ac1e464c713849978dceb3c8e460656cc1212b151eb869a522ca6641db7b4a4a316b3f233aff5
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+

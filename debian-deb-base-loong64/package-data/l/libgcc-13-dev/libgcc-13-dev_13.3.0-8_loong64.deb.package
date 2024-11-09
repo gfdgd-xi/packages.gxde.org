@@ -1,0 +1,24 @@
+Package: libgcc-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 10118
+Depends: gcc-13-base (= 13.3.0-8), libgcc-s1 (>= 13.3.0-8), libgomp1 (>= 13.3.0-8), libitm1 (>= 13.3.0-8), libatomic1 (>= 13.3.0-8)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-13-dev/libgcc-13-dev_13.3.0-8_loong64.deb
+Size: 815020
+MD5sum: 6c118657de01d466ff2d2f82eb5e23bb
+SHA1: ad39298a99916f4ebdefff6117d956494705096d
+SHA256: c9fc14ebf40c02159b866e6c4e169d6e2afa93e8e2cd26d321602a46a3b772d6
+SHA512: 5425f9353bce02580815f345fd6b278024059fb0099b21082ef55b7f6a47ca222d96c00acd420e7efaab2f5cede1db7b322ab1f82697f64a0beebacf2e14ceeb
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+

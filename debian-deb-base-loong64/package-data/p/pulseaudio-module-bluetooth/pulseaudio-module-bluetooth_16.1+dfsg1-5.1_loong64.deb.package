@@ -1,0 +1,27 @@
+Package: pulseaudio-module-bluetooth
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 336
+Depends: libbluetooth3 (>= 4.91), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.10.0), libgstreamer1.0-0 (>= 1.4.0), libpulse0 (= 16.1+dfsg1-5.1), libsbc1 (>= 2.0), pulseaudio (= 16.1+dfsg1-5.1), bluez
+Recommends: gstreamer1.0-plugins-bad (>= 1.19)
+Filename: ./p/pulseaudio-module-bluetooth/pulseaudio-module-bluetooth_16.1+dfsg1-5.1_loong64.deb
+Size: 98344
+MD5sum: 1be27f2db1983d1a58dc6bb18b03259e
+SHA1: 55816cbe80fc83e15fd004861ee1aa54c9e3d24f
+SHA256: 14b47bf0f67c62dd925cd8ed1d00e99c7e17ed7b58440cb75390d1b49e0f8bb6
+SHA512: 0d0ebc7e23c7eff713a43e8c2c26f41a270c875ef8df6ea658cb13657a6c9fd3a0c82ded27a99b2857332b530407f8be2a1ee4f9648da138fc9211b7ebb8b7c9
+Homepage: https://www.pulseaudio.org
+Description: Bluetooth module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to work with bluetooth devices, like headset
+ or audio gateway.
+ .
+ The module is called module-bluetooth
+

@@ -1,0 +1,27 @@
+Package: libpython3.12t64
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9674
+Provides: libpython3.12 (= 3.12.7-1)
+Depends: libpython3.12-stdlib (= 3.12.7-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Breaks: libpython3.12 (<< 3.12.7-1)
+Replaces: libpython3.12
+Filename: ./l/libpython3.12t64/libpython3.12t64_3.12.7-1_loong64.deb
+Size: 2160044
+MD5sum: 0da304f03e2ec2c516ccbbe525a429d4
+SHA1: 679921e0bc544bb1b7ddecefd6016c63b5215585
+SHA256: 870fe4fbe669486ebff8babe47e960f48fb54a045b152b1b6fcde3516f342566
+SHA512: c1e3b72d929554fa75e0d72df9545e3d974b8a9551c2ab412521c4b5ed79d93000a8019f371c4056a872d7d56f464197101085d6198533b8efb8d3d9d439480c
+Description: Shared Python runtime library (version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+

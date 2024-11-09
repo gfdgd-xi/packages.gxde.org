@@ -1,0 +1,21 @@
+Package: gcc-14-test-results
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 16463
+Depends: gcc-14-base (= 14.2.0-7)
+Replaces: g++-5 (<< 5.2.1-28)
+Filename: ./g/gcc-14-test-results/gcc-14-test-results_14.2.0-7_loong64.deb
+Size: 16842832
+MD5sum: 80ae41adac76db71836c061217e5950f
+SHA1: 521e83f7f1946ad33f691c8a83d71d41088a19b4
+SHA256: 8f63a14c82fb3e4062c48dd4a35408a55cd073ffcff5f2ccacd0726866387988
+SHA512: a5dc60a1546130bd0ce8fe443397aa3b14ee4bf91b35bde1fa58ab84bb9854698619918b575777142168b329c7d7b7d6f14e14a754a7a5dae61dc53d8ad8a668
+Homepage: http://gcc.gnu.org/
+Description: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+

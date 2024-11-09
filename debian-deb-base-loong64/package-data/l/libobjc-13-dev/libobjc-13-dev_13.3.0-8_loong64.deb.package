@@ -1,0 +1,21 @@
+Package: libobjc-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4241
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libobjc4 (>= 13.3.0-8)
+Filename: ./l/libobjc-13-dev/libobjc-13-dev_13.3.0-8_loong64.deb
+Size: 263404
+MD5sum: 935b9a542e7bd916070b4355d3424781
+SHA1: 705135e329bfa8ff40ee33aa30750600b357aaa8
+SHA256: 7b49de99d2f76d1b8553efe61219db1b073cc5e8cfc567b78e19432d1dcdb843
+SHA512: bcc6b5b85fc226fd06b523db91a084b37250ef267bfa197a38c91401a04f27c69bb149e61c5274aa85aa64b1e5a6fc2fd08a244470c725ccb5e53d10258d711f
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+

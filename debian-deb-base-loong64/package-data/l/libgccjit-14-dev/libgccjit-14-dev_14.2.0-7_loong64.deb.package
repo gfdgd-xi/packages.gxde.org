@@ -1,0 +1,22 @@
+Package: libgccjit-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 129
+Depends: gcc-14-base (= 14.2.0-7), libgccjit0 (>= 14.2.0-7)
+Suggests: libgccjit-14-dbg
+Filename: ./l/libgccjit-14-dev/libgccjit-14-dev_14.2.0-7_loong64.deb
+Size: 21092
+MD5sum: 6c218ab0d78e5ca46f3ddd65e289672a
+SHA1: a23778c15c19c410678de3a42ae59603427e9d2d
+SHA256: d38f8b3eac08bc820bc265bc9daf816f2f1f1b8c287a7f0a9896d66de9323f8c
+SHA512: 3e9998ceed71b8dafa7a07e422a88af265cc56487011bcd0a6f9ca1468b55bde0cccae6b2626063176f6466a8191980cd1b5c48b418341ff22c3076396e3a53d
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (development files)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
+

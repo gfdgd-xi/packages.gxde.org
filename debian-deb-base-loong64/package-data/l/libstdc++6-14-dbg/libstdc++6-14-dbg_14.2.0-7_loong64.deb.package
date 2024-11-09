@@ -1,0 +1,23 @@
+Package: libstdc++6-14-dbg
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 157953
+Depends: gcc-14-base (= 14.2.0-7), libstdc++6 (>= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 14.2.0-7)
+Recommends: libstdc++-14-dev (= 14.2.0-7)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-12-dbg, libstdc++6-13-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-14-dbg/libstdc++6-14-dbg_14.2.0-7_loong64.deb
+Size: 16027836
+MD5sum: 3782ad04e5d6fc723b83dce9f7f036d1
+SHA1: 260d3ea285dc6deea43cf66ce9e05bf23ef269b0
+SHA256: 4430ed94e7b986deb28cf4c3a709cd477698d57bd1c2a3ebb87ab65fb7223d7c
+SHA512: 0edf231540f543454977be8114349c1de83caba27cdbc343c994149c0dde68eae952ef916e50a8602fb5fce3069ec30e335c38f31dade0e8374da788beddb4d3
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+

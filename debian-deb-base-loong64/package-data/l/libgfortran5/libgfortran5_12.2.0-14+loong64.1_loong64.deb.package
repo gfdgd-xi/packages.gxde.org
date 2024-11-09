@@ -1,0 +1,22 @@
+Package: libgfortran5
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1493
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 12.2.0-14+loong64.1)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: ./l/libgfortran5/libgfortran5_12.2.0-14+loong64.1_loong64.deb
+Size: 334912
+MD5sum: 33ae9ad02305e6642e62dd3f1c61ba61
+SHA1: e56d871fc560eb33699ced47ef5e926fc9932dbc
+SHA256: e5b37e1e2583bbb43560f9ba7dec4d4432fed3761bed01d48d49ba7f0d871675
+SHA512: 9f53c2743cbe222e9ecfa7c6a89e9c35879ff13cf7eb695befee2e947795e72f99e848e9e61326a88b731478b65a50b9d7bcf86526eb3c5c557ec939f2476ba0
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications
+ Library needed for GNU Fortran applications linked against the
+ shared library.
+

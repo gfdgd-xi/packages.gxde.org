@@ -1,0 +1,20 @@
+Package: libgm2-19
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 676
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Filename: ./l/libgm2-19/libgm2-19_14.2.0-7_loong64.deb
+Size: 163752
+MD5sum: d0e07182a92b8aafaa33c8b0c90a4ecc
+SHA1: 7be38b7f62ab03e9d95b870f99899484068ed086
+SHA256: 4c5090d8b9fd2aa3f5ec3de746a4c8d70c0541027acf8b3b4c38595a691f8b10
+SHA512: 2b0aed9dc5652a7cf757edf3eaf2e901ed91c44376a66feff36c92763a2877defe449488ffd624a64875f76d550e6ecf769c5ee0c122a2ea9ee76b8dad4cdc1d
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 standard library (runtime library)
+ This is the GNU Modula-2 standard library that comes with the gm2 compiler.
+

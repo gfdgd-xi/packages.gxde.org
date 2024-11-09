@@ -1,0 +1,25 @@
+Package: pulseaudio-module-jack
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 137
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1)
+Filename: ./p/pulseaudio-module-jack/pulseaudio-module-jack_16.1+dfsg1-5.1_loong64.deb
+Size: 35840
+MD5sum: 359083ababebb70d7297699bf1512dd3
+SHA1: a574d78237ab67a0a5d8b7ba0637fed216e3c694
+SHA256: 0b3f0be442543d1fb1c01a5180e84d64823e68aabd9d2edf8476665e2d4fa348
+SHA512: ddc348949501d61e9c71e5a500a17e2269d4dd26ce6e51d9d00123397419913970f35ce0c95187fafe10de94eec326d8693a6bf89bc73c2cef7113fa16a80baf
+Homepage: https://www.pulseaudio.org
+Description: jackd modules for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ These modules enables PulseAudio to connect to a jackd daemon.
+ .
+ The modules are called module-jack-sink, module-jack-source.
+

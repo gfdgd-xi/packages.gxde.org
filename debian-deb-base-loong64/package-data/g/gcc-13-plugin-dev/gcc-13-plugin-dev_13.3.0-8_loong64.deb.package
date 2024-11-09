@@ -1,0 +1,21 @@
+Package: gcc-13-plugin-dev
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 8079
+Depends: gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.40)
+Filename: ./g/gcc-13-plugin-dev/gcc-13-plugin-dev_13.3.0-8_loong64.deb
+Size: 1273288
+MD5sum: 6335140e549d462bd56c9b6b20b4c2c4
+SHA1: 1b37cff8dc7e63be7e98539a41c487ddc3a11b1a
+SHA256: 2cc97e5b745b1dd2712bd68ea8d4ef1f25a93f0e34bb2df5604ec0affbd37613
+SHA512: 90e1bd046b785f82c9964fde8c1abb9b025c45d5c844155f2bdf78ee4111d2a3c0da79411cc358af29210d58c005ecab44f87056b9ab18edc937e4ef6c8da224
+Homepage: http://gcc.gnu.org/
+Description: Files for GNU GCC plugin development.
+ This package contains (header) files for GNU GCC plugin development. It
+ is only used for the development of GCC plugins, but not needed to run
+ plugins.
+

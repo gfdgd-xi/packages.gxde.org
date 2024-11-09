@@ -1,0 +1,22 @@
+Package: libubsan1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3769
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1)
+Filename: ./l/libubsan1/libubsan1_14.2.0-7_loong64.deb
+Size: 1071108
+MD5sum: d90ac0e6ec8d875a22540dcc41fe758a
+SHA1: b633ba9ae79ea30dd9fd7f8f3c068d0490512298
+SHA256: 2ba64bf203d6c097d7dc8065c3d75042aed5b4d68aa9b8da24fd3462e2887118
+SHA512: d57c176af3a7057c9896c7025040dc6862fa1215112ce2d61d1f5200f55da2f02a2c2549e8849476d381224191ed01a393eb0764a89c53fab37bbfc5fc08364f
+Homepage: http://gcc.gnu.org/
+Description: UBSan -- undefined behaviour sanitizer (runtime)
+ UndefinedBehaviorSanitizer can be enabled via -fsanitize=undefined.
+ Various computations will be instrumented to detect undefined behavior
+ at runtime. Available for C and C++.
+

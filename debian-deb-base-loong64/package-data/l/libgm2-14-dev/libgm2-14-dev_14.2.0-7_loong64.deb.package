@@ -1,0 +1,20 @@
+Package: libgm2-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 13007
+Depends: gcc-14-base (= 14.2.0-7), libgm2-19 (>= 14.2.0-7)
+Filename: ./l/libgm2-14-dev/libgm2-14-dev_14.2.0-7_loong64.deb
+Size: 1273280
+MD5sum: 908c38e1fe6de3c838f3f4dfc2a71d02
+SHA1: 007032cfaed1b3e4ac71078e05e0a3fa8b409888
+SHA256: ba66d1dd4779bf5b57aa5202cf393eff98cc7457634b4d6a8fb075616d8ce6d1
+SHA512: 4ecb982ed86c93bd3652f6e1b92a5cacf4540fe9b2480692a53cd8bf6d158a47222e3d0da0ea0f19ad311fa5fe2fce75379bf787be65f1426b111004fc821a85
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 standard library
+ This is the Modula-2 standard library that comes with the gm2 compiler.
+

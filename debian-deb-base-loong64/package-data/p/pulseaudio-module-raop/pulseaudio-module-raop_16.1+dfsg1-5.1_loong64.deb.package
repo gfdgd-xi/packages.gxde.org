@@ -1,0 +1,23 @@
+Package: pulseaudio-module-raop
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 154
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1), libssl3t64 (>= 3.0.0), pulseaudio (= 16.1+dfsg1-5.1), pulseaudio-module-zeroconf
+Filename: ./p/pulseaudio-module-raop/pulseaudio-module-raop_16.1+dfsg1-5.1_loong64.deb
+Size: 48612
+MD5sum: 6fb74f9b8840ceca02a70657ae041df1
+SHA1: 58d2e35269ca115a968e076fccf1b1d6866464af
+SHA256: 700b6c37edfe084575ebf02a9b6725bbab457cd762aa5bbac0d68d06dbdda023
+SHA512: e43f88dcc5c2c22e93b1782c034b8520553e9f1e183e4fe86ee86ca36913fa54ac7573ff312acae614ffcba6d6db92910707c980fbac7b44bec3b5fb958cac80
+Homepage: https://www.pulseaudio.org
+Description: RAOP module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to stream audio to an Apple Airport Express.
+

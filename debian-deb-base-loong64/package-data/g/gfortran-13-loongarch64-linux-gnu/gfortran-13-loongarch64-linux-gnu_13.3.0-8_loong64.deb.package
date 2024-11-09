@@ -1,0 +1,25 @@
+Package: gfortran-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 23724
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libgfortran-13-dev (= 13.3.0-8), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-13-doc, libcoarrays-dev
+Breaks: gfortran-13 (<< 13.2.0-11)
+Replaces: gfortran-13 (<< 13.2.0-11)
+Filename: ./g/gfortran-13-loongarch64-linux-gnu/gfortran-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 7976576
+MD5sum: cd3bdf7fc8b91cf1ce1c85a63ac51512
+SHA1: 2880eccae3f786c78ac69f4d22f43a5d01affbf1
+SHA256: 9d66da98defb17f8bca89d1642f9f0abe0dfd3f2f1331ab7ba28e08a110a1148
+SHA512: be672f313d781053d3c062817ad30d18a926a71810497be9c1dc8af30e46dc765a645588d9fe319d2e26055b5ae2dc6f6c584b2e3f54e6b59500e82aed443ba6
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Fortran compiler for the loongarch64-linux-gnu architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+

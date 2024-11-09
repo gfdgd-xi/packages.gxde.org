@@ -1,0 +1,31 @@
+Package: python3.13-full
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 6
+Depends: python3.13 (= 3.13.0-1), libpython3.13-testsuite, python3.13-venv (= 3.13.0-1), idle-python3.13, python3.13-gdbm, python3.13-tk, ca-certificates
+Recommends: python3.13-doc, python3.13-examples
+Suggests: python3.13-dev
+Filename: ./p/python3.13-full/python3.13-full_3.13.0-1_loong64.deb
+Size: 1260
+MD5sum: af9e928f94838acbcf78daa264e381c1
+SHA1: 42795f4018b2383ed2373b103fa108186aecb53e
+SHA256: f5a3fd7cd5f2f27bdd6b653ef762aa021740548eea7818dac945c991759a8476
+SHA512: f622d83d0edc8b69d4a360e0bd7a1d1f9648ba47330048350ecba133c2efc508d638f9158ff30991e0eb3faa4e5418415195a7f7861ed83d9aa0e78bae3ab339
+Description: Python Interpreter with complete class library (version 3.13)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on the full
+ standard library of Python for Python developers. Including modules
+ used only at build-time, such as venv, and modules with complex
+ dependencies, such as tk and IDLE. All batteries included.
+ .
+ According to the Debian Python policy, this package must not be used in
+ build dependencies, dependencies and recommendations.
+

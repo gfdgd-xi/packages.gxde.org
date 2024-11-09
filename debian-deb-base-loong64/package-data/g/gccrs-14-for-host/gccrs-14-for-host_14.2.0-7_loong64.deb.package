@@ -1,0 +1,32 @@
+Package: gccrs-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gccrs-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gccrs-14-for-host/gccrs-14-for-host_14.2.0-7_loong64.deb
+Size: 1152
+MD5sum: af71b06c04cc1cb1ebbdc94f716f3f35
+SHA1: 8418700415484968b72011521f570058d2a3e77c
+SHA256: 08e1aa4726329a7b68366bd966c74f8358701f5f7dbc8acb784e009ae5c58d5c
+SHA512: a37c40dbe2fe8b6dcaa4f545e556dc56ad1fba4c38e690e97413b126a6fd36a20a241969d2544fc0540f4e89294a963f730f647a9e86018a189e6c039bb1162f
+Homepage: http://gcc.gnu.org/
+Description: GNU Rust compiler for the host architecture
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ gccrs is a full alternative implementation of the Rust
+ language ontop of GCC with the goal to become fully
+ upstream with the GNU toolchain.
+ .
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

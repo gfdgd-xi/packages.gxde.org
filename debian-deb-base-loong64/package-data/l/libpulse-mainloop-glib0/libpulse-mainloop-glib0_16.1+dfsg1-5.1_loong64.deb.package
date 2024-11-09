@@ -1,0 +1,27 @@
+Package: libpulse-mainloop-glib0
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 70
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.28.0), libpulse0 (= 16.1+dfsg1-5.1)
+Filename: ./l/libpulse-mainloop-glib0/libpulse-mainloop-glib0_16.1+dfsg1-5.1_loong64.deb
+Size: 27072
+MD5sum: 89a1c363fb49b21232566fa42a1fcbd1
+SHA1: 67723c3f180a388bea1c5329d0a865656567d63b
+SHA256: ed7cf2c147ab673a5d96ecca091bf83971acd34d0614796f6c0c54c315d061ef
+SHA512: 9e6452652258852bcab1d2e8eb56d964ca1a9b373da8fefdb25ae895b4ebea2263820a0971a847fbb395cb664a28e6c55f7f4eb0fae645f760055bb07775f7d4
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio client libraries (glib support)
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+ .
+ This package adds support for glib2 client applications.
+

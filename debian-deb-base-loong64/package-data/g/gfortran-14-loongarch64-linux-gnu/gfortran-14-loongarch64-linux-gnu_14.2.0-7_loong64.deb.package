@@ -1,0 +1,23 @@
+Package: gfortran-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 30918
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (= 14.2.0-7), libgfortran-14-dev (= 14.2.0-7), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-14-doc, libcoarrays-dev
+Filename: ./g/gfortran-14-loongarch64-linux-gnu/gfortran-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 9778840
+MD5sum: cc3c2b3bf2e1c07eeb0180b37dd06b15
+SHA1: 7dede20cb8ffce94cd66340e3a840ddc40099ef6
+SHA256: 6bc88083f182773c66d3567ef631df3e2a6f6422d6e06f0b68d8918db92f2ae9
+SHA512: 524f91da7c9bd04c25c2f132ad1a0c4f98a2cb9361ff39e9d0ec589d104b30b6d35bce811e274c8cb024ab337ec3986fdf1943c9fce11300fb67f38981265f1e
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Fortran compiler for the loongarch64-linux-gnu architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+

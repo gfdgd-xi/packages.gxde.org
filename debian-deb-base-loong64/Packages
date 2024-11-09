@@ -288,6 +288,194 @@ Description: GNU cpio -- a program to manage archives of files
  files from one place to another.  It handles a number of cpio formats
  as well as reading and writing tar files.
 
+Package: cpp-12
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: interpreters
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 21185
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
+Suggests: gcc-12-locales (>= 12), cpp-12-doc (>= 12)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-12/cpp-12_12.2.0-14+loong64.1_loong64.deb
+Size: 6890112
+MD5sum: b4c885ed044db9d4251dbfd71b2853dc
+SHA1: 619d45f9ea89501843792072389afac42535bc8b
+SHA256: f045c75ca12c868c12bebae6b6d54f3958bbc9bc9d850b482ec8c665efbabe02
+SHA512: b1cf9f1a3277603148c89acf48c599bfca89263b875a947862faf60affc7f29fa608cb077c09c659e63f2844d2cb5a070f2c0b897cb44221fe8858019c2ef997
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+
+Package: cpp-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: interpreters
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 11
+Depends: gcc-13-base (= 13.3.0-8), cpp-13-loongarch64-linux-gnu (= 13.3.0-8)
+Suggests: gcc-13-locales (>= 13)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-13/cpp-13_13.3.0-8_loong64.deb
+Size: 1284
+MD5sum: dee5b014e093f3b91ecab70acf341a41
+SHA1: b9f5249c70fc012e14ae2fbb17cffdbbe63c5d89
+SHA256: 3633e1744abe226db92fd230059dfc3e2fa010694db620108e7b83cd98221fbd
+SHA512: 7803945b5ea41f237f4d2e58e9d3dc538c52141b7c2ce3fde859afe8ef3d9ce7fc397eabeb3664080aa2826531bf93d1f5a4eee9b1f401a37c2caa016a33ec80
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+
+Package: cpp-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: interpreters
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), cpp-13-loongarch64-linux-gnu (>= 13)
+Filename: ./c/cpp-13-for-host/cpp-13-for-host_13.3.0-8_loong64.deb
+Size: 1136
+MD5sum: ab333ba7d97b5a5a09a833580729ecd1
+SHA1: 693ab42752405cd0d2fa212e3dff218f9bf86f6e
+SHA256: 69bfd1a1543c2db975753f6543f9128ae455888e77634b13b2e844dec914935d
+SHA512: d5e5c25e31c83cdb3f9a33ad531effafd6ff730c5aa832420bc6d8f144e02f79d75fe72adc02b3a9e7a5697b579594a1f1db06583a944e3eea79403536601b0a
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor for the host architecture
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor configured for the host architecture but not
+ the compiler.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: cpp-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: interpreters
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 22556
+Depends: gcc-13-base (= 13.3.0-8), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gcc-13-locales (>= 13), cpp-13-doc (>= 13)
+Breaks: cpp-13 (<< 13.2.0-11), hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Replaces: cpp-13 (<< 13.2.0-11)
+Filename: ./c/cpp-13-loongarch64-linux-gnu/cpp-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 7528712
+MD5sum: 01e52ae7329f92b909210470fb9d6db7
+SHA1: 6ff29c74421e43f2e0151af30960e0f237199c2e
+SHA256: 02ce54e2aa192f9dcebaa670a787ffa72c80c77af8cd8070ed9ccab1f0b03853
+SHA512: 2dded5ddd4f3918dd51feada79bf99ea64307bfaea22f01e6a2660328c5b5906682c802531037f10dd2c6fbca698078906eb6f270a8403a6a214ca08853587d6
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor for loongarch64-linux-gnu
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor configured for loongarch64-linux-gnu architecture but not
+ the compiler.
+
+Package: cpp-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: interpreters
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 11
+Depends: gcc-14-base (= 14.2.0-7), cpp-14-loongarch64-linux-gnu (= 14.2.0-7)
+Suggests: gcc-14-locales (>= 14)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-14/cpp-14_14.2.0-7_loong64.deb
+Size: 1284
+MD5sum: 5ae5ee9c57ca756aa72c3229ec980aa8
+SHA1: 6c0567ccb716bebecc3a830af86c72987b10060d
+SHA256: b0c9237a61453e3458ad096d1cf9343cd8be9790df545c816809e376f4e837c5
+SHA512: 26563a02b6db105375cda8e7e0e9fde7400458c793aaf43bd3fa5cbf3332d5f1c0b4d2048744db6b1d299d313fb4c34a7eb943aa03dfa716ca41ea267b6c5cda
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+
+Package: cpp-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: interpreters
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), cpp-14-loongarch64-linux-gnu (>= 14)
+Filename: ./c/cpp-14-for-host/cpp-14-for-host_14.2.0-7_loong64.deb
+Size: 1140
+MD5sum: a9aeb6708556134314d91421b832e91f
+SHA1: 332488049d158f61d6fff3fc40ee38676af08930
+SHA256: 5c862d37ae0a0f0f65ea9d7b16d1cb8f4c75ae614ef883edbc25b14eccdc82e2
+SHA512: 7a35353e3705601ac5ca8356b4be3f95efba9ebdd5ea8ae5a8e60f17294a959771715f39e48f7db1a5232e5da3145601e2fbc257de00fde7873742421079af44
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor for the host architecture
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor configured for the host architecture but not
+ the compiler.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: cpp-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: interpreters
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 29646
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gcc-14-locales (>= 14), cpp-14-doc (>= 14)
+Breaks: hardening-wrapper (<< 2.8+nmu3), libmagics++-dev (<< 2.28.0-4)
+Filename: ./c/cpp-14-loongarch64-linux-gnu/cpp-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 9268096
+MD5sum: abf8964e270bc1b2359a4d8a82e94e88
+SHA1: b24c113c65b39193656558f9c77b15b4f9b5351d
+SHA256: 6aa74ff78ac79ca8d1d0e2af26cc38dd510bbd051dc69006cd6fc624b504286a
+SHA512: da0757997041a0198dc51704a456ce5633c58e8485b958ab4b256a1d6ee5297f35d7e954b634d04c386802439aa9b135046ca42c1a146cced2c604a8827e70cb
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor for loongarch64-linux-gnu
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor configured for loongarch64-linux-gnu architecture but not
+ the compiler.
+
 Package: cron
 Architecture: loong64
 Version: 3.0pl1-189
@@ -682,6 +870,484 @@ Description: utilities for finding files--find, xargs
  This package contains 'find' and 'xargs'; however, 'locate' has
  been split off into a separate package.
 
+Package: gcc-13-plugin-dev
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 8079
+Depends: gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.40)
+Filename: ./g/gcc-13-plugin-dev/gcc-13-plugin-dev_13.3.0-8_loong64.deb
+Size: 1273288
+MD5sum: 6335140e549d462bd56c9b6b20b4c2c4
+SHA1: 1b37cff8dc7e63be7e98539a41c487ddc3a11b1a
+SHA256: 2cc97e5b745b1dd2712bd68ea8d4ef1f25a93f0e34bb2df5604ec0affbd37613
+SHA512: 90e1bd046b785f82c9964fde8c1abb9b025c45d5c844155f2bdf78ee4111d2a3c0da79411cc358af29210d58c005ecab44f87056b9ab18edc937e4ef6c8da224
+Homepage: http://gcc.gnu.org/
+Description: Files for GNU GCC plugin development.
+ This package contains (header) files for GNU GCC plugin development. It
+ is only used for the development of GCC plugins, but not needed to run
+ plugins.
+
+Package: gfortran-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gfortran-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gfortran-14-for-host/gfortran-14-for-host_14.2.0-7_loong64.deb
+Size: 1080
+MD5sum: c180f58813c4922e5f71d1e1c75ff9e2
+SHA1: 2574e431b8aaf309682fcb274c14a8330d8be53b
+SHA256: 9bad00e4366e9567a200c4556dd79374626fa75442a0e84e93be0408fd2aa63e
+SHA512: 3051faeeb501d7a3dd607c6db2501bd746b326d9d12cf5bf7ec3e2a0872719c4237e37a6fe5d9ed86806446cbda3435b0c65d4ef3a62fc46fd84e1517afeb7f0
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the host architecture
+ This is the GNU Fortran compiler for the host architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: g++-12
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 23567
+Provides: c++-compiler, c++abi2-dev
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), gcc-12 (= 12.2.0-14+loong64.1), libstdc++-12-dev (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
+Suggests: gcc-12-doc (>= 12)
+Filename: ./g/g++-12/g++-12_12.2.0-14+loong64.1_loong64.deb
+Size: 7709856
+MD5sum: b7076a435bb51367ad10e532c32b49fe
+SHA1: b58fcda5d579e6c4ff88205a98b3f8e289a3bf42
+SHA256: 097e1ac57d80dc16e476f0959b406f94f6e6e992cb4daed2dfd787a4f2881ab1
+SHA512: e54d25814405eb829e6a7e838b9e65ccd0e1f13ce37355c3a184a2a8e0c3b2180e50e5dba1fbf8c685cfebad82ab501239101f154dfefcc24f210d9960b0d122
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+
+Package: g++-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 29
+Provides: c++-compiler, c++abi2-dev
+Depends: g++-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Filename: ./g/g++-13/g++-13_13.3.0-8_loong64.deb
+Size: 16376
+MD5sum: eaddeacaa951139285dcc7f8efe60c4b
+SHA1: 081d49f745b429e9dc0f420ae75d9be7a82a2de1
+SHA256: 74f4e79b6892a4fff4dd7f81b5cadcd57d6cd4ecd6b495390c8a52149fac3832
+SHA512: d9bc4150e4b050013e1512f4f521c50cce60b8e8fcff6007cf1c07ccca2ed8a5410ebfc881b4ae20c2052fcb415a609f381bd2215285c2bb938f218b58ec17ac
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+
+Package: g++-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), g++-13-loongarch64-linux-gnu (>= 13), gcc-13-for-host (= 13.3.0-8)
+Filename: ./g/g++-13-for-host/g++-13-for-host_13.3.0-8_loong64.deb
+Size: 1048
+MD5sum: 00e6a1d3ac633ea1573b744d54370be6
+SHA1: 9445ad180465edd4a908a9ab5be6a4e4e4c4ab16
+SHA256: b7e9af6a8d21724017a79bea2d0aaaf162836fd71081882abe2e7870597ed56a
+SHA512: 7b818d3cc7202ca052061f01599087f8f148ef4f105320aa9a36aeaec8348c431c3cf2a81969f09a50010e8061f6636bdbf1d44146b3869b714c3f0b05dc349f
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for the host architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for the host architecture.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: g++-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 25220
+Provides: c++-compiler-loongarch64-linux-gnu
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libstdc++-13-dev (= 13.3.0-8), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gcc-13-doc (>= 13)
+Breaks: g++-13 (<< 13.2.0-11)
+Replaces: g++-13 (<< 13.2.0-11)
+Filename: ./g/g++-13-loongarch64-linux-gnu/g++-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 8488588
+MD5sum: 7182b0e27041e61dc274f5febdc5b457
+SHA1: a6f71699825472d8f4317cd2ed8722db003e8d54
+SHA256: a6fc0d4997ffb84f26d3bc5e8dd46f65be86622295f9ac855daad2ac1c7337db
+SHA512: f46d76a2abfa4c1c9f80faaa791806086866324e135d8e6b50b410a9b7036ebf46c9f4455ec842e73872f7a65bafe2d6487cf6e34a3ac7c1af3af5150542ea45
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for loongarch64-linux-gnu architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for loongarch64-linux-gnu architecture.
+
+Package: g++-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 33
+Provides: c++-compiler, c++abi2-dev
+Depends: g++-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/g++-14/g++-14_14.2.0-7_loong64.deb
+Size: 20040
+MD5sum: 0b9c867adb13b4df1760c6efc3fe5d62
+SHA1: 6f9e83c2cd875ee9f055301209aca272225abbe0
+SHA256: caa7a99af17d87fb9404aed902ef1028414d316f6a202c27dda006a3a1062a14
+SHA512: cb38da19c6c6b0acf4cdc9d949cd707f06ea24b19de04c2c54dce8e0bbe7ceb4b3e0b302928825192d190f1c9d59839acde306e8c3cec5db87ca58438910a444
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+
+Package: g++-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), g++-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/g++-14-for-host/g++-14-for-host_14.2.0-7_loong64.deb
+Size: 1052
+MD5sum: fee54172bce316c17bd8c4bc8b4568f4
+SHA1: 6ea9185da7ebc309d3b051e8fcfc9e655ab6e960
+SHA256: c4bdc6fb7a6128e1b562bb5438ebc2d699e8ead4851f685e589d96b85ab4d7d5
+SHA512: 6cba77dc396ba18a97c122c426b888299e42087f233812a19c4b2d56a9afafe7d1674ca5d29afaa761fa84fa5de7db3a17369974829a7e4729f1b2f19b927020
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for the host architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for the host architecture.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: g++-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 32726
+Provides: c++-compiler-loongarch64-linux-gnu
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (= 14.2.0-7), libstdc++-14-dev (= 14.2.0-7), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/g++-14-loongarch64-linux-gnu/g++-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10333432
+MD5sum: 9540fcde565c52f5b68cc732256df655
+SHA1: ecb0f7e4218489443252ed904fa037579cdf96b9
+SHA256: 03f4258211340eb0ef28a7613c53720aee70f0d05ac350706b2238ac27acec83
+SHA512: 6d2d17b19a79c70098b36346749a19664ce3d4478afa420b786672a061021b69ae9b44001c24e716e83697cd9efd89ecd19f345ea7b1df869b665d31901ef714
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for loongarch64-linux-gnu architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for loongarch64-linux-gnu architecture.
+
+Package: gcc-12
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 42844
+Provides: c-compiler
+Depends: cpp-12 (= 12.2.0-14+loong64.1), gcc-12-base (= 12.2.0-14+loong64.1), libcc1-0 (>= 12.2.0-14+loong64.1), binutils (>= 2.40), libgcc-12-dev (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-12-doc (>= 12), gcc-12-locales (>= 12)
+Replaces: cpp-12 (<< 7.1.1-8)
+Filename: ./g/gcc-12/gcc-12_12.2.0-14+loong64.1_loong64.deb
+Size: 13355976
+MD5sum: cbc2656657112e44deefde216cb3f2f1
+SHA1: d4f6175b4f4d630c5989526d499da7ac20bd7918
+SHA256: 38a23d4792135674105fc6d6a0fd892b62d883f9f54161696dfa389ae2e753bd
+SHA512: 0ed04540f6af7cd7403a3941021f8b9a74a37d677cb2156048a44737e528851a1af653afbb908fcd61c925805bc5cbdca0276bb43a8eb42b4638905d0a2c4bf5
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
+Package: gcc-12-base
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 96
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-12-base/gcc-12-base_12.2.0-14+loong64.1_loong64.deb
+Size: 34488
+MD5sum: e94e9b329a452627a101256b39a2d745
+SHA1: 98588da1f0a6c6f6d5fdb261be214e3e79a2a9d1
+SHA256: dab25cc44cbf7f5c14999ac473e885ff9bf025424c99345e3a79ee20801a9b9c
+SHA512: 8d31fd914202f509174575fd8a6412d71da78f1ed4d08e4cca66aa1b7c9ce82578ce57f3c3f2dca249ee44d6519e2dc9cae7b9a3a8d7bb25657b57cbe94a8ab7
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: gcc-12-locales
+Architecture: all
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12423
+Depends: gcc-12-base (>= 12), cpp-12 (>= 12)
+Recommends: gcc-12 (>= 12)
+Filename: ./g/gcc-12-locales/gcc-12-locales_12.2.0-14+loong64.1_all.deb
+Size: 1759376
+MD5sum: e544ec7bb4ef41878b06f7c33ce35388
+SHA1: 47c5339a2916c0e64cf6f449a152a75587eb7ef1
+SHA256: 7aef6b5b58043aa28c7afacb159b889a900bfca342e359921c6358d5e6be2b81
+SHA512: 61c2467e01e1b2315b6ac2906059eff879a17c42e50ba59789125559918e525d3aabb4712309f0ab067a58f780bd8b2de01d5dbcb46a41f3c31018f9db028920
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU compiler collection (native language support files)
+ Native language support for GCC. Lets GCC speak your language,
+ if translations are available.
+ .
+ Please do NOT submit bug reports in other languages than "C".
+ Always reset your language settings to use the "C" locales.
+
+Package: gcc-12-plugin-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 7915
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), gcc-12 (= 12.2.0-14+loong64.1), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.36)
+Filename: ./g/gcc-12-plugin-dev/gcc-12-plugin-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 1257480
+MD5sum: c90880b84ff4c53d7211f2af2eede91e
+SHA1: ed00b788959b37e853c626742ddb7d2444536e7c
+SHA256: 37c0f0900935f84891a259d57c75261f743c5e1f8490f810ff90bbad5275b1ae
+SHA512: edee1812373eebb9ddfcf57767f1da16a2f753a6789fbf2c57d6530db28768960da4421b2bf15a02433f2c46f839489b2fbfe07d4899f177eda0f987aa8a952d
+Homepage: http://gcc.gnu.org/
+Description: Files for GNU GCC plugin development.
+ This package contains (header) files for GNU GCC plugin development. It
+ is only used for the development of GCC plugins, but not needed to run
+ plugins.
+
+Package: gcc-12-source
+Architecture: all
+Version: 12.2.0-14+loong64.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 100993
+Depends: make, quilt, patchutils, sharutils, gawk, lsb-release, time, m4, libtool, autoconf2.69
+Filename: ./g/gcc-12-source/gcc-12-source_12.2.0-14+loong64.1_all.deb
+Size: 83444128
+MD5sum: 6fe4f654c653e57bdd75974eb4e6b9e3
+SHA1: 5b04dbfee47df44ebf92e1f74f799ae14d783775
+SHA256: fe1e38bc6d4d82a926167198052101944490b014c0d7393bda1a9ec337c8d18b
+SHA512: 15eaebc8f61c5adbaeb6ee0de46048b0ba220fdb7336f64589adff1ccd4556c603fa8c8150df7f022d12b9866a08b86d6b31dfab6d3c0076e20bc9109f288929
+Homepage: http://gcc.gnu.org/
+Description: Source of the GNU Compiler Collection
+ This package contains the sources and patches which are needed to
+ build the GNU Compiler Collection (GCC).
+
+Package: gcc-12-test-results
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 8
+Depends: gcc-12-base (= 12.2.0-14+loong64.1)
+Replaces: g++-5 (<< 5.2.1-28)
+Filename: ./g/gcc-12-test-results/gcc-12-test-results_12.2.0-14+loong64.1_loong64.deb
+Size: 1104
+MD5sum: be22d9011868bb4d2a313345ae1f520e
+SHA1: 5fbb8330eb8e18a7631c05cf21aed591e71ab0d3
+SHA256: c1a8351cde62fab258f137ce9e088d584ed24a9af4d74b3e5c24cdf3227eb91d
+SHA512: e97fa5a334db5a356ebfa06fc56dc4ef46af49c96653bc56d28d111758e1a8a684b3af07ad6cd65b43ceba3ec8af641b5bcd12981a9fce73bb309e19b857b85f
+Homepage: http://gcc.gnu.org/
+Description: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+
+Package: gcc-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 526
+Provides: c-compiler
+Depends: gcc-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), cpp-13 (= 13.3.0-8), binutils (>= 2.39)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
+Replaces: cpp-13 (<< 7.1.1-8)
+Filename: ./g/gcc-13/gcc-13_13.3.0-8_loong64.deb
+Size: 472092
+MD5sum: f787e1f9eafb320de4471e6a474ce7ca
+SHA1: 2afcc158a3fef9c5bd6ea201b7fc82db5b732d4d
+SHA256: 803396cee4267614831715a0988eaf70cdec284b5af61b1ce053fd8b14ce13ad
+SHA512: 5cea08578f0b2f9a86a55f94c8d60e6aef1636df15ec9361ca9ac1e464c713849978dceb3c8e460656cc1212b151eb869a522ca6641db7b4a4a316b3f233aff5
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
+Package: gcc-13-base
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 109
+Breaks: gnat (<< 7)
+Filename: ./g/gcc-13-base/gcc-13-base_13.3.0-8_loong64.deb
+Size: 47200
+MD5sum: 2f7cb95170fbe8fd10d7fbbf43383397
+SHA1: 0450c23f35b23a81e5d558c95937a5b206bf1eef
+SHA256: bd087349b6f26249eca52e80b4e6432cf5d311213021bbf0f345d0bb9737728e
+SHA512: 9e9c1a22dd041f82976f0ba306eb148125a85d4c30fca0627ea0f84e07a953703d9b37d69eb31d494df75da7a50f4cb5fc59a6869f6710c8d199ba23940f1873
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: gcc-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (>= 13), cpp-13-for-host (= 13.3.0-8)
+Filename: ./g/gcc-13-for-host/gcc-13-for-host_13.3.0-8_loong64.deb
+Size: 1028
+MD5sum: d27a0912a7f2bcb3e5fd608e2b40833f
+SHA1: d3a744166144530d3ef5344d71f23053a1bc6056
+SHA256: 3fbd04f313b518a8f9d5eb96bb2e6285baa5f923f93aa4fb398959b43e4629b5
+SHA512: 850c8d1903989e28274e7cead27574d66c225c864ddb7a1daecfa32e2230af7c95e9e0b50110cb24afd063dca2da17273d47725180155c293c3256cb9c4507f4
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the host architecture
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gcc-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 44251
+Provides: c-compiler-loongarch64-linux-gnu
+Depends: cpp-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), libcc1-0 (>= 13.3.0-8), binutils-loongarch64-linux-gnu (>= 2.39), libgcc-13-dev (= 13.3.0-8), libc6 (>= 2.40), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-13-doc (>= 13), gcc-13-locales (>= 13)
+Breaks: gcc-13 (<< 13.2.0-11)
+Replaces: cpp-13-loongarch64-linux-gnu (<< 7.1.1-8), gcc-13 (<< 13.2.0-11)
+Filename: ./g/gcc-13-loongarch64-linux-gnu/gcc-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 14272684
+MD5sum: 8f5b6929b911f619b5d5801b3c533061
+SHA1: 3ea2719e810a6e7121de67701e628ffd64c77622
+SHA256: fb79e586ab35d7d20dc793560e85fcf6e754b9f9f89d4c272a15308533f99428
+SHA512: e4164df184ff05cd4d7c20be991095e447ac1dfabd382bde28c28ee7169110a678c2589530efc9f50e0e0c9248f0ccbb6374b6ff643f28e10b5e3a30545adc7b
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the loongarch64-linux-gnu architecture
+ This is the GNU C compiler for the loongarch64-linux-gnu architecture,
+ a fairly portable optimizing compiler for C.
+
+Package: gcc-13-test-results
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12958
+Depends: gcc-13-base (= 13.3.0-8)
+Replaces: g++-5 (<< 5.2.1-28)
+Filename: ./g/gcc-13-test-results/gcc-13-test-results_13.3.0-8_loong64.deb
+Size: 13254032
+MD5sum: 81371e6e50809d93b7a495d0371007ad
+SHA1: 1513ff37c598ebae9b29091f13d34cefbfae9122
+SHA256: c0e08ec2e171106e156adf8a57fe98144c3f4b81c4bbe9bf353a1d7b79969053
+SHA512: 5db4f592b2cdd897ab3955e6aad87b825331be3f66509c433a0e50eb89ee74d11071f72f8c7dc3d527e2034e7a6a4bca3d14600f0f5a918b4975ee25286cb0db
+Homepage: http://gcc.gnu.org/
+Description: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+
+Package: gcc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 597
+Provides: c-compiler
+Depends: gcc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), cpp-14 (= 14.2.0-7), binutils (>= 2.39)
+Recommends: libc6-dev (>= 2.23-1~)
+Suggests: gcc-14-doc (>= 14), gcc-14-locales (>= 14)
+Replaces: cpp-14 (<< 7.1.1-8)
+Filename: ./g/gcc-14/gcc-14_14.2.0-7_loong64.deb
+Size: 516672
+MD5sum: 701b21f45b46c6135431fff0dfb8629c
+SHA1: 337f1a295a2277513d1440be22122c1a5c004ba1
+SHA256: bf73931475697d8f7896661a8a259243425acd38a73d9bc78519b47a733f87cf
+SHA512: e9cc147dce768a67d22df339cdf3cb63f488a87bd5d15696eb647be9daf4a3b7d172a454389411ca562a07709adceb4861cf8863a364943136ceb15d8db55a87
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
 Package: gcc-14-base
 Architecture: loong64
 Version: 14.2.0-7
@@ -702,6 +1368,824 @@ Homepage: http://gcc.gnu.org/
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
  contained in the GNU Compiler Collection (GCC).
+
+Package: gcc-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (>= 14), cpp-14-for-host (= 14.2.0-7)
+Filename: ./g/gcc-14-for-host/gcc-14-for-host_14.2.0-7_loong64.deb
+Size: 1024
+MD5sum: 23552e64880aa0b726a941e1707b8f56
+SHA1: ad2558ec5fcafa2d15ac6622fa9dbb38fe2746d6
+SHA256: 84c5ceedcfec0fef40d2aa9269832efd5eab1934a553e9c00bed5eeb993006db
+SHA512: 058c29c4d7c4f4fe3f74e1dc6ee96135a537b97eb470059018f96362d129962bb7152117f76f905d27e2e18fe908eb9d9ef1bb732646f3dcc6ccfcd9bea41b25
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the host architecture
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gcc-14-plugin-dev
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9252
+Depends: gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7), libgmp-dev (>= 2:5.0.1~), libmpc-dev (>= 1.0), libc6 (>= 2.40)
+Filename: ./g/gcc-14-plugin-dev/gcc-14-plugin-dev_14.2.0-7_loong64.deb
+Size: 1404016
+MD5sum: fec5bf0318f3549169177b3abc7f6b4a
+SHA1: e272ebb80b2a441160bcf896b40480594dc8bbbb
+SHA256: 8e4cfbfdc40150d40ea3376f9bdcaa6ceaf15ab6311ccb95d4f6f9ed797e0131
+SHA512: ec8cd9380de390e716ddd23cfa24cc786c3c2ec0fd7ebab22f5e43b63fa2f6b604b4a16d1a9f92e49507285bbf00d4520c976fae5c30d0884819cc5799c4a472
+Homepage: http://gcc.gnu.org/
+Description: Files for GNU GCC plugin development.
+ This package contains (header) files for GNU GCC plugin development. It
+ is only used for the development of GCC plugins, but not needed to run
+ plugins.
+
+Package: gcc-14-test-results
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 16463
+Depends: gcc-14-base (= 14.2.0-7)
+Replaces: g++-5 (<< 5.2.1-28)
+Filename: ./g/gcc-14-test-results/gcc-14-test-results_14.2.0-7_loong64.deb
+Size: 16842832
+MD5sum: 80ae41adac76db71836c061217e5950f
+SHA1: 521e83f7f1946ad33f691c8a83d71d41088a19b4
+SHA256: 8f63a14c82fb3e4062c48dd4a35408a55cd073ffcff5f2ccacd0726866387988
+SHA512: a5dc60a1546130bd0ce8fe443397aa3b14ee4bf91b35bde1fa58ab84bb9854698619918b575777142168b329c7d7b7d6f14e14a754a7a5dae61dc53d8ad8a668
+Homepage: http://gcc.gnu.org/
+Description: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+
+Package: gccrs-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 8
+Provides: gccrs, rust-compiler
+Depends: gcc-14-base (>= 14), gccrs-14-loongarch64-linux-gnu (= 14.2.0-7), g++-14 (>= 14)
+Filename: ./g/gccrs-14/gccrs-14_14.2.0-7_loong64.deb
+Size: 1120
+MD5sum: 575a05d185943a7dd58e199ba605928e
+SHA1: 8e3a7a722645c9fd5728752ae7e46d3a5f7c9ef1
+SHA256: bf7731b7242d6bc96260777c069952fafcd91da58172f3a074d50ec500fb5044
+SHA512: 0f949b6dadfa0dd82dafa75e5779536f0362609fe2ac4989a40909b5a241e92c53bfa67f2aed9f463f95d4a437b36d36ca712c9111efc92bee9a991b24352bc8
+Homepage: http://gcc.gnu.org/
+Description: GNU Rust compiler
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ gccrs is a full alternative implementation of the Rust
+ language ontop of GCC with the goal to become fully
+ upstream with the GNU toolchain.
+ .
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+
+Package: gccrs-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gccrs-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gccrs-14-for-host/gccrs-14-for-host_14.2.0-7_loong64.deb
+Size: 1152
+MD5sum: af71b06c04cc1cb1ebbdc94f716f3f35
+SHA1: 8418700415484968b72011521f570058d2a3e77c
+SHA256: 08e1aa4726329a7b68366bd966c74f8358701f5f7dbc8acb784e009ae5c58d5c
+SHA512: a37c40dbe2fe8b6dcaa4f545e556dc56ad1fba4c38e690e97413b126a6fd36a20a241969d2544fc0540f4e89294a963f730f647a9e86018a189e6c039bb1162f
+Homepage: http://gcc.gnu.org/
+Description: GNU Rust compiler for the host architecture
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ gccrs is a full alternative implementation of the Rust
+ language ontop of GCC with the goal to become fully
+ upstream with the GNU toolchain.
+ .
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gccrs-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 33710
+Depends: gcc-14-base (>= 14), g++-14-loongarch64-linux-gnu (>= 14), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Filename: ./g/gccrs-14-loongarch64-linux-gnu/gccrs-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10137320
+MD5sum: 2ee30b5ce0d6318da8df2ca9b5aebc44
+SHA1: d3ca30456445e133dbcf2c91d7eaeac50de863ee
+SHA256: ad8e78bbab0559ba431c031a67246772ec634debe3c229759f37b5a3d0d2bd9b
+SHA512: cb47e957ccdf03bb8dc2ce94ace4734028f4258d9e9f800037d9711ed33aba0d2b57cc5ecff861556922d6dc34b2aa03a9af29c773ed4d24eaa4414d781b500c
+Homepage: http://gcc.gnu.org/
+Description: GNU Rust compiler for the loongarch64-linux-gnu architecture
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+ .
+ gccrs is a full alternative implementation of the Rust
+ language ontop of GCC with the goal to become fully
+ upstream with the GNU toolchain.
+ .
+ !!!!! Please note, the compiler is in a very early stage
+ and not usable yet for compiling real Rust programs !!!!!
+
+Package: gdc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 111
+Provides: d-compiler, d-v2-compiler, gdc
+Depends: gdc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
+Replaces: gdc (<< 4.4.6-5)
+Filename: ./g/gdc-14/gdc-14_14.2.0-7_loong64.deb
+Size: 44596
+MD5sum: ecffd38cc64b835c90f04ace3d459eee
+SHA1: 81ec599b38d02ba5f52cdaf1e76dd9b036015690
+SHA256: d79ab9d15f20246979ce29a9ccfc1831a31d188aaaa6cd8df5c3aa18cfb4946c
+SHA512: f36ffcc9561a26edd25134fac3c53dba6b93993c1e3421ce1acd12565feb996f8781b1b77476e1df51fdbbb912c876e3a92daab727ea7aad2bfac8ffa5e3ff68
+Homepage: http://gcc.gnu.org/
+Description: GNU D compiler (version 2)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+
+Package: gdc-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gdc-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gdc-14-for-host/gdc-14-for-host_14.2.0-7_loong64.deb
+Size: 1096
+MD5sum: 22345bdc31f0e05a4028def07e50d7bf
+SHA1: 208db8f89b04d2b4dd1b9409975fb5dafffd5996
+SHA256: 0b00c593446b1dcb3d8cc0d80c5709a0774f306a4d35481d4715ee0295f95ce9
+SHA512: c90f1397fad5638a83cdf11923d57e9d8270a1c61003b4c0072f5cc04580313e71db1ebc5f3b66885e34d64984687ef4b239c12bd3bdf103850d2bab4ee596b9
+Homepage: http://gcc.gnu.org/
+Description: GNU D compiler (version 2) for the host architecture
+ This is the GNU D compiler for the host architecture, which compiles D on
+ platforms supported by gcc. It uses the gcc backend to generate optimised
+ code.
+ .
+ This compiler supports D language version 2.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gdc-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 34398
+Depends: gcc-14-base (>= 14), g++-14-loongarch64-linux-gnu (>= 14.2.0-7), libgphobos-14-dev (>= 14), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Filename: ./g/gdc-14-loongarch64-linux-gnu/gdc-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10256724
+MD5sum: dc8587840ff80186843f44e3ff01552e
+SHA1: 0900e698d9a8702479b4a55484a04e255b18ec18
+SHA256: f444507d3a7805660b4317eb5dccc03742d73af042afe818de9f3f9bb5ea87e3
+SHA512: 8db3e5e168044921dd71ca9e65659dad6105587422bdf22771d751a4f8c83c6c23dfea1d0cbb42cf4d78872dc3897978362d922785492cacddd1e80297105351
+Homepage: http://gcc.gnu.org/
+Description: GNU D compiler (version 2) for the loongarch64-linux-gnu architecture
+ This is the GNU D compiler for the loongarch64-linux-gnu architecture,
+ which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+
+Package: gfortran-12
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 22070
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), gcc-12 (= 12.2.0-14+loong64.1), libgfortran-12-dev (= 12.2.0-14+loong64.1), libc6-dev (>= 2.23-1~), libc6 (>= 2.36), libgmp10 (>= 2:6.2.1+dfsg1), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-12-doc, libcoarrays-dev
+Filename: ./g/gfortran-12/gfortran-12_12.2.0-14+loong64.1_loong64.deb
+Size: 7293116
+MD5sum: 2bbf7dccec29352e3c9079d1e59c8307
+SHA1: de8b9f5d34c6b471892b764197493c2361bae258
+SHA256: 4aec93da6593a9259edd7d25dffa84590256d5e752e65bfd6c7d7961e0180ceb
+SHA512: 8285419bc710742dad28ee5beb31ea85297ffc258e4572d9617c0321eda9ee4e732d457ddb52048ac46c91d3e6602f3e19e879f6d9aee52a79cf48a76bdbf1cb
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gfortran-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 26
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gfortran-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8)
+Suggests: gfortran-13-doc
+Filename: ./g/gfortran-13/gfortran-13_13.3.0-8_loong64.deb
+Size: 14324
+MD5sum: 8b00232624df5156359da50272a3d8b2
+SHA1: fbba1c768b396447375a69093b270c88fcbe190d
+SHA256: 323b8fe9474c7c4a15092da91d1922c104b385d11254f5605c642c0decd239a6
+SHA512: e08b8e738d8b27d13c6e06aa56294a2a79f92fa3a51323a6ae3e526a6a7869da93406111a211b5efbe4c85f3898b0244690e134ba148528e4bc3434e9bd91b89
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gfortran-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gfortran-13-loongarch64-linux-gnu (>= 13), gcc-13-for-host (= 13.3.0-8)
+Filename: ./g/gfortran-13-for-host/gfortran-13-for-host_13.3.0-8_loong64.deb
+Size: 1076
+MD5sum: 29a4c6c0ef7a08e117bda85f15f39665
+SHA1: fbc9b87c70844137e07c013a0ce7ac2f879eaf9a
+SHA256: c8397baf6b6ef454efb353c025e5f8e660719fa6da02f9246537f4aab0a2c32d
+SHA512: 55171183e67dc1b4b2036c740374913b0c24ebde8548ef26cf3065606d5b7728e5a91f70bc0f3d2934eaedbc70f2f94d0117d5bb9908bcb7f200156dab436247
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the host architecture
+ This is the GNU Fortran compiler for the host architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gfortran-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 23724
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libgfortran-13-dev (= 13.3.0-8), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-13-doc, libcoarrays-dev
+Breaks: gfortran-13 (<< 13.2.0-11)
+Replaces: gfortran-13 (<< 13.2.0-11)
+Filename: ./g/gfortran-13-loongarch64-linux-gnu/gfortran-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 7976576
+MD5sum: cd3bdf7fc8b91cf1ce1c85a63ac51512
+SHA1: 2880eccae3f786c78ac69f4d22f43a5d01affbf1
+SHA256: 9d66da98defb17f8bca89d1642f9f0abe0dfd3f2f1331ab7ba28e08a110a1148
+SHA512: be672f313d781053d3c062817ad30d18a926a71810497be9c1dc8af30e46dc765a645588d9fe319d2e26055b5ae2dc6f6c584b2e3f54e6b59500e82aed443ba6
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Fortran compiler for the loongarch64-linux-gnu architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+
+Package: gfortran-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 24
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gfortran-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gfortran-14-doc
+Filename: ./g/gfortran-14/gfortran-14_14.2.0-7_loong64.deb
+Size: 11916
+MD5sum: ab22981c51eabb325ab1c29deeb2a66a
+SHA1: 2ef7ea16381f39c7e8613aed789da88af7b9cbfa
+SHA256: 6a24d2b4e4f84add5350d7534a961641b8229d168ca03c236594c5962bdc5fea
+SHA512: e15991d127e2c44d8a217ece87eba2efd8e296297a5da9acb66baf57426ebfc7f839e0721966e83fb35e2eb3df2e5c63e7dbce9cce385f3dc8a588be5b6be98e
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gfortran-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 30918
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (= 14.2.0-7), libgfortran-14-dev (= 14.2.0-7), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gfortran-14-doc, libcoarrays-dev
+Filename: ./g/gfortran-14-loongarch64-linux-gnu/gfortran-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 9778840
+MD5sum: cc3c2b3bf2e1c07eeb0180b37dd06b15
+SHA1: 7dede20cb8ffce94cd66340e3a840ddc40099ef6
+SHA256: 6bc88083f182773c66d3567ef631df3e2a6f6422d6e06f0b68d8918db92f2ae9
+SHA512: 524f91da7c9bd04c25c2f132ad1a0c4f98a2cb9361ff39e9d0ec589d104b30b6d35bce811e274c8cb024ab337ec3986fdf1943c9fce11300fb67f38981265f1e
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Fortran compiler for the loongarch64-linux-gnu architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+
+Package: gm2-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 152
+Provides: gm2, m2-compiler
+Depends: gm2-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (>= 14), g++-14 (>= 14)
+Filename: ./g/gm2-14/gm2-14_14.2.0-7_loong64.deb
+Size: 87200
+MD5sum: 464f36803f6907f56ed10ffa2f940ce7
+SHA1: 63d256fd556e0c8ad605f71f041105c2d9b0d87f
+SHA256: 5677b0b4f95335dceec714c4c42f7111c9791cdc8bd7dd573524b169e7145bfa
+SHA512: 751e27f27c2ea958b56dcef5421df2e85cde006a882dabab125fa84d9eb6c33e7f9c145ddf16351f028dc9084d81e77b2c419a387b29a32ff5840589de0fa7e0
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 compiler (version 2)
+ This is the GNU Modula-2 compiler, which compiles Modula-2 on platforms
+ supported by gcc.  It uses the gcc backend to generate optimised code.
+
+Package: gm2-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gm2-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gm2-14-for-host/gm2-14-for-host_14.2.0-7_loong64.deb
+Size: 1084
+MD5sum: db09abe7dd41002742abdb2a9dbc4e76
+SHA1: c783f158ad709cb81b1cfa1fd13e1822108f00e2
+SHA256: 0cfa2cc03fc39b8c20126aec24c5f644bcb13ff50ba33eb7ff53500859883d06
+SHA512: 688660f3ffe939a23b42f7b49f07c84824e36d8f7ece79d2e4570619ad32c0334c6cb706ca2ed75e7e64d5e06791b7045a35ad883b596ef7d985b9ccc0b4080f
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 compiler for the host architecture
+ This is the GNU Modula-2 compiler for the host architecture,
+ which compiles Modula-2 on platforms supported by gcc.  It uses the gcc
+ backend to generate optimised code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gm2-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 29667
+Depends: gcc-14-base (>= 14), g++-14-loongarch64-linux-gnu (>= 14.2.0-7), libgm2-14-dev (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3.1), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Filename: ./g/gm2-14-loongarch64-linux-gnu/gm2-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 9236572
+MD5sum: f55c935f184bc55668d1a5636bd61507
+SHA1: c8c8b2ae9824bbfbad99e05a98712b89442b2f74
+SHA256: a830a8761654c61b1a29b3c595a9e99c74ca6f5bc4dbac7b348546580244708f
+SHA512: ebfa1967eb69a467553a6ee95369ba682e8a10a4e1045857b31c025e53702f0f1e527c4759844f1a60956d26439f6ee07489a7e6398ed72143f0a53508e3f1b0
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Modula-2 compiler for the loongarch64-linux-gnu architecture,
+ which compiles Modula-2 on platforms supported by gcc.  It uses the gcc
+ backend to generate optimised code.
+
+Package: gnat-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 42
+Provides: gnat-14-65874b7f
+Depends: gnat-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (>= 14)
+Suggests: gnat-14-doc, ada-reference-manual-2012, gnat-14-sjlj
+Filename: ./g/gnat-14/gnat-14_14.2.0-7_loong64.deb
+Size: 6644
+MD5sum: 7df22ddbcebcf3ed12b0fc448f7d0cba
+SHA1: 59a309de34c4ba4c41bed23a4f7864d45b32bb92
+SHA256: e4c4bfc199a8a3fb964d99fe639150fe0a270bcf5c178ef936814b38c4341d86
+SHA512: ce2f58558963141443d8766cb30aad0d88dd5ae0e17ac8a54d9de158930ebbaf067e41f1037b6ee0e05e6fb14738de16a2afdbb2e1e19c9d5d44c398385410a5
+Homepage: http://gcc.gnu.org/
+Description: GNU Ada compiler
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+
+Package: gnat-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gnat-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gnat-14-for-host/gnat-14-for-host_14.2.0-7_loong64.deb
+Size: 1152
+MD5sum: b1285affce54de872a766968a44c7d9e
+SHA1: 1749513d25a26bdc741bcbe2207b581033e42c35
+SHA256: 2d81cc9eb60f0abe74bf0b9b2cc4ad7d07380b61a57a18a52cca07be1700c7c1
+SHA512: 818635fd674250aa4667f2ab481fcfcb58479e3187511438af948259300938085458b466d8abcae111ea7ec0a9222cc4fcc5a02b57b5d1793d7b33ef03334c3d
+Homepage: http://gcc.gnu.org/
+Description: GNU Ada compiler for the host architecture
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gnat-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 133866
+Provides: gnat-14-65874b7f
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (>= 14), libgnat-14 (>= 14.2.0-7), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Suggests: gnat-14-doc, ada-reference-manual-2012
+Conflicts: gnat-10, gnat-11, gnat-12, gnat-13, gnat-4.9, gnat-5, gnat-6, gnat-7, gnat-8, gnat-9
+Filename: ./g/gnat-14-loongarch64-linux-gnu/gnat-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 21033476
+MD5sum: 369c22b65130a4496a7dd88383890fc6
+SHA1: 2dd4947137b87d725f88f17a61e38cee6b3f1c77
+SHA256: b6c56b16a2be15cc27eec31f96cd3d56db9d40c7c10f0ebabd17f60f5dd0c0fd
+SHA512: 5da5b8e4fba930f453c0f3e8b908747c8f6f964e31ec9144b6a9626fa83a55e539645a48007a60468c83f686f97a46801c6795fecd15188e5461af5cda3c56ac
+Homepage: http://gcc.gnu.org/
+Description: GNU Ada compiler for the loongarch64-linux-gnu architecture
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+
+Package: gobjc++-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 14
+Provides: objc++-compiler
+Depends: gcc-13-base (= 13.3.0-8), gobjc++-13-loongarch64-linux-gnu (= 13.3.0-8), gobjc-13 (= 13.3.0-8), g++-13 (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Filename: ./g/gobjc++-13/gobjc++-13_13.3.0-8_loong64.deb
+Size: 6684
+MD5sum: 1f4d56df4d8d77b051de820dbef7c5c0
+SHA1: d635fd4db2a29fa5e318da4816ced476f796c4db
+SHA256: 160cfac5ff50e8ccac20ebe74997ebf7c6584637c24b5aa05408588f19203f9d
+SHA512: a761fdb99101aabbbdd648e2e32eceefe2caabf96920003cfbbdf2c6aef346b0eb20d7e75c86d6818518b3e07bfc4d46875249a79ecc104f826990b98650f416
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler
+ This is the GNU Objective-C++ compiler, which compiles
+ Objective-C++ on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc++-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gobjc++-13-loongarch64-linux-gnu (>= 13), gobjc-13-for-host (= 13.3.0-8), g++-13-for-host (= 13.3.0-8)
+Filename: ./g/gobjc++-13-for-host/gobjc++-13-for-host_13.3.0-8_loong64.deb
+Size: 1096
+MD5sum: d09d76271c10c8ef22f71ab3fa910374
+SHA1: b53c91da321f3467a775b04d4a01432f13f7016b
+SHA256: 228da1a0d6dd1ac8839de967dc469c6b339da3e516334436c213be798437b485
+SHA512: 73bc3b2a56d80efbc9dc2ee73a856a86482725c1146e84a22fc11d94d491c54d4a7a12b422414f7290e8650a93bde227a3a832ad5124e25c4dcf79890369ff21
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the host architecture
+ This is the GNU Objective-C++ compiler for the host architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gobjc++-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 24232
+Provides: objc++-compiler-loongarch64-linux-gnu
+Depends: gcc-13-base (= 13.3.0-8), gobjc-13-loongarch64-linux-gnu (= 13.3.0-8), g++-13-loongarch64-linux-gnu (= 13.3.0-8), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), libobjc-13-dev (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Breaks: gobjc++-13 (<< 13.2.0-11)
+Replaces: gobjc++-13 (<< 13.2.0-11)
+Filename: ./g/gobjc++-13-loongarch64-linux-gnu/gobjc++-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 8210516
+MD5sum: 1fb619c293e5dfd713fabdce1e230cc3
+SHA1: 50a1ca5d997b4daea576bc4f4b107b0e7c11425a
+SHA256: f60618c1854d9a7f4ebb48fc72b38a28d581ae591cbea6f0800fc0b833763a3e
+SHA512: 21e2e5578d2e7685d29240a82914df9ee8186b46b889e588cee66b2c05c8bfb6ff7f6c6962b03d11e9c14d21e64bb9f33567e395cb55aad9b66de077b50fdb1d
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+
+Package: gobjc++-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 14
+Provides: objc++-compiler
+Depends: gcc-14-base (= 14.2.0-7), gobjc++-14-loongarch64-linux-gnu (= 14.2.0-7), gobjc-14 (= 14.2.0-7), g++-14 (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc++-14/gobjc++-14_14.2.0-7_loong64.deb
+Size: 6836
+MD5sum: b05076bf41bc9c858997278be6766857
+SHA1: 9a262277d58e1215b6b1eb0e5f51db90ba79d6b0
+SHA256: 127d48a2593fb006a8330b1c7067fd28a11f737fd817db166d98bdd6c4f5a516
+SHA512: 3ea9caf31241a0b5bf39b6d9153468caccfd462a3214f626f9cda8050d0f9dbd657d6aa84e9fc4dd9c5df0a84fcfcbffaea052c8b403b2f0198a53100c79c61c
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler
+ This is the GNU Objective-C++ compiler, which compiles
+ Objective-C++ on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc++-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gobjc++-14-loongarch64-linux-gnu (>= 14), gobjc-14-for-host (= 14.2.0-7), g++-14-for-host (= 14.2.0-7)
+Filename: ./g/gobjc++-14-for-host/gobjc++-14-for-host_14.2.0-7_loong64.deb
+Size: 1096
+MD5sum: 7bee87e5523dbe13248154bfd7b82f79
+SHA1: fa15db32c1fe6cd706a87e3cfe241360120ea031
+SHA256: 5ad74185b959bea9e9802de297693e7c7dbeea49b4b0bf77d0556243cf50773d
+SHA512: e38919f99c0b5369c44d0c1bfbcb8a9117e331e460b9d127d2f3ca155005ca7b512438e6e42941881dec4640c97a51d74d00255b64ced06e60172b86db96b72a
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the host architecture
+ This is the GNU Objective-C++ compiler for the host architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gobjc++-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 31498
+Provides: objc++-compiler-loongarch64-linux-gnu
+Depends: gcc-14-base (= 14.2.0-7), gobjc-14-loongarch64-linux-gnu (= 14.2.0-7), g++-14-loongarch64-linux-gnu (= 14.2.0-7), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2), libobjc-14-dev (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc++-14-loongarch64-linux-gnu/gobjc++-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10059620
+MD5sum: dba7851e2457675de75360e37f82e5e7
+SHA1: e419fbe17140550ff7c40c04c8fd6450c7b3a9b9
+SHA256: 06d26231f8fd98136a3ecc21d0ddb0e216b3d4c855cfe5557029c98dcd4b6227
+SHA512: 0d2f20b90b3c65c7067be0c0883e6ff27f6a83d4ba7a973317f9b105e6cb2a784f88dfe1b583079cd589abf08e7fa72dea5178fe1eface72778fe695dfa849b9
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+
+Package: gobjc-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 44
+Provides: objc-compiler
+Depends: gcc-13-base (= 13.3.0-8), gobjc-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13 (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Filename: ./g/gobjc-13/gobjc-13_13.3.0-8_loong64.deb
+Size: 37888
+MD5sum: 643accce2f1536c3e05e7ff48b4b9b58
+SHA1: 190439b21b9d9995e0a8c5f440bba3cdc022e29d
+SHA256: 653802d19d20fe68b2329b5fa59a08e0e06cfafaad7db4576d8b46996d8cf809
+SHA512: 5f97f4c8faae8e4d382565894498b7bd48a698cc97bff56e21911e8e0254c66db3c25d49f01744f201d5d8a468426182ae27999b23a208a756b930e84ed4f82f
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler
+ This is the GNU Objective-C compiler, which compiles
+ Objective-C on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gobjc-13-loongarch64-linux-gnu (>= 13), gcc-13-for-host (= 13.3.0-8)
+Filename: ./g/gobjc-13-for-host/gobjc-13-for-host_13.3.0-8_loong64.deb
+Size: 1084
+MD5sum: 249a3d0373270472f777aaac74b71d6d
+SHA1: 8845a6bd702c1d46061f020140f2b52c5579b74c
+SHA256: 49a72cf1cc6b3af0b867aba0f72585e02f64f730373c425f95340f06872d6233
+SHA512: 2f6158f043cddf21e336305f12acecf093ce9ce2f666a5ae43bf3a74072502f3165592d8f7c91c7ee4bd289be85cf338c6e7e745d70a3b2c406bc142eb97d3f8
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the host architecture
+ This is the GNU Objective-C compiler for the host architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gobjc-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 21812
+Provides: objc-compiler-loongarch64-linux-gnu
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), libobjc-13-dev (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Breaks: gobjc-13 (<< 13.2.0-11)
+Replaces: gobjc-13 (<< 13.2.0-11)
+Filename: ./g/gobjc-13-loongarch64-linux-gnu/gobjc-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 7325824
+MD5sum: 346123cdbb2f9f32cc2e9e3aff096e40
+SHA1: 5056c18acf5c86f59ed40e8516dc1d5900fbfe8d
+SHA256: 8ae297cfcbbf262e7b05254cdf364f04e972d1ef4b9865f174099d8470d8dba7
+SHA512: f7e6385daf9bd63d253f9a89de74e6b91f7018b45338512b6dca4aded9dd889eb76a62fc4d72cbaa7f20352dce7f47380bbc486ff406dcb84a856b72d7494d68
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+
+Package: gobjc-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 44
+Provides: objc-compiler
+Depends: gcc-14-base (= 14.2.0-7), gobjc-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc-14/gobjc-14_14.2.0-7_loong64.deb
+Size: 38096
+MD5sum: e6c66e061288bc69dfbe6cf9bafe2928
+SHA1: d024289861db2d22eb4046f0ae25251ee1b1e4ae
+SHA256: 3e49c8926f0daf46383c9b6dcc21e2473f4d0f9aa717b8740474839d50be960f
+SHA512: 409480b738c0ce7527db01dfbe03c34fd78fec910e46c8e2367acad03fa696680d90cfbad77ef28888e74957d4d263c2527a2b44e8917390f5d58d39ce7adc68
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler
+ This is the GNU Objective-C compiler, which compiles
+ Objective-C on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), gobjc-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/gobjc-14-for-host/gobjc-14-for-host_14.2.0-7_loong64.deb
+Size: 1084
+MD5sum: a3d83aaa05fe22ea39c947a11247fd10
+SHA1: 8d9f937801b6c4bc30e415b31f6cdcf2292fe40a
+SHA256: bd11caebc1a70c7d31ea72755f71f3b8eceaf758f1dc800ffee590ece3f6f9e5
+SHA512: bfece4602600e60d7c166b479c1a31ea11bd1c4eaf51f8e2aff8e2dd4906f708899d84ad83bd4e273cf2d0c958774d08e103a388d8e52095cba7c25d043ba7b9
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the host architecture
+ This is the GNU Objective-C compiler for the host architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+
+Package: gobjc-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 28694
+Provides: objc-compiler-loongarch64-linux-gnu
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (= 14.2.0-7), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), libobjc-14-dev (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc-14-loongarch64-linux-gnu/gobjc-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 9027660
+MD5sum: 8950a1efcd017e881a821330665cd92e
+SHA1: 3944f3c743ab80f89e3f4669c08702c35cb24498
+SHA256: 31e84fe5b842a383a9b36fb985d158975e17acc8a12ef606adab14e2562362d3
+SHA512: 6ca52cd56acf03ddf7a062f800e3a2de360a8127571297af1e41069f9f550eb42496fa8502d031c852a0bf415e0ae3b5b01cb07a011131d5fe3ab7b76f57f608
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
 
 Package: gpgv
 Architecture: loong64
@@ -960,83 +2444,6 @@ Description: tools for managing Linux kernel modules
  removing kernel modules for Linux.
  It replaces module-init-tools.
 
-Package: libdebconfclient0
-Architecture: loong64
-Version: 0.272
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: cdebconf
-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
-Installed-Size: 40
-Depends: libc6 (>= 2.38)
-Filename: ./l/libdebconfclient0/libdebconfclient0_0.272_loong64.deb
-Size: 10072
-MD5sum: 46130e544304a334e994eff90915372c
-SHA1: f6ab7bf8202ecd37d286501429c8cdc37129c3b8
-SHA256: 9241e4516284d2a2bd143ec09c81b8dc49669f5be542689432a6779e6cf64136
-SHA512: f6ba5bdf25d523066a287e57e953c67cf39f12f1b7633fefc61c740d6ac4012ecb6a22c7c7f87ceb67d362cbd21fe5821c4a70963cf13f6b722871612753eda7
-Description: Debian Configuration Management System (C-implementation library)
- Debconf is a configuration management system for Debian packages. It is
- used by some packages to prompt you for information before they are
- installed. cdebconf is a reimplementation of the original debconf in C.
- .
- This library allows C programs to interface with cdebconf.
-
-Package: libkrb5support0
-Architecture: loong64
-Version: 1.21.3-3
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: krb5
-Maintainer: Sam Hartman <hartmans@debian.org>
-Installed-Size: 136
-Depends: libc6 (>= 2.39)
-Breaks: krb5-admin-server (<< 1.20.1-4~), krb5-kdc (<< 1.20.1-4~), krb5-pkinit (<< 1.20.1-4~), krb5-user (<< 1.20.1-4~), libgssapi-krb5-2 (<< 1.20), libk5crypto3 (<< 1.20.1-4~), libkadm5clnt-mit9 (<< 1.13~alpha1-1), libkadm5srv-mit12 (<< 1.20.1-4~), libkadm5srv-mit9 (<< 1.13~alpha1-1), libkdb5-10t64 (<< 1.20.1-4~), libkdb5-8 (<< 1.16), libkrb5-3 (<< 1.20.1-4~)
-Filename: ./l/libkrb5support0/libkrb5support0_1.21.3-3_loong64.deb
-Size: 31988
-MD5sum: fb63af33a6a44670b23426b3a65b4cf5
-SHA1: 0539f513fffd52dd71bd1e675be0e5c98fa5338c
-SHA256: 086dbd40368480376b9edbd60498cf4e9ce2d2ed2c97d3f48bebd7d67e952350
-SHA512: 8dfaa6307fd4a19bc3b7ad42dee29b04d44b45e8e748ec857eb4953ac76f14b999dc9d5367154c82ffa84d0aabc7486ea2168ed09a0955b6be08bd85ebff272d
-Homepage: https://web.mit.edu/kerberos/
-Description: MIT Kerberos runtime libraries - Support library
- Kerberos is a system for authenticating users and services on a network.
- Kerberos is a trusted third-party service.  That means that there is a
- third party (the Kerberos server) that is trusted by all the entities on
- the network (users and services, usually called "principals").
- .
- This is the MIT reference implementation of Kerberos V5.
- .
- This package contains an internal runtime support library used by other
- Kerberos libraries.
-
-Package: libproc2-0
-Architecture: loong64
-Version: 2:4.0.4-6
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: procps
-Maintainer: Craig Small <csmall@debian.org>
-Installed-Size: 244
-Depends: libc6 (>= 2.40), libsystemd0
-Replaces: procps (<< 1:3.3.2-1)
-Filename: ./l/libproc2-0/libproc2-0_2%3a4.0.4-6_loong64.deb
-Size: 64956
-MD5sum: 784ddc640657635cfa63eb568dfff603
-SHA1: 372fecf0591ba23c898c2515b8575fedaba4d32c
-SHA256: 44bf19569ee19d9104af05adda73755da6b396d781ab5b4d09b66ef9f17830a8
-SHA512: 61e77411c88fdfcda502e7cd9e399132216b7223c08977f09966f21f49339c8f1e15ca61fd257030f2a33868dbcceaf7ff6f788e30ee295889f24b2d3bffecfa
-Homepage: https://gitlab.com/procps-ng/procps
-Description: library for accessing process information from /proc
- The libproc2 library is a way of accessing information out of the /proc
- filesystem.
- .
- This package contains the shared libraries necessary to run programs
- compiled with libproc2.
-
 Package: less
 Architecture: loong64
 Version: 643-1
@@ -1145,6 +2552,69 @@ Description: package management runtime library
   * providing different transports to retrieve data over cdrom, ftp,
     http(s), rsh as well as an interface to add more transports like
     tor+http(s) (apt-transport-tor).
+
+Package: libasan8
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12261
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/libasan8/libasan8_14.2.0-7_loong64.deb
+Size: 2689448
+MD5sum: b962472550ab78d8d81cb070416982aa
+SHA1: c212ee18b6c65ff77d44668ae9caa11037c3bc86
+SHA256: bb4007e7ca43a8823431a51021449b83126d1a69ba2639809412cd2891755ec9
+SHA512: 2e8f6672bddeb35d60fbf7284d0e918729a358c507fb4a64ed8d9331968bce0ef16c8bbe69fe7160b6cafa632c088855c5001a55d891befdaa968759d3061f03
+Homepage: http://gcc.gnu.org/
+Description: AddressSanitizer -- a fast memory error detector
+ AddressSanitizer (ASan) is a fast memory error detector.  It finds
+ use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+
+Package: libatomic1
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 48
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36)
+Filename: ./l/libatomic1/libatomic1_12.2.0-14+loong64.1_loong64.deb
+Size: 8864
+MD5sum: 2efa0f8cfd2355e73469d795f5e4f58d
+SHA1: b50792657b5092b10885f760a8018ff4156c5209
+SHA256: 77f91325c49d209a87318d1201c86153bc644013b691fb426c85a148437d5cf4
+SHA512: 3f180cbca8e66c3fa99951ebc97ed45d17eaf9f590475f51c500f7a17028e45a6fc69039a2f35e103a7b6f35df28f4b733c79e153b1467c20c0ef57d0f08b674
+Homepage: http://gcc.gnu.org/
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+
+Package: libatomic1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 48
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Filename: ./l/libatomic1/libatomic1_14.2.0-7_loong64.deb
+Size: 8564
+MD5sum: 282dba8085b3d856254b8099dfc883df
+SHA1: d43b76be43596b4304cb1f3da90c7f097e3fb860
+SHA256: 89193e6e7f5ff347aaed8f9a3dc9e95e97d4de415c1bb71837cb1cb5314a786e
+SHA512: 54be909bc6cf8de0e357828a35060baae218d07ebe46483df0c45c563c085e161f3fb9930706b41fd8709366230cc3c2f675ed8671c6dcfb52eea13587acd6b0
+Homepage: http://gcc.gnu.org/
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
 
 Package: libattr1
 Architecture: loong64
@@ -1446,6 +2916,46 @@ Description: POSIX 1003.1e capabilities (utilities)
  .
  This package contains additional utilities.
 
+Package: libcc1-0
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 145
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: ./l/libcc1-0/libcc1-0_12.2.0-14+loong64.1_loong64.deb
+Size: 38836
+MD5sum: 6653ba749f16c8444b9a49b9f79ada3a
+SHA1: f63d7b0475b77a66f664a14ee990bda0db1f3728
+SHA256: 1f610875aa139daf81e40542db75addc2301ffbb2cafb6d1ccd216492207f98a
+SHA512: e089142a6c0f40564924286c831926e819a8061bc9385a8862221ba7c03976b0b4d4b1f1cfa4158b51017d4678d21003930c515ad1e7cc9795c35e342edc4915
+Homepage: http://gcc.gnu.org/
+Description: GCC cc1 plugin for GDB
+ libcc1 is a plugin for GDB.
+
+Package: libcc1-0
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 144
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: ./l/libcc1-0/libcc1-0_14.2.0-7_loong64.deb
+Size: 39340
+MD5sum: 016d7ecdda96da4c3817f31056370a69
+SHA1: e93c63ff509e5a909f84d57c8fe00485b7339dd9
+SHA256: 3ace468153df0e9bb3d28c44045da8356993e02a16859a8e75586adfd2e8be59
+SHA512: dd773e51c3310a9fa1975eaf5678854aac85d89037ffbf4dd517649146ecd734fe681d48d07911c52c471f51c6c51163eaae0ee046dc98420b8d001cc5ef3074
+Homepage: http://gcc.gnu.org/
+Description: GCC cc1 plugin for GDB
+ libcc1 is a plugin for GDB.
+
 Package: libcom-err2
 Architecture: loong64
 Version: 1.47.1-1
@@ -1648,6 +3158,104 @@ Description: Foreign Function Interface library runtime
  allows code written in one language to call code written in another
  language.
 
+Package: libgcc-12-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 2979
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libgcc-s1 (>= 12.2.0-14+loong64.1), libgomp1 (>= 12.2.0-14+loong64.1), libatomic1 (>= 12.2.0-14+loong64.1)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-12-dev/libgcc-12-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 274900
+MD5sum: e568211e9063ea3cc02e1c73d7644e12
+SHA1: e29847f541e7c1e89c5430d2f25eceb70d81ea67
+SHA256: 046b9ac69b3503e613ab316d63335e0d6ec02853c9803d1f289e9fd3d4f2b593
+SHA512: 8b56c85cdbc03b4661ce2b424e38e73a48b29e156742999c243715b252456c44f745aa9ea84a64db56370ca4e7f3c9905878c9ddf2ab619566a1a6d5641d21ed
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: libgcc-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 10118
+Depends: gcc-13-base (= 13.3.0-8), libgcc-s1 (>= 13.3.0-8), libgomp1 (>= 13.3.0-8), libitm1 (>= 13.3.0-8), libatomic1 (>= 13.3.0-8)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-13-dev/libgcc-13-dev_13.3.0-8_loong64.deb
+Size: 815020
+MD5sum: 6c118657de01d466ff2d2f82eb5e23bb
+SHA1: ad39298a99916f4ebdefff6117d956494705096d
+SHA256: c9fc14ebf40c02159b866e6c4e169d6e2afa93e8e2cd26d321602a46a3b772d6
+SHA512: 5425f9353bce02580815f345fd6b278024059fb0099b21082ef55b7f6a47ca222d96c00acd420e7efaab2f5cede1db7b322ab1f82697f64a0beebacf2e14ceeb
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: libgcc-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 67000
+Depends: gcc-14-base (= 14.2.0-7), libgcc-s1 (>= 14.2.0-7), libgomp1 (>= 14.2.0-7), libitm1 (>= 14.2.0-7), libatomic1 (>= 14.2.0-7), libasan8 (>= 14.2.0-7), liblsan0 (>= 14.2.0-7), libtsan2 (>= 14.2.0-7), libubsan1 (>= 14.2.0-7)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-14-dev/libgcc-14-dev_14.2.0-7_loong64.deb
+Size: 5289932
+MD5sum: 21d1c9bb275a2372054ead356c8cd705
+SHA1: 62ef7d6df78634781e9b4c62cba01b1328008668
+SHA256: 0a6ec77a75023c4f239ec69c168b86553a2aba108f167651130a2fd28de1b44e
+SHA512: 742c0cce1bd294c7451c01d0289ed77d217042f8fc4f24408a01b0581a9aea596d9afbea8292508a616655fd07261f1b515b23ec41b8dc6a32e54bdac2ca09ca
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: libgcc-s1
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Protected: yes
+Important: yes
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 367
+Provides: libgcc1 (= 1:12.2.0-14+loong64.1)
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36)
+Replaces: libgcc1 (<< 1:10)
+Filename: ./l/libgcc-s1/libgcc-s1_12.2.0-14+loong64.1_loong64.deb
+Size: 85068
+MD5sum: 35e91df864f3646cf726053a04b66d73
+SHA1: ab20af3a5f7793c7cce3ae5b98ecfd43a5b4fd5c
+SHA256: 43dfa38e5eda9ef5f64457cad57bb49c3ff9561bf95953faf2490e58aba0b7d4
+SHA512: 7f076c90f4ccc605f9bf14901ec3b13f6cf9c3934e57693d7ac08cf9535b3964cfa3d74a48b605c2f000d3c8226b250a8d56598ae5676338b943b637f7df0141
+Homepage: http://gcc.gnu.org/
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+
 Package: libgcc-s1
 Architecture: loong64
 Version: 14.2.0-7
@@ -1673,6 +3281,72 @@ Description: GCC support library
  Shared version of the support library, a library of internal subroutines
  that GCC uses to overcome shortcomings of particular machines, or
  special needs for some languages.
+
+Package: libgccjit-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 127
+Depends: gcc-13-base (= 13.3.0-8), libgccjit0 (>= 13.3.0-8)
+Suggests: libgccjit-13-dbg
+Filename: ./l/libgccjit-13-dev/libgccjit-13-dev_13.3.0-8_loong64.deb
+Size: 20768
+MD5sum: cbc2db26eec43a5fd3c94f805d7ca0b7
+SHA1: 8efe421043837c8ac84ea5a5e2fa79ce91769666
+SHA256: e186d7eb2d8122125a444a0624b24bf181770d38784b591c1556ec573a9c0c41
+SHA512: f552c03dd21edb24d5cc0463e4824a28d870e0c402f5054add4211cbea34aef91c8c89157df6b6ab1d21bb9430bd3b46e141629535be7d98ddec075baacaabd4
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (development files)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
+
+Package: libgccjit-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 129
+Depends: gcc-14-base (= 14.2.0-7), libgccjit0 (>= 14.2.0-7)
+Suggests: libgccjit-14-dbg
+Filename: ./l/libgccjit-14-dev/libgccjit-14-dev_14.2.0-7_loong64.deb
+Size: 21092
+MD5sum: 6c218ab0d78e5ca46f3ddd65e289672a
+SHA1: a23778c15c19c410678de3a42ae59603427e9d2d
+SHA256: d38f8b3eac08bc820bc265bc9daf816f2f1f1b8c287a7f0a9896d66de9323f8c
+SHA512: 3e9998ceed71b8dafa7a07e422a88af265cc56487011bcd0a6f9ca1468b55bde0cccae6b2626063176f6466a8191980cd1b5c48b418341ff22c3076396e3a53d
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (development files)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
+
+Package: libgccjit0
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 25898
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev, binutils, libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Breaks: python-gccjit (<< 0.4-4), python3-gccjit (<< 0.4-4)
+Filename: ./l/libgccjit0/libgccjit0_14.2.0-7_loong64.deb
+Size: 7717140
+MD5sum: 26268fe23656ac66901f013d91907836
+SHA1: ff5edc22bb380ec7f3176db215b8572549713780
+SHA256: 1193aab6b7fab1d77139cc8dfcf613541e7b08e771d181184597cb630707f946
+SHA512: 65eacfef4198e08cbe5bb19ebb5dec32f8be12cd11c86ebd66ee8473e70320851ae29dda57a416382052b2fb2a01c61a0111077254114d1032ed560d203b9274
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (shared library)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
 
 Package: libgcrypt20
 Architecture: loong64
@@ -1702,6 +3376,153 @@ Description: LGPL Crypto library - runtime library
  SHA3-512, SHAKE128, SHAKE256, Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC
  (Curve25519, sec256k1, GOST R 34.10-2001 and GOST R 34.10-2012, etc.)
 
+Package: libgfortran-12-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3350
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libgcc-12-dev (= 12.2.0-14+loong64.1), libgfortran5 (>= 12.2.0-14+loong64.1)
+Filename: ./l/libgfortran-12-dev/libgfortran-12-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 378284
+MD5sum: 2c43609b0fc69232129c7f9d55b8541b
+SHA1: edb88abf2894c19eae85f95ac855a7a896a3a493
+SHA256: 0cacddb9993ccafe8c40937674d015abee41e3fbcd0c76cbbab9f733bcee1894
+SHA512: a4be66106d812f22dd1468b9aca48e98c50c3936b87f227b56d3bd11a2e129209f7493e8773931744cbe66ec2e14186c208a6a0fe12f3da88a2f6a978168db15
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+
+Package: libgfortran-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 14538
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libgfortran5 (>= 13.3.0-8)
+Filename: ./l/libgfortran-13-dev/libgfortran-13-dev_13.3.0-8_loong64.deb
+Size: 942032
+MD5sum: 6491c12f175fc43cd3d7af6c4df32dcd
+SHA1: e319f9e1e2690c6519433ac164df81900d268f6e
+SHA256: 8df5fe1888bf7a0d5519983563503a451c6ee597dc8ab6a60bddb34eca64b42a
+SHA512: 79416b06d39e42a3ff321c82cbab1b5c4c509afd16bde0ad20ea2dd6110d4a31f0a77a551988f6bbb8dbf60685bdb4db6ac21fcf47a67a650b342d8ca5bccc49
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+
+Package: libgfortran-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 16804
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev (= 14.2.0-7), libgfortran5 (>= 14.2.0-7)
+Filename: ./l/libgfortran-14-dev/libgfortran-14-dev_14.2.0-7_loong64.deb
+Size: 1108264
+MD5sum: e4998c6918f5be94af89d730c474f0ed
+SHA1: 2df4737dc5969a095e903557752b1b490b23d4e2
+SHA256: 4967506db03d29b2746fe09ab8d9c93caff8d868200de1c32ba0887d94071d1f
+SHA512: 3cc87d065b0c7648007ecc488a089520ee19172ed6821dd034dd7da0de185e68d1b4c9cab821a9b61741225ffccf174ab2f70d07bd7ed0608e679f851d2d300f
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+
+Package: libgfortran5
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1493
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 12.2.0-14+loong64.1)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: ./l/libgfortran5/libgfortran5_12.2.0-14+loong64.1_loong64.deb
+Size: 334912
+MD5sum: 33ae9ad02305e6642e62dd3f1c61ba61
+SHA1: e56d871fc560eb33699ced47ef5e926fc9932dbc
+SHA256: e5b37e1e2583bbb43560f9ba7dec4d4432fed3761bed01d48d49ba7f0d871675
+SHA512: 9f53c2743cbe222e9ecfa7c6a89e9c35879ff13cf7eb695befee2e947795e72f99e848e9e61326a88b731478b65a50b9d7bcf86526eb3c5c557ec939f2476ba0
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications
+ Library needed for GNU Fortran applications linked against the
+ shared library.
+
+Package: libgfortran5
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1701
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 14.2.0-7)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: ./l/libgfortran5/libgfortran5_14.2.0-7_loong64.deb
+Size: 393868
+MD5sum: 506b659ea82274a75796635f6fc6e9d3
+SHA1: fed4abb8714dcc25cd54d99975d445907a8ca38b
+SHA256: 97c766ca0ae8922d36b8f66e14026325ba9dc4a6083d20459b3a7c71c47d8795
+SHA512: c6192fc6eff59d9a122ec5f78fa31968083e103914529eff941a7fb7451bc19937f64f456ca1913059803e15705629c98d32a0badd70078257a08c20b260094e
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications
+ Library needed for GNU Fortran applications linked against the
+ shared library.
+
+Package: libgm2-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 13007
+Depends: gcc-14-base (= 14.2.0-7), libgm2-19 (>= 14.2.0-7)
+Filename: ./l/libgm2-14-dev/libgm2-14-dev_14.2.0-7_loong64.deb
+Size: 1273280
+MD5sum: 908c38e1fe6de3c838f3f4dfc2a71d02
+SHA1: 007032cfaed1b3e4ac71078e05e0a3fa8b409888
+SHA256: ba66d1dd4779bf5b57aa5202cf393eff98cc7457634b4d6a8fb075616d8ce6d1
+SHA512: 4ecb982ed86c93bd3652f6e1b92a5cacf4540fe9b2480692a53cd8bf6d158a47222e3d0da0ea0f19ad311fa5fe2fce75379bf787be65f1426b111004fc821a85
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 standard library
+ This is the Modula-2 standard library that comes with the gm2 compiler.
+
+Package: libgm2-19
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 676
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Filename: ./l/libgm2-19/libgm2-19_14.2.0-7_loong64.deb
+Size: 163752
+MD5sum: d0e07182a92b8aafaa33c8b0c90a4ecc
+SHA1: 7be38b7f62ab03e9d95b870f99899484068ed086
+SHA256: 4c5090d8b9fd2aa3f5ec3de746a4c8d70c0541027acf8b3b4c38595a691f8b10
+SHA512: 2b0aed9dc5652a7cf757edf3eaf2e901ed91c44376a66feff36c92763a2877defe449488ffd624a64875f76d550e6ecf769c5ee0c122a2ea9ee76b8dad4cdc1d
+Homepage: http://gcc.gnu.org/
+Description: GNU Modula-2 standard library (runtime library)
+ This is the GNU Modula-2 standard library that comes with the gm2 compiler.
+
 Package: libgmp10
 Architecture: loong64
 Version: 2:6.3.0+dfsg-2+b1
@@ -1727,6 +3548,32 @@ Description: Multiprecision arithmetic library
  .
  It has a rich set of functions, and the functions have a regular
  interface.
+
+Package: libgnat-14
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4907
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 4.2)
+Filename: ./l/libgnat-14/libgnat-14_14.2.0-7_loong64.deb
+Size: 1131076
+MD5sum: c8bc8bfbc8c978dd80a3e5acab171cdc
+SHA1: 9bc25325b3778fac4f5b9acc802dcc7077fabb9c
+SHA256: 2a663a94ce285c1f859b653e867468c5b6465dab5da7d47b544feae23ef52ce9
+SHA512: e497f400f5d1a83f193daca6a66427cb4d7505dc49f806030be3c6c5dfa89a5e6a6ed43f53e687f316b42124bee7fcd6447b1a0e014972b6dfaec340188e6d5c
+Homepage: http://gcc.gnu.org/
+Description: runtime for applications compiled with GNAT (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the runtime shared library.
 
 Package: libgnutls30t64
 Architecture: loong64
@@ -1765,6 +3612,50 @@ Description: GNU TLS library - main runtime library
  .
  This package contains the main runtime library.
 
+Package: libgomp1
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 320
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: ./l/libgomp1/libgomp1_12.2.0-14+loong64.1_loong64.deb
+Size: 106716
+MD5sum: cdf2a40b6b69cc35cb5520ad8b83ebdd
+SHA1: ccd2abde0f814c59269fec53fd2cd444276d7e97
+SHA256: 2b684a6b91c7ee4e1c8dec0ce06516b7f79b89dc700b11fa508ab909c7a3f4b0
+SHA512: 7bd176ac4b1f5afbd9a4db018ba03c460c5ceeb846f72300cc701196a572636805a931d18d8058ba92d56a1019975f471846fa387661835059ea60d1ea4b86c2
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+
+Package: libgomp1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 384
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: ./l/libgomp1/libgomp1_14.2.0-7_loong64.deb
+Size: 128412
+MD5sum: 276402c3ba9fbcb91a6501d2bef3a7aa
+SHA1: a71fc766493c978a54b2a467e9fb2bbff2ea1b4d
+SHA256: 0a9a6525b4bf11e100133d1ca4eb1972e3afcb4b8318b1b47f10ecd407ba0744
+SHA512: 3e6568059b1226fcc7eea83a0c2a43b194d5bf02bbc0d0f165fe49ab487d42f5818a1d32ab772fc0248c860bcbe1a205e3b17c8cab171fd2b3d640fcca6a179d
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+
 Package: libgpg-error0
 Architecture: loong64
 Version: 1.50-4
@@ -1790,6 +3681,52 @@ Description: GnuPG development runtime library
  possibly more in the future.
  .
  It will likely be renamed "gpgrt" in the future.
+
+Package: libgphobos-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 174187
+Depends: gcc-14-base (= 14.2.0-7), libgphobos5 (>= 14.2.0-7), zlib1g-dev
+Filename: ./l/libgphobos-14-dev/libgphobos-14-dev_14.2.0-7_loong64.deb
+Size: 16211092
+MD5sum: 732b0ff34aee2855245c8beccf2e1845
+SHA1: 9eefe5caedd246b36ae132a5abb2580aff5b64b8
+SHA256: c00612f64a11ef6be5a12041ea034785022e45e02e45a4c61811e6a30a7ca373
+SHA512: 9c2140003221208ffd80ab4417dde797aed6dae763d4de49cc99ba5ea312e1238dffda37b16b35707393119ea5fa3836115b0fdd2617b6a6fef8eabb79fbfec0
+Homepage: http://gcc.gnu.org/
+Description: Phobos D standard library
+ This is the Phobos standard library that comes with the D2 compiler.
+ .
+ For more information check http://www.dlang.org/phobos/
+
+Package: libgphobos5
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12581
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 14.2.0-7), zlib1g (>= 1:1.2.0)
+Breaks: dub (<< 1.16.0-1~)
+Replaces: libgphobos68
+Filename: ./l/libgphobos5/libgphobos5_14.2.0-7_loong64.deb
+Size: 1579008
+MD5sum: e4c3cc8d2fe8d63eed9476d40e162242
+SHA1: cfc1743c718361a510f8967004b723a82202f373
+SHA256: 6123852ebdc718f978ec843e37b0ff6ec79aa4cb27878c6d83facad4f8414e2f
+SHA512: 6db45701b3344b3e21b735f48015997a1ec0c28dd5e1a3c387e67f26c0438760b1f881fb1276583ed40c672d3876f23195ea46737a506ec0162e8fc26b1df571
+Homepage: http://gcc.gnu.org/
+Description: Phobos D standard library (runtime library)
+ This is the Phobos standard library that comes with the D2 compiler.
+ .
+ For more information check http://www.dlang.org/phobos/
 
 Package: libgssapi-krb5-2
 Architecture: loong64
@@ -1879,6 +3816,28 @@ Description: Internationalized domain names (IDNA2008/TR46) library
  names called IDNA2008/TR46.
  .
  This package contains runtime libraries.
+
+Package: libitm1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 114
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40)
+Filename: ./l/libitm1/libitm1_14.2.0-7_loong64.deb
+Size: 24476
+MD5sum: ded296a7fe6c2e0476e689e1f92d42ae
+SHA1: 4594f403b4e9b26eb8a3322374ca9be3f2dd482d
+SHA256: a74c41616c54b1246912d556a875c636915625e34fadbf66ec449cd7462923e8
+SHA512: 1bcd43139318d64d82df8b68a97e655800e7f12b132f2eccaa725a87e3e71b2bbe394059f7f1e59f8f808a559019e0e7ad84a71f72df2fbd2831869ca8a3e19b
+Homepage: http://gcc.gnu.org/
+Description: GNU Transactional Memory Library
+ GNU Transactional Memory Library (libitm) provides transaction support for
+ accesses to the memory of a process, enabling easy-to-use synchronization of
+ accesses to shared memory by several threads.
 
 Package: libjansson4
 Architecture: loong64
@@ -2040,6 +3999,27 @@ Description: module using libc functions for internationalization in Perl
  It provides gettext(), dgettext(), dcgettext(), textdomain(),
  bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext()
  and dngettext().
+
+Package: liblsan0
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4280
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/liblsan0/liblsan0_14.2.0-7_loong64.deb
+Size: 1197876
+MD5sum: 84a7feb82cf0c1f8a2f36f21c13234fb
+SHA1: c18e7c535d167e9ac67043a70314e42c8836ae06
+SHA256: 281a92f8b907996a26f80c6161c9d7bba91b2d3597589e3db0c591112a34aaa0
+SHA512: f7ca06c0948cee4acd1a302866ab5a73cef0decf01d1dfbbd60b78ce99aeb1c9f86c627d30c62b0e2cde03a5af5288c527c6fa1d08a7c32d71f5f60dcff1847f
+Homepage: http://gcc.gnu.org/
+Description: LeakSanitizer -- a memory leak detector (runtime)
+ LeakSanitizer (Lsan) is a memory leak detector which is integrated
+ into AddressSanitizer.
 
 Package: liblz4-1
 Architecture: loong64
@@ -2326,6 +4306,68 @@ Description: Netfilter nftables userspace API library
  Is the user-space library for low-level interaction with
  nftables Netlink's API over libmnl.
 
+Package: libobjc-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4241
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libobjc4 (>= 13.3.0-8)
+Filename: ./l/libobjc-13-dev/libobjc-13-dev_13.3.0-8_loong64.deb
+Size: 263404
+MD5sum: 935b9a542e7bd916070b4355d3424781
+SHA1: 705135e329bfa8ff40ee33aa30750600b357aaa8
+SHA256: 7b49de99d2f76d1b8553efe61219db1b073cc5e8cfc567b78e19432d1dcdb843
+SHA512: bcc6b5b85fc226fd06b523db91a084b37250ef267bfa197a38c91401a04f27c69bb149e61c5274aa85aa64b1e5a6fc2fd08a244470c725ccb5e53d10258d711f
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+
+Package: libobjc-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5220
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev (= 14.2.0-7), libobjc4 (>= 14.2.0-7)
+Filename: ./l/libobjc-14-dev/libobjc-14-dev_14.2.0-7_loong64.deb
+Size: 294624
+MD5sum: d5fc9f3684fc88c1e9fd6f6f45b038c7
+SHA1: 7381eb1176f78d759a9e4c153c8662dc778ea7d7
+SHA256: 6dbb31182966f974d0503fcb1cd3e360bc37f4aed4089376214815fb91b7ecec
+SHA512: 075495a0a09604a200977c59b35ca33d7026d300efa21985fa35c22b30fd7cd0e1486844bc3b08ad8eb6376badab5bd739badaf6b80e374ad42d598611985b9a
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+
+Package: libobjc4
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 229
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
+Filename: ./l/libobjc4/libobjc4_14.2.0-7_loong64.deb
+Size: 42012
+MD5sum: ab87decb171a3af65e28693f7a1091a2
+SHA1: db1dfd4b468ac226aaa988b6bc12a11afe477d43
+SHA256: 437eb338bba376e9c21240a329aaa4712509886cd6d4d3167e2d9c0c3404c38c
+SHA512: 1169cb29fa5ad173f6e46991e8d375a3821d2d18d49cb0007cb6cf06cdb0401c1edb8cfd5f2b7b769a9210f75726b6168dd3ef8a2189669f2fdb1a89d46a67fc
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications
+ Library needed for GNU ObjC applications linked against the shared library.
+
 Package: libp11-kit0
 Architecture: loong64
 Version: 0.25.5-2
@@ -2504,6 +4546,309 @@ Description: lib for parsing cmdline parameters
  strings into argv[] arrays using shell-like rules.
  .
  This package contains the runtime library and locale data.
+
+Package: libpulse-dev
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 479
+Depends: libpulse0 (= 16.1+dfsg1-5.1), libpulse-mainloop-glib0 (= 16.1+dfsg1-5.1), libglib2.0-dev
+Filename: ./l/libpulse-dev/libpulse-dev_16.1+dfsg1-5.1_loong64.deb
+Size: 89468
+MD5sum: 7e13424e59317064206dc58300075eb1
+SHA1: 879c8d5fe1f7b9f13f8f4afd87c9bc3a96a4ad87
+SHA256: 4e4be2a2255a13d8205bd31335fca66f88b5eff1a74d5d770bbd0d9fcdca8d55
+SHA512: c1704e18f4cfbcb6e78705499cc6ac13edbccb2852b428c0d4d775a41788f684a2078b78f2988bf139afc5053152279d5af0dcf73af6b2af815c459b4ffc93ba
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio client development headers and libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Headers and libraries for developing applications that access a PulseAudio
+ sound server via PulseAudio's native interface.
+
+Package: libpulse-mainloop-glib0
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 70
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.28.0), libpulse0 (= 16.1+dfsg1-5.1)
+Filename: ./l/libpulse-mainloop-glib0/libpulse-mainloop-glib0_16.1+dfsg1-5.1_loong64.deb
+Size: 27072
+MD5sum: 89a1c363fb49b21232566fa42a1fcbd1
+SHA1: 67723c3f180a388bea1c5329d0a865656567d63b
+SHA256: ed7cf2c147ab673a5d96ecca091bf83971acd34d0614796f6c0c54c315d061ef
+SHA512: 9e6452652258852bcab1d2e8eb56d964ca1a9b373da8fefdb25ae895b4ebea2263820a0971a847fbb395cb664a28e6c55f7f4eb0fae645f760055bb07775f7d4
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio client libraries (glib support)
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+ .
+ This package adds support for glib2 client applications.
+
+Package: libpulse0
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 897
+Depends: libasyncns0 (>= 0.3), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libsndfile1 (>= 1.0.20), libsystemd0, libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb1
+Suggests: pulseaudio
+Filename: ./l/libpulse0/libpulse0_16.1+dfsg1-5.1_loong64.deb
+Size: 254580
+MD5sum: e6ac1a9689e0bd6bf5c2803003ac830f
+SHA1: d95d27d98a700f35c4bb6323f3d9a65f5c24529d
+SHA256: 9b87857f4015e57a6fbbbf9bdddac42af17a41e77e98d7e79382518a47114d16
+SHA512: d9e546836f4f5b01a8cadbc1c07b7b097c03ed067a4b7765e9f47642365664c53a1b9c7e3b23c3a240537350f382123531f0fa4c303e295502db5b9bffbc75a5
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio client libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+
+Package: libpulsedsp
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 99
+Depends: libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1)
+Filename: ./l/libpulsedsp/libpulsedsp_16.1+dfsg1-5.1_loong64.deb
+Size: 35896
+MD5sum: 79570dc68d43445ad5eb991cafa1917d
+SHA1: 1e0587110223fa5e2675800912da51a3d14dd08a
+SHA256: a646cfc6d49141b1e9d8c9f1cb77933c4294972e97d2037859c6d4d8bae0e1ad
+SHA512: 365839749d00597472af8edc6607c87e3d5a4c4d4dc859161cb0d82afed9ffdae1db736bb234c1b1b52833f78377626883c7f3475fe03b56207139554387aed5
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio OSS pre-load library
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This package provides the pre-load library used to redirect applications
+ using OSS through pulseaudio.
+
+Package: libpython3.12-dev
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 153396
+Depends: libpython3.12-stdlib (= 3.12.7-1), libpython3.12t64 (= 3.12.7-1), libexpat1-dev, zlib1g-dev
+Recommends: libc6-dev | libc-dev
+Filename: ./l/libpython3.12-dev/libpython3.12-dev_3.12.7-1_loong64.deb
+Size: 14616720
+MD5sum: b240ec83344ed8528b3d21d03c2c4406
+SHA1: 9062c5d775dff50d1b36e3d59d71b2aa9b557561
+SHA256: 8470a6b149bc250f0020c186033b507834cee5ddb9c3af606c0d4447e4013efc
+SHA512: 9565c63fdd6527d7c69142a50000e8719ae12a7474e439ce9d7aabd9e4f3d948dc96a57495d5039922786c15b866d5e980ad3eb5709923d0c43641993739e207
+Description: Header files and a static library for Python (v3.12)
+ Header files, a static library and development tools for building
+ Python (v3.12) modules, extending the Python interpreter or embedding
+ Python (v3.12) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+ .
+ This package contains development files. It is normally not
+ used on it's own, but as a dependency of python3.12-dev.
+
+Package: libpython3.12-minimal
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5219
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Recommends: libpython3.12-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./l/libpython3.12-minimal/libpython3.12-minimal_3.12.7-1_loong64.deb
+Size: 812236
+MD5sum: 06d74181dc3377647f0462f95b71eebc
+SHA1: ef021f767eac14ac348b867f58aaf83e47324c31
+SHA256: 82fdb15d971f67c8c05ac18ab5e87bba38f317b3efecc1ca89ec2e0a92836cbb
+SHA512: f66a5fd2b382323d197d65b5b594a39b2334500c5b921c26c4315b46ac13abb87b097ab9ac7c8e98e406f69e3ddc09dbf328dacfe632e2bb8b3cde0df40ffdb4
+Description: Minimal subset of the Python language (version 3.12)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.12-minimal.
+
+Package: libpython3.12-stdlib
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9334
+Depends: libpython3.12-minimal (= 3.12.7-1), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.40), libcrypt1 (>= 1:4.1.0), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libnsl2 (>= 1.0), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6), libtirpc3t64 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Breaks: libpython3.12-testsuite (<< 3.12.0-3~), python3-gdbm (<< 3.9.9-1~)
+Replaces: libpython3.12-testsuite (<< 3.12.0-3~), python3-gdbm (<< 3.9.9-1~)
+Filename: ./l/libpython3.12-stdlib/libpython3.12-stdlib_3.12.7-1_loong64.deb
+Size: 1917168
+MD5sum: 37778df55b61c2f61e705396d7c5c753
+SHA1: aace9f29d575b3443b0dbf1611066247b41d3745
+SHA256: 9beaec98424e44e2a86b85b831176826a619282f76bcd8d2c4525ea7ce03174c
+SHA512: ddf6a02d3f9561979d951fa4d5c55fb500eb60ada6719fec474a161fd5c202ec2773f33b03d24cc187bb0a6b591d7224ba3b36b4fb69c479ca372e664260452f
+Description: Interactive high-level object-oriented language (standard library, version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.12's standard library. It is normally not
+ used on its own, but as a dependency of python3.12.
+
+Package: libpython3.12t64
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9674
+Provides: libpython3.12 (= 3.12.7-1)
+Depends: libpython3.12-stdlib (= 3.12.7-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Breaks: libpython3.12 (<< 3.12.7-1)
+Replaces: libpython3.12
+Filename: ./l/libpython3.12t64/libpython3.12t64_3.12.7-1_loong64.deb
+Size: 2160044
+MD5sum: 0da304f03e2ec2c516ccbbe525a429d4
+SHA1: 679921e0bc544bb1b7ddecefd6016c63b5215585
+SHA256: 870fe4fbe669486ebff8babe47e960f48fb54a045b152b1b6fcde3516f342566
+SHA512: c1e3b72d929554fa75e0d72df9545e3d974b8a9551c2ab412521c4b5ed79d93000a8019f371c4056a872d7d56f464197101085d6198533b8efb8d3d9d439480c
+Description: Shared Python runtime library (version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+
+Package: libpython3.13
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8170
+Depends: libpython3.13-stdlib (= 3.13.0-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Replaces: libpython3.13
+Filename: ./l/libpython3.13/libpython3.13_3.13.0-1_loong64.deb
+Size: 2134016
+MD5sum: eaeee86063953a3bc7d29730f7b04525
+SHA1: 53a6fe4e28d98084b187ed724b532f0403eb38c0
+SHA256: 25b9c1a5d96ffb7c3a700ff23f05ecbc80933eacec3aba79fc81b12e8981a492
+SHA512: be58851d9bf80eb221509d4e45ed23c7f10351128dd5756c1cef0de7e71769fcbc4f987928ca18186dc92f8654da0898c7c7eb48379169faeebec831161dbe05
+Description: Shared Python runtime library (version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+
+Package: libpython3.13-dev
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 163673
+Depends: libpython3.13-stdlib (= 3.13.0-1), libpython3.13 (= 3.13.0-1), libexpat1-dev, zlib1g-dev
+Recommends: libc6-dev | libc-dev
+Filename: ./l/libpython3.13-dev/libpython3.13-dev_3.13.0-1_loong64.deb
+Size: 15651372
+MD5sum: 1b1fa1666b12f291dfabfc82f4ccdffe
+SHA1: 6567ac02938dffe41613b5fdefa2d95e297954ca
+SHA256: c855c5ea641409c61e488e4c1a22821e5bd5dcb710d4a82631b5fa0577aeb0dc
+SHA512: 4a3676ea13f62351dcaba8b425fe6df66d988f29729d39a599be04e3a385332964e832a941240385c67dfff9dbbe81ceddd7c7c11e3c4a56769fa29152475d58
+Description: Header files and a static library for Python (v3.13)
+ Header files, a static library and development tools for building
+ Python (v3.13) modules, extending the Python interpreter or embedding
+ Python (v3.13) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+ .
+ This package contains development files. It is normally not
+ used on it's own, but as a dependency of python3.13-dev.
+
+Package: libpython3.13-minimal
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5451
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Recommends: libpython3.13-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./l/libpython3.13-minimal/libpython3.13-minimal_3.13.0-1_loong64.deb
+Size: 854764
+MD5sum: 3e840ca3a185aa9eca5530e4c6ea319c
+SHA1: 160ddb8042cdc975b55370361ca4f04c4cd8bbd8
+SHA256: 30548f24a109fef8d586addd661fcbdd29e0ecbf67fd97cff7ea4c9f9a2353ab
+SHA512: 2185d705357e53238919fdbaa01e6c99adbcea490be09aaa0de6afc616d2f974e797f426e2dba2890cd13ac21422473e9f5d3fe04cfa9ba53328c52dd8ba97ce
+Description: Minimal subset of the Python language (version 3.13)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.13-minimal.
+
+Package: libpython3.13-stdlib
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9435
+Depends: libpython3.13-minimal (= 3.13.0-1), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.40), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6), libuuid1 (>= 2.20.1)
+Filename: ./l/libpython3.13-stdlib/libpython3.13-stdlib_3.13.0-1_loong64.deb
+Size: 1931680
+MD5sum: 351eb5fcfb5a68f215593787e64c064b
+SHA1: 4e1ce84121b9ac2be96ebdfc2fd41d78c352addd
+SHA256: 2d6e18303750e71d9df3927bab5e6e84bf060bb6ffd569bd6dc12aafd654fb16
+SHA512: 1686d3f21b1b88a72fdd30ba891dc2c73c794ef485695d973dcab8e70d40091af0aed439ddad4234483fb0e3f1d2ca68468a21e46903468a4de6182a4373f621
+Description: Interactive high-level object-oriented language (standard library, version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.13's standard library. It is normally not
+ used on its own, but as a dependency of python3.13.
 
 Package: libreadline8t64
 Architecture: loong64
@@ -2771,6 +5116,209 @@ Description: Secure Sockets Layer toolkit - shared libraries
  .
  It provides the libssl and libcrypto shared libraries.
 
+Package: libstdc++-12-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 18891
+Provides: libstdc++-dev
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libgcc-12-dev (= 12.2.0-14+loong64.1), libstdc++6 (>= 12.2.0-14+loong64.1), libc6-dev (>= 2.23-1~)
+Suggests: libstdc++-12-doc
+Filename: ./l/libstdc++-12-dev/libstdc++-12-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 1971308
+MD5sum: f1bc4fd2c0c03d33601d1ceadc9b4543
+SHA1: 826afea86f76300502212926a35859e60fe18445
+SHA256: 9750b95e472cbce92eb49bc17f55be17047296d767fb832fa536b085a96b36c7
+SHA512: e2c1d8852ba7e7b98f0af693509b4ddf64edba49b082f57fd06686bc514fac0c55a26cacee51dc3342d2007dbd64aec8c59a444435448125059747771083d1e9
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libstdc++-12-doc
+Architecture: all
+Version: 12.2.0-14+loong64.1
+Priority: optional
+Section: doc
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5052
+Depends: gcc-12-base (>= 12)
+Conflicts: libstdc++-10-doc, libstdc++-11-doc, libstdc++-4.8-doc, libstdc++-4.9-doc, libstdc++-5-doc, libstdc++-6-doc, libstdc++-7-doc, libstdc++-8-doc, libstdc++-9-doc, libstdc++5-3.3-doc, libstdc++5-doc, libstdc++6-4.0-doc, libstdc++6-4.1-doc, libstdc++6-4.2-doc, libstdc++6-4.3-doc, libstdc++6-4.4-doc, libstdc++6-4.5-doc, libstdc++6-4.6-doc, libstdc++6-4.7-doc, libstdc++6-doc
+Filename: ./l/libstdc++-12-doc/libstdc++-12-doc_12.2.0-14+loong64.1_all.deb
+Size: 2569144
+MD5sum: 751d320d5e053110800b1b87d24e0336
+SHA1: 3180618e306748401837bebcf46b52f630676a01
+SHA256: 0dad33aba3cddf65aab689c62a5e147d1effddcf47d39135d6f7298bde163990
+SHA512: afc4005b43e7f3afef3c499ebd556052ac7050b66fbfb5e7ed2eb2f0b08a02207a4446fb4d022312fac5b9a19b49e3e681b436e2b1c4bb485c5648eac227fcb3
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (documentation files)
+ This package contains documentation files for the GNU stdc++ library.
+ .
+ One set is the distribution documentation, the other set is the
+ source documentation including a namespace list, class hierarchy,
+ alphabetical list, compound list, file list, namespace members,
+ compound members and file members.
+
+Package: libstdc++-12-pic
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5906
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libstdc++6 (>= 12.2.0-14+loong64.1), libstdc++-12-dev (= 12.2.0-14+loong64.1)
+Filename: ./l/libstdc++-12-pic/libstdc++-12-pic_12.2.0-14+loong64.1_loong64.deb
+Size: 677416
+MD5sum: 06b1c7c10b8119256b9a52f0ffa9ef04
+SHA1: 9bceb4ca966e95feeed098b1bddbb9f64955fae7
+SHA256: 19bebc5dc29e1c7dacf62ede7ce8e260c926b420db881b9ced6e0e9150de76fb
+SHA512: a7f28e5b9afdd8090e9a4236cae6f6270eff81d04ca111166830d6820d2fd2b5f9371f5e7af0c318133582e72fdb40cd3e1063a5a79aa18c97be1d77195a43a8
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (shared library subset kit)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+
+Package: libstdc++-13-dev
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 49585
+Provides: libstdc++-dev
+Depends: gcc-13-base (= 13.3.0-8), libgcc-13-dev (= 13.3.0-8), libstdc++6 (>= 13.3.0-8), libc6-dev (>= 2.23-1~)
+Suggests: libstdc++-13-doc
+Filename: ./l/libstdc++-13-dev/libstdc++-13-dev_13.3.0-8_loong64.deb
+Size: 4501328
+MD5sum: 78373fbffbe2ca0f182b644d28e9c60e
+SHA1: 09fec3c38af20a0464beab843b5cdaf71ec09390
+SHA256: 7c767ccf5b710306ca629a6bdc91698f601fce99197501e98f1540b6a368e0ab
+SHA512: babc66e11d31415647efacbae1297fc601150f754737d6232ad25634ef26ff9b1e5f3d8f2a06d67a1d07a7c24b58574178c10c5cbd407f92654ebf206ae84bc2
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libstdc++-13-pic
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 25602
+Depends: gcc-13-base (= 13.3.0-8), libstdc++6 (>= 13.3.0-8), libstdc++-13-dev (= 13.3.0-8)
+Filename: ./l/libstdc++-13-pic/libstdc++-13-pic_13.3.0-8_loong64.deb
+Size: 2465836
+MD5sum: ca79d5e5beebfdd20603c87a57244544
+SHA1: ece55a3ee42b7ffe15bcd2642debaa7f1887a308
+SHA256: 9228d57ebeb5f5b767d4a1606b423deac657d239a3abc20565764288042043fa
+SHA512: 9e5e750ab777a6263518e424aa921f98e1522091ec3735516a1450c322f1fcd9e2289a8a7fd0b0f36f04e5b33c9c0da3275904df8432d622d1bc8755354541f4
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (shared library subset kit)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+
+Package: libstdc++-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 67793
+Provides: libstdc++-dev
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev (= 14.2.0-7), libstdc++6 (>= 14.2.0-7), libc6-dev (>= 2.23-1~)
+Suggests: libstdc++-14-doc
+Filename: ./l/libstdc++-14-dev/libstdc++-14-dev_14.2.0-7_loong64.deb
+Size: 5939172
+MD5sum: 2199757f3cd3e581788023e84435743f
+SHA1: 1cfae642251925d8ece23c61ceb45320ce62daf6
+SHA256: ba64eef14b1f795fcc2b6599d11333639467e0803f477d9ab4520ab911615f1b
+SHA512: 19324d23d1a2ce7f3fb2e58495572b106a84309783167af25fcd47b563def4d1ead3e68f58b4e7ebdbd5434f2d486aa466bfc7b701a90267a3c61605c263c187
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libstdc++-14-pic
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 37663
+Depends: gcc-14-base (= 14.2.0-7), libstdc++6 (>= 14.2.0-7), libstdc++-14-dev (= 14.2.0-7)
+Filename: ./l/libstdc++-14-pic/libstdc++-14-pic_14.2.0-7_loong64.deb
+Size: 3334356
+MD5sum: ea1bc1d45eb13f2e9fcd96056f8339a5
+SHA1: 4e218eb732b8a087ea4c4cb59e608489498eaa93
+SHA256: 11c44622999657f35a257d1a71afe3495e26e9c20f3fed8f85a8243afeefc221
+SHA512: 7b5bb0586166c15d8678a40a67964da7e869d24d0a10e8abaee4ef00ff99fcb7013c3eb4c66e64190579b7c91f57ec0e6c7f26b8951edc116678e727ad39186a
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (shared library subset kit)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+
+Package: libstdc++6
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 2690
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 12.2.0-14+loong64.1)
+Conflicts: scim (<< 1.4.2-1)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Replaces: libstdc++6-12-dbg (<< 4.9.0-3)
+Filename: ./l/libstdc++6/libstdc++6_12.2.0-14+loong64.1_loong64.deb
+Size: 582920
+MD5sum: 231a6eb5124ae6122a119e35c2bad043
+SHA1: 18611a58e418385f956e94a8344cd33c804c9581
+SHA256: 45c8df92498ed7bbf7e1d68e720069d1d84f7b0f9e70998e97730533f5d98e79
+SHA512: d65dc470fa9df23366ae791bc7aeab5ef930241e821d77d46319c1808b270eebaedff5332b07050305b59c77e1bbdf93d8f5094de5b9ba4962bc88a83bd89f65
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
 Package: libstdc++6
 Architecture: loong64
 Version: 14.2.0-7
@@ -2799,6 +5347,75 @@ Description: GNU Standard C++ Library v3
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
 
+Package: libstdc++6-12-dbg
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 66362
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libstdc++6 (>= 12.2.0-14+loong64.1), libc6 (>= 2.36), libgcc-s1 (>= 12.2.0-14+loong64.1)
+Recommends: libstdc++-12-dev (= 12.2.0-14+loong64.1)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-12-dbg/libstdc++6-12-dbg_12.2.0-14+loong64.1_loong64.deb
+Size: 8647232
+MD5sum: 20f9faed5fd58773b5fbfa4a1d537e1d
+SHA1: c1b80006778a1dfb98226056fb94d9d67d4f2ac0
+SHA256: 777120b73f63e1473d5f41e9c0282a7d15df1f52bdb881fbbe2a1fe4320d2183
+SHA512: a09ca759920c7e499c7e760766c57c8584c946bbd61062e2fdd21b99a7515a5e673f94d1db2bac8b2900dac588dc1c4432c8e62167de61bf81720802c2daefff
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+
+Package: libstdc++6-13-dbg
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 132337
+Depends: gcc-13-base (= 13.3.0-8), libstdc++6 (>= 13.3.0-8), libc6 (>= 2.40), libgcc-s1
+Recommends: libstdc++-13-dev (= 13.3.0-8)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-12-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-13-dbg/libstdc++6-13-dbg_13.3.0-8_loong64.deb
+Size: 14318980
+MD5sum: 90b1c130a4b80bf80e8b3d3f4a264e69
+SHA1: ececc9fcf4ac1a2efc8053b1b79b466aae90d648
+SHA256: 6783d8d03f4dfadd5c35f00b7999115a022d69ca22f45f2db3dcb4fcacc1a3f9
+SHA512: ad698d7b27390eba0db0ab83d673846ee74cc259bde06ddb21becf9944dc22e9c1c6f072888b656fa7f64d3fc3cd13f560b0e121eae3ba8cc54b97c2ce420279
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+
+Package: libstdc++6-14-dbg
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 157953
+Depends: gcc-14-base (= 14.2.0-7), libstdc++6 (>= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 14.2.0-7)
+Recommends: libstdc++-14-dev (= 14.2.0-7)
+Conflicts: libstdc++5-3.3-dbg, libstdc++5-dbg, libstdc++6-10-dbg, libstdc++6-11-dbg, libstdc++6-12-dbg, libstdc++6-13-dbg, libstdc++6-4.0-dbg, libstdc++6-4.1-dbg, libstdc++6-4.2-dbg, libstdc++6-4.3-dbg, libstdc++6-4.4-dbg, libstdc++6-4.5-dbg, libstdc++6-4.6-dbg, libstdc++6-4.7-dbg, libstdc++6-4.8-dbg, libstdc++6-4.9-dbg, libstdc++6-5-dbg, libstdc++6-6-dbg, libstdc++6-7-dbg, libstdc++6-8-dbg, libstdc++6-9-dbg, libstdc++6-dbg
+Filename: ./l/libstdc++6-14-dbg/libstdc++6-14-dbg_14.2.0-7_loong64.deb
+Size: 16027836
+MD5sum: 3782ad04e5d6fc723b83dce9f7f036d1
+SHA1: 260d3ea285dc6deea43cf66ce9e05bf23ef269b0
+SHA256: 4430ed94e7b986deb28cf4c3a709cd477698d57bd1c2a3ebb87ab65fb7223d7c
+SHA512: 0edf231540f543454977be8114349c1de83caba27cdbc343c994149c0dde68eae952ef916e50a8602fb5fce3069ec30e335c38f31dade0e8374da788beddb4d3
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (debug build)
+ This package contains a debug build of the shared libstdc++ library.  The debug
+ symbols for the default build can be found in the libstdc++6-dbgsym package.
+
 Package: libsystemd-shared
 Architecture: loong64
 Version: 256.7-2
@@ -2822,29 +5439,6 @@ Description: systemd shared private library
  This internal shared library provides common code used by various systemd
  components. It is supposed to decrease memory and disk footprint.
  The shared library is not meant for public use and is not API or ABI stable.
-
-Package: libsystemd0
-Architecture: loong64
-Version: 256.7-2
-Multi-Arch: same
-Priority: optional
-Section: libs
-Source: systemd
-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
-Installed-Size: 1099
-Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
-Recommends: libzstd1
-Suggests: libgcrypt20, liblz4-1, liblzma5
-Filename: ./l/libsystemd0/libsystemd0_256.7-2_loong64.deb
-Size: 382736
-MD5sum: ab6db337f845735063fad5de4ddbed47
-SHA1: cabedadf4dac64415450da216e72d7e3cf47962e
-SHA256: c884c3a71a62fb868166dbc27bfdd84cbb0d6188b5a1185a4c8a2296d1118ed7
-SHA512: 3e053ce5f269dcc02f179611447d1924cffd92fc530baf384afa197b74d830232a5014edce0748ff2eef4cf16ab3d4546b66c404df295c046511ec6b15a51e2f
-Homepage: https://systemd.io
-Description: systemd utility library
- This library provides APIs to interface with various system components such as
- the system journal, the system service manager, D-Bus and more.
 
 Package: libtasn1-6
 Architecture: loong64
@@ -3021,6 +5615,49 @@ Description: transport-independent RPC library
  This package contains a port of Sun's transport-independent RPC library to
  Linux. The library is intended as a replacement for the RPC code in the GNU C
  library, providing among others support for RPC (and in turn, NFS) over IPv6.
+
+Package: libtsan2
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9987
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3)
+Filename: ./l/libtsan2/libtsan2_14.2.0-7_loong64.deb
+Size: 2437232
+MD5sum: 5a9c7ab8b098d975c555bb133fb072f4
+SHA1: 1e201777c36e9619167f27f210b3861d2ff1dfa0
+SHA256: aadb20cae4d5adc6585cba4a004cad0698f4af0a862f7045160d7e90bcec7b34
+SHA512: bcd9efaf44552402e3ff907348f1a94a9ca829e7db0762c4aa39b9d42006bdf7b4b1d68002783fe266477ee50195a3369120d15bfa09e02babb2dfe6d5712779
+Homepage: http://gcc.gnu.org/
+Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
+ ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
+ The Linux and Mac versions are based on Valgrind.
+
+Package: libubsan1
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3769
+Depends: gcc-14-base (= 14.2.0-7), libc6 (>= 2.40), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1)
+Filename: ./l/libubsan1/libubsan1_14.2.0-7_loong64.deb
+Size: 1071108
+MD5sum: d90ac0e6ec8d875a22540dcc41fe758a
+SHA1: b633ba9ae79ea30dd9fd7f8f3c068d0490512298
+SHA256: 2ba64bf203d6c097d7dc8065c3d75042aed5b4d68aa9b8da24fd3462e2887118
+SHA512: d57c176af3a7057c9896c7025040dc6862fa1215112ce2d61d1f5200f55da2f02a2c2549e8849476d381224191ed01a393eb0764a89c53fab37bbfc5fc08364f
+Homepage: http://gcc.gnu.org/
+Description: UBSan -- undefined behaviour sanitizer (runtime)
+ UndefinedBehaviorSanitizer can be enabled via -fsanitize=undefined.
+ Various computations will be instrumented to detect undefined behavior
+ at runtime. Available for C and C++.
 
 Package: libudev1
 Architecture: loong64
@@ -3278,6 +5915,106 @@ Description: save the output of a command in a log file
  containing directory for logfile does not exist, logsave will
  accumulate the output in memory until it can be written out.  A copy
  of the output will also be written to standard output.
+
+Package: libdebconfclient0
+Architecture: loong64
+Version: 0.272
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: cdebconf
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Installed-Size: 40
+Depends: libc6 (>= 2.38)
+Filename: ./l/libdebconfclient0/libdebconfclient0_0.272_loong64.deb
+Size: 10072
+MD5sum: 46130e544304a334e994eff90915372c
+SHA1: f6ab7bf8202ecd37d286501429c8cdc37129c3b8
+SHA256: 9241e4516284d2a2bd143ec09c81b8dc49669f5be542689432a6779e6cf64136
+SHA512: f6ba5bdf25d523066a287e57e953c67cf39f12f1b7633fefc61c740d6ac4012ecb6a22c7c7f87ceb67d362cbd21fe5821c4a70963cf13f6b722871612753eda7
+Description: Debian Configuration Management System (C-implementation library)
+ Debconf is a configuration management system for Debian packages. It is
+ used by some packages to prompt you for information before they are
+ installed. cdebconf is a reimplementation of the original debconf in C.
+ .
+ This library allows C programs to interface with cdebconf.
+
+Package: libkrb5support0
+Architecture: loong64
+Version: 1.21.3-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: krb5
+Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 136
+Depends: libc6 (>= 2.39)
+Breaks: krb5-admin-server (<< 1.20.1-4~), krb5-kdc (<< 1.20.1-4~), krb5-pkinit (<< 1.20.1-4~), krb5-user (<< 1.20.1-4~), libgssapi-krb5-2 (<< 1.20), libk5crypto3 (<< 1.20.1-4~), libkadm5clnt-mit9 (<< 1.13~alpha1-1), libkadm5srv-mit12 (<< 1.20.1-4~), libkadm5srv-mit9 (<< 1.13~alpha1-1), libkdb5-10t64 (<< 1.20.1-4~), libkdb5-8 (<< 1.16), libkrb5-3 (<< 1.20.1-4~)
+Filename: ./l/libkrb5support0/libkrb5support0_1.21.3-3_loong64.deb
+Size: 31988
+MD5sum: fb63af33a6a44670b23426b3a65b4cf5
+SHA1: 0539f513fffd52dd71bd1e675be0e5c98fa5338c
+SHA256: 086dbd40368480376b9edbd60498cf4e9ce2d2ed2c97d3f48bebd7d67e952350
+SHA512: 8dfaa6307fd4a19bc3b7ad42dee29b04d44b45e8e748ec857eb4953ac76f14b999dc9d5367154c82ffa84d0aabc7486ea2168ed09a0955b6be08bd85ebff272d
+Homepage: https://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - Support library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an internal runtime support library used by other
+ Kerberos libraries.
+
+Package: libproc2-0
+Architecture: loong64
+Version: 2:4.0.4-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: procps
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 244
+Depends: libc6 (>= 2.40), libsystemd0
+Replaces: procps (<< 1:3.3.2-1)
+Filename: ./l/libproc2-0/libproc2-0_2%3a4.0.4-6_loong64.deb
+Size: 64956
+MD5sum: 784ddc640657635cfa63eb568dfff603
+SHA1: 372fecf0591ba23c898c2515b8575fedaba4d32c
+SHA256: 44bf19569ee19d9104af05adda73755da6b396d781ab5b4d09b66ef9f17830a8
+SHA512: 61e77411c88fdfcda502e7cd9e399132216b7223c08977f09966f21f49339c8f1e15ca61fd257030f2a33868dbcceaf7ff6f788e30ee295889f24b2d3bffecfa
+Homepage: https://gitlab.com/procps-ng/procps
+Description: library for accessing process information from /proc
+ The libproc2 library is a way of accessing information out of the /proc
+ filesystem.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with libproc2.
+
+Package: libsystemd0
+Architecture: loong64
+Version: 256.7-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 1099
+Depends: libc6 (>= 2.40), libcap2 (>= 1:2.10)
+Recommends: libzstd1
+Suggests: libgcrypt20, liblz4-1, liblzma5
+Filename: ./l/libsystemd0/libsystemd0_256.7-2_loong64.deb
+Size: 382736
+MD5sum: ab6db337f845735063fad5de4ddbed47
+SHA1: cabedadf4dac64415450da216e72d7e3cf47962e
+SHA256: c884c3a71a62fb868166dbc27bfdd84cbb0d6188b5a1185a4c8a2296d1118ed7
+SHA512: 3e053ce5f269dcc02f179611447d1924cffd92fc530baf384afa197b74d830232a5014edce0748ff2eef4cf16ab3d4546b66c404df295c046511ec6b15a51e2f
+Homepage: https://systemd.io
+Description: systemd utility library
+ This library provides APIs to interface with various system components such as
+ the system journal, the system service manager, D-Bus and more.
 
 Package: mawk
 Architecture: loong64
@@ -4049,6 +6786,660 @@ Description: /proc file system utilities
  .
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
+
+Package: pulseaudio
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Multi-Arch: foreign
+Priority: optional
+Section: sound
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 6362
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libasound2t64 (>= 1.2.1.1), libc6 (>= 2.38), libcap2 (>= 1:2.10), libdbus-1-3 (>= 1.9.14), libfftw3-single3 (>= 3.3.10), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.32.0), libgstreamer-plugins-base1.0-0 (>= 1.10.0), libgstreamer1.0-0 (>= 1.14.0), libice6 (>= 1:1.0.0), libltdl7 (>= 2.4.7), liborc-0.4-0t64 (>= 1:0.4.34), libpulse0 (= 16.1+dfsg1-5.1), libsm6, libsndfile1 (>= 1.0.20), libsoxr0 (>= 0.1.0), libspeexdsp1 (>= 1.2.1), libstdc++6 (>= 11), libsystemd0, libtdb1 (>= 1.2.7+git20101214), libudev1 (>= 183), libwebrtc-audio-processing1, libwrap0 (>= 7.6-4~), libx11-6 (>= 2:1.7.0), libx11-xcb1 (>= 2:1.8.7), libxcb1, libxtst6, adduser, lsb-base, libasound2-plugins, pulseaudio-utils
+Recommends: rtkit, default-logind | logind, dbus-user-session
+Suggests: udev, pavumeter, pavucontrol, paprefs
+Filename: ./p/pulseaudio/pulseaudio_16.1+dfsg1-5.1_loong64.deb
+Size: 1094988
+MD5sum: e9de6b347f1848d954d7062aa94fdf78
+SHA1: 7544baa44df539aa925bebc4be7ff40f984fdbaa
+SHA256: cfd18f9c85afd8254c27cfd088d7f64e4e57d1c8ce1fa8533a3c4818ca99b0bc
+SHA512: 94f4da515d97f7413ce4572a3b29b7e9774e132ecffdb6ee83a64f8aec6b561d07c14265f16602df0d5ce0fcbfafa07570b59895ee013e87bbd326b0f2852c6c
+Homepage: https://www.pulseaudio.org
+Description: PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ These are some of PulseAudio's features:
+ .
+   * High quality software mixing of multiple audio streams with support for
+     more than one sink/source. May be used to combine multiple sound cards
+     into one (with sample rate adjustment).
+ .
+   * Wide range of supported client libraries. ESD, ALSA, oss, libao and
+     GStreamer client applications are supported as-is. Native PulseAudio
+     plug-ins are also available for xmms and mplayer.
+ .
+   * Good low latency behaviour and very accurate latency measurement for
+     playback and recording. Ability to fully synchronize multiple playback
+     streams.
+ .
+   * Network transparency, allowing an application to play back or record
+     audio on a different machine than the one it is running on.
+ .
+   * Extensible plug-in architecture with plug-ins for jackd, multicast-rtp
+     lirc and avahi, just to name a few.
+ .
+ This package contains the daemon and basic module set.
+
+Package: pulseaudio-equalizer
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 143
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libfftw3-single3 (>= 3.3.10), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1), python3, python3-pyqt5, python3-dbus.mainloop.pyqt5, python3-dbus
+Filename: ./p/pulseaudio-equalizer/pulseaudio-equalizer_16.1+dfsg1-5.1_loong64.deb
+Size: 47944
+MD5sum: 52f2c5ef82f4696d6727c654c7fc65d7
+SHA1: 1a4f7ef5fbc3380161740d536b6e81deac0289fe
+SHA256: fc4319dd8659ed9a15edc8d27a3c21fa40ffd2b11f7eca8fd1c3b2321f731f09
+SHA512: 4ad478e3ddba4ebcbfe8517be2a818390564cb8d3cef1df0b4ca3f952cb94bdc39ee43335dec2c29592eed06ba58f831d7c8638723c40e169ca3cf7db6ae7a48
+Homepage: https://www.pulseaudio.org
+Description: Equalizer sink module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This package provides an equalizer sink and an interface to configure the
+ equalizer, qpaeq.
+ .
+ The module is called module-equalizer-sink.
+
+Package: pulseaudio-module-bluetooth
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 336
+Depends: libbluetooth3 (>= 4.91), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.12.0), libgstreamer-plugins-base1.0-0 (>= 1.10.0), libgstreamer1.0-0 (>= 1.4.0), libpulse0 (= 16.1+dfsg1-5.1), libsbc1 (>= 2.0), pulseaudio (= 16.1+dfsg1-5.1), bluez
+Recommends: gstreamer1.0-plugins-bad (>= 1.19)
+Filename: ./p/pulseaudio-module-bluetooth/pulseaudio-module-bluetooth_16.1+dfsg1-5.1_loong64.deb
+Size: 98344
+MD5sum: 1be27f2db1983d1a58dc6bb18b03259e
+SHA1: 55816cbe80fc83e15fd004861ee1aa54c9e3d24f
+SHA256: 14b47bf0f67c62dd925cd8ed1d00e99c7e17ed7b58440cb75390d1b49e0f8bb6
+SHA512: 0d0ebc7e23c7eff713a43e8c2c26f41a270c875ef8df6ea658cb13657a6c9fd3a0c82ded27a99b2857332b530407f8be2a1ee4f9648da138fc9211b7ebb8b7c9
+Homepage: https://www.pulseaudio.org
+Description: Bluetooth module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to work with bluetooth devices, like headset
+ or audio gateway.
+ .
+ The module is called module-bluetooth
+
+Package: pulseaudio-module-gsettings
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 104
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.68.0), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1), dconf-gsettings-backend | gsettings-backend
+Filename: ./p/pulseaudio-module-gsettings/pulseaudio-module-gsettings_16.1+dfsg1-5.1_loong64.deb
+Size: 28956
+MD5sum: ed605213978b0dbf6786188843b0c0a6
+SHA1: dd1278c901b1f691f08bf091c2c62c8f0e32c6e8
+SHA256: aa244e61400f6001ccd3c16d64bac2db7c6acc30ecd738e35c23c655092364bc
+SHA512: 4fd36c5a2843684d7cb95ac53641353d7dc3cb42b08baa3350aa8d7622e6d927223a368f0701b858cbd68b4aea7c6d750a161a50884f0c0d9e7d273e855c6e2f
+Homepage: https://www.pulseaudio.org
+Description: GSettings module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to store additional configuration in GSettings.
+ .
+ The module is called module-gsettings.
+
+Package: pulseaudio-module-jack
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 137
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1)
+Filename: ./p/pulseaudio-module-jack/pulseaudio-module-jack_16.1+dfsg1-5.1_loong64.deb
+Size: 35840
+MD5sum: 359083ababebb70d7297699bf1512dd3
+SHA1: a574d78237ab67a0a5d8b7ba0637fed216e3c694
+SHA256: 0b3f0be442543d1fb1c01a5180e84d64823e68aabd9d2edf8476665e2d4fa348
+SHA512: ddc348949501d61e9c71e5a500a17e2269d4dd26ce6e51d9d00123397419913970f35ce0c95187fafe10de94eec326d8693a6bf89bc73c2cef7113fa16a80baf
+Homepage: https://www.pulseaudio.org
+Description: jackd modules for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ These modules enables PulseAudio to connect to a jackd daemon.
+ .
+ The modules are called module-jack-sink, module-jack-source.
+
+Package: pulseaudio-module-lirc
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 67
+Depends: libc6 (>= 2.38), liblirc-client0t64 (>= 0.10.2), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1)
+Filename: ./p/pulseaudio-module-lirc/pulseaudio-module-lirc_16.1+dfsg1-5.1_loong64.deb
+Size: 25184
+MD5sum: 31263d1a2830f521b78849ea9bbc68c7
+SHA1: eb12938e1c4525e5de7826d87ee86e969372bc9c
+SHA256: c810876d9e2e75021546559d3545c2889f0959c5005c093ec4798b15fee25444
+SHA512: 00b25f0cbe73c12c5fc35964a5f82ed396bceebf451be22f44d8dc1b9ab0b3359c3ad7cdbea1b0f91bc1e3f0e1ad323c068c953bb424396f3c50a378810ece7c
+Homepage: https://www.pulseaudio.org
+Description: lirc module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables the volume of a PulseAudio sink to be controlled when
+ buttons of an infrared remote control are pressed (through LIRC).
+ .
+ The module is called module-lirc.
+
+Package: pulseaudio-module-raop
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 154
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1), libssl3t64 (>= 3.0.0), pulseaudio (= 16.1+dfsg1-5.1), pulseaudio-module-zeroconf
+Filename: ./p/pulseaudio-module-raop/pulseaudio-module-raop_16.1+dfsg1-5.1_loong64.deb
+Size: 48612
+MD5sum: 6fb74f9b8840ceca02a70657ae041df1
+SHA1: 58d2e35269ca115a968e076fccf1b1d6866464af
+SHA256: 700b6c37edfe084575ebf02a9b6725bbab457cd762aa5bbac0d68d06dbdda023
+SHA512: e43f88dcc5c2c22e93b1782c034b8520553e9f1e183e4fe86ee86ca36913fa54ac7573ff312acae614ffcba6d6db92910707c980fbac7b44bec3b5fb958cac80
+Homepage: https://www.pulseaudio.org
+Description: RAOP module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to stream audio to an Apple Airport Express.
+
+Package: pulseaudio-module-zeroconf
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 120
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libpulse0 (= 16.1+dfsg1-5.1), pulseaudio (= 16.1+dfsg1-5.1), avahi-daemon
+Filename: ./p/pulseaudio-module-zeroconf/pulseaudio-module-zeroconf_16.1+dfsg1-5.1_loong64.deb
+Size: 35892
+MD5sum: 14bbdd2987f49f510bb8f3a2af3472b4
+SHA1: af5e6c8d1e2640c822c0276c5df3dba5a799aff1
+SHA256: 57dceec8cc5eeb3295414a09b410389b1032c7297c33fffb69a882d0e817a33f
+SHA512: f570d99e8d36ee03a15086e1b1adf4a7c2273bd9010bfb14ee981ca9f2e6f85e3fa9c7550710de7f1769406da0733ce13d796b5b4e5adc11a6dd1551e5dacf2a
+Homepage: https://www.pulseaudio.org
+Description: Zeroconf module for PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to publish available sinks and sources via
+ zeroconf (aka. Avahi, mdns).
+ .
+ The module is called module-zeroconf-publish.
+
+Package: pulseaudio-utils
+Architecture: loong64
+Version: 16.1+dfsg1-5.1
+Priority: optional
+Section: sound
+Source: pulseaudio
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Installed-Size: 327
+Depends: libc6 (>= 2.38), libpulse0 (= 16.1+dfsg1-5.1), libsndfile1 (>= 1.0.20), libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb1, libpulsedsp
+Suggests: avahi-daemon, pulseaudio
+Breaks: pulseaudio (<< 14.2-3~)
+Replaces: pulseaudio (<< 14.2-3~)
+Filename: ./p/pulseaudio-utils/pulseaudio-utils_16.1+dfsg1-5.1_loong64.deb
+Size: 83596
+MD5sum: 280e105e7b0506ac45f9630cf04bd152
+SHA1: 51fabc4773754baf6e9b6b946c7eb08c3b564612
+SHA256: 31671736ef57b92b051a8954b3879974cbf3075c677a5940b7f2535aed02a46a
+SHA512: 03ee5dd149448fadcd6d03c788060bb2d47cd423148bf6d4fb5353e616fd8c10dcb3002b9e806fed29a978bcacc7ca8c1828300d9667a1b1e944bb3776a9bf05
+Homepage: https://www.pulseaudio.org
+Description: Command line tools for the PulseAudio sound server
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ These tools provide command line access to various features of the
+ PulseAudio sound server. Included tools are:
+ .
+   paplay - Playback a WAV file via a PulseAudio sink.
+   pacat - Cat raw audio data to a PulseAudio sink.
+   parec - Cat raw audio data from a PulseAudio source.
+   pacmd - Connect to PulseAudio's built-in command line control interface.
+   pactl - Send a control command to a PulseAudio server.
+   padsp - /dev/dsp wrapper to transparently support OSS applications.
+   pax11publish - Store/retrieve PulseAudio default server/sink/source
+                  settings in the X11 root window.
+
+Package: python3.12
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 746
+Depends: python3.12-minimal (= 3.12.7-1), libpython3.12-stdlib (= 3.12.7-1), media-types | mime-support, tzdata
+Recommends: ca-certificates
+Suggests: python3.12-venv, python3.12-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+Filename: ./p/python3.12/python3.12_3.12.7-1_loong64.deb
+Size: 670664
+MD5sum: 6abfd383f5058fd9c1304b2db6bb3891
+SHA1: 39a24ff85b924f54bcdc1a75471d1d9a019d7d7c
+SHA256: e8206634ac0426fd5e6771883e5d7bcae2172c83b5c633d23249c207de9ee468
+SHA512: 33312bc79c41693738567ec806f5709aa009edfb34539f5aa3f142d839a64acdd50d6420363228847d6ac3e17efebda6aca6347340e95b04994f47fb17f40f57
+Description: Interactive high-level object-oriented language (version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+
+Package: python3.12-dev
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 509
+Depends: python3.12 (= 3.12.7-1), libpython3.12-dev (= 3.12.7-1), libpython3.12t64 (= 3.12.7-1)
+Recommends: libc6-dev | libc-dev
+Filename: ./p/python3.12-dev/python3.12-dev_3.12.7-1_loong64.deb
+Size: 506648
+MD5sum: 66590f1abce701e117f4f2c552eda0f4
+SHA1: a8cffeca18c81d52899c82762178b04ac5abe17e
+SHA256: c1a9a087028cc2b22c79608911208e5ce16a344af76b3ffc76be4826613015b8
+SHA512: fca09323a5cdc999551adf97e4cd94c204f5d921903ca1389033d56cfa4cc66ab34441d360a305254fe0b0ea253f24911854446738a842b1dddb3ac0c0e92dd5
+Description: Header files and a static library for Python (v3.12)
+ Header files, a static library and development tools for building
+ Python (v3.12) modules, extending the Python interpreter or embedding
+ Python (v3.12) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+
+Package: python3.12-full
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 6
+Depends: python3.12 (= 3.12.7-1), libpython3.12-testsuite, python3.12-venv (= 3.12.7-1), idle-python3.12, python3.12-gdbm, python3.12-lib2to3, python3.12-tk, ca-certificates
+Recommends: python3.12-doc, python3.12-examples
+Suggests: python3.12-dev
+Filename: ./p/python3.12-full/python3.12-full_3.12.7-1_loong64.deb
+Size: 1276
+MD5sum: 2544090f361697ea116101691f5e9ee2
+SHA1: 2107faaf40dd7d3add4baf44e60e44530ce44ce6
+SHA256: fc751f9e2bce7cba6e34aba2a7d7a0551bcc023dc4efa98fdf67c2b291d518df
+SHA512: 0a3fe8378baa93ba82a4e657f9576e86467c96e4533f137f194736dc5d8a095e939fa34c448a55e748ed3625bdd31aa645af488f2bbc5ad24dbfeae851efee0c
+Description: Python Interpreter with complete class library (version 3.12)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on the full
+ standard library of Python for Python developers. Including modules
+ used only at build-time, such as venv and lib2to3, and modules with
+ complex dependencies, such as tk and IDLE. All batteries included.
+ .
+ According to the Debian Python policy, this package must not be used in
+ build dependencies, dependencies and recommendations.
+
+Package: python3.12-gdbm
+Architecture: loong64
+Version: 3.12.7-1
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 105
+Depends: libc6 (>= 2.40), libgdbm6t64 (>= 1.16)
+Breaks: python3-gdbm (<< 3.12.5-2~)
+Replaces: python3-gdbm (<< 3.12.5-2~)
+Enhances: python3.12
+Filename: ./p/python3.12-gdbm/python3.12-gdbm_3.12.7-1_loong64.deb
+Size: 28808
+MD5sum: ab7cdf1e0a97b2499822a7a2296d0e22
+SHA1: e00bb202f917e28eccdb83de0d49a026a1403290
+SHA256: 08bf595869e2d50bc471871e625b255aa696d0a2cd304de516a0ec45ea7ed1da
+SHA512: 08d4b20a8565cdc52b061eec021f138f8445af053acad07ed95d58bb23f58451cf5fa7fef78ca75539200c1992612df8952fbfa935d94cc917b521703ec9b018
+Description: GNU dbm database support for Python (v3.12)
+ GNU dbm database module for Python. Install this if you want to
+ create or read GNU dbm database files with Python.
+
+Package: python3.12-minimal
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8776
+Pre-Depends: libc6 (>= 2.40)
+Depends: libpython3.12-minimal (= 3.12.7-1), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Recommends: python3.12
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./p/python3.12-minimal/python3.12-minimal_3.12.7-1_loong64.deb
+Size: 2107328
+MD5sum: ff1f3a6854af623046d20271ef3dd16a
+SHA1: 04a23426bf27a33847f83e15d9775a6e9fec2845
+SHA256: 88babb3cc2534b7c00b5ce834562f1eaac996018c11d44b0e21500fdc8465666
+SHA512: 4a98512f46837c1292e49813137279fcc35e58b0577930b8ccec3f6e257bf5f351c2be7d21faf2c3d273c9d0144815b3f31f7b1ea125dc0e80f213b7a1d4d60c
+Description: Minimal subset of the Python language (version 3.12)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.12-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.12
+
+Package: python3.12-nopie
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8756
+Depends: python3.12-minimal (= 3.12.7-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Filename: ./p/python3.12-nopie/python3.12-nopie_3.12.7-1_loong64.deb
+Size: 2096748
+MD5sum: 7b9cf6107e551c8649e294d688efb86c
+SHA1: c050fb6011af59606853d785502fcc8f6a306ac7
+SHA256: 2c630e7854d69d22b3fefeea8a06741fce08412f48c39c432e3aef0917ed596f
+SHA512: cbd33daef18c22fd69d7978d40edafb9b27371995f48c5b2edeef7f3a6237fa888a0bcd8fd5427cbcde36bd91cfafa8639b5d50d48e8beec354c79844bc4f02f
+Description: Python interpreter linked without PIE (version 3.12)
+ This package contains the interpreter not built as position independent
+ executable. This interpreter is diverting the python3.12 executable, and making
+ the interpreter built with PIE available as python3.12-pie.
+Cnf-Visible-Pkgname: python3.12
+
+Package: python3.12-tk
+Architecture: loong64
+Version: 3.12.7-1
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 523
+Depends: libc6 (>= 2.40), libtcl8.6 (>= 8.6.0), libtk8.6 (>= 8.6.0)
+Suggests: tix
+Breaks: python3-tk (<< 3.12.5-2~)
+Replaces: python3-tk (<< 3.12.5-2~)
+Enhances: python3.12
+Filename: ./p/python3.12-tk/python3.12-tk_3.12.7-1_loong64.deb
+Size: 114936
+MD5sum: d17f625a4faf9076d7b3057f87889fc7
+SHA1: 2f2d4934118180850595b0ca6e6e1d8f43587b7c
+SHA256: b0e3517a02e04463f5d97a22f367ccdc0f5a6e36bc914e32bc6e82e03707e405
+SHA512: b5108f8f1343f35ea31f3e017ede3ce7182f172eb7acb85eab8f3add50aff5e41ce00d29c2ecf48fb304ea5ae71fb8a4ed6bba7353f9468dbedde0d07018d3e8
+Description: Tkinter - Writing Tk applications with Python (v3.12)
+ A module for writing portable GUI applications with Python (v3.12) using Tk.
+ Also known as Tkinter.
+Python-Version: 3.12
+
+Package: python3.12-venv
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 28
+Depends: python3.12 (= 3.12.7-1), python3-pip-whl (>= 22.2), python3-setuptools-whl
+Breaks: python3-pip (<< 1.5.6-4)
+Filename: ./p/python3.12-venv/python3.12-venv_3.12.7-1_loong64.deb
+Size: 5844
+MD5sum: d17d6c3fe40a6ad1e8b20c7697e66350
+SHA1: 61debf01a94243bd1db1d5544b985139004b1d65
+SHA256: 193ec2e31d1cf55a766c5f5fa704f1c7ea951c7c87afb24ef1050b83b18fafaa
+SHA512: bdf9b2afd361b14f490bdfa13a22181ab9ae5dec184440276afb3e15c9a1f81753e7ece02a05a7a230beebab045a26d85eb047e218c6c20e12d13c5b532772e6
+Description: Interactive high-level object-oriented language (pyvenv binary, version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the pyvenv-3.12 binary.
+
+Package: python3.13
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 804
+Depends: python3.13-minimal (= 3.13.0-1), libpython3.13-stdlib (= 3.13.0-1), media-types | mime-support, tzdata
+Recommends: ca-certificates
+Suggests: python3.13-venv, python3.13-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+Filename: ./p/python3.13/python3.13_3.13.0-1_loong64.deb
+Size: 729736
+MD5sum: 415ac991d6289d6a22e530d9a3d46b87
+SHA1: 3011800656f0d8e22ccb72745a53a81882e2fabb
+SHA256: 6070f35fed154adf9765e7336392a64c876fe91f96b83d8d295723559a438b7f
+SHA512: f53614abdd200502c0bace3ac305f08693360f738da6effbe42592c44c4af27020cd083ca1faed4e6e7434194c0a1250ecc72f1af8cab37ac8f5fae3914fa530
+Description: Interactive high-level object-oriented language (version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+
+Package: python3.13-dev
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 508
+Depends: python3.13 (= 3.13.0-1), libpython3.13-dev (= 3.13.0-1), libpython3.13 (= 3.13.0-1)
+Recommends: libc6-dev | libc-dev
+Filename: ./p/python3.13-dev/python3.13-dev_3.13.0-1_loong64.deb
+Size: 504768
+MD5sum: b29e2ce35949ea2cf639147bc6021bdb
+SHA1: d13048dc8235f9c7bc782b3e6d1740eb5ef33347
+SHA256: c30fdee304976cbb6e9f1455a40123946306d8f4d08fccde018a77238ecda667
+SHA512: a5289bb1dd7875d71287898f41bc04a0858579895f56051a097c7581d6e5f59b044d18ee3e52f2fcfd401c99c6b12d4a9a5b44771d949da80c62e6d822a8dc35
+Description: Header files and a static library for Python (v3.13)
+ Header files, a static library and development tools for building
+ Python (v3.13) modules, extending the Python interpreter or embedding
+ Python (v3.13) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+
+Package: python3.13-full
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 6
+Depends: python3.13 (= 3.13.0-1), libpython3.13-testsuite, python3.13-venv (= 3.13.0-1), idle-python3.13, python3.13-gdbm, python3.13-tk, ca-certificates
+Recommends: python3.13-doc, python3.13-examples
+Suggests: python3.13-dev
+Filename: ./p/python3.13-full/python3.13-full_3.13.0-1_loong64.deb
+Size: 1260
+MD5sum: af9e928f94838acbcf78daa264e381c1
+SHA1: 42795f4018b2383ed2373b103fa108186aecb53e
+SHA256: f5a3fd7cd5f2f27bdd6b653ef762aa021740548eea7818dac945c991759a8476
+SHA512: f622d83d0edc8b69d4a360e0bd7a1d1f9648ba47330048350ecba133c2efc508d638f9158ff30991e0eb3faa4e5418415195a7f7861ed83d9aa0e78bae3ab339
+Description: Python Interpreter with complete class library (version 3.13)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on the full
+ standard library of Python for Python developers. Including modules
+ used only at build-time, such as venv, and modules with complex
+ dependencies, such as tk and IDLE. All batteries included.
+ .
+ According to the Debian Python policy, this package must not be used in
+ build dependencies, dependencies and recommendations.
+
+Package: python3.13-gdbm
+Architecture: loong64
+Version: 3.13.0-1
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 106
+Depends: libc6 (>= 2.40), libgdbm6t64 (>= 1.16)
+Breaks: python3-gdbm (<< 3.12.5-2~)
+Replaces: python3-gdbm (<< 3.12.5-2~)
+Enhances: python3.13
+Filename: ./p/python3.13-gdbm/python3.13-gdbm_3.13.0-1_loong64.deb
+Size: 29660
+MD5sum: 151fc5a55f1dbefede02c77f470cbb00
+SHA1: 31d7654a7cacc6e67c524b83d1b5dd5f9e5d27d1
+SHA256: 55f009b3ca784ff013877a6159d33cc9d8b6031b7e7e5af9802980dd0e539fdb
+SHA512: 4ce424bacc92363cee65e980565d4a6ef6a9bab2682fccbcb0dcd4f2b9fb30630ca306b10586906af70c235e6fdcc457bfb5a7e3e27ab52d67947eac3de32694
+Description: GNU dbm database support for Python (v3.13)
+ GNU dbm database module for Python. Install this if you want to
+ create or read GNU dbm database files with Python.
+
+Package: python3.13-minimal
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7781
+Pre-Depends: libc6 (>= 2.40)
+Depends: libpython3.13-minimal (= 3.13.0-1), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Recommends: python3.13
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./p/python3.13-minimal/python3.13-minimal_3.13.0-1_loong64.deb
+Size: 2134924
+MD5sum: e60892f70557dc0d4a3a2249f3ab4b16
+SHA1: 957cec7277cfba95d5c3347712630ab86e362cc7
+SHA256: 7b3f581edcab5ddc79ec3babc36344f36d60869693370f1c1c9de919045aa562
+SHA512: f664960634f468567a26382d5b66595dc8677d54bfe4481f7e6a2da72c0d48b7d1c45d4598e4596c4b606091cdf644c4168af8203b34ed35d6d339e047022a3b
+Description: Minimal subset of the Python language (version 3.13)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.13-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.13
+
+Package: python3.13-nopie
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7761
+Depends: python3.13-minimal (= 3.13.0-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Filename: ./p/python3.13-nopie/python3.13-nopie_3.13.0-1_loong64.deb
+Size: 2124104
+MD5sum: 0050d08ca4f7336abb3ebfb0383dbdc4
+SHA1: 5f4e759eeed9926c65946d3100c3162c494d203c
+SHA256: c88afb7a399cbf8b68f9ec2f5ff8aff8e843a6fd1f7f660b0542c51d39fe0c4e
+SHA512: 6398c89754069cbfc2618ec15b809ea0d3d88d90ace09c536d7b1899e3bb53f4fbebd75e677147f36d7202a96c708d97fa460d419728ace531bec088d7474d91
+Description: Python interpreter linked without PIE (version 3.13)
+ This package contains the interpreter not built as position independent
+ executable. This interpreter is diverting the python3.13 executable, and making
+ the interpreter built with PIE available as python3.13-pie.
+Cnf-Visible-Pkgname: python3.13
+
+Package: python3.13-tk
+Architecture: loong64
+Version: 3.13.0-1
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 463
+Depends: libc6 (>= 2.40), libtcl8.6 (>= 8.6.0), libtk8.6 (>= 8.6.0)
+Suggests: tix
+Breaks: python3-tk (<< 3.12.5-2~)
+Replaces: python3-tk (<< 3.12.5-2~)
+Enhances: python3.13
+Filename: ./p/python3.13-tk/python3.13-tk_3.13.0-1_loong64.deb
+Size: 105932
+MD5sum: 8e1130088f8de89d2a06752179cfb9ee
+SHA1: d97b247197cc3cfbcf2c585defe88651cd5e7909
+SHA256: 2213d7829b4d9c1f5e1dcf048dad97b8ef6edcdb42748ed42460023bf982ab8c
+SHA512: 938351a29b4783017b74c99e555be03c9f466087ee20a83622e12d5a738dd8d5315627ea9aa8be1137f4df47dbf12d49c6aa384cdaae48ac971ba8934f7e5f2b
+Description: Tkinter - Writing Tk applications with Python (v3.13)
+ A module for writing portable GUI applications with Python (v3.13) using Tk.
+ Also known as Tkinter.
+Python-Version: 3.13
+
+Package: python3.13-venv
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 27
+Depends: python3.13 (= 3.13.0-1), python3-pip-whl (>= 22.2), python3-setuptools-whl
+Breaks: python3-pip (<< 1.5.6-4)
+Filename: ./p/python3.13-venv/python3.13-venv_3.13.0-1_loong64.deb
+Size: 5464
+MD5sum: 7b76c8422ad18144cb684005e233e52e
+SHA1: 46a7857334ff5e1f6fec7d5580f0bddbd94a7240
+SHA256: 09824a3151e2783010b53e9313181a84c13a93e85081ab15dd236897fe3d7d05
+SHA512: 7bedbcf6047db25673d97ec2d805d785ac15609d41e9415a72f40363a9b36598df95b1e7817cb8017ff4ae41d1a1c15285afbbefd5febaa022dafe0bc889aeaa
+Description: Interactive high-level object-oriented language (pyvenv binary, version 3.13)
+ Python is a high-level, interactive, object-oriented language. Its 3.13 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the pyvenv-3.13 binary.
 
 Package: qemu-block-extra
 Architecture: loong64

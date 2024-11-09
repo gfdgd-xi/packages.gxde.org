@@ -1,0 +1,24 @@
+Package: libgcc-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 67000
+Depends: gcc-14-base (= 14.2.0-7), libgcc-s1 (>= 14.2.0-7), libgomp1 (>= 14.2.0-7), libitm1 (>= 14.2.0-7), libatomic1 (>= 14.2.0-7), libasan8 (>= 14.2.0-7), liblsan0 (>= 14.2.0-7), libtsan2 (>= 14.2.0-7), libubsan1 (>= 14.2.0-7)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-14-dev/libgcc-14-dev_14.2.0-7_loong64.deb
+Size: 5289932
+MD5sum: 21d1c9bb275a2372054ead356c8cd705
+SHA1: 62ef7d6df78634781e9b4c62cba01b1328008668
+SHA256: 0a6ec77a75023c4f239ec69c168b86553a2aba108f167651130a2fd28de1b44e
+SHA512: 742c0cce1bd294c7451c01d0289ed77d217042f8fc4f24408a01b0581a9aea596d9afbea8292508a616655fd07261f1b515b23ec41b8dc6a32e54bdac2ca09ca
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+

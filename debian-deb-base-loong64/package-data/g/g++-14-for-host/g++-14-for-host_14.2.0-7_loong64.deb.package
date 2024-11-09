@@ -1,0 +1,26 @@
+Package: g++-14-for-host
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-14-base (= 14.2.0-7), g++-14-loongarch64-linux-gnu (>= 14), gcc-14-for-host (= 14.2.0-7)
+Filename: ./g/g++-14-for-host/g++-14-for-host_14.2.0-7_loong64.deb
+Size: 1052
+MD5sum: fee54172bce316c17bd8c4bc8b4568f4
+SHA1: 6ea9185da7ebc309d3b051e8fcfc9e655ab6e960
+SHA256: c4bdc6fb7a6128e1b562bb5438ebc2d699e8ead4851f685e589d96b85ab4d7d5
+SHA512: 6cba77dc396ba18a97c122c426b888299e42087f233812a19c4b2d56a9afafe7d1674ca5d29afaa761fa84fa5de7db3a17369974829a7e4729f1b2f19b927020
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for the host architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for the host architecture.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

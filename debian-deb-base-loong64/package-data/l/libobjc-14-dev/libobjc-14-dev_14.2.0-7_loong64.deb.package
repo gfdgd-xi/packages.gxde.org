@@ -1,0 +1,21 @@
+Package: libobjc-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 5220
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev (= 14.2.0-7), libobjc4 (>= 14.2.0-7)
+Filename: ./l/libobjc-14-dev/libobjc-14-dev_14.2.0-7_loong64.deb
+Size: 294624
+MD5sum: d5fc9f3684fc88c1e9fd6f6f45b038c7
+SHA1: 7381eb1176f78d759a9e4c153c8662dc778ea7d7
+SHA256: 6dbb31182966f974d0503fcb1cd3e360bc37f4aed4089376214815fb91b7ecec
+SHA512: 075495a0a09604a200977c59b35ca33d7026d300efa21985fa35c22b30fd7cd0e1486844bc3b08ad8eb6376badab5bd739badaf6b80e374ad42d598611985b9a
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+

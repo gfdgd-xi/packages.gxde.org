@@ -1,0 +1,22 @@
+Package: python3.13-gdbm
+Architecture: loong64
+Version: 3.13.0-1
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 106
+Depends: libc6 (>= 2.40), libgdbm6t64 (>= 1.16)
+Breaks: python3-gdbm (<< 3.12.5-2~)
+Replaces: python3-gdbm (<< 3.12.5-2~)
+Enhances: python3.13
+Filename: ./p/python3.13-gdbm/python3.13-gdbm_3.13.0-1_loong64.deb
+Size: 29660
+MD5sum: 151fc5a55f1dbefede02c77f470cbb00
+SHA1: 31d7654a7cacc6e67c524b83d1b5dd5f9e5d27d1
+SHA256: 55f009b3ca784ff013877a6159d33cc9d8b6031b7e7e5af9802980dd0e539fdb
+SHA512: 4ce424bacc92363cee65e980565d4a6ef6a9bab2682fccbcb0dcd4f2b9fb30630ca306b10586906af70c235e6fdcc457bfb5a7e3e27ab52d67947eac3de32694
+Description: GNU dbm database support for Python (v3.13)
+ GNU dbm database module for Python. Install this if you want to
+ create or read GNU dbm database files with Python.
+

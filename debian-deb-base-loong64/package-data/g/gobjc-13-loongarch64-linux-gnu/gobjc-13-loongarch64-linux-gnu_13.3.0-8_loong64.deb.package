@@ -1,0 +1,26 @@
+Package: gobjc-13-loongarch64-linux-gnu
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 21812
+Provides: objc-compiler-loongarch64-linux-gnu
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (= 13.3.0-8), libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), libobjc-13-dev (= 13.3.0-8)
+Suggests: gcc-13-doc (>= 13)
+Breaks: gobjc-13 (<< 13.2.0-11)
+Replaces: gobjc-13 (<< 13.2.0-11)
+Filename: ./g/gobjc-13-loongarch64-linux-gnu/gobjc-13-loongarch64-linux-gnu_13.3.0-8_loong64.deb
+Size: 7325824
+MD5sum: 346123cdbb2f9f32cc2e9e3aff096e40
+SHA1: 5056c18acf5c86f59ed40e8516dc1d5900fbfe8d
+SHA256: 8ae297cfcbbf262e7b05254cdf364f04e972d1ef4b9865f174099d8470d8dba7
+SHA512: f7e6385daf9bd63d253f9a89de74e6b91f7018b45338512b6dca4aded9dd889eb76a62fc4d72cbaa7f20352dce7f47380bbc486ff406dcb84a856b72d7494d68
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+

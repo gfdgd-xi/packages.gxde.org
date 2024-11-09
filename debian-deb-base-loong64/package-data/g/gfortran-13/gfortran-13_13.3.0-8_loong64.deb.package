@@ -1,0 +1,23 @@
+Package: gfortran-13
+Architecture: loong64
+Version: 13.3.0-8
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 26
+Provides: fortran95-compiler, gfortran-mod-15
+Depends: gfortran-13-loongarch64-linux-gnu (= 13.3.0-8), gcc-13-base (= 13.3.0-8), gcc-13 (= 13.3.0-8)
+Suggests: gfortran-13-doc
+Filename: ./g/gfortran-13/gfortran-13_13.3.0-8_loong64.deb
+Size: 14324
+MD5sum: 8b00232624df5156359da50272a3d8b2
+SHA1: fbba1c768b396447375a69093b270c88fcbe190d
+SHA256: 323b8fe9474c7c4a15092da91d1922c104b385d11254f5605c642c0decd239a6
+SHA512: e08b8e738d8b27d13c6e06aa56294a2a79f92fa3a51323a6ae3e526a6a7869da93406111a211b5efbe4c85f3898b0244690e134ba148528e4bc3434e9bd91b89
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler
+ This is the GNU Fortran compiler, which compiles
+ Fortran on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+

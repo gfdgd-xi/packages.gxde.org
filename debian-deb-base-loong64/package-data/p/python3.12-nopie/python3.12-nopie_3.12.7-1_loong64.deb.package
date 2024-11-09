@@ -1,0 +1,22 @@
+Package: python3.12-nopie
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8756
+Depends: python3.12-minimal (= 3.12.7-1), libc6 (>= 2.40), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Filename: ./p/python3.12-nopie/python3.12-nopie_3.12.7-1_loong64.deb
+Size: 2096748
+MD5sum: 7b9cf6107e551c8649e294d688efb86c
+SHA1: c050fb6011af59606853d785502fcc8f6a306ac7
+SHA256: 2c630e7854d69d22b3fefeea8a06741fce08412f48c39c432e3aef0917ed596f
+SHA512: cbd33daef18c22fd69d7978d40edafb9b27371995f48c5b2edeef7f3a6237fa888a0bcd8fd5427cbcde36bd91cfafa8639b5d50d48e8beec354c79844bc4f02f
+Description: Python interpreter linked without PIE (version 3.12)
+ This package contains the interpreter not built as position independent
+ executable. This interpreter is diverting the python3.12 executable, and making
+ the interpreter built with PIE available as python3.12-pie.
+Cnf-Visible-Pkgname: python3.12
+

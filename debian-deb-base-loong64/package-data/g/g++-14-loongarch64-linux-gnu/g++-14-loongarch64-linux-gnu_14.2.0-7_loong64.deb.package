@@ -1,0 +1,24 @@
+Package: g++-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 32726
+Provides: c++-compiler-loongarch64-linux-gnu
+Depends: gcc-14-base (= 14.2.0-7), gcc-14-loongarch64-linux-gnu (= 14.2.0-7), libstdc++-14-dev (= 14.2.0-7), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/g++-14-loongarch64-linux-gnu/g++-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10333432
+MD5sum: 9540fcde565c52f5b68cc732256df655
+SHA1: ecb0f7e4218489443252ed904fa037579cdf96b9
+SHA256: 03f4258211340eb0ef28a7613c53720aee70f0d05ac350706b2238ac27acec83
+SHA512: 6d2d17b19a79c70098b36346749a19664ce3d4478afa420b786672a061021b69ae9b44001c24e716e83697cd9efd89ecd19f345ea7b1df869b665d31901ef714
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler for loongarch64-linux-gnu architecture
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for loongarch64-linux-gnu architecture.
+

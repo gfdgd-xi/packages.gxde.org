@@ -1,0 +1,21 @@
+Package: g++-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 33
+Provides: c++-compiler, c++abi2-dev
+Depends: g++-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/g++-14/g++-14_14.2.0-7_loong64.deb
+Size: 20040
+MD5sum: 0b9c867adb13b4df1760c6efc3fe5d62
+SHA1: 6f9e83c2cd875ee9f055301209aca272225abbe0
+SHA256: caa7a99af17d87fb9404aed902ef1028414d316f6a202c27dda006a3a1062a14
+SHA512: cb38da19c6c6b0acf4cdc9d949cd707f06ea24b19de04c2c54dce8e0bbe7ceb4b3e0b302928825192d190f1c9d59839acde306e8c3cec5db87ca58438910a444
+Homepage: http://gcc.gnu.org/
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+

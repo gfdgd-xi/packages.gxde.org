@@ -1,0 +1,22 @@
+Package: libgccjit0
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 25898
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev, binutils, libc6-dev (>= 2.23-1~), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Breaks: python-gccjit (<< 0.4-4), python3-gccjit (<< 0.4-4)
+Filename: ./l/libgccjit0/libgccjit0_14.2.0-7_loong64.deb
+Size: 7717140
+MD5sum: 26268fe23656ac66901f013d91907836
+SHA1: ff5edc22bb380ec7f3176db215b8572549713780
+SHA256: 1193aab6b7fab1d77139cc8dfcf613541e7b08e771d181184597cb630707f946
+SHA512: 65eacfef4198e08cbe5bb19ebb5dec32f8be12cd11c86ebd66ee8473e70320851ae29dda57a416382052b2fb2a01c61a0111077254114d1032ed560d203b9274
+Homepage: http://gcc.gnu.org/
+Description: GCC just-in-time compilation (shared library)
+ libgccjit provides an embeddable shared library with an API for adding
+ compilation to existing programs using GCC.
+

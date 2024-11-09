@@ -1,0 +1,26 @@
+Package: gfortran-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gfortran-13-loongarch64-linux-gnu (>= 13), gcc-13-for-host (= 13.3.0-8)
+Filename: ./g/gfortran-13-for-host/gfortran-13-for-host_13.3.0-8_loong64.deb
+Size: 1076
+MD5sum: 29a4c6c0ef7a08e117bda85f15f39665
+SHA1: fbc9b87c70844137e07c013a0ce7ac2f879eaf9a
+SHA256: c8397baf6b6ef454efb353c025e5f8e660719fa6da02f9246537f4aab0a2c32d
+SHA512: 55171183e67dc1b4b2036c740374913b0c24ebde8548ef26cf3065606d5b7728e5a91f70bc0f3d2934eaedbc70f2f94d0117d5bb9908bcb7f200156dab436247
+Homepage: http://gcc.gnu.org/
+Description: GNU Fortran compiler for the host architecture
+ This is the GNU Fortran compiler for the host architecture,
+ which compiles Fortran on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

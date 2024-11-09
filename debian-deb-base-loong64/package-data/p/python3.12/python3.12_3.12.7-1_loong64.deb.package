@@ -1,0 +1,23 @@
+Package: python3.12
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 746
+Depends: python3.12-minimal (= 3.12.7-1), libpython3.12-stdlib (= 3.12.7-1), media-types | mime-support, tzdata
+Recommends: ca-certificates
+Suggests: python3.12-venv, python3.12-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+Filename: ./p/python3.12/python3.12_3.12.7-1_loong64.deb
+Size: 670664
+MD5sum: 6abfd383f5058fd9c1304b2db6bb3891
+SHA1: 39a24ff85b924f54bcdc1a75471d1d9a019d7d7c
+SHA256: e8206634ac0426fd5e6771883e5d7bcae2172c83b5c633d23249c207de9ee468
+SHA512: 33312bc79c41693738567ec806f5709aa009edfb34539f5aa3f142d839a64acdd50d6420363228847d6ac3e17efebda6aca6347340e95b04994f47fb17f40f57
+Description: Interactive high-level object-oriented language (version 3.12)
+ Python is a high-level, interactive, object-oriented language. Its 3.12 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+

@@ -1,0 +1,21 @@
+Package: libgfortran-14-dev
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 16804
+Depends: gcc-14-base (= 14.2.0-7), libgcc-14-dev (= 14.2.0-7), libgfortran5 (>= 14.2.0-7)
+Filename: ./l/libgfortran-14-dev/libgfortran-14-dev_14.2.0-7_loong64.deb
+Size: 1108264
+MD5sum: e4998c6918f5be94af89d730c474f0ed
+SHA1: 2df4737dc5969a095e903557752b1b490b23d4e2
+SHA256: 4967506db03d29b2746fe09ab8d9c93caff8d868200de1c32ba0887d94071d1f
+SHA512: 3cc87d065b0c7648007ecc488a089520ee19172ed6821dd034dd7da0de185e68d1b4c9cab821a9b61741225ffccf174ab2f70d07bd7ed0608e679f851d2d300f
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+

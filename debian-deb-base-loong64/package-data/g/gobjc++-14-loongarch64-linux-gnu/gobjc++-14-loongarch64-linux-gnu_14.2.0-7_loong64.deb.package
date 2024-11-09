@@ -1,0 +1,24 @@
+Package: gobjc++-14-loongarch64-linux-gnu
+Architecture: loong64
+Version: 14.2.0-7
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 31498
+Provides: objc++-compiler-loongarch64-linux-gnu
+Depends: gcc-14-base (= 14.2.0-7), gobjc-14-loongarch64-linux-gnu (= 14.2.0-7), g++-14-loongarch64-linux-gnu (= 14.2.0-7), libc6 (>= 2.40), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2), libobjc-14-dev (= 14.2.0-7)
+Suggests: gcc-14-doc (>= 14)
+Filename: ./g/gobjc++-14-loongarch64-linux-gnu/gobjc++-14-loongarch64-linux-gnu_14.2.0-7_loong64.deb
+Size: 10059620
+MD5sum: dba7851e2457675de75360e37f82e5e7
+SHA1: e419fbe17140550ff7c40c04c8fd6450c7b3a9b9
+SHA256: 06d26231f8fd98136a3ecc21d0ddb0e216b3d4c855cfe5557029c98dcd4b6227
+SHA512: 0d2f20b90b3c65c7067be0c0883e6ff27f6a83d4ba7a973317f9b105e6cb2a784f88dfe1b583079cd589abf08e7fa72dea5178fe1eface72778fe695dfa849b9
+Homepage: http://gcc.gnu.org/
+Description: GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture
+ This is the GNU Objective-C++ compiler for the loongarch64-linux-gnu architecture,
+ which compiles Objective-C++ on platforms supported by the gcc compiler.
+ It uses the gcc backend to generate optimized code.
+

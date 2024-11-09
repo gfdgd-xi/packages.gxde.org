@@ -1,0 +1,21 @@
+Package: gcc-12-source
+Architecture: all
+Version: 12.2.0-14+loong64.1
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 100993
+Depends: make, quilt, patchutils, sharutils, gawk, lsb-release, time, m4, libtool, autoconf2.69
+Filename: ./g/gcc-12-source/gcc-12-source_12.2.0-14+loong64.1_all.deb
+Size: 83444128
+MD5sum: 6fe4f654c653e57bdd75974eb4e6b9e3
+SHA1: 5b04dbfee47df44ebf92e1f74f799ae14d783775
+SHA256: fe1e38bc6d4d82a926167198052101944490b014c0d7393bda1a9ec337c8d18b
+SHA512: 15eaebc8f61c5adbaeb6ee0de46048b0ba220fdb7336f64589adff1ccd4556c603fa8c8150df7f022d12b9866a08b86d6b31dfab6d3c0076e20bc9109f288929
+Homepage: http://gcc.gnu.org/
+Description: Source of the GNU Compiler Collection
+ This package contains the sources and patches which are needed to
+ build the GNU Compiler Collection (GCC).
+

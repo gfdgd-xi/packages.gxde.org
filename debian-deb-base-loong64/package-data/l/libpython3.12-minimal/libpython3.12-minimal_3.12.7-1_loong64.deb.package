@@ -1,0 +1,22 @@
+Package: libpython3.12-minimal
+Architecture: loong64
+Version: 3.12.7-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.12
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5219
+Depends: libc6 (>= 2.40), libssl3t64 (>= 3.3.0)
+Recommends: libpython3.12-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./l/libpython3.12-minimal/libpython3.12-minimal_3.12.7-1_loong64.deb
+Size: 812236
+MD5sum: 06d74181dc3377647f0462f95b71eebc
+SHA1: ef021f767eac14ac348b867f58aaf83e47324c31
+SHA256: 82fdb15d971f67c8c05ac18ab5e87bba38f317b3efecc1ca89ec2e0a92836cbb
+SHA512: f66a5fd2b382323d197d65b5b594a39b2334500c5b921c26c4315b46ac13abb87b097ab9ac7c8e98e406f69e3ddc09dbf328dacfe632e2bb8b3cde0df40ffdb4
+Description: Minimal subset of the Python language (version 3.12)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.12-minimal.
+

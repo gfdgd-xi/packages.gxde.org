@@ -1,0 +1,25 @@
+Package: gnat-14
+Architecture: loong64
+Version: 14.2.0-7
+Priority: optional
+Section: devel
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 42
+Provides: gnat-14-65874b7f
+Depends: gnat-14-loongarch64-linux-gnu (= 14.2.0-7), gcc-14-base (= 14.2.0-7), gcc-14 (>= 14)
+Suggests: gnat-14-doc, ada-reference-manual-2012, gnat-14-sjlj
+Filename: ./g/gnat-14/gnat-14_14.2.0-7_loong64.deb
+Size: 6644
+MD5sum: 7df22ddbcebcf3ed12b0fc448f7d0cba
+SHA1: 59a309de34c4ba4c41bed23a4f7864d45b32bb92
+SHA256: e4c4bfc199a8a3fb964d99fe639150fe0a270bcf5c178ef936814b38c4341d86
+SHA512: ce2f58558963141443d8766cb30aad0d88dd5ae0e17ac8a54d9de158930ebbaf067e41f1037b6ee0e05e6fb14738de16a2afdbb2e1e19c9d5d44c398385410a5
+Homepage: http://gcc.gnu.org/
+Description: GNU Ada compiler
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+

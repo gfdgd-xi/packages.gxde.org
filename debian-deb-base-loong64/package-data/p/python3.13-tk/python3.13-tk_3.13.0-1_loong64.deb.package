@@ -1,0 +1,24 @@
+Package: python3.13-tk
+Architecture: loong64
+Version: 3.13.0-1
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 463
+Depends: libc6 (>= 2.40), libtcl8.6 (>= 8.6.0), libtk8.6 (>= 8.6.0)
+Suggests: tix
+Breaks: python3-tk (<< 3.12.5-2~)
+Replaces: python3-tk (<< 3.12.5-2~)
+Enhances: python3.13
+Filename: ./p/python3.13-tk/python3.13-tk_3.13.0-1_loong64.deb
+Size: 105932
+MD5sum: 8e1130088f8de89d2a06752179cfb9ee
+SHA1: d97b247197cc3cfbcf2c585defe88651cd5e7909
+SHA256: 2213d7829b4d9c1f5e1dcf048dad97b8ef6edcdb42748ed42460023bf982ab8c
+SHA512: 938351a29b4783017b74c99e555be03c9f466087ee20a83622e12d5a738dd8d5315627ea9aa8be1137f4df47dbf12d49c6aa384cdaae48ac971ba8934f7e5f2b
+Description: Tkinter - Writing Tk applications with Python (v3.13)
+ A module for writing portable GUI applications with Python (v3.13) using Tk.
+ Also known as Tkinter.
+Python-Version: 3.13
+

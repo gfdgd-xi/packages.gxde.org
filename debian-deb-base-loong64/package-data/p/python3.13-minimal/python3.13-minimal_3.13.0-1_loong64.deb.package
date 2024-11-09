@@ -1,0 +1,27 @@
+Package: python3.13-minimal
+Architecture: loong64
+Version: 3.13.0-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.13
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7781
+Pre-Depends: libc6 (>= 2.40)
+Depends: libpython3.13-minimal (= 3.13.0-1), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Recommends: python3.13
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./p/python3.13-minimal/python3.13-minimal_3.13.0-1_loong64.deb
+Size: 2134924
+MD5sum: e60892f70557dc0d4a3a2249f3ab4b16
+SHA1: 957cec7277cfba95d5c3347712630ab86e362cc7
+SHA256: 7b3f581edcab5ddc79ec3babc36344f36d60869693370f1c1c9de919045aa562
+SHA512: f664960634f468567a26382d5b66595dc8677d54bfe4481f7e6a2da72c0d48b7d1c45d4598e4596c4b606091cdf644c4168af8203b34ed35d6d339e047022a3b
+Description: Minimal subset of the Python language (version 3.13)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.13-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.13
+

@@ -1,0 +1,24 @@
+Package: gcc-13-for-host
+Architecture: loong64
+Version: 13.3.0-8
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: gcc-13
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 6
+Depends: gcc-13-base (= 13.3.0-8), gcc-13-loongarch64-linux-gnu (>= 13), cpp-13-for-host (= 13.3.0-8)
+Filename: ./g/gcc-13-for-host/gcc-13-for-host_13.3.0-8_loong64.deb
+Size: 1028
+MD5sum: d27a0912a7f2bcb3e5fd608e2b40833f
+SHA1: d3a744166144530d3ef5344d71f23053a1bc6056
+SHA256: 3fbd04f313b518a8f9d5eb96bb2e6285baa5f923f93aa4fb398959b43e4629b5
+SHA512: 850c8d1903989e28274e7cead27574d66c225c864ddb7a1daecfa32e2230af7c95e9e0b50110cb24afd063dca2da17273d47725180155c293c3256cb9c4507f4
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler for the host architecture
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ When using this package, tools must be invoked with an architecture prefix.
+ .
+ This is a dependency package.
+

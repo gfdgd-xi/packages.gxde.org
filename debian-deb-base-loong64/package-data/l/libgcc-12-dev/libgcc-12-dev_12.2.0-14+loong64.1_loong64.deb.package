@@ -1,0 +1,24 @@
+Package: libgcc-12-dev
+Architecture: loong64
+Version: 12.2.0-14+loong64.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 2979
+Depends: gcc-12-base (= 12.2.0-14+loong64.1), libgcc-s1 (>= 12.2.0-14+loong64.1), libgomp1 (>= 12.2.0-14+loong64.1), libatomic1 (>= 12.2.0-14+loong64.1)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: ./l/libgcc-12-dev/libgcc-12-dev_12.2.0-14+loong64.1_loong64.deb
+Size: 274900
+MD5sum: e568211e9063ea3cc02e1c73d7644e12
+SHA1: e29847f541e7c1e89c5430d2f25eceb70d81ea67
+SHA256: 046b9ac69b3503e613ab316d63335e0d6ec02853c9803d1f289e9fd3d4f2b593
+SHA512: 8b56c85cdbc03b4661ce2b424e38e73a48b29e156742999c243715b252456c44f745aa9ea84a64db56370ca4e7f3c9905878c9ddf2ab619566a1a6d5641d21ed
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
